@@ -1,0 +1,2526 @@
+{
+  "config": {
+    "bi_encoder": "sentence-transformers/all-MiniLM-L6-v2",
+    "cross_encoder": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+    "llm": "gemini-3.7-flash",
+    "vector_store": "ChromaDB (cosine)",
+    "num_chunks": 873,
+    "chunk_size": 800,
+    "chunk_overlap": 100,
+    "top_k": 10,
+    "top_n": 3,
+    "device": "cuda",
+    "gpu": "NVIDIA GeForce RTX 2050"
+  },
+  "qa_results": [
+    {
+      "qid": "q1",
+      "question": "What spell level are cantrips considered to be?",
+      "gold_answer": "Level 0",
+      "pipeline_1_correct": true,
+      "pipeline_2_correct": true,
+      "top10": [
+        {
+          "bi_rank": 1,
+          "ce_rank": 1,
+          "cosine": 0.408,
+          "ce_score": 7.641,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "### Spell Level\n\nEvery spell has a level from 0 to 9, which is indicated in a spell's description. A spell's level is an indicator of how powerful it is. Cantrips—simple spells that can be cast almost by rote—are level 0. The rules for each spellcasting class say when its members gain access to spells of certain levels.\n\n#### Spell Slots"
+        },
+        {
+          "bi_rank": 2,
+          "ce_rank": 2,
+          "cosine": 0.408,
+          "ce_score": 7.641,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "### Spell Level\n\nEvery spell has a level from 0 to 9, which is indicated in a spell's description. A spell's level is an indicator of how powerful it is. Cantrips—simple spells that can be cast almost by rote—are level 0. The rules for each spellcasting class say when its members gain access to spells of certain levels.\n\n#### Spell Slots"
+        },
+        {
+          "bi_rank": 3,
+          "ce_rank": 3,
+          "cosine": 0.408,
+          "ce_score": 7.641,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "### Spell Level\n\nEvery spell has a level from 0 to 9, which is indicated in a spell's description. A spell's level is an indicator of how powerful it is. Cantrips—simple spells that can be cast almost by rote—are level 0. The rules for each spellcasting class say when its members gain access to spells of certain levels.\n\n#### Spell Slots"
+        },
+        {
+          "bi_rank": 4,
+          "ce_rank": 4,
+          "cosine": 0.408,
+          "ce_score": 7.641,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "### Spell Level\n\nEvery spell has a level from 0 to 9, which is indicated in a spell's description. A spell's level is an indicator of how powerful it is. Cantrips—simple spells that can be cast almost by rote—are level 0. The rules for each spellcasting class say when its members gain access to spells of certain levels.\n\n#### Spell Slots"
+        },
+        {
+          "bi_rank": 5,
+          "ce_rank": 5,
+          "cosine": 0.9421,
+          "ce_score": 2.549,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "_Using a Higher-Level Spell Slot._ The damage increases by 1d6 for each spell slot level above 3.\n\n#### Vicious Mockery\n\n_Enchantment Cantrip (Bard)_\n\n**Casting Time:** Action\n**Range:** 60 feet\n**Components:** V\n**Duration:** Instantaneous"
+        },
+        {
+          "bi_rank": 6,
+          "ce_rank": 6,
+          "cosine": 0.9421,
+          "ce_score": 2.549,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "_Using a Higher-Level Spell Slot._ The damage increases by 1d6 for each spell slot level above 3.\n\n#### Vicious Mockery\n\n_Enchantment Cantrip (Bard)_\n\n**Casting Time:** Action\n**Range:** 60 feet\n**Components:** V\n**Duration:** Instantaneous"
+        },
+        {
+          "bi_rank": 7,
+          "ce_rank": 7,
+          "cosine": 0.9421,
+          "ce_score": 2.549,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "_Using a Higher-Level Spell Slot._ The damage increases by 1d6 for each spell slot level above 3.\n\n#### Vicious Mockery\n\n_Enchantment Cantrip (Bard)_\n\n**Casting Time:** Action\n**Range:** 60 feet\n**Components:** V\n**Duration:** Instantaneous"
+        },
+        {
+          "bi_rank": 8,
+          "ce_rank": 8,
+          "cosine": 0.9421,
+          "ce_score": 2.549,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "_Using a Higher-Level Spell Slot._ The damage increases by 1d6 for each spell slot level above 3.\n\n#### Vicious Mockery\n\n_Enchantment Cantrip (Bard)_\n\n**Casting Time:** Action\n**Range:** 60 feet\n**Components:** V\n**Duration:** Instantaneous"
+        },
+        {
+          "bi_rank": 9,
+          "ce_rank": 9,
+          "cosine": 1.063,
+          "ce_score": 2.286,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "_Using a Higher-Level Spell Slot._ The damage increases by 1d8 for every slot level above 2.\n\n#### Starry Wisp\n\n_Evocation Cantrip (Bard, Druid)_\n\n**Casting Time:** Action\n**Range:** 60 feet\n**Components:** V, S\n**Duration:** Instantaneous"
+        },
+        {
+          "bi_rank": 10,
+          "ce_rank": 10,
+          "cosine": 1.063,
+          "ce_score": 2.286,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "_Using a Higher-Level Spell Slot._ The damage increases by 1d8 for every slot level above 2.\n\n#### Starry Wisp\n\n_Evocation Cantrip (Bard, Druid)_\n\n**Casting Time:** Action\n**Range:** 60 feet\n**Components:** V, S\n**Duration:** Instantaneous"
+        }
+      ],
+      "pipeline_1_baseline": {
+        "context_bi_ranks": [1, 2, 3],
+        "answer": "Based on the provided context, cantrips are level 0."
+      },
+      "pipeline_2_reranked": {
+        "context_bi_ranks": [1, 2, 3],
+        "answer": "Based on the provided context, cantrips are considered to be **level 0**."
+      },
+      "latency_ms": {
+        "retrieve": 18.1,
+        "rerank": 17.1,
+        "llm_p1": 3444.3,
+        "llm_p2": 2004.0
+      },
+      "rank_shift": {
+        "first_relevant_baseline_rank": 1,
+        "first_relevant_reranked_rank": 1,
+        "relevant_in_top10": true,
+        "baseline_has_relevant_in_top3": true,
+        "reranked_has_relevant_in_top3": true,
+        "promoted_into_top3": false,
+        "demoted_out_of_top3": false
+      }
+    },
+    {
+      "qid": "q2",
+      "question": "Which school of magic has typical effects that prevent or reverse harmful effects?",
+      "gold_answer": "Abjuration",
+      "pipeline_1_correct": false,
+      "pipeline_2_correct": true,
+      "top10": [
+        {
+          "bi_rank": 1,
+          "ce_rank": 7,
+          "cosine": 0.9234,
+          "ce_score": -3.42,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "### School of Magic\n\nEach spell belongs to a school of magic. The schools are listed in the Schools of Magic table. These categories help describe spells but have no rules of their own, although some other rules refer to them.\n\n**Schools of Magic**"
+        },
+        {
+          "bi_rank": 2,
+          "ce_rank": 8,
+          "cosine": 0.9234,
+          "ce_score": -3.42,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "### School of Magic\n\nEach spell belongs to a school of magic. The schools are listed in the Schools of Magic table. These categories help describe spells but have no rules of their own, although some other rules refer to them.\n\n**Schools of Magic**"
+        },
+        {
+          "bi_rank": 3,
+          "ce_rank": 9,
+          "cosine": 0.9234,
+          "ce_score": -3.42,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "### School of Magic\n\nEach spell belongs to a school of magic. The schools are listed in the Schools of Magic table. These categories help describe spells but have no rules of their own, although some other rules refer to them.\n\n**Schools of Magic**"
+        },
+        {
+          "bi_rank": 4,
+          "ce_rank": 10,
+          "cosine": 0.9234,
+          "ce_score": -3.42,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "### School of Magic\n\nEach spell belongs to a school of magic. The schools are listed in the Schools of Magic table. These categories help describe spells but have no rules of their own, although some other rules refer to them.\n\n**Schools of Magic**"
+        },
+        {
+          "bi_rank": 5,
+          "ce_rank": 1,
+          "cosine": 1.0,
+          "ce_score": 3.72,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "<table>\n  <thead>\n    <tr>\n      <th>School</th>\n      <th>Typical Effects</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Abjuration</td>\n      <td>Prevents or reverses harmful effects</td>\n    </tr>\n    <tr>\n      <td>Conjuration</td>\n      <td>Transports creatures or objects</td>\n    </tr>\n    <tr>\n      <td>Divination</td>\n      <td>Reveals information</td>\n    </tr>\n    <tr>\n      <td>Enchantment</td>\n      <td>Influences minds</td>\n    </tr>\n    <tr>\n      <td>Evocation</td>"
+        },
+        {
+          "bi_rank": 6,
+          "ce_rank": 2,
+          "cosine": 1.0,
+          "ce_score": 3.72,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "<table>\n  <thead>\n    <tr>\n      <th>School</th>\n      <th>Typical Effects</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Abjuration</td>\n      <td>Prevents or reverses harmful effects</td>\n    </tr>\n    <tr>\n      <td>Conjuration</td>\n      <td>Transports creatures or objects</td>\n    </tr>\n    <tr>\n      <td>Divination</td>\n      <td>Reveals information</td>\n    </tr>\n    <tr>\n      <td>Enchantment</td>\n      <td>Influences minds</td>\n    </tr>\n    <tr>\n      <td>Evocation</td>"
+        },
+        {
+          "bi_rank": 7,
+          "ce_rank": 3,
+          "cosine": 1.0,
+          "ce_score": 3.72,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "<table>\n  <thead>\n    <tr>\n      <th>School</th>\n      <th>Typical Effects</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Abjuration</td>\n      <td>Prevents or reverses harmful effects</td>\n    </tr>\n    <tr>\n      <td>Conjuration</td>\n      <td>Transports creatures or objects</td>\n    </tr>\n    <tr>\n      <td>Divination</td>\n      <td>Reveals information</td>\n    </tr>\n    <tr>\n      <td>Enchantment</td>\n      <td>Influences minds</td>\n    </tr>\n    <tr>\n      <td>Evocation</td>"
+        },
+        {
+          "bi_rank": 8,
+          "ce_rank": 4,
+          "cosine": 1.0,
+          "ce_score": 3.72,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "<table>\n  <thead>\n    <tr>\n      <th>School</th>\n      <th>Typical Effects</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Abjuration</td>\n      <td>Prevents or reverses harmful effects</td>\n    </tr>\n    <tr>\n      <td>Conjuration</td>\n      <td>Transports creatures or objects</td>\n    </tr>\n    <tr>\n      <td>Divination</td>\n      <td>Reveals information</td>\n    </tr>\n    <tr>\n      <td>Enchantment</td>\n      <td>Influences minds</td>\n    </tr>\n    <tr>\n      <td>Evocation</td>"
+        },
+        {
+          "bi_rank": 9,
+          "ce_rank": 5,
+          "cosine": 1.0986,
+          "ce_score": 0.209,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "For the duration, you sense the presence of magical effects within 30 feet of yourself. If you sense such effects, you can take the Magic action to see a faint aura around any visible creature or object in the area that bears the magic, and if an effect was created by a spell, you learn the spell's school of magic.\n\nThe spell is blocked by 1 foot of stone, dirt, or wood; 1 inch of metal; or a thin sheet of lead.\n\n#### Detect Poison and Disease"
+        },
+        {
+          "bi_rank": 10,
+          "ce_rank": 6,
+          "cosine": 1.0986,
+          "ce_score": 0.209,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "For the duration, you sense the presence of magical effects within 30 feet of yourself. If you sense such effects, you can take the Magic action to see a faint aura around any visible creature or object in the area that bears the magic, and if an effect was created by a spell, you learn the spell's school of magic.\n\nThe spell is blocked by 1 foot of stone, dirt, or wood; 1 inch of metal; or a thin sheet of lead.\n\n#### Detect Poison and Disease"
+        }
+      ],
+      "pipeline_1_baseline": {
+        "context_bi_ranks": [1, 2, 3],
+        "answer": "Based on the provided context, the answer is not available. The text mentions the \"Schools of Magic\" table, but the details and descriptions of the specific schools of magic are not included in the context provided."
+      },
+      "pipeline_2_reranked": {
+        "context_bi_ranks": [5, 6, 7],
+        "answer": "Based on the provided context, the **Abjuration** school of magic has typical effects that prevent or reverse harmful effects."
+      },
+      "latency_ms": {
+        "retrieve": 8.9,
+        "rerank": 28.6,
+        "llm_p1": 3804.4,
+        "llm_p2": 3227.5
+      },
+      "rank_shift": {
+        "first_relevant_baseline_rank": 5,
+        "first_relevant_reranked_rank": 1,
+        "relevant_in_top10": true,
+        "baseline_has_relevant_in_top3": false,
+        "reranked_has_relevant_in_top3": true,
+        "promoted_into_top3": true,
+        "demoted_out_of_top3": false
+      }
+    },
+    {
+      "qid": "q3",
+      "question": "What are the physical requirements a spellcaster must meet to cast a spell as indicated in its description?",
+      "gold_answer": "Verbal (V), Somatic (S), or Material (M) components",
+      "pipeline_1_correct": true,
+      "pipeline_2_correct": true,
+      "top10": [
+        {
+          "bi_rank": 1,
+          "ce_rank": 1,
+          "cosine": 0.7172,
+          "ce_score": 8.133,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "## Components\n\nA spell's components are physical requirements the spellcaster must meet to cast the spell. Each spell's description indicates whether it requires Verbal (V), Somatic (S), or Material (M) components. If the spellcaster can't provide one or more of a spell's components, the spellcaster can't cast the spell.\n\n### Verbal (V)"
+        },
+        {
+          "bi_rank": 2,
+          "ce_rank": 2,
+          "cosine": 0.7172,
+          "ce_score": 8.133,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "## Components\n\nA spell's components are physical requirements the spellcaster must meet to cast the spell. Each spell's description indicates whether it requires Verbal (V), Somatic (S), or Material (M) components. If the spellcaster can't provide one or more of a spell's components, the spellcaster can't cast the spell.\n\n### Verbal (V)"
+        },
+        {
+          "bi_rank": 3,
+          "ce_rank": 3,
+          "cosine": 0.7172,
+          "ce_score": 8.133,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "## Components\n\nA spell's components are physical requirements the spellcaster must meet to cast the spell. Each spell's description indicates whether it requires Verbal (V), Somatic (S), or Material (M) components. If the spellcaster can't provide one or more of a spell's components, the spellcaster can't cast the spell.\n\n### Verbal (V)"
+        },
+        {
+          "bi_rank": 4,
+          "ce_rank": 4,
+          "cosine": 0.7172,
+          "ce_score": 8.133,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "## Components\n\nA spell's components are physical requirements the spellcaster must meet to cast the spell. Each spell's description indicates whether it requires Verbal (V), Somatic (S), or Material (M) components. If the spellcaster can't provide one or more of a spell's components, the spellcaster can't cast the spell.\n\n### Verbal (V)"
+        },
+        {
+          "bi_rank": 5,
+          "ce_rank": 5,
+          "cosine": 0.9647,
+          "ce_score": 1.008,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "## Casting Spells\n\nEach spell description has a series of entries that provide the details needed to cast the spell. The following sections explain each of those entries, which follow a spell's name.\n\n> **Casting in Armor**\n>\n> You must have training with any armor you are wearing to cast spells while wearing it. You are otherwise too hampered by the armor for spellcasting.\n\n### Spell Level"
+        },
+        {
+          "bi_rank": 6,
+          "ce_rank": 6,
+          "cosine": 0.9647,
+          "ce_score": 1.008,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "## Casting Spells\n\nEach spell description has a series of entries that provide the details needed to cast the spell. The following sections explain each of those entries, which follow a spell's name.\n\n> **Casting in Armor**\n>\n> You must have training with any armor you are wearing to cast spells while wearing it. You are otherwise too hampered by the armor for spellcasting.\n\n### Spell Level"
+        },
+        {
+          "bi_rank": 7,
+          "ce_rank": 7,
+          "cosine": 0.9647,
+          "ce_score": 1.008,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "## Casting Spells\n\nEach spell description has a series of entries that provide the details needed to cast the spell. The following sections explain each of those entries, which follow a spell's name.\n\n> **Casting in Armor**\n>\n> You must have training with any armor you are wearing to cast spells while wearing it. You are otherwise too hampered by the armor for spellcasting.\n\n### Spell Level"
+        },
+        {
+          "bi_rank": 8,
+          "ce_rank": 8,
+          "cosine": 0.9647,
+          "ce_score": 1.008,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "## Casting Spells\n\nEach spell description has a series of entries that provide the details needed to cast the spell. The following sections explain each of those entries, which follow a spell's name.\n\n> **Casting in Armor**\n>\n> You must have training with any armor you are wearing to cast spells while wearing it. You are otherwise too hampered by the armor for spellcasting.\n\n### Spell Level"
+        },
+        {
+          "bi_rank": 9,
+          "ce_rank": 9,
+          "cosine": 1.0308,
+          "ce_score": -2.568,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "﻿# Spells\n\n## Gaining Spells\n\nBefore you can cast a spell, you must have the spell prepared in your mind or have access to the spell from a magic item, such as a _Spell Scroll_. Your features specify which spells you have access to, if any; whether you always have certain spells prepared; and whether you can change the list of spells you have prepared.\n\n### Preparing Spells"
+        },
+        {
+          "bi_rank": 10,
+          "ce_rank": 10,
+          "cosine": 1.0308,
+          "ce_score": -2.568,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "﻿# Spells\n\n## Gaining Spells\n\nBefore you can cast a spell, you must have the spell prepared in your mind or have access to the spell from a magic item, such as a _Spell Scroll_. Your features specify which spells you have access to, if any; whether you always have certain spells prepared; and whether you can change the list of spells you have prepared.\n\n### Preparing Spells"
+        }
+      ],
+      "pipeline_1_baseline": {
+        "context_bi_ranks": [1, 2, 3],
+        "answer": "Based on the provided context, the physical requirements a spellcaster must meet are the spell's **components**, which can include:\n\n* **Verbal (V)**\n* **Somatic (S)**\n* **Material (M)**"
+      },
+      "pipeline_2_reranked": {
+        "context_bi_ranks": [1, 2, 3],
+        "answer": "Based on the provided context, the physical requirements a spellcaster must meet are the spell's **components**, which can include:\n\n* **Verbal (V)** components\n* **Somatic (S)** components\n* **Material (M)** components"
+      },
+      "latency_ms": {
+        "retrieve": 11.4,
+        "rerank": 19.0,
+        "llm_p1": 2492.6,
+        "llm_p2": 2809.1
+      },
+      "rank_shift": {
+        "first_relevant_baseline_rank": 1,
+        "first_relevant_reranked_rank": 1,
+        "relevant_in_top10": true,
+        "baseline_has_relevant_in_top3": true,
+        "reranked_has_relevant_in_top3": true,
+        "promoted_into_top3": false,
+        "demoted_out_of_top3": false
+      }
+    },
+    {
+      "qid": "q4",
+      "question": "What action do most spells require to cast?",
+      "gold_answer": "The Magic action",
+      "pipeline_1_correct": true,
+      "pipeline_2_correct": true,
+      "top10": [
+        {
+          "bi_rank": 1,
+          "ce_rank": 1,
+          "cosine": 0.8566,
+          "ce_score": 7.201,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "### Class Spell Lists\n\nIf a spell is on a class's spell list, the class's name appears in parentheses after the spell's school of magic. Some features add a spell to a character's spell list even if the character isn't a member of a class in the parentheses.\n\n## Casting Time\n\nMost spells require the Magic action to cast, but some spells require a Bonus Action, a Reaction, or 1 minute or more. A spell's Casting Time entry specifies which of those is required."
+        },
+        {
+          "bi_rank": 2,
+          "ce_rank": 2,
+          "cosine": 0.8566,
+          "ce_score": 7.201,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "### Class Spell Lists\n\nIf a spell is on a class's spell list, the class's name appears in parentheses after the spell's school of magic. Some features add a spell to a character's spell list even if the character isn't a member of a class in the parentheses.\n\n## Casting Time\n\nMost spells require the Magic action to cast, but some spells require a Bonus Action, a Reaction, or 1 minute or more. A spell's Casting Time entry specifies which of those is required."
+        },
+        {
+          "bi_rank": 3,
+          "ce_rank": 3,
+          "cosine": 0.8566,
+          "ce_score": 7.201,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "### Class Spell Lists\n\nIf a spell is on a class's spell list, the class's name appears in parentheses after the spell's school of magic. Some features add a spell to a character's spell list even if the character isn't a member of a class in the parentheses.\n\n## Casting Time\n\nMost spells require the Magic action to cast, but some spells require a Bonus Action, a Reaction, or 1 minute or more. A spell's Casting Time entry specifies which of those is required."
+        },
+        {
+          "bi_rank": 4,
+          "ce_rank": 4,
+          "cosine": 0.8566,
+          "ce_score": 7.201,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "### Class Spell Lists\n\nIf a spell is on a class's spell list, the class's name appears in parentheses after the spell's school of magic. Some features add a spell to a character's spell list even if the character isn't a member of a class in the parentheses.\n\n## Casting Time\n\nMost spells require the Magic action to cast, but some spells require a Bonus Action, a Reaction, or 1 minute or more. A spell's Casting Time entry specifies which of those is required."
+        },
+        {
+          "bi_rank": 5,
+          "ce_rank": 5,
+          "cosine": 0.9786,
+          "ce_score": 1.821,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "## Components\n\nA spell's components are physical requirements the spellcaster must meet to cast the spell. Each spell's description indicates whether it requires Verbal (V), Somatic (S), or Material (M) components. If the spellcaster can't provide one or more of a spell's components, the spellcaster can't cast the spell.\n\n### Verbal (V)"
+        },
+        {
+          "bi_rank": 6,
+          "ce_rank": 6,
+          "cosine": 0.9786,
+          "ce_score": 1.821,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "## Components\n\nA spell's components are physical requirements the spellcaster must meet to cast the spell. Each spell's description indicates whether it requires Verbal (V), Somatic (S), or Material (M) components. If the spellcaster can't provide one or more of a spell's components, the spellcaster can't cast the spell.\n\n### Verbal (V)"
+        },
+        {
+          "bi_rank": 7,
+          "ce_rank": 7,
+          "cosine": 0.9786,
+          "ce_score": 1.821,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "## Components\n\nA spell's components are physical requirements the spellcaster must meet to cast the spell. Each spell's description indicates whether it requires Verbal (V), Somatic (S), or Material (M) components. If the spellcaster can't provide one or more of a spell's components, the spellcaster can't cast the spell.\n\n### Verbal (V)"
+        },
+        {
+          "bi_rank": 8,
+          "ce_rank": 8,
+          "cosine": 0.9786,
+          "ce_score": 1.821,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "## Components\n\nA spell's components are physical requirements the spellcaster must meet to cast the spell. Each spell's description indicates whether it requires Verbal (V), Somatic (S), or Material (M) components. If the spellcaster can't provide one or more of a spell's components, the spellcaster can't cast the spell.\n\n### Verbal (V)"
+        },
+        {
+          "bi_rank": 9,
+          "ce_rank": 9,
+          "cosine": 1.0498,
+          "ce_score": -0.651,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "﻿# Spells\n\n## Gaining Spells\n\nBefore you can cast a spell, you must have the spell prepared in your mind or have access to the spell from a magic item, such as a _Spell Scroll_. Your features specify which spells you have access to, if any; whether you always have certain spells prepared; and whether you can change the list of spells you have prepared.\n\n### Preparing Spells"
+        },
+        {
+          "bi_rank": 10,
+          "ce_rank": 10,
+          "cosine": 1.0498,
+          "ce_score": -0.651,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "﻿# Spells\n\n## Gaining Spells\n\nBefore you can cast a spell, you must have the spell prepared in your mind or have access to the spell from a magic item, such as a _Spell Scroll_. Your features specify which spells you have access to, if any; whether you always have certain spells prepared; and whether you can change the list of spells you have prepared.\n\n### Preparing Spells"
+        }
+      ],
+      "pipeline_1_baseline": {
+        "context_bi_ranks": [1, 2, 3],
+        "answer": "Based on the provided context, most spells require the **Magic action** to cast."
+      },
+      "pipeline_2_reranked": {
+        "context_bi_ranks": [1, 2, 3],
+        "answer": "Based on the provided context, most spells require the **Magic action** to cast."
+      },
+      "latency_ms": {
+        "retrieve": 18.9,
+        "rerank": 19.9,
+        "llm_p1": 3926.4,
+        "llm_p2": 3286.1
+      },
+      "rank_shift": {
+        "first_relevant_baseline_rank": 1,
+        "first_relevant_reranked_rank": 1,
+        "relevant_in_top10": true,
+        "baseline_has_relevant_in_top3": true,
+        "reranked_has_relevant_in_top3": true,
+        "promoted_into_top3": false,
+        "demoted_out_of_top3": false
+      }
+    },
+    {
+      "qid": "q5",
+      "question": "How much longer does the Ritual version of a spell take to cast compared to normal?",
+      "gold_answer": "10 minutes longer",
+      "pipeline_1_correct": false,
+      "pipeline_2_correct": true,
+      "top10": [
+        {
+          "bi_rank": 1,
+          "ce_rank": 5,
+          "cosine": 0.7235,
+          "ce_score": 4.822,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "### Longer Casting Times\n\nCertain spells—including a spell cast as a Ritual—require more time to cast: minutes or even hours. While you cast a spell with a casting time of 1 minute or more, you must take the Magic action on each of your turns, and you must maintain Concentration (see \"Rules Glossary\") while you do so. If your Concentration is broken, the spell fails, but you don't expend a spell slot. To cast the spell again, you must start over.\n\n## Range"
+        },
+        {
+          "bi_rank": 2,
+          "ce_rank": 6,
+          "cosine": 0.7235,
+          "ce_score": 4.822,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "### Longer Casting Times\n\nCertain spells—including a spell cast as a Ritual—require more time to cast: minutes or even hours. While you cast a spell with a casting time of 1 minute or more, you must take the Magic action on each of your turns, and you must maintain Concentration (see \"Rules Glossary\") while you do so. If your Concentration is broken, the spell fails, but you don't expend a spell slot. To cast the spell again, you must start over.\n\n## Range"
+        },
+        {
+          "bi_rank": 3,
+          "ce_rank": 7,
+          "cosine": 0.7235,
+          "ce_score": 4.822,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "### Longer Casting Times\n\nCertain spells—including a spell cast as a Ritual—require more time to cast: minutes or even hours. While you cast a spell with a casting time of 1 minute or more, you must take the Magic action on each of your turns, and you must maintain Concentration (see \"Rules Glossary\") while you do so. If your Concentration is broken, the spell fails, but you don't expend a spell slot. To cast the spell again, you must start over.\n\n## Range"
+        },
+        {
+          "bi_rank": 4,
+          "ce_rank": 8,
+          "cosine": 0.7235,
+          "ce_score": 4.822,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "### Longer Casting Times\n\nCertain spells—including a spell cast as a Ritual—require more time to cast: minutes or even hours. While you cast a spell with a casting time of 1 minute or more, you must take the Magic action on each of your turns, and you must maintain Concentration (see \"Rules Glossary\") while you do so. If your Concentration is broken, the spell fails, but you don't expend a spell slot. To cast the spell again, you must start over.\n\n## Range"
+        },
+        {
+          "bi_rank": 5,
+          "ce_rank": 1,
+          "cosine": 0.7807,
+          "ce_score": 8.558,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "**Rituals.** Certain spells have the Ritual tag in the Casting Time entry. Such a spell can be cast following the normal rules for spellcasting, or it can be cast as a Ritual. The Ritual version of a spell takes 10 minutes longer to cast than normal, but it doesn't expend a spell slot. To cast a spell as a Ritual, a spellcaster must have it prepared."
+        },
+        {
+          "bi_rank": 6,
+          "ce_rank": 2,
+          "cosine": 0.7807,
+          "ce_score": 8.558,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "**Rituals.** Certain spells have the Ritual tag in the Casting Time entry. Such a spell can be cast following the normal rules for spellcasting, or it can be cast as a Ritual. The Ritual version of a spell takes 10 minutes longer to cast than normal, but it doesn't expend a spell slot. To cast a spell as a Ritual, a spellcaster must have it prepared."
+        },
+        {
+          "bi_rank": 7,
+          "ce_rank": 3,
+          "cosine": 0.7807,
+          "ce_score": 8.558,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "**Rituals.** Certain spells have the Ritual tag in the Casting Time entry. Such a spell can be cast following the normal rules for spellcasting, or it can be cast as a Ritual. The Ritual version of a spell takes 10 minutes longer to cast than normal, but it doesn't expend a spell slot. To cast a spell as a Ritual, a spellcaster must have it prepared."
+        },
+        {
+          "bi_rank": 8,
+          "ce_rank": 4,
+          "cosine": 0.7807,
+          "ce_score": 8.558,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "**Rituals.** Certain spells have the Ritual tag in the Casting Time entry. Such a spell can be cast following the normal rules for spellcasting, or it can be cast as a Ritual. The Ritual version of a spell takes 10 minutes longer to cast than normal, but it doesn't expend a spell slot. To cast a spell as a Ritual, a spellcaster must have it prepared."
+        },
+        {
+          "bi_rank": 9,
+          "ce_rank": 9,
+          "cosine": 0.9703,
+          "ce_score": 1.664,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "_Using a Higher-Level Spell Slot._ If you use a level 7 or 8 spell slot, the duration is 365 days. If you use a level 9 spell slot, the spell lasts until it is ended by one of the spells mentioned above.\n\n#### Gentle Repose\n\n_Level 2 Necromancy (Cleric, Paladin, Wizard)_\n\n**Casting Time:** Action or Ritual\n**Range:** Touch\n**Components:** V, S, M (2 Copper Pieces, which the spell consumes)\n**Duration:** 10 days"
+        },
+        {
+          "bi_rank": 10,
+          "ce_rank": 10,
+          "cosine": 0.9703,
+          "ce_score": 1.664,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "_Using a Higher-Level Spell Slot._ If you use a level 7 or 8 spell slot, the duration is 365 days. If you use a level 9 spell slot, the spell lasts until it is ended by one of the spells mentioned above.\n\n#### Gentle Repose\n\n_Level 2 Necromancy (Cleric, Paladin, Wizard)_\n\n**Casting Time:** Action or Ritual\n**Range:** Touch\n**Components:** V, S, M (2 Copper Pieces, which the spell consumes)\n**Duration:** 10 days"
+        }
+      ],
+      "pipeline_1_baseline": {
+        "context_bi_ranks": [1, 2, 3],
+        "answer": "Based on the provided context, it is not specified exactly how much longer a ritual takes to cast compared to normal. The context only states that a spell cast as a Ritual requires \"more time to cast: minutes or even hours.\""
+      },
+      "pipeline_2_reranked": {
+        "context_bi_ranks": [5, 6, 7],
+        "answer": "Based on the provided context, the Ritual version of a spell takes 10 minutes longer to cast than normal."
+      },
+      "latency_ms": {
+        "retrieve": 9.1,
+        "rerank": 24.9,
+        "llm_p1": 4835.4,
+        "llm_p2": 1901.9
+      },
+      "rank_shift": {
+        "first_relevant_baseline_rank": 5,
+        "first_relevant_reranked_rank": 1,
+        "relevant_in_top10": true,
+        "baseline_has_relevant_in_top3": false,
+        "reranked_has_relevant_in_top3": true,
+        "promoted_into_top3": true,
+        "demoted_out_of_top3": false
+      }
+    },
+    {
+      "qid": "q6",
+      "question": "What action must you take to try to identify an ongoing non-instantaneous spell?",
+      "gold_answer": "The Study action",
+      "pipeline_1_correct": true,
+      "pipeline_2_correct": true,
+      "top10": [
+        {
+          "bi_rank": 1,
+          "ce_rank": 1,
+          "cosine": 0.4835,
+          "ce_score": 8.557,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "> **IDENTIFYING AN ONGOING SPELL**\n>\n> You can try to identify a non-instantaneous spell by its observable effects if its duration is ongoing. To identify it, you must take the Study action and succeed on a DC 15 Intelligence (Arcana) check.\n\n## Spell Descriptions\n\n#### Acid Arrow\n\n_Level 2 Evocation (Wizard)_\n\n**Casting Time:** Action\n**Range:** 90 feet\n**Components:** V, S, M (powdered rhubarb leaf)\n**Duration:** Instantaneous"
+        },
+        {
+          "bi_rank": 2,
+          "ce_rank": 2,
+          "cosine": 0.4835,
+          "ce_score": 8.557,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "> **IDENTIFYING AN ONGOING SPELL**\n>\n> You can try to identify a non-instantaneous spell by its observable effects if its duration is ongoing. To identify it, you must take the Study action and succeed on a DC 15 Intelligence (Arcana) check.\n\n## Spell Descriptions\n\n#### Acid Arrow\n\n_Level 2 Evocation (Wizard)_\n\n**Casting Time:** Action\n**Range:** 90 feet\n**Components:** V, S, M (powdered rhubarb leaf)\n**Duration:** Instantaneous"
+        },
+        {
+          "bi_rank": 3,
+          "ce_rank": 3,
+          "cosine": 0.4835,
+          "ce_score": 8.557,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "> **IDENTIFYING AN ONGOING SPELL**\n>\n> You can try to identify a non-instantaneous spell by its observable effects if its duration is ongoing. To identify it, you must take the Study action and succeed on a DC 15 Intelligence (Arcana) check.\n\n## Spell Descriptions\n\n#### Acid Arrow\n\n_Level 2 Evocation (Wizard)_\n\n**Casting Time:** Action\n**Range:** 90 feet\n**Components:** V, S, M (powdered rhubarb leaf)\n**Duration:** Instantaneous"
+        },
+        {
+          "bi_rank": 4,
+          "ce_rank": 4,
+          "cosine": 0.4835,
+          "ce_score": 8.557,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "> **IDENTIFYING AN ONGOING SPELL**\n>\n> You can try to identify a non-instantaneous spell by its observable effects if its duration is ongoing. To identify it, you must take the Study action and succeed on a DC 15 Intelligence (Arcana) check.\n\n## Spell Descriptions\n\n#### Acid Arrow\n\n_Level 2 Evocation (Wizard)_\n\n**Casting Time:** Action\n**Range:** 90 feet\n**Components:** V, S, M (powdered rhubarb leaf)\n**Duration:** Instantaneous"
+        },
+        {
+          "bi_rank": 5,
+          "ce_rank": 7,
+          "cosine": 0.9718,
+          "ce_score": -8.879,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "You implant a message within an object in range—a message that is uttered when a trigger condition is met. Choose an object that you can see and that isn't being worn or carried by another creature. Then speak the message, which must be 25 words or fewer, though it can be delivered over as long as 10 minutes. Finally, determine the circumstance that will trigger the spell to deliver your message."
+        },
+        {
+          "bi_rank": 6,
+          "ce_rank": 8,
+          "cosine": 0.9718,
+          "ce_score": -8.879,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "You implant a message within an object in range—a message that is uttered when a trigger condition is met. Choose an object that you can see and that isn't being worn or carried by another creature. Then speak the message, which must be 25 words or fewer, though it can be delivered over as long as 10 minutes. Finally, determine the circumstance that will trigger the spell to deliver your message."
+        },
+        {
+          "bi_rank": 7,
+          "ce_rank": 9,
+          "cosine": 0.9718,
+          "ce_score": -8.879,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "You implant a message within an object in range—a message that is uttered when a trigger condition is met. Choose an object that you can see and that isn't being worn or carried by another creature. Then speak the message, which must be 25 words or fewer, though it can be delivered over as long as 10 minutes. Finally, determine the circumstance that will trigger the spell to deliver your message."
+        },
+        {
+          "bi_rank": 8,
+          "ce_rank": 10,
+          "cosine": 0.9718,
+          "ce_score": -8.879,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "You implant a message within an object in range—a message that is uttered when a trigger condition is met. Choose an object that you can see and that isn't being worn or carried by another creature. Then speak the message, which must be 25 words or fewer, though it can be delivered over as long as 10 minutes. Finally, determine the circumstance that will trigger the spell to deliver your message."
+        },
+        {
+          "bi_rank": 9,
+          "ce_rank": 5,
+          "cosine": 0.9719,
+          "ce_score": 0.324,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "**Casting Time:** Action\n**Range:** 120 feet\n**Components:** V, S\n**Duration:** Instantaneous\n\nChoose one creature, object, or magical effect within range. Any ongoing spell of level 3 or lower on the target ends. For each ongoing spell of level 4 or higher on the target, make an ability check using your spellcasting ability (DC 10 plus that spell's level). On a successful check, the spell ends."
+        },
+        {
+          "bi_rank": 10,
+          "ce_rank": 6,
+          "cosine": 0.9719,
+          "ce_score": 0.324,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "**Casting Time:** Action\n**Range:** 120 feet\n**Components:** V, S\n**Duration:** Instantaneous\n\nChoose one creature, object, or magical effect within range. Any ongoing spell of level 3 or lower on the target ends. For each ongoing spell of level 4 or higher on the target, make an ability check using your spellcasting ability (DC 10 plus that spell's level). On a successful check, the spell ends."
+        }
+      ],
+      "pipeline_1_baseline": {
+        "context_bi_ranks": [1, 2, 3],
+        "answer": "To try to identify an ongoing non-instantaneous spell, you must take the **Study action** (and succeed on a DC 15 Intelligence (Arcana) check)."
+      },
+      "pipeline_2_reranked": {
+        "context_bi_ranks": [1, 2, 3],
+        "answer": "To try to identify an ongoing non-instantaneous spell, you must take the **Study action**."
+      },
+      "latency_ms": {
+        "retrieve": 9.4,
+        "rerank": 23.9,
+        "llm_p1": 2668.5,
+        "llm_p2": 2252.7
+      },
+      "rank_shift": {
+        "first_relevant_baseline_rank": 1,
+        "first_relevant_reranked_rank": 1,
+        "relevant_in_top10": true,
+        "baseline_has_relevant_in_top3": true,
+        "reranked_has_relevant_in_top3": true,
+        "promoted_into_top3": false,
+        "demoted_out_of_top3": false
+      }
+    },
+    {
+      "qid": "q7",
+      "question": "What check and DC are required to identify an ongoing spell?",
+      "gold_answer": "A DC 15 Intelligence (Arcana) check",
+      "pipeline_1_correct": true,
+      "pipeline_2_correct": true,
+      "top10": [
+        {
+          "bi_rank": 1,
+          "ce_rank": 1,
+          "cosine": 0.7829,
+          "ce_score": 6.976,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "> **IDENTIFYING AN ONGOING SPELL**\n>\n> You can try to identify a non-instantaneous spell by its observable effects if its duration is ongoing. To identify it, you must take the Study action and succeed on a DC 15 Intelligence (Arcana) check.\n\n## Spell Descriptions\n\n#### Acid Arrow\n\n_Level 2 Evocation (Wizard)_\n\n**Casting Time:** Action\n**Range:** 90 feet\n**Components:** V, S, M (powdered rhubarb leaf)\n**Duration:** Instantaneous"
+        },
+        {
+          "bi_rank": 2,
+          "ce_rank": 2,
+          "cosine": 0.7829,
+          "ce_score": 6.976,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "> **IDENTIFYING AN ONGOING SPELL**\n>\n> You can try to identify a non-instantaneous spell by its observable effects if its duration is ongoing. To identify it, you must take the Study action and succeed on a DC 15 Intelligence (Arcana) check.\n\n## Spell Descriptions\n\n#### Acid Arrow\n\n_Level 2 Evocation (Wizard)_\n\n**Casting Time:** Action\n**Range:** 90 feet\n**Components:** V, S, M (powdered rhubarb leaf)\n**Duration:** Instantaneous"
+        },
+        {
+          "bi_rank": 3,
+          "ce_rank": 3,
+          "cosine": 0.7829,
+          "ce_score": 6.976,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "> **IDENTIFYING AN ONGOING SPELL**\n>\n> You can try to identify a non-instantaneous spell by its observable effects if its duration is ongoing. To identify it, you must take the Study action and succeed on a DC 15 Intelligence (Arcana) check.\n\n## Spell Descriptions\n\n#### Acid Arrow\n\n_Level 2 Evocation (Wizard)_\n\n**Casting Time:** Action\n**Range:** 90 feet\n**Components:** V, S, M (powdered rhubarb leaf)\n**Duration:** Instantaneous"
+        },
+        {
+          "bi_rank": 4,
+          "ce_rank": 4,
+          "cosine": 0.7829,
+          "ce_score": 6.976,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "> **IDENTIFYING AN ONGOING SPELL**\n>\n> You can try to identify a non-instantaneous spell by its observable effects if its duration is ongoing. To identify it, you must take the Study action and succeed on a DC 15 Intelligence (Arcana) check.\n\n## Spell Descriptions\n\n#### Acid Arrow\n\n_Level 2 Evocation (Wizard)_\n\n**Casting Time:** Action\n**Range:** 90 feet\n**Components:** V, S, M (powdered rhubarb leaf)\n**Duration:** Instantaneous"
+        },
+        {
+          "bi_rank": 5,
+          "ce_rank": 5,
+          "cosine": 0.7829,
+          "ce_score": 6.976,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "> **IDENTIFYING AN ONGOING SPELL**\n>\n> You can try to identify a non-instantaneous spell by its observable effects if its duration is ongoing. To identify it, you must take the Study action and succeed on a DC 15 Intelligence (Arcana) check.\n\n## Spell Descriptions\n\n#### Acid Arrow\n\n_Level 2 Evocation (Wizard)_\n\n**Casting Time:** Action\n**Range:** 90 feet\n**Components:** V, S, M (powdered rhubarb leaf)\n**Duration:** Instantaneous"
+        },
+        {
+          "bi_rank": 6,
+          "ce_rank": 6,
+          "cosine": 0.7829,
+          "ce_score": 6.976,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "> **IDENTIFYING AN ONGOING SPELL**\n>\n> You can try to identify a non-instantaneous spell by its observable effects if its duration is ongoing. To identify it, you must take the Study action and succeed on a DC 15 Intelligence (Arcana) check.\n\n## Spell Descriptions\n\n#### Acid Arrow\n\n_Level 2 Evocation (Wizard)_\n\n**Casting Time:** Action\n**Range:** 90 feet\n**Components:** V, S, M (powdered rhubarb leaf)\n**Duration:** Instantaneous"
+        },
+        {
+          "bi_rank": 7,
+          "ce_rank": 7,
+          "cosine": 0.7829,
+          "ce_score": 6.976,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "> **IDENTIFYING AN ONGOING SPELL**\n>\n> You can try to identify a non-instantaneous spell by its observable effects if its duration is ongoing. To identify it, you must take the Study action and succeed on a DC 15 Intelligence (Arcana) check.\n\n## Spell Descriptions\n\n#### Acid Arrow\n\n_Level 2 Evocation (Wizard)_\n\n**Casting Time:** Action\n**Range:** 90 feet\n**Components:** V, S, M (powdered rhubarb leaf)\n**Duration:** Instantaneous"
+        },
+        {
+          "bi_rank": 8,
+          "ce_rank": 8,
+          "cosine": 0.7829,
+          "ce_score": 6.976,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "> **IDENTIFYING AN ONGOING SPELL**\n>\n> You can try to identify a non-instantaneous spell by its observable effects if its duration is ongoing. To identify it, you must take the Study action and succeed on a DC 15 Intelligence (Arcana) check.\n\n## Spell Descriptions\n\n#### Acid Arrow\n\n_Level 2 Evocation (Wizard)_\n\n**Casting Time:** Action\n**Range:** 90 feet\n**Components:** V, S, M (powdered rhubarb leaf)\n**Duration:** Instantaneous"
+        },
+        {
+          "bi_rank": 9,
+          "ce_rank": 9,
+          "cosine": 1.0073,
+          "ce_score": 3.734,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "**Casting Time:** Action\n**Range:** 120 feet\n**Components:** V, S\n**Duration:** Instantaneous\n\nChoose one creature, object, or magical effect within range. Any ongoing spell of level 3 or lower on the target ends. For each ongoing spell of level 4 or higher on the target, make an ability check using your spellcasting ability (DC 10 plus that spell's level). On a successful check, the spell ends."
+        },
+        {
+          "bi_rank": 10,
+          "ce_rank": 10,
+          "cosine": 1.0073,
+          "ce_score": 3.734,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "**Casting Time:** Action\n**Range:** 120 feet\n**Components:** V, S\n**Duration:** Instantaneous\n\nChoose one creature, object, or magical effect within range. Any ongoing spell of level 3 or lower on the target ends. For each ongoing spell of level 4 or higher on the target, make an ability check using your spellcasting ability (DC 10 plus that spell's level). On a successful check, the spell ends."
+        }
+      ],
+      "pipeline_1_baseline": {
+        "context_bi_ranks": [1, 2, 3],
+        "answer": "To identify an ongoing spell, you must succeed on a **DC 15 Intelligence (Arcana) check** (which requires taking the Study action)."
+      },
+      "pipeline_2_reranked": {
+        "context_bi_ranks": [1, 2, 3],
+        "answer": "To identify an ongoing spell, you must succeed on a **DC 15 Intelligence (Arcana)** check (using the Study action)."
+      },
+      "latency_ms": {
+        "retrieve": 18.8,
+        "rerank": 23.4,
+        "llm_p1": 3597.3,
+        "llm_p2": 2469.3
+      },
+      "rank_shift": {
+        "first_relevant_baseline_rank": 1,
+        "first_relevant_reranked_rank": 1,
+        "relevant_in_top10": true,
+        "baseline_has_relevant_in_top3": true,
+        "reranked_has_relevant_in_top3": true,
+        "promoted_into_top3": false,
+        "demoted_out_of_top3": false
+      }
+    },
+    {
+      "qid": "q8",
+      "question": "What is the formula for calculating the Spell save DC?",
+      "gold_answer": "8 + your spellcasting ability modifier + your Proficiency Bonus",
+      "pipeline_1_correct": true,
+      "pipeline_2_correct": true,
+      "top10": [
+        {
+          "bi_rank": 1,
+          "ce_rank": 1,
+          "cosine": 0.3984,
+          "ce_score": 7.402,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "## Saving Throws\n\nMany spells specify that a target makes a saving throw to avoid some or all of a spell's effects. The spell specifies the ability that the target uses for the save and what happens on a success or failure. Here's how to calculate the DC for your spells:\n\n**Spell save DC** = 8 + your spellcasting ability modifier + your Proficiency Bonus\n\n## Attack Rolls"
+        },
+        {
+          "bi_rank": 2,
+          "ce_rank": 2,
+          "cosine": 0.3984,
+          "ce_score": 7.402,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "## Saving Throws\n\nMany spells specify that a target makes a saving throw to avoid some or all of a spell's effects. The spell specifies the ability that the target uses for the save and what happens on a success or failure. Here's how to calculate the DC for your spells:\n\n**Spell save DC** = 8 + your spellcasting ability modifier + your Proficiency Bonus\n\n## Attack Rolls"
+        },
+        {
+          "bi_rank": 3,
+          "ce_rank": 3,
+          "cosine": 0.3984,
+          "ce_score": 7.402,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "## Saving Throws\n\nMany spells specify that a target makes a saving throw to avoid some or all of a spell's effects. The spell specifies the ability that the target uses for the save and what happens on a success or failure. Here's how to calculate the DC for your spells:\n\n**Spell save DC** = 8 + your spellcasting ability modifier + your Proficiency Bonus\n\n## Attack Rolls"
+        },
+        {
+          "bi_rank": 4,
+          "ce_rank": 4,
+          "cosine": 0.3984,
+          "ce_score": 7.402,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "## Saving Throws\n\nMany spells specify that a target makes a saving throw to avoid some or all of a spell's effects. The spell specifies the ability that the target uses for the save and what happens on a success or failure. Here's how to calculate the DC for your spells:\n\n**Spell save DC** = 8 + your spellcasting ability modifier + your Proficiency Bonus\n\n## Attack Rolls"
+        },
+        {
+          "bi_rank": 5,
+          "ce_rank": 5,
+          "cosine": 0.3984,
+          "ce_score": 7.402,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "## Saving Throws\n\nMany spells specify that a target makes a saving throw to avoid some or all of a spell's effects. The spell specifies the ability that the target uses for the save and what happens on a success or failure. Here's how to calculate the DC for your spells:\n\n**Spell save DC** = 8 + your spellcasting ability modifier + your Proficiency Bonus\n\n## Attack Rolls"
+        },
+        {
+          "bi_rank": 6,
+          "ce_rank": 6,
+          "cosine": 0.3984,
+          "ce_score": 7.402,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "## Saving Throws\n\nMany spells specify that a target makes a saving throw to avoid some or all of a spell's effects. The spell specifies the ability that the target uses for the save and what happens on a success or failure. Here's how to calculate the DC for your spells:\n\n**Spell save DC** = 8 + your spellcasting ability modifier + your Proficiency Bonus\n\n## Attack Rolls"
+        },
+        {
+          "bi_rank": 7,
+          "ce_rank": 7,
+          "cosine": 0.3984,
+          "ce_score": 7.402,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "## Saving Throws\n\nMany spells specify that a target makes a saving throw to avoid some or all of a spell's effects. The spell specifies the ability that the target uses for the save and what happens on a success or failure. Here's how to calculate the DC for your spells:\n\n**Spell save DC** = 8 + your spellcasting ability modifier + your Proficiency Bonus\n\n## Attack Rolls"
+        },
+        {
+          "bi_rank": 8,
+          "ce_rank": 8,
+          "cosine": 0.3984,
+          "ce_score": 7.402,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "## Saving Throws\n\nMany spells specify that a target makes a saving throw to avoid some or all of a spell's effects. The spell specifies the ability that the target uses for the save and what happens on a success or failure. Here's how to calculate the DC for your spells:\n\n**Spell save DC** = 8 + your spellcasting ability modifier + your Proficiency Bonus\n\n## Attack Rolls"
+        },
+        {
+          "bi_rank": 9,
+          "ce_rank": 9,
+          "cosine": 1.0024,
+          "ce_score": 0.736,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "mind, the target can take an action on its turn to make an Intelligence (Arcana) check against your spell save DC, ending the spell on a success."
+        },
+        {
+          "bi_rank": 10,
+          "ce_rank": 10,
+          "cosine": 1.0024,
+          "ce_score": 0.736,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "mind, the target can take an action on its turn to make an Intelligence (Arcana) check against your spell save DC, ending the spell on a success."
+        }
+      ],
+      "pipeline_1_baseline": {
+        "context_bi_ranks": [1, 2, 3],
+        "answer": "Based on the provided context, the formula for calculating the Spell save DC is:\n\n**Spell save DC** = 8 + your spellcasting ability modifier + your Proficiency Bonus"
+      },
+      "pipeline_2_reranked": {
+        "context_bi_ranks": [1, 2, 3],
+        "answer": "Based on the provided context, the formula for calculating the Spell save DC is:\n\n**Spell save DC** = 8 + your spellcasting ability modifier + your Proficiency Bonus"
+      },
+      "latency_ms": {
+        "retrieve": 8.0,
+        "rerank": 17.3,
+        "llm_p1": 2250.0,
+        "llm_p2": 2839.0
+      },
+      "rank_shift": {
+        "first_relevant_baseline_rank": 1,
+        "first_relevant_reranked_rank": 1,
+        "relevant_in_top10": true,
+        "baseline_has_relevant_in_top3": true,
+        "reranked_has_relevant_in_top3": true,
+        "promoted_into_top3": false,
+        "demoted_out_of_top3": false
+      }
+    },
+    {
+      "qid": "q9",
+      "question": "What is the formula for calculating the Spell attack modifier?",
+      "gold_answer": "Your spellcasting ability modifier + your Proficiency Bonus",
+      "pipeline_1_correct": true,
+      "pipeline_2_correct": true,
+      "top10": [
+        {
+          "bi_rank": 1,
+          "ce_rank": 1,
+          "cosine": 0.5056,
+          "ce_score": 7.1,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "## Attack Rolls\n\nSome spells require the caster to make an attack roll to determine whether the spell hits a target. Here's how to calculate the attack modifier for your spells:\n\n**Spell attack modifier** = your spellcasting ability modifier + your Proficiency Bonus\n\n## Combining Spell Effects"
+        },
+        {
+          "bi_rank": 2,
+          "ce_rank": 2,
+          "cosine": 0.5056,
+          "ce_score": 7.1,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "## Attack Rolls\n\nSome spells require the caster to make an attack roll to determine whether the spell hits a target. Here's how to calculate the attack modifier for your spells:\n\n**Spell attack modifier** = your spellcasting ability modifier + your Proficiency Bonus\n\n## Combining Spell Effects"
+        },
+        {
+          "bi_rank": 3,
+          "ce_rank": 3,
+          "cosine": 0.5056,
+          "ce_score": 7.1,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "## Attack Rolls\n\nSome spells require the caster to make an attack roll to determine whether the spell hits a target. Here's how to calculate the attack modifier for your spells:\n\n**Spell attack modifier** = your spellcasting ability modifier + your Proficiency Bonus\n\n## Combining Spell Effects"
+        },
+        {
+          "bi_rank": 4,
+          "ce_rank": 4,
+          "cosine": 0.5056,
+          "ce_score": 7.1,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "## Attack Rolls\n\nSome spells require the caster to make an attack roll to determine whether the spell hits a target. Here's how to calculate the attack modifier for your spells:\n\n**Spell attack modifier** = your spellcasting ability modifier + your Proficiency Bonus\n\n## Combining Spell Effects"
+        },
+        {
+          "bi_rank": 5,
+          "ce_rank": 5,
+          "cosine": 0.5056,
+          "ce_score": 7.1,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "## Attack Rolls\n\nSome spells require the caster to make an attack roll to determine whether the spell hits a target. Here's how to calculate the attack modifier for your spells:\n\n**Spell attack modifier** = your spellcasting ability modifier + your Proficiency Bonus\n\n## Combining Spell Effects"
+        },
+        {
+          "bi_rank": 6,
+          "ce_rank": 6,
+          "cosine": 0.5056,
+          "ce_score": 7.1,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "## Attack Rolls\n\nSome spells require the caster to make an attack roll to determine whether the spell hits a target. Here's how to calculate the attack modifier for your spells:\n\n**Spell attack modifier** = your spellcasting ability modifier + your Proficiency Bonus\n\n## Combining Spell Effects"
+        },
+        {
+          "bi_rank": 7,
+          "ce_rank": 7,
+          "cosine": 0.5056,
+          "ce_score": 7.1,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "## Attack Rolls\n\nSome spells require the caster to make an attack roll to determine whether the spell hits a target. Here's how to calculate the attack modifier for your spells:\n\n**Spell attack modifier** = your spellcasting ability modifier + your Proficiency Bonus\n\n## Combining Spell Effects"
+        },
+        {
+          "bi_rank": 8,
+          "ce_rank": 8,
+          "cosine": 0.5056,
+          "ce_score": 7.1,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "## Attack Rolls\n\nSome spells require the caster to make an attack roll to determine whether the spell hits a target. Here's how to calculate the attack modifier for your spells:\n\n**Spell attack modifier** = your spellcasting ability modifier + your Proficiency Bonus\n\n## Combining Spell Effects"
+        },
+        {
+          "bi_rank": 9,
+          "ce_rank": 9,
+          "cosine": 1.0973,
+          "ce_score": -2.32,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "**Casting Time:** Action\n**Range:** Self\n**Components:** S, M (a weapon with which you have proficiency and that is worth 1+ CP)\n**Duration:** Instantaneous\n\nGuided by a flash of magical insight, you make one attack with the weapon used in the spell's casting. The attack uses your spellcasting ability for the attack and damage rolls instead of using Strength or Dexterity. If the attack deals damage, it can be Radiant damage or the weapon's normal damage type (your choice)."
+        },
+        {
+          "bi_rank": 10,
+          "ce_rank": 10,
+          "cosine": 1.0973,
+          "ce_score": -2.32,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "**Casting Time:** Action\n**Range:** Self\n**Components:** S, M (a weapon with which you have proficiency and that is worth 1+ CP)\n**Duration:** Instantaneous\n\nGuided by a flash of magical insight, you make one attack with the weapon used in the spell's casting. The attack uses your spellcasting ability for the attack and damage rolls instead of using Strength or Dexterity. If the attack deals damage, it can be Radiant damage or the weapon's normal damage type (your choice)."
+        }
+      ],
+      "pipeline_1_baseline": {
+        "context_bi_ranks": [1, 2, 3],
+        "answer": "Based on the provided context, the formula for calculating the Spell attack modifier is:\n\n**Spell attack modifier** = your spellcasting ability modifier + your Proficiency Bonus"
+      },
+      "pipeline_2_reranked": {
+        "context_bi_ranks": [1, 2, 3],
+        "answer": "Based on the provided context, the formula for calculating the Spell attack modifier is:\n\n**Spell attack modifier** = your spellcasting ability modifier + your Proficiency Bonus"
+      },
+      "latency_ms": {
+        "retrieve": 10.2,
+        "rerank": 23.2,
+        "llm_p1": 2208.0,
+        "llm_p2": 3667.9
+      },
+      "rank_shift": {
+        "first_relevant_baseline_rank": 1,
+        "first_relevant_reranked_rank": 1,
+        "relevant_in_top10": true,
+        "baseline_has_relevant_in_top3": true,
+        "reranked_has_relevant_in_top3": true,
+        "promoted_into_top3": false,
+        "demoted_out_of_top3": false
+      }
+    },
+    {
+      "qid": "q10",
+      "question": "How many level 1 spell slots does a level 3 Wizard have?",
+      "gold_answer": "Four level 1 spell slots",
+      "pipeline_1_correct": true,
+      "pipeline_2_correct": true,
+      "top10": [
+        {
+          "bi_rank": 1,
+          "ce_rank": 1,
+          "cosine": 0.6843,
+          "ce_score": 8.36,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "When you cast a spell, you expend a slot of that spell's level or higher, effectively \"filling\" a slot with the spell. Imagine a spell slot is a groove of a certain size—small for a level 1 slot and larger for a higher-level spell. A level 1 spell fits into a slot of any size, but a level 2 spell fits only into a slot that's at least level 2. So when a level 3 Wizard casts _Magic Missile_, a level 1 spell, that Wizard spends one of four level 1 slots and has three remaining."
+        },
+        {
+          "bi_rank": 2,
+          "ce_rank": 2,
+          "cosine": 0.6843,
+          "ce_score": 8.36,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "When you cast a spell, you expend a slot of that spell's level or higher, effectively \"filling\" a slot with the spell. Imagine a spell slot is a groove of a certain size—small for a level 1 slot and larger for a higher-level spell. A level 1 spell fits into a slot of any size, but a level 2 spell fits only into a slot that's at least level 2. So when a level 3 Wizard casts _Magic Missile_, a level 1 spell, that Wizard spends one of four level 1 slots and has three remaining."
+        },
+        {
+          "bi_rank": 3,
+          "ce_rank": 3,
+          "cosine": 0.6843,
+          "ce_score": 8.36,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "When you cast a spell, you expend a slot of that spell's level or higher, effectively \"filling\" a slot with the spell. Imagine a spell slot is a groove of a certain size—small for a level 1 slot and larger for a higher-level spell. A level 1 spell fits into a slot of any size, but a level 2 spell fits only into a slot that's at least level 2. So when a level 3 Wizard casts _Magic Missile_, a level 1 spell, that Wizard spends one of four level 1 slots and has three remaining."
+        },
+        {
+          "bi_rank": 4,
+          "ce_rank": 4,
+          "cosine": 0.6843,
+          "ce_score": 8.36,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "When you cast a spell, you expend a slot of that spell's level or higher, effectively \"filling\" a slot with the spell. Imagine a spell slot is a groove of a certain size—small for a level 1 slot and larger for a higher-level spell. A level 1 spell fits into a slot of any size, but a level 2 spell fits only into a slot that's at least level 2. So when a level 3 Wizard casts _Magic Missile_, a level 1 spell, that Wizard spends one of four level 1 slots and has three remaining."
+        },
+        {
+          "bi_rank": 5,
+          "ce_rank": 5,
+          "cosine": 0.6843,
+          "ce_score": 8.36,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "When you cast a spell, you expend a slot of that spell's level or higher, effectively \"filling\" a slot with the spell. Imagine a spell slot is a groove of a certain size—small for a level 1 slot and larger for a higher-level spell. A level 1 spell fits into a slot of any size, but a level 2 spell fits only into a slot that's at least level 2. So when a level 3 Wizard casts _Magic Missile_, a level 1 spell, that Wizard spends one of four level 1 slots and has three remaining."
+        },
+        {
+          "bi_rank": 6,
+          "ce_rank": 6,
+          "cosine": 0.6843,
+          "ce_score": 8.36,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "When you cast a spell, you expend a slot of that spell's level or higher, effectively \"filling\" a slot with the spell. Imagine a spell slot is a groove of a certain size—small for a level 1 slot and larger for a higher-level spell. A level 1 spell fits into a slot of any size, but a level 2 spell fits only into a slot that's at least level 2. So when a level 3 Wizard casts _Magic Missile_, a level 1 spell, that Wizard spends one of four level 1 slots and has three remaining."
+        },
+        {
+          "bi_rank": 7,
+          "ce_rank": 7,
+          "cosine": 0.6843,
+          "ce_score": 8.36,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "When you cast a spell, you expend a slot of that spell's level or higher, effectively \"filling\" a slot with the spell. Imagine a spell slot is a groove of a certain size—small for a level 1 slot and larger for a higher-level spell. A level 1 spell fits into a slot of any size, but a level 2 spell fits only into a slot that's at least level 2. So when a level 3 Wizard casts _Magic Missile_, a level 1 spell, that Wizard spends one of four level 1 slots and has three remaining."
+        },
+        {
+          "bi_rank": 8,
+          "ce_rank": 8,
+          "cosine": 0.6843,
+          "ce_score": 8.36,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "When you cast a spell, you expend a slot of that spell's level or higher, effectively \"filling\" a slot with the spell. Imagine a spell slot is a groove of a certain size—small for a level 1 slot and larger for a higher-level spell. A level 1 spell fits into a slot of any size, but a level 2 spell fits only into a slot that's at least level 2. So when a level 3 Wizard casts _Magic Missile_, a level 1 spell, that Wizard spends one of four level 1 slots and has three remaining."
+        },
+        {
+          "bi_rank": 9,
+          "ce_rank": 9,
+          "cosine": 0.6951,
+          "ce_score": 8.042,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "#### Spell Slots\n\nSpellcasting is taxing, so a spellcaster can cast only a limited number of level 1+ spells before resting. Spell slots are the main way a spellcaster's magical potential is represented. Each spellcasting class gives its members a limited number of spell slots of certain spell levels. For example, a level 3 Wizard has four level 1 spell slots and two level 2 slots."
+        },
+        {
+          "bi_rank": 10,
+          "ce_rank": 10,
+          "cosine": 0.6951,
+          "ce_score": 8.042,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "#### Spell Slots\n\nSpellcasting is taxing, so a spellcaster can cast only a limited number of level 1+ spells before resting. Spell slots are the main way a spellcaster's magical potential is represented. Each spellcasting class gives its members a limited number of spell slots of certain spell levels. For example, a level 3 Wizard has four level 1 spell slots and two level 2 slots."
+        }
+      ],
+      "pipeline_1_baseline": {
+        "context_bi_ranks": [1, 2, 3],
+        "answer": "Based on the provided context, a level 3 Wizard has four level 1 spell slots."
+      },
+      "pipeline_2_reranked": {
+        "context_bi_ranks": [1, 2, 3],
+        "answer": "Based on the provided context, a level 3 Wizard has four level 1 spell slots."
+      },
+      "latency_ms": {
+        "retrieve": 19.3,
+        "rerank": 24.5,
+        "llm_p1": 3803.2,
+        "llm_p2": 2604.2
+      },
+      "rank_shift": {
+        "first_relevant_baseline_rank": 9,
+        "first_relevant_reranked_rank": 9,
+        "relevant_in_top10": true,
+        "baseline_has_relevant_in_top3": false,
+        "reranked_has_relevant_in_top3": false,
+        "promoted_into_top3": false,
+        "demoted_out_of_top3": false
+      }
+    },
+    {
+      "qid": "q11",
+      "question": "What school of magic does Acid Splash belong to?",
+      "gold_answer": "Evocation",
+      "pipeline_1_correct": true,
+      "pipeline_2_correct": true,
+      "top10": [
+        {
+          "bi_rank": 1,
+          "ce_rank": 1,
+          "cosine": 1.0091,
+          "ce_score": -0.557,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "#### Acid Splash\n\n_Evocation Cantrip (Sorcerer, Wizard)_\n\n**Casting Time:** Action\n**Range:** 60 feet\n**Components:** V, S\n**Duration:** Instantaneous\n\nYou create an acidic bubble at a point within range, where it explodes in a 5-foot-radius Sphere. Each creature in that Sphere must succeed on a Dexterity saving throw or take 1d6 Acid damage.\n\n_Cantrip Upgrade._ The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).\n\n#### Aid"
+        },
+        {
+          "bi_rank": 2,
+          "ce_rank": 2,
+          "cosine": 1.0091,
+          "ce_score": -0.557,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "#### Acid Splash\n\n_Evocation Cantrip (Sorcerer, Wizard)_\n\n**Casting Time:** Action\n**Range:** 60 feet\n**Components:** V, S\n**Duration:** Instantaneous\n\nYou create an acidic bubble at a point within range, where it explodes in a 5-foot-radius Sphere. Each creature in that Sphere must succeed on a Dexterity saving throw or take 1d6 Acid damage.\n\n_Cantrip Upgrade._ The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).\n\n#### Aid"
+        },
+        {
+          "bi_rank": 3,
+          "ce_rank": 3,
+          "cosine": 1.0091,
+          "ce_score": -0.557,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "#### Acid Splash\n\n_Evocation Cantrip (Sorcerer, Wizard)_\n\n**Casting Time:** Action\n**Range:** 60 feet\n**Components:** V, S\n**Duration:** Instantaneous\n\nYou create an acidic bubble at a point within range, where it explodes in a 5-foot-radius Sphere. Each creature in that Sphere must succeed on a Dexterity saving throw or take 1d6 Acid damage.\n\n_Cantrip Upgrade._ The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).\n\n#### Aid"
+        },
+        {
+          "bi_rank": 4,
+          "ce_rank": 4,
+          "cosine": 1.0091,
+          "ce_score": -0.557,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "#### Acid Splash\n\n_Evocation Cantrip (Sorcerer, Wizard)_\n\n**Casting Time:** Action\n**Range:** 60 feet\n**Components:** V, S\n**Duration:** Instantaneous\n\nYou create an acidic bubble at a point within range, where it explodes in a 5-foot-radius Sphere. Each creature in that Sphere must succeed on a Dexterity saving throw or take 1d6 Acid damage.\n\n_Cantrip Upgrade._ The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).\n\n#### Aid"
+        },
+        {
+          "bi_rank": 5,
+          "ce_rank": 5,
+          "cosine": 1.0091,
+          "ce_score": -0.557,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "#### Acid Splash\n\n_Evocation Cantrip (Sorcerer, Wizard)_\n\n**Casting Time:** Action\n**Range:** 60 feet\n**Components:** V, S\n**Duration:** Instantaneous\n\nYou create an acidic bubble at a point within range, where it explodes in a 5-foot-radius Sphere. Each creature in that Sphere must succeed on a Dexterity saving throw or take 1d6 Acid damage.\n\n_Cantrip Upgrade._ The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).\n\n#### Aid"
+        },
+        {
+          "bi_rank": 6,
+          "ce_rank": 6,
+          "cosine": 1.0091,
+          "ce_score": -0.557,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "#### Acid Splash\n\n_Evocation Cantrip (Sorcerer, Wizard)_\n\n**Casting Time:** Action\n**Range:** 60 feet\n**Components:** V, S\n**Duration:** Instantaneous\n\nYou create an acidic bubble at a point within range, where it explodes in a 5-foot-radius Sphere. Each creature in that Sphere must succeed on a Dexterity saving throw or take 1d6 Acid damage.\n\n_Cantrip Upgrade._ The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).\n\n#### Aid"
+        },
+        {
+          "bi_rank": 7,
+          "ce_rank": 7,
+          "cosine": 1.0091,
+          "ce_score": -0.557,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "#### Acid Splash\n\n_Evocation Cantrip (Sorcerer, Wizard)_\n\n**Casting Time:** Action\n**Range:** 60 feet\n**Components:** V, S\n**Duration:** Instantaneous\n\nYou create an acidic bubble at a point within range, where it explodes in a 5-foot-radius Sphere. Each creature in that Sphere must succeed on a Dexterity saving throw or take 1d6 Acid damage.\n\n_Cantrip Upgrade._ The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).\n\n#### Aid"
+        },
+        {
+          "bi_rank": 8,
+          "ce_rank": 8,
+          "cosine": 1.0091,
+          "ce_score": -0.557,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "#### Acid Splash\n\n_Evocation Cantrip (Sorcerer, Wizard)_\n\n**Casting Time:** Action\n**Range:** 60 feet\n**Components:** V, S\n**Duration:** Instantaneous\n\nYou create an acidic bubble at a point within range, where it explodes in a 5-foot-radius Sphere. Each creature in that Sphere must succeed on a Dexterity saving throw or take 1d6 Acid damage.\n\n_Cantrip Upgrade._ The damage increases by 1d6 when you reach levels 5 (2d6), 11 (3d6), and 17 (4d6).\n\n#### Aid"
+        },
+        {
+          "bi_rank": 9,
+          "ce_rank": 9,
+          "cosine": 1.0938,
+          "ce_score": -3.599,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "A shimmering green arrow streaks toward a target within range and bursts in a spray of acid. Make a ranged spell attack against the target. On a hit, the target takes 4d4 Acid damage and 2d4 Acid damage at the end of its next turn. On a miss, the arrow splashes the target with acid for half as much of the initial damage only.\n\n_Using a Higher-Level Spell Slot._ The damage (both initial and later) increases by 1d4 for each spell slot level above 2.\n\n#### Acid Splash"
+        },
+        {
+          "bi_rank": 10,
+          "ce_rank": 10,
+          "cosine": 1.0938,
+          "ce_score": -3.599,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "A shimmering green arrow streaks toward a target within range and bursts in a spray of acid. Make a ranged spell attack against the target. On a hit, the target takes 4d4 Acid damage and 2d4 Acid damage at the end of its next turn. On a miss, the arrow splashes the target with acid for half as much of the initial damage only.\n\n_Using a Higher-Level Spell Slot._ The damage (both initial and later) increases by 1d4 for each spell slot level above 2.\n\n#### Acid Splash"
+        }
+      ],
+      "pipeline_1_baseline": {
+        "context_bi_ranks": [1, 2, 3],
+        "answer": "Acid Splash belongs to the **Evocation** school of magic."
+      },
+      "pipeline_2_reranked": {
+        "context_bi_ranks": [1, 2, 3],
+        "answer": "Based on the provided context, Acid Splash belongs to the **Evocation** school of magic."
+      },
+      "latency_ms": {
+        "retrieve": 8.4,
+        "rerank": 24.6,
+        "llm_p1": 2886.5,
+        "llm_p2": 3736.0
+      },
+      "rank_shift": {
+        "first_relevant_baseline_rank": 1,
+        "first_relevant_reranked_rank": 1,
+        "relevant_in_top10": true,
+        "baseline_has_relevant_in_top3": true,
+        "reranked_has_relevant_in_top3": true,
+        "promoted_into_top3": false,
+        "demoted_out_of_top3": false
+      }
+    },
+    {
+      "qid": "q12",
+      "question": "What is the range of the Arcane Eye spell?",
+      "gold_answer": "30 feet",
+      "pipeline_1_correct": true,
+      "pipeline_2_correct": true,
+      "top10": [
+        {
+          "bi_rank": 1,
+          "ce_rank": 1,
+          "cosine": 0.6062,
+          "ce_score": 4.309,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "#### Arcane Eye\n\n_Level 4 Divination (Wizard)_\n\n**Casting Time:** Action\n**Range:** 30 feet\n**Components:** V, S, M (a bit of bat fur)\n**Duration:** Concentration, up to 1 hour\n\nYou create an Invisible, invulnerable eye within range that hovers for the duration. You mentally receive visual information from the eye, which can see in every direction. It also has Darkvision with a range of 30 feet."
+        },
+        {
+          "bi_rank": 2,
+          "ce_rank": 2,
+          "cosine": 0.6062,
+          "ce_score": 4.309,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "#### Arcane Eye\n\n_Level 4 Divination (Wizard)_\n\n**Casting Time:** Action\n**Range:** 30 feet\n**Components:** V, S, M (a bit of bat fur)\n**Duration:** Concentration, up to 1 hour\n\nYou create an Invisible, invulnerable eye within range that hovers for the duration. You mentally receive visual information from the eye, which can see in every direction. It also has Darkvision with a range of 30 feet."
+        },
+        {
+          "bi_rank": 3,
+          "ce_rank": 3,
+          "cosine": 0.6062,
+          "ce_score": 4.309,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "#### Arcane Eye\n\n_Level 4 Divination (Wizard)_\n\n**Casting Time:** Action\n**Range:** 30 feet\n**Components:** V, S, M (a bit of bat fur)\n**Duration:** Concentration, up to 1 hour\n\nYou create an Invisible, invulnerable eye within range that hovers for the duration. You mentally receive visual information from the eye, which can see in every direction. It also has Darkvision with a range of 30 feet."
+        },
+        {
+          "bi_rank": 4,
+          "ce_rank": 4,
+          "cosine": 0.6062,
+          "ce_score": 4.309,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "#### Arcane Eye\n\n_Level 4 Divination (Wizard)_\n\n**Casting Time:** Action\n**Range:** 30 feet\n**Components:** V, S, M (a bit of bat fur)\n**Duration:** Concentration, up to 1 hour\n\nYou create an Invisible, invulnerable eye within range that hovers for the duration. You mentally receive visual information from the eye, which can see in every direction. It also has Darkvision with a range of 30 feet."
+        },
+        {
+          "bi_rank": 5,
+          "ce_rank": 5,
+          "cosine": 0.6062,
+          "ce_score": 4.309,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "#### Arcane Eye\n\n_Level 4 Divination (Wizard)_\n\n**Casting Time:** Action\n**Range:** 30 feet\n**Components:** V, S, M (a bit of bat fur)\n**Duration:** Concentration, up to 1 hour\n\nYou create an Invisible, invulnerable eye within range that hovers for the duration. You mentally receive visual information from the eye, which can see in every direction. It also has Darkvision with a range of 30 feet."
+        },
+        {
+          "bi_rank": 6,
+          "ce_rank": 6,
+          "cosine": 0.6062,
+          "ce_score": 4.309,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "#### Arcane Eye\n\n_Level 4 Divination (Wizard)_\n\n**Casting Time:** Action\n**Range:** 30 feet\n**Components:** V, S, M (a bit of bat fur)\n**Duration:** Concentration, up to 1 hour\n\nYou create an Invisible, invulnerable eye within range that hovers for the duration. You mentally receive visual information from the eye, which can see in every direction. It also has Darkvision with a range of 30 feet."
+        },
+        {
+          "bi_rank": 7,
+          "ce_rank": 7,
+          "cosine": 0.6062,
+          "ce_score": 4.309,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "#### Arcane Eye\n\n_Level 4 Divination (Wizard)_\n\n**Casting Time:** Action\n**Range:** 30 feet\n**Components:** V, S, M (a bit of bat fur)\n**Duration:** Concentration, up to 1 hour\n\nYou create an Invisible, invulnerable eye within range that hovers for the duration. You mentally receive visual information from the eye, which can see in every direction. It also has Darkvision with a range of 30 feet."
+        },
+        {
+          "bi_rank": 8,
+          "ce_rank": 8,
+          "cosine": 0.6062,
+          "ce_score": 4.309,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "#### Arcane Eye\n\n_Level 4 Divination (Wizard)_\n\n**Casting Time:** Action\n**Range:** 30 feet\n**Components:** V, S, M (a bit of bat fur)\n**Duration:** Concentration, up to 1 hour\n\nYou create an Invisible, invulnerable eye within range that hovers for the duration. You mentally receive visual information from the eye, which can see in every direction. It also has Darkvision with a range of 30 feet."
+        },
+        {
+          "bi_rank": 9,
+          "ce_rank": 9,
+          "cosine": 0.6211,
+          "ce_score": 2.649,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "As a Bonus Action, you can move the eye up to 30 feet in any direction. A solid barrier blocks the eye's movement, but the eye can pass through an opening as small as 1 inch in diameter.\n\n#### Arcane Hand\n\n_Level 5 Evocation (Sorcerer, Wizard)_\n\n**Casting Time:** Action\n**Range:** 120 feet\n**Components:** V, S, M (an eggshell and a glove)\n**Duration:** Concentration, up to 1 minute"
+        },
+        {
+          "bi_rank": 10,
+          "ce_rank": 10,
+          "cosine": 0.6211,
+          "ce_score": 2.649,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "As a Bonus Action, you can move the eye up to 30 feet in any direction. A solid barrier blocks the eye's movement, but the eye can pass through an opening as small as 1 inch in diameter.\n\n#### Arcane Hand\n\n_Level 5 Evocation (Sorcerer, Wizard)_\n\n**Casting Time:** Action\n**Range:** 120 feet\n**Components:** V, S, M (an eggshell and a glove)\n**Duration:** Concentration, up to 1 minute"
+        }
+      ],
+      "pipeline_1_baseline": {
+        "context_bi_ranks": [1, 2, 3],
+        "answer": "The range of the *Arcane Eye* spell is 30 feet."
+      },
+      "pipeline_2_reranked": {
+        "context_bi_ranks": [1, 2, 3],
+        "answer": "Based on the provided context, the range of the *Arcane Eye* spell is 30 feet."
+      },
+      "latency_ms": {
+        "retrieve": 8.2,
+        "rerank": 20.3,
+        "llm_p1": 3246.8,
+        "llm_p2": 2879.3
+      },
+      "rank_shift": {
+        "first_relevant_baseline_rank": 1,
+        "first_relevant_reranked_rank": 1,
+        "relevant_in_top10": true,
+        "baseline_has_relevant_in_top3": true,
+        "reranked_has_relevant_in_top3": true,
+        "promoted_into_top3": false,
+        "demoted_out_of_top3": false
+      }
+    },
+    {
+      "qid": "q13",
+      "question": "What initial Acid damage does Acid Arrow deal on a hit?",
+      "gold_answer": "4d4 Acid damage",
+      "pipeline_1_correct": true,
+      "pipeline_2_correct": true,
+      "top10": [
+        {
+          "bi_rank": 1,
+          "ce_rank": 1,
+          "cosine": 0.7886,
+          "ce_score": 7.15,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "A shimmering green arrow streaks toward a target within range and bursts in a spray of acid. Make a ranged spell attack against the target. On a hit, the target takes 4d4 Acid damage and 2d4 Acid damage at the end of its next turn. On a miss, the arrow splashes the target with acid for half as much of the initial damage only.\n\n_Using a Higher-Level Spell Slot._ The damage (both initial and later) increases by 1d4 for each spell slot level above 2.\n\n#### Acid Splash"
+        },
+        {
+          "bi_rank": 2,
+          "ce_rank": 2,
+          "cosine": 0.7886,
+          "ce_score": 7.15,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "A shimmering green arrow streaks toward a target within range and bursts in a spray of acid. Make a ranged spell attack against the target. On a hit, the target takes 4d4 Acid damage and 2d4 Acid damage at the end of its next turn. On a miss, the arrow splashes the target with acid for half as much of the initial damage only.\n\n_Using a Higher-Level Spell Slot._ The damage (both initial and later) increases by 1d4 for each spell slot level above 2.\n\n#### Acid Splash"
+        },
+        {
+          "bi_rank": 3,
+          "ce_rank": 3,
+          "cosine": 0.7886,
+          "ce_score": 7.15,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "A shimmering green arrow streaks toward a target within range and bursts in a spray of acid. Make a ranged spell attack against the target. On a hit, the target takes 4d4 Acid damage and 2d4 Acid damage at the end of its next turn. On a miss, the arrow splashes the target with acid for half as much of the initial damage only.\n\n_Using a Higher-Level Spell Slot._ The damage (both initial and later) increases by 1d4 for each spell slot level above 2.\n\n#### Acid Splash"
+        },
+        {
+          "bi_rank": 4,
+          "ce_rank": 4,
+          "cosine": 0.7886,
+          "ce_score": 7.15,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "A shimmering green arrow streaks toward a target within range and bursts in a spray of acid. Make a ranged spell attack against the target. On a hit, the target takes 4d4 Acid damage and 2d4 Acid damage at the end of its next turn. On a miss, the arrow splashes the target with acid for half as much of the initial damage only.\n\n_Using a Higher-Level Spell Slot._ The damage (both initial and later) increases by 1d4 for each spell slot level above 2.\n\n#### Acid Splash"
+        },
+        {
+          "bi_rank": 5,
+          "ce_rank": 5,
+          "cosine": 0.7886,
+          "ce_score": 7.15,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "A shimmering green arrow streaks toward a target within range and bursts in a spray of acid. Make a ranged spell attack against the target. On a hit, the target takes 4d4 Acid damage and 2d4 Acid damage at the end of its next turn. On a miss, the arrow splashes the target with acid for half as much of the initial damage only.\n\n_Using a Higher-Level Spell Slot._ The damage (both initial and later) increases by 1d4 for each spell slot level above 2.\n\n#### Acid Splash"
+        },
+        {
+          "bi_rank": 6,
+          "ce_rank": 6,
+          "cosine": 0.7886,
+          "ce_score": 7.15,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "A shimmering green arrow streaks toward a target within range and bursts in a spray of acid. Make a ranged spell attack against the target. On a hit, the target takes 4d4 Acid damage and 2d4 Acid damage at the end of its next turn. On a miss, the arrow splashes the target with acid for half as much of the initial damage only.\n\n_Using a Higher-Level Spell Slot._ The damage (both initial and later) increases by 1d4 for each spell slot level above 2.\n\n#### Acid Splash"
+        },
+        {
+          "bi_rank": 7,
+          "ce_rank": 7,
+          "cosine": 0.7886,
+          "ce_score": 7.15,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "A shimmering green arrow streaks toward a target within range and bursts in a spray of acid. Make a ranged spell attack against the target. On a hit, the target takes 4d4 Acid damage and 2d4 Acid damage at the end of its next turn. On a miss, the arrow splashes the target with acid for half as much of the initial damage only.\n\n_Using a Higher-Level Spell Slot._ The damage (both initial and later) increases by 1d4 for each spell slot level above 2.\n\n#### Acid Splash"
+        },
+        {
+          "bi_rank": 8,
+          "ce_rank": 8,
+          "cosine": 0.7886,
+          "ce_score": 7.15,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "A shimmering green arrow streaks toward a target within range and bursts in a spray of acid. Make a ranged spell attack against the target. On a hit, the target takes 4d4 Acid damage and 2d4 Acid damage at the end of its next turn. On a miss, the arrow splashes the target with acid for half as much of the initial damage only.\n\n_Using a Higher-Level Spell Slot._ The damage (both initial and later) increases by 1d4 for each spell slot level above 2.\n\n#### Acid Splash"
+        },
+        {
+          "bi_rank": 9,
+          "ce_rank": 9,
+          "cosine": 0.9643,
+          "ce_score": 1.124,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "You point at a location within range, and a glowing, 1-foot-diameter ball of acid streaks there and explodes in a 20-foot-radius Sphere. Each creature in that area makes a Dexterity saving throw. On a failed save, a creature takes 10d4 Acid damage and another 5d4 Acid damage at the end of its next turn. On a successful save, a creature takes half the initial damage only.\n\n_Using a Higher-Level Spell Slot._ The initial damage increases by 2d4 for each spell slot level above 4."
+        },
+        {
+          "bi_rank": 10,
+          "ce_rank": 10,
+          "cosine": 0.9643,
+          "ce_score": 1.124,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "You point at a location within range, and a glowing, 1-foot-diameter ball of acid streaks there and explodes in a 20-foot-radius Sphere. Each creature in that area makes a Dexterity saving throw. On a failed save, a creature takes 10d4 Acid damage and another 5d4 Acid damage at the end of its next turn. On a successful save, a creature takes half the initial damage only.\n\n_Using a Higher-Level Spell Slot._ The initial damage increases by 2d4 for each spell slot level above 4."
+        }
+      ],
+      "pipeline_1_baseline": {
+        "context_bi_ranks": [1, 2, 3],
+        "answer": "On a hit, it deals **4d4 Acid damage** initially (which increases by 1d4 for each spell slot level above 2)."
+      },
+      "pipeline_2_reranked": {
+        "context_bi_ranks": [1, 2, 3],
+        "answer": "On a hit, it deals 4d4 Acid damage initially (which increases by 1d4 for each spell slot level above 2)."
+      },
+      "latency_ms": {
+        "retrieve": 21.6,
+        "rerank": 20.1,
+        "llm_p1": 9188.6,
+        "llm_p2": 4092.4
+      },
+      "rank_shift": {
+        "first_relevant_baseline_rank": 1,
+        "first_relevant_reranked_rank": 1,
+        "relevant_in_top10": true,
+        "baseline_has_relevant_in_top3": true,
+        "reranked_has_relevant_in_top3": true,
+        "promoted_into_top3": false,
+        "demoted_out_of_top3": false
+      }
+    },
+    {
+      "qid": "q14",
+      "question": "What is the range of the Fireball spell?",
+      "gold_answer": "150 feet",
+      "pipeline_1_correct": false,
+      "pipeline_2_correct": true,
+      "top10": [
+        {
+          "bi_rank": 1,
+          "ce_rank": 3,
+          "cosine": 0.8041,
+          "ce_score": -1.773,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "You create a 5-foot-diameter sphere of fire in an unoccupied space on the ground within range. It lasts for the duration. Any creature that ends its turn within 5 feet of the sphere makes a Dexterity saving throw, taking 2d6 Fire damage on a failed save or half as much damage on a successful one."
+        },
+        {
+          "bi_rank": 2,
+          "ce_rank": 4,
+          "cosine": 0.8041,
+          "ce_score": -1.773,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "You create a 5-foot-diameter sphere of fire in an unoccupied space on the ground within range. It lasts for the duration. Any creature that ends its turn within 5 feet of the sphere makes a Dexterity saving throw, taking 2d6 Fire damage on a failed save or half as much damage on a successful one."
+        },
+        {
+          "bi_rank": 3,
+          "ce_rank": 5,
+          "cosine": 0.8041,
+          "ce_score": -1.773,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "You create a 5-foot-diameter sphere of fire in an unoccupied space on the ground within range. It lasts for the duration. Any creature that ends its turn within 5 feet of the sphere makes a Dexterity saving throw, taking 2d6 Fire damage on a failed save or half as much damage on a successful one."
+        },
+        {
+          "bi_rank": 4,
+          "ce_rank": 6,
+          "cosine": 0.8041,
+          "ce_score": -1.773,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "You create a 5-foot-diameter sphere of fire in an unoccupied space on the ground within range. It lasts for the duration. Any creature that ends its turn within 5 feet of the sphere makes a Dexterity saving throw, taking 2d6 Fire damage on a failed save or half as much damage on a successful one."
+        },
+        {
+          "bi_rank": 5,
+          "ce_rank": 7,
+          "cosine": 0.8041,
+          "ce_score": -1.773,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "You create a 5-foot-diameter sphere of fire in an unoccupied space on the ground within range. It lasts for the duration. Any creature that ends its turn within 5 feet of the sphere makes a Dexterity saving throw, taking 2d6 Fire damage on a failed save or half as much damage on a successful one."
+        },
+        {
+          "bi_rank": 6,
+          "ce_rank": 8,
+          "cosine": 0.8041,
+          "ce_score": -1.773,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "You create a 5-foot-diameter sphere of fire in an unoccupied space on the ground within range. It lasts for the duration. Any creature that ends its turn within 5 feet of the sphere makes a Dexterity saving throw, taking 2d6 Fire damage on a failed save or half as much damage on a successful one."
+        },
+        {
+          "bi_rank": 7,
+          "ce_rank": 9,
+          "cosine": 0.8041,
+          "ce_score": -1.773,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "You create a 5-foot-diameter sphere of fire in an unoccupied space on the ground within range. It lasts for the duration. Any creature that ends its turn within 5 feet of the sphere makes a Dexterity saving throw, taking 2d6 Fire damage on a failed save or half as much damage on a successful one."
+        },
+        {
+          "bi_rank": 8,
+          "ce_rank": 10,
+          "cosine": 0.8041,
+          "ce_score": -1.773,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "You create a 5-foot-diameter sphere of fire in an unoccupied space on the ground within range. It lasts for the duration. Any creature that ends its turn within 5 feet of the sphere makes a Dexterity saving throw, taking 2d6 Fire damage on a failed save or half as much damage on a successful one."
+        },
+        {
+          "bi_rank": 9,
+          "ce_rank": 1,
+          "cosine": 0.8626,
+          "ce_score": 0.205,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "_Level 3 Evocation (Sorcerer, Wizard)_\n\n**Casting Time:** Action\n**Range:** 150 feet\n**Components:** V, S, M (a ball of bat guano and sulfur)\n**Duration:** Instantaneous\n\nA bright streak flashes from you to a point you choose within range and then blossoms with a low roar into a fiery explosion. Each creature in a 20-foot-radius Sphere centered on that point makes a Dexterity saving throw, taking 8d6 Fire damage on a failed save or half as much damage on a successful one."
+        },
+        {
+          "bi_rank": 10,
+          "ce_rank": 2,
+          "cosine": 0.8626,
+          "ce_score": 0.205,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "_Level 3 Evocation (Sorcerer, Wizard)_\n\n**Casting Time:** Action\n**Range:** 150 feet\n**Components:** V, S, M (a ball of bat guano and sulfur)\n**Duration:** Instantaneous\n\nA bright streak flashes from you to a point you choose within range and then blossoms with a low roar into a fiery explosion. Each creature in a 20-foot-radius Sphere centered on that point makes a Dexterity saving throw, taking 8d6 Fire damage on a failed save or half as much damage on a successful one."
+        }
+      ],
+      "pipeline_1_baseline": {
+        "context_bi_ranks": [1, 2, 3],
+        "answer": "Based on the provided context, the range of the Fireball spell is not mentioned."
+      },
+      "pipeline_2_reranked": {
+        "context_bi_ranks": [9, 10, 1],
+        "answer": "Based on the provided context, the range of the spell is 150 feet."
+      },
+      "latency_ms": {
+        "retrieve": 8.9,
+        "rerank": 23.9,
+        "llm_p1": 3077.3,
+        "llm_p2": 13033.9
+      },
+      "rank_shift": {
+        "first_relevant_baseline_rank": 9,
+        "first_relevant_reranked_rank": 1,
+        "relevant_in_top10": true,
+        "baseline_has_relevant_in_top3": false,
+        "reranked_has_relevant_in_top3": true,
+        "promoted_into_top3": true,
+        "demoted_out_of_top3": false
+      }
+    },
+    {
+      "qid": "q15",
+      "question": "How much Force damage does each dart of the Magic Missile spell deal?",
+      "gold_answer": "1d4 + 1 Force damage",
+      "pipeline_1_correct": false,
+      "pipeline_2_correct": false,
+      "top10": [
+        {
+          "bi_rank": 1,
+          "ce_rank": 1,
+          "cosine": 0.9304,
+          "ce_score": 1.35,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "A nonmagical object that isn't being worn or carried also takes the damage if it's in the spell's area.\n\n_Using a Higher-Level Spell Slot._ The damage increases by 1d8 for each spell slot level above 2.\n\n#### Shield\n\n_Level 1 Abjuration (Sorcerer, Wizard)_\n\n**Casting Time:** Reaction, which you take when you are hit by an attack roll or targeted by the _Magic Missile_ spell\n**Range:** Self\n**Components:** V, S\n**Duration:** 1 round"
+        },
+        {
+          "bi_rank": 2,
+          "ce_rank": 2,
+          "cosine": 0.9304,
+          "ce_score": 1.35,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "A nonmagical object that isn't being worn or carried also takes the damage if it's in the spell's area.\n\n_Using a Higher-Level Spell Slot._ The damage increases by 1d8 for each spell slot level above 2.\n\n#### Shield\n\n_Level 1 Abjuration (Sorcerer, Wizard)_\n\n**Casting Time:** Reaction, which you take when you are hit by an attack roll or targeted by the _Magic Missile_ spell\n**Range:** Self\n**Components:** V, S\n**Duration:** 1 round"
+        },
+        {
+          "bi_rank": 3,
+          "ce_rank": 3,
+          "cosine": 0.9304,
+          "ce_score": 1.35,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "A nonmagical object that isn't being worn or carried also takes the damage if it's in the spell's area.\n\n_Using a Higher-Level Spell Slot._ The damage increases by 1d8 for each spell slot level above 2.\n\n#### Shield\n\n_Level 1 Abjuration (Sorcerer, Wizard)_\n\n**Casting Time:** Reaction, which you take when you are hit by an attack roll or targeted by the _Magic Missile_ spell\n**Range:** Self\n**Components:** V, S\n**Duration:** 1 round"
+        },
+        {
+          "bi_rank": 4,
+          "ce_rank": 4,
+          "cosine": 0.9304,
+          "ce_score": 1.35,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "A nonmagical object that isn't being worn or carried also takes the damage if it's in the spell's area.\n\n_Using a Higher-Level Spell Slot._ The damage increases by 1d8 for each spell slot level above 2.\n\n#### Shield\n\n_Level 1 Abjuration (Sorcerer, Wizard)_\n\n**Casting Time:** Reaction, which you take when you are hit by an attack roll or targeted by the _Magic Missile_ spell\n**Range:** Self\n**Components:** V, S\n**Duration:** 1 round"
+        },
+        {
+          "bi_rank": 5,
+          "ce_rank": 5,
+          "cosine": 0.9304,
+          "ce_score": 1.35,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "A nonmagical object that isn't being worn or carried also takes the damage if it's in the spell's area.\n\n_Using a Higher-Level Spell Slot._ The damage increases by 1d8 for each spell slot level above 2.\n\n#### Shield\n\n_Level 1 Abjuration (Sorcerer, Wizard)_\n\n**Casting Time:** Reaction, which you take when you are hit by an attack roll or targeted by the _Magic Missile_ spell\n**Range:** Self\n**Components:** V, S\n**Duration:** 1 round"
+        },
+        {
+          "bi_rank": 6,
+          "ce_rank": 6,
+          "cosine": 0.9304,
+          "ce_score": 1.35,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "A nonmagical object that isn't being worn or carried also takes the damage if it's in the spell's area.\n\n_Using a Higher-Level Spell Slot._ The damage increases by 1d8 for each spell slot level above 2.\n\n#### Shield\n\n_Level 1 Abjuration (Sorcerer, Wizard)_\n\n**Casting Time:** Reaction, which you take when you are hit by an attack roll or targeted by the _Magic Missile_ spell\n**Range:** Self\n**Components:** V, S\n**Duration:** 1 round"
+        },
+        {
+          "bi_rank": 7,
+          "ce_rank": 7,
+          "cosine": 0.9304,
+          "ce_score": 1.35,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "A nonmagical object that isn't being worn or carried also takes the damage if it's in the spell's area.\n\n_Using a Higher-Level Spell Slot._ The damage increases by 1d8 for each spell slot level above 2.\n\n#### Shield\n\n_Level 1 Abjuration (Sorcerer, Wizard)_\n\n**Casting Time:** Reaction, which you take when you are hit by an attack roll or targeted by the _Magic Missile_ spell\n**Range:** Self\n**Components:** V, S\n**Duration:** 1 round"
+        },
+        {
+          "bi_rank": 8,
+          "ce_rank": 8,
+          "cosine": 0.9304,
+          "ce_score": 1.35,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "A nonmagical object that isn't being worn or carried also takes the damage if it's in the spell's area.\n\n_Using a Higher-Level Spell Slot._ The damage increases by 1d8 for each spell slot level above 2.\n\n#### Shield\n\n_Level 1 Abjuration (Sorcerer, Wizard)_\n\n**Casting Time:** Reaction, which you take when you are hit by an attack roll or targeted by the _Magic Missile_ spell\n**Range:** Self\n**Components:** V, S\n**Duration:** 1 round"
+        },
+        {
+          "bi_rank": 9,
+          "ce_rank": 9,
+          "cosine": 0.9304,
+          "ce_score": 1.35,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "A nonmagical object that isn't being worn or carried also takes the damage if it's in the spell's area.\n\n_Using a Higher-Level Spell Slot._ The damage increases by 1d8 for each spell slot level above 2.\n\n#### Shield\n\n_Level 1 Abjuration (Sorcerer, Wizard)_\n\n**Casting Time:** Reaction, which you take when you are hit by an attack roll or targeted by the _Magic Missile_ spell\n**Range:** Self\n**Components:** V, S\n**Duration:** 1 round"
+        },
+        {
+          "bi_rank": 10,
+          "ce_rank": 10,
+          "cosine": 0.9889,
+          "ce_score": 1.164,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "An imperceptible barrier of magical force protects you. Until the start of your next turn, you have a +5\nbonus to AC, including against the triggering attack, and you take no damage from _Magic Missile_.\n\n#### Shield of Faith\n\n_Level 1 Abjuration (Cleric, Paladin)_\n\n**Casting Time:** Bonus Action\n**Range:** 60 feet\n**Components:** V, S, M (a prayer scroll)\n**Duration:** Concentration, up to 10 minutes"
+        }
+      ],
+      "pipeline_1_baseline": {
+        "context_bi_ranks": [1, 2, 3],
+        "answer": "Based on the provided context, there is no information about how much damage the *Magic Missile* spell deals. The context only mentions *Magic Missile* as a trigger for casting the *Shield* spell."
+      },
+      "pipeline_2_reranked": {
+        "context_bi_ranks": [1, 2, 3],
+        "answer": "Based on the provided context, there is no information about how much Force damage each dart of the *Magic Missile* spell deals. The context only mentions *Magic Missile* as a trigger for the *Shield* spell."
+      },
+      "latency_ms": {
+        "retrieve": 125.8,
+        "rerank": 24.4,
+        "llm_p1": 9743.4,
+        "llm_p2": 3346.4
+      },
+      "rank_shift": {
+        "first_relevant_baseline_rank": null,
+        "first_relevant_reranked_rank": null,
+        "relevant_in_top10": false,
+        "baseline_has_relevant_in_top3": false,
+        "reranked_has_relevant_in_top3": false,
+        "promoted_into_top3": false,
+        "demoted_out_of_top3": false
+      }
+    },
+    {
+      "qid": "q16",
+      "question": "How far can you teleport with the Misty Step spell?",
+      "gold_answer": "Up to 30 feet",
+      "pipeline_1_correct": false,
+      "pipeline_2_correct": false,
+      "top10": [
+        {
+          "bi_rank": 1,
+          "ce_rank": 2,
+          "cosine": 0.9302,
+          "ce_score": -6.29,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "If you move more than 100 feet from the disk (typically because it can't move around an obstacle to follow you), the spell ends.\n\n#### Fly\n\n_Level 3 Transmutation (Sorcerer, Warlock, Wizard)_\n\n**Casting Time:** Action\n**Range:** Touch\n**Components:** V, S, M (a feather)\n**Duration:** Concentration, up to 10 minutes"
+        },
+        {
+          "bi_rank": 2,
+          "ce_rank": 3,
+          "cosine": 0.9302,
+          "ce_score": -6.29,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "If you move more than 100 feet from the disk (typically because it can't move around an obstacle to follow you), the spell ends.\n\n#### Fly\n\n_Level 3 Transmutation (Sorcerer, Warlock, Wizard)_\n\n**Casting Time:** Action\n**Range:** Touch\n**Components:** V, S, M (a feather)\n**Duration:** Concentration, up to 10 minutes"
+        },
+        {
+          "bi_rank": 3,
+          "ce_rank": 4,
+          "cosine": 0.9302,
+          "ce_score": -6.29,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "If you move more than 100 feet from the disk (typically because it can't move around an obstacle to follow you), the spell ends.\n\n#### Fly\n\n_Level 3 Transmutation (Sorcerer, Warlock, Wizard)_\n\n**Casting Time:** Action\n**Range:** Touch\n**Components:** V, S, M (a feather)\n**Duration:** Concentration, up to 10 minutes"
+        },
+        {
+          "bi_rank": 4,
+          "ce_rank": 5,
+          "cosine": 0.9302,
+          "ce_score": -6.29,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "If you move more than 100 feet from the disk (typically because it can't move around an obstacle to follow you), the spell ends.\n\n#### Fly\n\n_Level 3 Transmutation (Sorcerer, Warlock, Wizard)_\n\n**Casting Time:** Action\n**Range:** Touch\n**Components:** V, S, M (a feather)\n**Duration:** Concentration, up to 10 minutes"
+        },
+        {
+          "bi_rank": 5,
+          "ce_rank": 6,
+          "cosine": 0.9302,
+          "ce_score": -6.29,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "If you move more than 100 feet from the disk (typically because it can't move around an obstacle to follow you), the spell ends.\n\n#### Fly\n\n_Level 3 Transmutation (Sorcerer, Warlock, Wizard)_\n\n**Casting Time:** Action\n**Range:** Touch\n**Components:** V, S, M (a feather)\n**Duration:** Concentration, up to 10 minutes"
+        },
+        {
+          "bi_rank": 6,
+          "ce_rank": 7,
+          "cosine": 0.9302,
+          "ce_score": -6.29,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "If you move more than 100 feet from the disk (typically because it can't move around an obstacle to follow you), the spell ends.\n\n#### Fly\n\n_Level 3 Transmutation (Sorcerer, Warlock, Wizard)_\n\n**Casting Time:** Action\n**Range:** Touch\n**Components:** V, S, M (a feather)\n**Duration:** Concentration, up to 10 minutes"
+        },
+        {
+          "bi_rank": 7,
+          "ce_rank": 8,
+          "cosine": 0.9302,
+          "ce_score": -6.29,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "If you move more than 100 feet from the disk (typically because it can't move around an obstacle to follow you), the spell ends.\n\n#### Fly\n\n_Level 3 Transmutation (Sorcerer, Warlock, Wizard)_\n\n**Casting Time:** Action\n**Range:** Touch\n**Components:** V, S, M (a feather)\n**Duration:** Concentration, up to 10 minutes"
+        },
+        {
+          "bi_rank": 8,
+          "ce_rank": 9,
+          "cosine": 0.9302,
+          "ce_score": -6.29,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "If you move more than 100 feet from the disk (typically because it can't move around an obstacle to follow you), the spell ends.\n\n#### Fly\n\n_Level 3 Transmutation (Sorcerer, Warlock, Wizard)_\n\n**Casting Time:** Action\n**Range:** Touch\n**Components:** V, S, M (a feather)\n**Duration:** Concentration, up to 10 minutes"
+        },
+        {
+          "bi_rank": 9,
+          "ce_rank": 10,
+          "cosine": 0.9302,
+          "ce_score": -6.29,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "If you move more than 100 feet from the disk (typically because it can't move around an obstacle to follow you), the spell ends.\n\n#### Fly\n\n_Level 3 Transmutation (Sorcerer, Warlock, Wizard)_\n\n**Casting Time:** Action\n**Range:** Touch\n**Components:** V, S, M (a feather)\n**Duration:** Concentration, up to 10 minutes"
+        },
+        {
+          "bi_rank": 10,
+          "ce_rank": 1,
+          "cosine": 0.9366,
+          "ce_score": -0.219,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "As you cast the spell, you draw a 5-foot-radius circle on the ground inscribed with sigils that link your location to a permanent teleportation circle of your choice whose sigil sequence you know and that is on the same plane of existence as you. A shimmering portal opens within the circle you drew and remains open until the end of your next turn. Any creature that enters the portal instantly appears within 5 feet of the destination circle or in the nearest unoccupied space if that space is"
+        }
+      ],
+      "pipeline_1_baseline": {
+        "context_bi_ranks": [1, 2, 3],
+        "answer": "Based on the provided context, there is no information about the *Misty Step* spell or how far it allows you to teleport."
+      },
+      "pipeline_2_reranked": {
+        "context_bi_ranks": [10, 1, 2],
+        "answer": "Based on the provided context, there is no information about the *Misty Step* spell."
+      },
+      "latency_ms": {
+        "retrieve": 10.9,
+        "rerank": 21.3,
+        "llm_p1": 3830.3,
+        "llm_p2": 2914.8
+      },
+      "rank_shift": {
+        "first_relevant_baseline_rank": null,
+        "first_relevant_reranked_rank": null,
+        "relevant_in_top10": false,
+        "baseline_has_relevant_in_top3": false,
+        "reranked_has_relevant_in_top3": false,
+        "promoted_into_top3": false,
+        "demoted_out_of_top3": false
+      }
+    },
+    {
+      "qid": "q17",
+      "question": "What is the base AC of a creature under the Mage Armor spell?",
+      "gold_answer": "13 plus its Dexterity modifier",
+      "pipeline_1_correct": true,
+      "pipeline_2_correct": true,
+      "top10": [
+        {
+          "bi_rank": 1,
+          "ce_rank": 1,
+          "cosine": 0.8947,
+          "ce_score": 6.199,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "You touch a willing creature who isn't wearing armor. Until the spell ends, the target's base AC becomes 13 plus its Dexterity modifier. The spell ends early if the target dons armor.\n\n#### Mage Hand\n\n_Conjuration Cantrip (Bard, Sorcerer, Warlock, Wizard)_\n\n**Casting Time:** Action\n**Range:** 30 feet\n**Components:** V, S\n**Duration:** 1 minute"
+        },
+        {
+          "bi_rank": 2,
+          "ce_rank": 2,
+          "cosine": 0.8947,
+          "ce_score": 6.199,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "You touch a willing creature who isn't wearing armor. Until the spell ends, the target's base AC becomes 13 plus its Dexterity modifier. The spell ends early if the target dons armor.\n\n#### Mage Hand\n\n_Conjuration Cantrip (Bard, Sorcerer, Warlock, Wizard)_\n\n**Casting Time:** Action\n**Range:** 30 feet\n**Components:** V, S\n**Duration:** 1 minute"
+        },
+        {
+          "bi_rank": 3,
+          "ce_rank": 3,
+          "cosine": 0.8947,
+          "ce_score": 6.199,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "You touch a willing creature who isn't wearing armor. Until the spell ends, the target's base AC becomes 13 plus its Dexterity modifier. The spell ends early if the target dons armor.\n\n#### Mage Hand\n\n_Conjuration Cantrip (Bard, Sorcerer, Warlock, Wizard)_\n\n**Casting Time:** Action\n**Range:** 30 feet\n**Components:** V, S\n**Duration:** 1 minute"
+        },
+        {
+          "bi_rank": 4,
+          "ce_rank": 4,
+          "cosine": 0.8947,
+          "ce_score": 6.199,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "You touch a willing creature who isn't wearing armor. Until the spell ends, the target's base AC becomes 13 plus its Dexterity modifier. The spell ends early if the target dons armor.\n\n#### Mage Hand\n\n_Conjuration Cantrip (Bard, Sorcerer, Warlock, Wizard)_\n\n**Casting Time:** Action\n**Range:** 30 feet\n**Components:** V, S\n**Duration:** 1 minute"
+        },
+        {
+          "bi_rank": 5,
+          "ce_rank": 5,
+          "cosine": 0.8947,
+          "ce_score": 6.199,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "You touch a willing creature who isn't wearing armor. Until the spell ends, the target's base AC becomes 13 plus its Dexterity modifier. The spell ends early if the target dons armor.\n\n#### Mage Hand\n\n_Conjuration Cantrip (Bard, Sorcerer, Warlock, Wizard)_\n\n**Casting Time:** Action\n**Range:** 30 feet\n**Components:** V, S\n**Duration:** 1 minute"
+        },
+        {
+          "bi_rank": 6,
+          "ce_rank": 6,
+          "cosine": 0.8947,
+          "ce_score": 6.199,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "You touch a willing creature who isn't wearing armor. Until the spell ends, the target's base AC becomes 13 plus its Dexterity modifier. The spell ends early if the target dons armor.\n\n#### Mage Hand\n\n_Conjuration Cantrip (Bard, Sorcerer, Warlock, Wizard)_\n\n**Casting Time:** Action\n**Range:** 30 feet\n**Components:** V, S\n**Duration:** 1 minute"
+        },
+        {
+          "bi_rank": 7,
+          "ce_rank": 7,
+          "cosine": 0.8947,
+          "ce_score": 6.199,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "You touch a willing creature who isn't wearing armor. Until the spell ends, the target's base AC becomes 13 plus its Dexterity modifier. The spell ends early if the target dons armor.\n\n#### Mage Hand\n\n_Conjuration Cantrip (Bard, Sorcerer, Warlock, Wizard)_\n\n**Casting Time:** Action\n**Range:** 30 feet\n**Components:** V, S\n**Duration:** 1 minute"
+        },
+        {
+          "bi_rank": 8,
+          "ce_rank": 8,
+          "cosine": 0.8947,
+          "ce_score": 6.199,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "You touch a willing creature who isn't wearing armor. Until the spell ends, the target's base AC becomes 13 plus its Dexterity modifier. The spell ends early if the target dons armor.\n\n#### Mage Hand\n\n_Conjuration Cantrip (Bard, Sorcerer, Warlock, Wizard)_\n\n**Casting Time:** Action\n**Range:** 30 feet\n**Components:** V, S\n**Duration:** 1 minute"
+        },
+        {
+          "bi_rank": 9,
+          "ce_rank": 9,
+          "cosine": 0.8947,
+          "ce_score": 6.199,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "You touch a willing creature who isn't wearing armor. Until the spell ends, the target's base AC becomes 13 plus its Dexterity modifier. The spell ends early if the target dons armor.\n\n#### Mage Hand\n\n_Conjuration Cantrip (Bard, Sorcerer, Warlock, Wizard)_\n\n**Casting Time:** Action\n**Range:** 30 feet\n**Components:** V, S\n**Duration:** 1 minute"
+        },
+        {
+          "bi_rank": 10,
+          "ce_rank": 10,
+          "cosine": 1.0713,
+          "ce_score": -6.709,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "**AC** 10 + 1 per spell level\n**HP** 5 + 10 per spell level (the steed has a number of Hit Dice [d10s] equal to the spell's level)\n**Speed** 60 ft., Fly 60 ft. (requires level 4+ spell)"
+        }
+      ],
+      "pipeline_1_baseline": {
+        "context_bi_ranks": [1, 2, 3],
+        "answer": "Based on the provided context, the base AC of a creature under the spell becomes **13 plus its Dexterity modifier**."
+      },
+      "pipeline_2_reranked": {
+        "context_bi_ranks": [1, 2, 3],
+        "answer": "Based on the provided context, the base AC of a creature under the spell becomes 13 plus its Dexterity modifier."
+      },
+      "latency_ms": {
+        "retrieve": 18.2,
+        "rerank": 19.5,
+        "llm_p1": 2906.4,
+        "llm_p2": 2728.8
+      },
+      "rank_shift": {
+        "first_relevant_baseline_rank": 1,
+        "first_relevant_reranked_rank": 1,
+        "relevant_in_top10": true,
+        "baseline_has_relevant_in_top3": true,
+        "reranked_has_relevant_in_top3": true,
+        "promoted_into_top3": false,
+        "demoted_out_of_top3": false
+      }
+    },
+    {
+      "qid": "q18",
+      "question": "How much Fire damage does the Fire Bolt cantrip deal on a hit?",
+      "gold_answer": "1d10 Fire damage",
+      "pipeline_1_correct": false,
+      "pipeline_2_correct": true,
+      "top10": [
+        {
+          "bi_rank": 1,
+          "ce_rank": 2,
+          "cosine": 0.7563,
+          "ce_score": 2.487,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "Flammable objects in the area that aren't being worn or carried start burning.\n\n_Using a Higher-Level Spell Slot._ The damage increases by 1d6 for each spell slot level above 3.\n\n#### Fire Bolt\n\n_Evocation Cantrip (Sorcerer, Wizard)_\n\n**Casting Time:** Action\n**Range:** 120 feet\n**Components:** V, S\n**Duration:** Instantaneous"
+        },
+        {
+          "bi_rank": 2,
+          "ce_rank": 3,
+          "cosine": 0.7563,
+          "ce_score": 2.487,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "Flammable objects in the area that aren't being worn or carried start burning.\n\n_Using a Higher-Level Spell Slot._ The damage increases by 1d6 for each spell slot level above 3.\n\n#### Fire Bolt\n\n_Evocation Cantrip (Sorcerer, Wizard)_\n\n**Casting Time:** Action\n**Range:** 120 feet\n**Components:** V, S\n**Duration:** Instantaneous"
+        },
+        {
+          "bi_rank": 3,
+          "ce_rank": 4,
+          "cosine": 0.7563,
+          "ce_score": 2.487,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "Flammable objects in the area that aren't being worn or carried start burning.\n\n_Using a Higher-Level Spell Slot._ The damage increases by 1d6 for each spell slot level above 3.\n\n#### Fire Bolt\n\n_Evocation Cantrip (Sorcerer, Wizard)_\n\n**Casting Time:** Action\n**Range:** 120 feet\n**Components:** V, S\n**Duration:** Instantaneous"
+        },
+        {
+          "bi_rank": 4,
+          "ce_rank": 5,
+          "cosine": 0.7563,
+          "ce_score": 2.487,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "Flammable objects in the area that aren't being worn or carried start burning.\n\n_Using a Higher-Level Spell Slot._ The damage increases by 1d6 for each spell slot level above 3.\n\n#### Fire Bolt\n\n_Evocation Cantrip (Sorcerer, Wizard)_\n\n**Casting Time:** Action\n**Range:** 120 feet\n**Components:** V, S\n**Duration:** Instantaneous"
+        },
+        {
+          "bi_rank": 5,
+          "ce_rank": 6,
+          "cosine": 0.7563,
+          "ce_score": 2.487,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "Flammable objects in the area that aren't being worn or carried start burning.\n\n_Using a Higher-Level Spell Slot._ The damage increases by 1d6 for each spell slot level above 3.\n\n#### Fire Bolt\n\n_Evocation Cantrip (Sorcerer, Wizard)_\n\n**Casting Time:** Action\n**Range:** 120 feet\n**Components:** V, S\n**Duration:** Instantaneous"
+        },
+        {
+          "bi_rank": 6,
+          "ce_rank": 7,
+          "cosine": 0.7563,
+          "ce_score": 2.487,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "Flammable objects in the area that aren't being worn or carried start burning.\n\n_Using a Higher-Level Spell Slot._ The damage increases by 1d6 for each spell slot level above 3.\n\n#### Fire Bolt\n\n_Evocation Cantrip (Sorcerer, Wizard)_\n\n**Casting Time:** Action\n**Range:** 120 feet\n**Components:** V, S\n**Duration:** Instantaneous"
+        },
+        {
+          "bi_rank": 7,
+          "ce_rank": 8,
+          "cosine": 0.7563,
+          "ce_score": 2.487,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "Flammable objects in the area that aren't being worn or carried start burning.\n\n_Using a Higher-Level Spell Slot._ The damage increases by 1d6 for each spell slot level above 3.\n\n#### Fire Bolt\n\n_Evocation Cantrip (Sorcerer, Wizard)_\n\n**Casting Time:** Action\n**Range:** 120 feet\n**Components:** V, S\n**Duration:** Instantaneous"
+        },
+        {
+          "bi_rank": 8,
+          "ce_rank": 9,
+          "cosine": 0.7563,
+          "ce_score": 2.487,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "Flammable objects in the area that aren't being worn or carried start burning.\n\n_Using a Higher-Level Spell Slot._ The damage increases by 1d6 for each spell slot level above 3.\n\n#### Fire Bolt\n\n_Evocation Cantrip (Sorcerer, Wizard)_\n\n**Casting Time:** Action\n**Range:** 120 feet\n**Components:** V, S\n**Duration:** Instantaneous"
+        },
+        {
+          "bi_rank": 9,
+          "ce_rank": 10,
+          "cosine": 0.7563,
+          "ce_score": 2.487,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "Flammable objects in the area that aren't being worn or carried start burning.\n\n_Using a Higher-Level Spell Slot._ The damage increases by 1d6 for each spell slot level above 3.\n\n#### Fire Bolt\n\n_Evocation Cantrip (Sorcerer, Wizard)_\n\n**Casting Time:** Action\n**Range:** 120 feet\n**Components:** V, S\n**Duration:** Instantaneous"
+        },
+        {
+          "bi_rank": 10,
+          "ce_rank": 1,
+          "cosine": 0.9454,
+          "ce_score": 5.384,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "You hurl a mote of fire at a creature or an object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 Fire damage. A flammable object hit by this spell starts burning if it isn't being worn or carried.\n\n_Cantrip Upgrade._ The damage increases by 1d10 when you reach levels 5 (2d10), 11 (3d10), and 17 (4d10).\n\n#### Fire Shield\n\n_Level 4 Evocation (Druid, Sorcerer, Wizard)_"
+        }
+      ],
+      "pipeline_1_baseline": {
+        "context_bi_ranks": [1, 2, 3],
+        "answer": "Based on the provided context, the amount of Fire damage dealt by the Fire Bolt cantrip is not mentioned."
+      },
+      "pipeline_2_reranked": {
+        "context_bi_ranks": [10, 1, 2],
+        "answer": "On a hit, the *Fire Bolt* cantrip deals **1d10 Fire damage**. \n\nThe damage increases as you reach higher levels:\n* **Level 5–10:** 2d10 Fire damage\n* **Level 11–16:** 3d10 Fire damage\n* **Level 17+:** 4d10 Fire damage"
+      },
+      "latency_ms": {
+        "retrieve": 8.9,
+        "rerank": 24.6,
+        "llm_p1": 3809.1,
+        "llm_p2": 3027.2
+      },
+      "rank_shift": {
+        "first_relevant_baseline_rank": 10,
+        "first_relevant_reranked_rank": 1,
+        "relevant_in_top10": true,
+        "baseline_has_relevant_in_top3": false,
+        "reranked_has_relevant_in_top3": true,
+        "promoted_into_top3": true,
+        "demoted_out_of_top3": false
+      }
+    },
+    {
+      "qid": "q19",
+      "question": "What is the casting time of the Healing Word spell?",
+      "gold_answer": "Bonus Action",
+      "pipeline_1_correct": false,
+      "pipeline_2_correct": false,
+      "top10": [
+        {
+          "bi_rank": 1,
+          "ce_rank": 1,
+          "cosine": 0.7242,
+          "ce_score": 5.131,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "#### Heal\n\n_Level 6 Abjuration (Cleric, Druid)_\n\n**Casting Time:** Action\n**Range:** 60 feet\n**Components:** V, S\n**Duration:** Instantaneous\n\nChoose a creature that you can see within range. Positive energy washes through the target, restoring 70 Hit Points. This spell also ends the Blinded, Deafened, and Poisoned conditions on the target.\n\n_Using a Higher-Level Spell Slot._ The healing increases by 10 for each spell slot level above 6.\n\n#### Healing Word"
+        },
+        {
+          "bi_rank": 2,
+          "ce_rank": 2,
+          "cosine": 0.7242,
+          "ce_score": 5.131,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "#### Heal\n\n_Level 6 Abjuration (Cleric, Druid)_\n\n**Casting Time:** Action\n**Range:** 60 feet\n**Components:** V, S\n**Duration:** Instantaneous\n\nChoose a creature that you can see within range. Positive energy washes through the target, restoring 70 Hit Points. This spell also ends the Blinded, Deafened, and Poisoned conditions on the target.\n\n_Using a Higher-Level Spell Slot._ The healing increases by 10 for each spell slot level above 6.\n\n#### Healing Word"
+        },
+        {
+          "bi_rank": 3,
+          "ce_rank": 3,
+          "cosine": 0.7242,
+          "ce_score": 5.131,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "#### Heal\n\n_Level 6 Abjuration (Cleric, Druid)_\n\n**Casting Time:** Action\n**Range:** 60 feet\n**Components:** V, S\n**Duration:** Instantaneous\n\nChoose a creature that you can see within range. Positive energy washes through the target, restoring 70 Hit Points. This spell also ends the Blinded, Deafened, and Poisoned conditions on the target.\n\n_Using a Higher-Level Spell Slot._ The healing increases by 10 for each spell slot level above 6.\n\n#### Healing Word"
+        },
+        {
+          "bi_rank": 4,
+          "ce_rank": 4,
+          "cosine": 0.7242,
+          "ce_score": 5.131,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "#### Heal\n\n_Level 6 Abjuration (Cleric, Druid)_\n\n**Casting Time:** Action\n**Range:** 60 feet\n**Components:** V, S\n**Duration:** Instantaneous\n\nChoose a creature that you can see within range. Positive energy washes through the target, restoring 70 Hit Points. This spell also ends the Blinded, Deafened, and Poisoned conditions on the target.\n\n_Using a Higher-Level Spell Slot._ The healing increases by 10 for each spell slot level above 6.\n\n#### Healing Word"
+        },
+        {
+          "bi_rank": 5,
+          "ce_rank": 5,
+          "cosine": 0.7242,
+          "ce_score": 5.131,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "#### Heal\n\n_Level 6 Abjuration (Cleric, Druid)_\n\n**Casting Time:** Action\n**Range:** 60 feet\n**Components:** V, S\n**Duration:** Instantaneous\n\nChoose a creature that you can see within range. Positive energy washes through the target, restoring 70 Hit Points. This spell also ends the Blinded, Deafened, and Poisoned conditions on the target.\n\n_Using a Higher-Level Spell Slot._ The healing increases by 10 for each spell slot level above 6.\n\n#### Healing Word"
+        },
+        {
+          "bi_rank": 6,
+          "ce_rank": 6,
+          "cosine": 0.7242,
+          "ce_score": 5.131,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "#### Heal\n\n_Level 6 Abjuration (Cleric, Druid)_\n\n**Casting Time:** Action\n**Range:** 60 feet\n**Components:** V, S\n**Duration:** Instantaneous\n\nChoose a creature that you can see within range. Positive energy washes through the target, restoring 70 Hit Points. This spell also ends the Blinded, Deafened, and Poisoned conditions on the target.\n\n_Using a Higher-Level Spell Slot._ The healing increases by 10 for each spell slot level above 6.\n\n#### Healing Word"
+        },
+        {
+          "bi_rank": 7,
+          "ce_rank": 7,
+          "cosine": 0.7242,
+          "ce_score": 5.131,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "#### Heal\n\n_Level 6 Abjuration (Cleric, Druid)_\n\n**Casting Time:** Action\n**Range:** 60 feet\n**Components:** V, S\n**Duration:** Instantaneous\n\nChoose a creature that you can see within range. Positive energy washes through the target, restoring 70 Hit Points. This spell also ends the Blinded, Deafened, and Poisoned conditions on the target.\n\n_Using a Higher-Level Spell Slot._ The healing increases by 10 for each spell slot level above 6.\n\n#### Healing Word"
+        },
+        {
+          "bi_rank": 8,
+          "ce_rank": 8,
+          "cosine": 0.7242,
+          "ce_score": 5.131,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "#### Heal\n\n_Level 6 Abjuration (Cleric, Druid)_\n\n**Casting Time:** Action\n**Range:** 60 feet\n**Components:** V, S\n**Duration:** Instantaneous\n\nChoose a creature that you can see within range. Positive energy washes through the target, restoring 70 Hit Points. This spell also ends the Blinded, Deafened, and Poisoned conditions on the target.\n\n_Using a Higher-Level Spell Slot._ The healing increases by 10 for each spell slot level above 6.\n\n#### Healing Word"
+        },
+        {
+          "bi_rank": 9,
+          "ce_rank": 9,
+          "cosine": 0.7242,
+          "ce_score": 5.131,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "#### Heal\n\n_Level 6 Abjuration (Cleric, Druid)_\n\n**Casting Time:** Action\n**Range:** 60 feet\n**Components:** V, S\n**Duration:** Instantaneous\n\nChoose a creature that you can see within range. Positive energy washes through the target, restoring 70 Hit Points. This spell also ends the Blinded, Deafened, and Poisoned conditions on the target.\n\n_Using a Higher-Level Spell Slot._ The healing increases by 10 for each spell slot level above 6.\n\n#### Healing Word"
+        },
+        {
+          "bi_rank": 10,
+          "ce_rank": 10,
+          "cosine": 0.7331,
+          "ce_score": 2.196,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "A wave of healing energy washes out from a point you can see within range. Choose up to six creatures in a 30-foot-radius Sphere centered on that point. Each target regains Hit Points equal to 5d8 plus your spellcasting ability modifier.\n\n_Using a Higher-Level Spell Slot._ The healing increases by 1d8 for each spell slot level above 5.\n\n#### Mass Heal\n\n_Level 9 Abjuration (Cleric)_\n\n**Casting Time:** Action\n**Range:** 60 feet\n**Components:** V, S\n**Duration:** Instantaneous"
+        }
+      ],
+      "pipeline_1_baseline": {
+        "context_bi_ranks": [1, 2, 3],
+        "answer": "Based on the provided context, there is no information about the casting time of the **Healing Word** spell (only details for the **Heal** spell are provided)."
+      },
+      "pipeline_2_reranked": {
+        "context_bi_ranks": [1, 2, 3],
+        "answer": "Based on the provided context, there is no information about the casting time of the *Healing Word* spell. Only the details for the *Heal* spell are provided."
+      },
+      "latency_ms": {
+        "retrieve": 8.8,
+        "rerank": 24.7,
+        "llm_p1": 2768.7,
+        "llm_p2": 3474.6
+      },
+      "rank_shift": {
+        "first_relevant_baseline_rank": null,
+        "first_relevant_reranked_rank": null,
+        "relevant_in_top10": false,
+        "baseline_has_relevant_in_top3": false,
+        "reranked_has_relevant_in_top3": false,
+        "promoted_into_top3": false,
+        "demoted_out_of_top3": false
+      }
+    }
+  ],
+  "failure_queries": []
+}

@@ -1,0 +1,102 @@
+[
+  {
+    "id": 1,
+    "question": "What spell level are cantrips considered to be?",
+    "answer": "Level 0"
+  },
+  {
+    "id": 2,
+    "question": "Which school of magic has typical effects that prevent or reverse harmful effects?",
+    "answer": "Abjuration"
+  },
+  {
+    "id": 3,
+    "question": "What are the physical requirements a spellcaster must meet to cast a spell as indicated in its description?",
+    "answer": "Verbal (V), Somatic (S), or Material (M) components"
+  },
+  {
+    "id": 4,
+    "question": "What action do most spells require to cast?",
+    "answer": "The Magic action"
+  },
+  {
+    "id": 5,
+    "question": "How much longer does the Ritual version of a spell take to cast compared to normal?",
+    "answer": "10 minutes longer"
+  },
+  {
+    "id": 6,
+    "question": "What action must you take to try to identify an ongoing non-instantaneous spell?",
+    "answer": "The Study action"
+  },
+  {
+    "id": 7,
+    "question": "What check and DC are required to identify an ongoing spell?",
+    "answer": "A DC 15 Intelligence (Arcana) check"
+  },
+  {
+    "id": 8,
+    "question": "What is the formula for calculating the Spell save DC?",
+    "answer": "8 + your spellcasting ability modifier + your Proficiency Bonus"
+  },
+  {
+    "id": 9,
+    "question": "What is the formula for calculating the Spell attack modifier?",
+    "answer": "Your spellcasting ability modifier + your Proficiency Bonus"
+  },
+  {
+    "id": 10,
+    "question": "How many level 1 spell slots does a level 3 Wizard have?",
+    "answer": "Four level 1 spell slots"
+  },
+  {
+    "id": 11,
+    "question": "What school of magic does Acid Splash belong to?",
+    "answer": "Evocation"
+  },
+  {
+    "id": 12,
+    "question": "What is the range of the Arcane Eye spell?",
+    "answer": "30 feet"
+  },
+  {
+    "id": 13,
+    "question": "What initial Acid damage does Acid Arrow deal on a hit?",
+    "answer": "4d4 Acid damage"
+  },
+  {
+    "id": 14,
+    "question": "What is the range of the Fireball spell?",
+    "answer": "150 feet"
+  },
+  {
+    "id": 15,
+    "question": "How much Force damage does each dart of the Magic Missile spell deal?",
+    "answer": "1d4 + 1 Force damage"
+  },
+  {
+    "id": 16,
+    "question": "How far can you teleport with the Misty Step spell?",
+    "answer": "Up to 30 feet"
+  },
+  {
+    "id": 17,
+    "question": "What is the base AC of a creature under the Mage Armor spell?",
+    "answer": "13 plus its Dexterity modifier"
+  },
+  {
+    "id": 18,
+    "question": "How much Fire damage does the Fire Bolt cantrip deal on a hit?",
+    "answer": "1d10 Fire damage"
+  },
+  {
+    "id": 19,
+    "question": "What is the casting time of the Healing Word spell?",
+    "answer": "Bonus Action"
+  },
+  {
+    "id": 20,
+    "question": "How many Hit Points does the Cure Wounds spell restore?",
+    "answer": "2d8 plus your spellcasting ability modifier"
+  }
+]
