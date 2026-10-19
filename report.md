@@ -1,5 +1,9 @@
 # RAG assignment: baseline retrieval vs. cross-encoder re-ranking
 
+NAME :sanjana sheela 
+ROLLNo: 2023102027
+Git link: [https://github.com/sanjanasheela/LMA_assignment_1_-RAG](https://github.com/sanjanasheela/LMA_assignment_1_-RAG)
+
 ## Setup
 
 | Item | Choice |
