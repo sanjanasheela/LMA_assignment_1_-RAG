@@ -5,8 +5,8 @@
     "llm": "gemini-3.7-flash",
     "vector_store": "ChromaDB (cosine)",
     "num_chunks": 873,
-    "chunk_size": 800,
-    "chunk_overlap": 100,
+    "chunk_size": 500,
+    "chunk_overlap": 50,
     "top_k": 10,
     "top_n": 3,
     "device": "cuda",
@@ -122,11 +122,19 @@
         }
       ],
       "pipeline_1_baseline": {
-        "context_bi_ranks": [1, 2, 3],
+        "context_bi_ranks": [
+          1,
+          2,
+          3
+        ],
         "answer": "Based on the provided context, cantrips are level 0."
       },
       "pipeline_2_reranked": {
-        "context_bi_ranks": [1, 2, 3],
+        "context_bi_ranks": [
+          1,
+          2,
+          3
+        ],
         "answer": "Based on the provided context, cantrips are considered to be **level 0**."
       },
       "latency_ms": {
@@ -254,11 +262,19 @@
         }
       ],
       "pipeline_1_baseline": {
-        "context_bi_ranks": [1, 2, 3],
+        "context_bi_ranks": [
+          1,
+          2,
+          3
+        ],
         "answer": "Based on the provided context, the answer is not available. The text mentions the \"Schools of Magic\" table, but the details and descriptions of the specific schools of magic are not included in the context provided."
       },
       "pipeline_2_reranked": {
-        "context_bi_ranks": [5, 6, 7],
+        "context_bi_ranks": [
+          5,
+          6,
+          7
+        ],
         "answer": "Based on the provided context, the **Abjuration** school of magic has typical effects that prevent or reverse harmful effects."
       },
       "latency_ms": {
@@ -386,11 +402,19 @@
         }
       ],
       "pipeline_1_baseline": {
-        "context_bi_ranks": [1, 2, 3],
+        "context_bi_ranks": [
+          1,
+          2,
+          3
+        ],
         "answer": "Based on the provided context, the physical requirements a spellcaster must meet are the spell's **components**, which can include:\n\n* **Verbal (V)**\n* **Somatic (S)**\n* **Material (M)**"
       },
       "pipeline_2_reranked": {
-        "context_bi_ranks": [1, 2, 3],
+        "context_bi_ranks": [
+          1,
+          2,
+          3
+        ],
         "answer": "Based on the provided context, the physical requirements a spellcaster must meet are the spell's **components**, which can include:\n\n* **Verbal (V)** components\n* **Somatic (S)** components\n* **Material (M)** components"
       },
       "latency_ms": {
@@ -518,11 +542,19 @@
         }
       ],
       "pipeline_1_baseline": {
-        "context_bi_ranks": [1, 2, 3],
+        "context_bi_ranks": [
+          1,
+          2,
+          3
+        ],
         "answer": "Based on the provided context, most spells require the **Magic action** to cast."
       },
       "pipeline_2_reranked": {
-        "context_bi_ranks": [1, 2, 3],
+        "context_bi_ranks": [
+          1,
+          2,
+          3
+        ],
         "answer": "Based on the provided context, most spells require the **Magic action** to cast."
       },
       "latency_ms": {
@@ -650,11 +682,19 @@
         }
       ],
       "pipeline_1_baseline": {
-        "context_bi_ranks": [1, 2, 3],
+        "context_bi_ranks": [
+          1,
+          2,
+          3
+        ],
         "answer": "Based on the provided context, it is not specified exactly how much longer a ritual takes to cast compared to normal. The context only states that a spell cast as a Ritual requires \"more time to cast: minutes or even hours.\""
       },
       "pipeline_2_reranked": {
-        "context_bi_ranks": [5, 6, 7],
+        "context_bi_ranks": [
+          5,
+          6,
+          7
+        ],
         "answer": "Based on the provided context, the Ritual version of a spell takes 10 minutes longer to cast than normal."
       },
       "latency_ms": {
@@ -782,11 +822,19 @@
         }
       ],
       "pipeline_1_baseline": {
-        "context_bi_ranks": [1, 2, 3],
+        "context_bi_ranks": [
+          1,
+          2,
+          3
+        ],
         "answer": "To try to identify an ongoing non-instantaneous spell, you must take the **Study action** (and succeed on a DC 15 Intelligence (Arcana) check)."
       },
       "pipeline_2_reranked": {
-        "context_bi_ranks": [1, 2, 3],
+        "context_bi_ranks": [
+          1,
+          2,
+          3
+        ],
         "answer": "To try to identify an ongoing non-instantaneous spell, you must take the **Study action**."
       },
       "latency_ms": {
@@ -914,11 +962,19 @@
         }
       ],
       "pipeline_1_baseline": {
-        "context_bi_ranks": [1, 2, 3],
+        "context_bi_ranks": [
+          1,
+          2,
+          3
+        ],
         "answer": "To identify an ongoing spell, you must succeed on a **DC 15 Intelligence (Arcana) check** (which requires taking the Study action)."
       },
       "pipeline_2_reranked": {
-        "context_bi_ranks": [1, 2, 3],
+        "context_bi_ranks": [
+          1,
+          2,
+          3
+        ],
         "answer": "To identify an ongoing spell, you must succeed on a **DC 15 Intelligence (Arcana)** check (using the Study action)."
       },
       "latency_ms": {
@@ -1046,11 +1102,19 @@
         }
       ],
       "pipeline_1_baseline": {
-        "context_bi_ranks": [1, 2, 3],
+        "context_bi_ranks": [
+          1,
+          2,
+          3
+        ],
         "answer": "Based on the provided context, the formula for calculating the Spell save DC is:\n\n**Spell save DC** = 8 + your spellcasting ability modifier + your Proficiency Bonus"
       },
       "pipeline_2_reranked": {
-        "context_bi_ranks": [1, 2, 3],
+        "context_bi_ranks": [
+          1,
+          2,
+          3
+        ],
         "answer": "Based on the provided context, the formula for calculating the Spell save DC is:\n\n**Spell save DC** = 8 + your spellcasting ability modifier + your Proficiency Bonus"
       },
       "latency_ms": {
@@ -1178,11 +1242,19 @@
         }
       ],
       "pipeline_1_baseline": {
-        "context_bi_ranks": [1, 2, 3],
+        "context_bi_ranks": [
+          1,
+          2,
+          3
+        ],
         "answer": "Based on the provided context, the formula for calculating the Spell attack modifier is:\n\n**Spell attack modifier** = your spellcasting ability modifier + your Proficiency Bonus"
       },
       "pipeline_2_reranked": {
-        "context_bi_ranks": [1, 2, 3],
+        "context_bi_ranks": [
+          1,
+          2,
+          3
+        ],
         "answer": "Based on the provided context, the formula for calculating the Spell attack modifier is:\n\n**Spell attack modifier** = your spellcasting ability modifier + your Proficiency Bonus"
       },
       "latency_ms": {
@@ -1310,11 +1382,19 @@
         }
       ],
       "pipeline_1_baseline": {
-        "context_bi_ranks": [1, 2, 3],
+        "context_bi_ranks": [
+          1,
+          2,
+          3
+        ],
         "answer": "Based on the provided context, a level 3 Wizard has four level 1 spell slots."
       },
       "pipeline_2_reranked": {
-        "context_bi_ranks": [1, 2, 3],
+        "context_bi_ranks": [
+          1,
+          2,
+          3
+        ],
         "answer": "Based on the provided context, a level 3 Wizard has four level 1 spell slots."
       },
       "latency_ms": {
@@ -1442,11 +1522,19 @@
         }
       ],
       "pipeline_1_baseline": {
-        "context_bi_ranks": [1, 2, 3],
+        "context_bi_ranks": [
+          1,
+          2,
+          3
+        ],
         "answer": "Acid Splash belongs to the **Evocation** school of magic."
       },
       "pipeline_2_reranked": {
-        "context_bi_ranks": [1, 2, 3],
+        "context_bi_ranks": [
+          1,
+          2,
+          3
+        ],
         "answer": "Based on the provided context, Acid Splash belongs to the **Evocation** school of magic."
       },
       "latency_ms": {
@@ -1574,11 +1662,19 @@
         }
       ],
       "pipeline_1_baseline": {
-        "context_bi_ranks": [1, 2, 3],
+        "context_bi_ranks": [
+          1,
+          2,
+          3
+        ],
         "answer": "The range of the *Arcane Eye* spell is 30 feet."
       },
       "pipeline_2_reranked": {
-        "context_bi_ranks": [1, 2, 3],
+        "context_bi_ranks": [
+          1,
+          2,
+          3
+        ],
         "answer": "Based on the provided context, the range of the *Arcane Eye* spell is 30 feet."
       },
       "latency_ms": {
@@ -1706,11 +1802,19 @@
         }
       ],
       "pipeline_1_baseline": {
-        "context_bi_ranks": [1, 2, 3],
+        "context_bi_ranks": [
+          1,
+          2,
+          3
+        ],
         "answer": "On a hit, it deals **4d4 Acid damage** initially (which increases by 1d4 for each spell slot level above 2)."
       },
       "pipeline_2_reranked": {
-        "context_bi_ranks": [1, 2, 3],
+        "context_bi_ranks": [
+          1,
+          2,
+          3
+        ],
         "answer": "On a hit, it deals 4d4 Acid damage initially (which increases by 1d4 for each spell slot level above 2)."
       },
       "latency_ms": {
@@ -1838,11 +1942,19 @@
         }
       ],
       "pipeline_1_baseline": {
-        "context_bi_ranks": [1, 2, 3],
+        "context_bi_ranks": [
+          1,
+          2,
+          3
+        ],
         "answer": "Based on the provided context, the range of the Fireball spell is not mentioned."
       },
       "pipeline_2_reranked": {
-        "context_bi_ranks": [9, 10, 1],
+        "context_bi_ranks": [
+          9,
+          10,
+          1
+        ],
         "answer": "Based on the provided context, the range of the spell is 150 feet."
       },
       "latency_ms": {
@@ -1970,11 +2082,19 @@
         }
       ],
       "pipeline_1_baseline": {
-        "context_bi_ranks": [1, 2, 3],
+        "context_bi_ranks": [
+          1,
+          2,
+          3
+        ],
         "answer": "Based on the provided context, there is no information about how much damage the *Magic Missile* spell deals. The context only mentions *Magic Missile* as a trigger for casting the *Shield* spell."
       },
       "pipeline_2_reranked": {
-        "context_bi_ranks": [1, 2, 3],
+        "context_bi_ranks": [
+          1,
+          2,
+          3
+        ],
         "answer": "Based on the provided context, there is no information about how much Force damage each dart of the *Magic Missile* spell deals. The context only mentions *Magic Missile* as a trigger for the *Shield* spell."
       },
       "latency_ms": {
@@ -2102,11 +2222,19 @@
         }
       ],
       "pipeline_1_baseline": {
-        "context_bi_ranks": [1, 2, 3],
+        "context_bi_ranks": [
+          1,
+          2,
+          3
+        ],
         "answer": "Based on the provided context, there is no information about the *Misty Step* spell or how far it allows you to teleport."
       },
       "pipeline_2_reranked": {
-        "context_bi_ranks": [10, 1, 2],
+        "context_bi_ranks": [
+          10,
+          1,
+          2
+        ],
         "answer": "Based on the provided context, there is no information about the *Misty Step* spell."
       },
       "latency_ms": {
@@ -2234,11 +2362,19 @@
         }
       ],
       "pipeline_1_baseline": {
-        "context_bi_ranks": [1, 2, 3],
+        "context_bi_ranks": [
+          1,
+          2,
+          3
+        ],
         "answer": "Based on the provided context, the base AC of a creature under the spell becomes **13 plus its Dexterity modifier**."
       },
       "pipeline_2_reranked": {
-        "context_bi_ranks": [1, 2, 3],
+        "context_bi_ranks": [
+          1,
+          2,
+          3
+        ],
         "answer": "Based on the provided context, the base AC of a creature under the spell becomes 13 plus its Dexterity modifier."
       },
       "latency_ms": {
@@ -2366,11 +2502,19 @@
         }
       ],
       "pipeline_1_baseline": {
-        "context_bi_ranks": [1, 2, 3],
+        "context_bi_ranks": [
+          1,
+          2,
+          3
+        ],
         "answer": "Based on the provided context, the amount of Fire damage dealt by the Fire Bolt cantrip is not mentioned."
       },
       "pipeline_2_reranked": {
-        "context_bi_ranks": [10, 1, 2],
+        "context_bi_ranks": [
+          10,
+          1,
+          2
+        ],
         "answer": "On a hit, the *Fire Bolt* cantrip deals **1d10 Fire damage**. \n\nThe damage increases as you reach higher levels:\n* **Level 5–10:** 2d10 Fire damage\n* **Level 11–16:** 3d10 Fire damage\n* **Level 17+:** 4d10 Fire damage"
       },
       "latency_ms": {
@@ -2498,11 +2642,19 @@
         }
       ],
       "pipeline_1_baseline": {
-        "context_bi_ranks": [1, 2, 3],
+        "context_bi_ranks": [
+          1,
+          2,
+          3
+        ],
         "answer": "Based on the provided context, there is no information about the casting time of the **Healing Word** spell (only details for the **Heal** spell are provided)."
       },
       "pipeline_2_reranked": {
-        "context_bi_ranks": [1, 2, 3],
+        "context_bi_ranks": [
+          1,
+          2,
+          3
+        ],
         "answer": "Based on the provided context, there is no information about the casting time of the *Healing Word* spell. Only the details for the *Heal* spell are provided."
       },
       "latency_ms": {
@@ -2517,6 +2669,1126 @@
         "relevant_in_top10": false,
         "baseline_has_relevant_in_top3": false,
         "reranked_has_relevant_in_top3": false,
+        "promoted_into_top3": false,
+        "demoted_out_of_top3": false
+      }
+    },
+    {
+      "qid": "q20",
+      "question": "What can a creature hit by Shocking Grasp not do until the start of its next turn?",
+      "gold_answer": "It can't make Opportunity Attacks",
+      "pipeline_1_correct": false,
+      "pipeline_2_correct": false,
+      "top10": [
+        {
+          "bi_rank": 1,
+          "ce_rank": 8,
+          "cosine": 0.4863,
+          "ce_score": -8.112,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "You and up to ten willing creatures of your choice within range assume gaseous forms for the duration, appearing as wisps of cloud. While in this cloud form, a target has a Fly Speed of 300 feet and can hover; it has Immunity to the Prone condition; and it has Resistance to Bludgeoning, Piercing, and Slashing damage. The only actions a target can take in this form are the Dash action or a Magic action to begin reverting to its normal form. Reverting takes 1 minute, during which the target has"
+        },
+        {
+          "bi_rank": 2,
+          "ce_rank": 9,
+          "cosine": 0.498,
+          "ce_score": -8.235,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "</tr>\n    <tr>\n      <td>7–8</td>\n      <td>The target doesn't move, and it takes the Attack action to make one melee attack against a random creature within reach. If none are within reach, the target takes no action.</td>\n    </tr>\n    <tr>\n      <td>9–10</td>\n      <td>The target chooses its behavior.</td>\n    </tr>\n  </tbody>\n</table>"
+        },
+        {
+          "bi_rank": 3,
+          "ce_rank": 2,
+          "cosine": 0.5169,
+          "ce_score": -4.726,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "the creature takes the Dodge action and moves only to avoid harm. Once given an order, the creature continues to follow the order until its task is complete."
+        },
+        {
+          "bi_rank": 4,
+          "ce_rank": 4,
+          "cosine": 0.5242,
+          "ce_score": -5.843,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "**Grasping Hand.** The hand attempts to grapple a Huge or smaller creature within 5 feet of it. The target must succeed on a Dexterity saving throw, or the target has the Grappled condition, with an escape DC equal to your spell save DC. While the hand grapples the target, you can take a Bonus Action to cause the hand to crush it, dealing Bludgeoning damage to the target equal to 4d6 plus your spellcasting ability modifier."
+        },
+        {
+          "bi_rank": 5,
+          "ce_rank": 7,
+          "cosine": 0.527,
+          "ce_score": -7.67,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "When you cast the spell and as a Bonus Action on your later turns, you can move the hand up to 60 feet and then cause one of the following effects:\n\n**Clenched Fist.** The hand strikes a target within 5 feet of it. Make a melee spell attack. On a hit, the target takes 5d8 Force damage."
+        },
+        {
+          "bi_rank": 6,
+          "ce_rank": 3,
+          "cosine": 0.5336,
+          "ce_score": -4.99,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "commands, the creature takes the Dodge action and moves only to avoid harm. Once given an order, the creature continues to follow it until its task is complete."
+        },
+        {
+          "bi_rank": 7,
+          "ce_rank": 5,
+          "cosine": 0.5449,
+          "ce_score": -6.766,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "You can also cause the effects below.\n\n_Fissures._ A total of 1d6 fissures open in the spell's area at the end of the turn you cast it. You choose the fissures' locations, which can't be under structures. Each fissure is 1d10 × 10 feet deep and 10 feet wide, and it extends from one edge of the spell's area to another edge. A creature in the same space as a fissure must succeed on a Dexterity saving throw or fall in. A creature that successfully saves moves with the fissure's edge as it opens."
+        },
+        {
+          "bi_rank": 8,
+          "ce_rank": 10,
+          "cosine": 0.5586,
+          "ce_score": -8.574,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "**Forceful Hand.** The hand attempts to push a Huge or smaller creature within 5 feet of it. The target must succeed on a Strength saving throw, or the hand pushes the target up to 5 feet plus a number of feet equal to five times your spellcasting ability modifier. The hand moves with the target, remaining within 5 feet of it."
+        },
+        {
+          "bi_rank": 9,
+          "ce_rank": 1,
+          "cosine": 0.5592,
+          "ce_score": -3.29,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "You create a floating, spectral force that resembles a weapon of your choice and lasts for the duration. The force appears within range in a space of your choice, and you can immediately make one melee spell attack against one creature within 5 feet of the force. On a hit, the target takes Force damage equal to 1d8 plus your spellcasting ability modifier.\n\nAs a Bonus Action on your later turns, you can move the force up to 20 feet and repeat the attack against a creature within 5 feet of it."
+        },
+        {
+          "bi_rank": 10,
+          "ce_rank": 6,
+          "cosine": 0.5623,
+          "ce_score": -7.06,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "A beam of yellow light flashes from you, then condenses at a chosen point within range as a glowing bead for the duration. When the spell ends, the bead explodes, and each creature in a 20-foot-radius Sphere centered on that point makes a Dexterity saving throw. A creature takes Fire damage equal to the total accumulated damage on a failed save or half as much damage on a successful one."
+        }
+      ],
+      "pipeline_1_baseline": {
+        "context_bi_ranks": [
+          1,
+          2,
+          3
+        ],
+        "answer": "The provided context doesn't say what a creature hit by Shocking Grasp can't do. It covers a gaseous cloud-form spell, a behavior table, and a creature following an order, and none of those mention Shocking Grasp.\n\nFrom general D&D 5e knowledge, which is outside the context you gave me, a creature hit by Shocking Grasp can't take Reactions until the start of its next turn. I can't confirm that from the context itself."
+      },
+      "pipeline_2_reranked": {
+        "context_bi_ranks": [
+          9,
+          3,
+          6
+        ],
+        "answer": "The provided context doesn't cover Shocking Grasp. It includes only a force-weapon spell (a spectral weapon attack) and text about a creature taking the Dodge action. So I can't answer from it.\n\nFrom general D&D 5e knowledge, and not from the context, a creature hit by Shocking Grasp can't take Reactions until the start of its next turn. Please check that against the spell text, since the context doesn't support it."
+      },
+      "latency_ms": {
+        "retrieve": 32.0,
+        "rerank": 25.1,
+        "llm_p1": 8401.5,
+        "llm_p2": 8898.3
+      },
+      "rank_shift": {
+        "first_relevant_baseline_rank": null,
+        "first_relevant_reranked_rank": null,
+        "relevant_in_top10": false,
+        "baseline_has_relevant_in_top3": false,
+        "reranked_has_relevant_in_top3": false,
+        "promoted_into_top3": false,
+        "demoted_out_of_top3": false
+      }
+    },
+    {
+      "qid": "q21",
+      "question": "Can the Light cantrip be cast on an object that another creature is carrying?",
+      "gold_answer": "No, the object must not be worn or carried by someone else",
+      "pipeline_1_correct": true,
+      "pipeline_2_correct": true,
+      "top10": [
+        {
+          "bi_rank": 1,
+          "ce_rank": 1,
+          "cosine": 0.5984,
+          "ce_score": 1.713,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "You touch one Large or smaller object that isn't being worn or carried by someone else. Until the spell ends, the object sheds Bright Light in a 20-foot radius and Dim Light for an additional 20 feet. The light can be colored as you like.\n\nCovering the object with something opaque blocks the light. The spell ends if you cast it again.\n\n#### Lightning Bolt\n\n_Level 3 Evocation (Sorcerer, Wizard)_"
+        },
+        {
+          "bi_rank": 2,
+          "ce_rank": 9,
+          "cosine": 0.6031,
+          "ce_score": -6.762,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "_Object into Creature._ You can turn an object into any kind of creature, as long as the creature's size is no larger than the object's size and the creature has a Challenge Rating of 9 or lower. The creature is Friendly to you and your allies. In combat, it takes its turns immediately after yours, and it obeys your commands.\n\nIf the spell lasts more than an hour, you no longer control the creature. It might remain Friendly to you, depending on how you have treated it."
+        },
+        {
+          "bi_rank": 3,
+          "ce_rank": 4,
+          "cosine": 0.6111,
+          "ce_score": -1.725,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "When the spell ends, the target floats gently to the ground if it is still aloft.\n\n#### Light\n\n_Evocation Cantrip (Bard, Cleric, Sorcerer, Wizard)_\n\n**Casting Time:** Action\n**Range:** Touch\n**Components:** V, M (a firefly or phosphorescent moss)\n**Duration:** 1 hour"
+        },
+        {
+          "bi_rank": 4,
+          "ce_rank": 3,
+          "cosine": 0.6162,
+          "ce_score": -0.01,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "Thereafter, you can take a Magic action to speak the object's name and crush the sapphire. The object instantly appears in your hand regardless of physical or planar distances, and the spell ends.\n\nIf another creature is holding or carrying the object, crushing the sapphire doesn't transport it, but instead you learn who that creature is and where that creature is currently located.\n\n#### Irresistible Dance\n\n_Level 6 Enchantment (Bard, Wizard)_"
+        },
+        {
+          "bi_rank": 5,
+          "ce_rank": 8,
+          "cosine": 0.618,
+          "ce_score": -6.318,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "If any of this spell's area overlaps with an area of Bright Light or Dim Light created by a spell of level 2 or lower, that other spell is dispelled.\n\n#### Darkvision\n\n_Level 2 Transmutation (Druid, Ranger, Sorcerer, Wizard)_\n\n**Casting Time:** Action\n**Range:** Touch\n**Components:** V, S, M (a dried carrot)\n**Duration:** 8 hours\n\nFor the duration, a willing creature you touch has Darkvision with a range of 150 feet.\n\n#### Daylight"
+        },
+        {
+          "bi_rank": 6,
+          "ce_rank": 5,
+          "cosine": 0.6296,
+          "ce_score": -2.241,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "_Illusion Cantrip (Bard, Sorcerer, Wizard)_\n\n**Casting Time:** Action\n**Range:** 120 feet\n**Components:** V, S, M (a bit of phosphorus)\n**Duration:** Concentration, up to 1 minute\nYou create up to four torch-size lights within range, making them appear as torches, lanterns, or glowing orbs that hover for the duration. Alternatively, you combine the four lights into one glowing Medium form that is vaguely humanlike. Whichever form you choose, each light sheds Dim Light in a 10-foot radius."
+        },
+        {
+          "bi_rank": 7,
+          "ce_rank": 10,
+          "cosine": 0.633,
+          "ce_score": -9.771,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "**Searing Light.** The target makes a Dexterity saving throw, taking 6d12 Radiant damage on a failed save or half as much damage on a successful one.\n\nUntil the spell ends, Bright Light fills the Cylinder, and when you move on your turn, you can also move the Cylinder up to 30 feet."
+        },
+        {
+          "bi_rank": 8,
+          "ce_rank": 2,
+          "cosine": 0.6341,
+          "ce_score": 0.219,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "The target can't talk or manipulate objects, and any objects it was carrying or holding can't be dropped, used, or otherwise interacted with. Finally, the target can't attack or cast spells.\n\n_Using a Higher-Level Spell Slot._ You can target one additional creature for each spell slot level above 3.\n\n#### Gate\n\n_Level 9 Conjuration (Cleric, Sorcerer, Warlock, Wizard)_"
+        },
+        {
+          "bi_rank": 9,
+          "ce_rank": 7,
+          "cosine": 0.6431,
+          "ce_score": -2.916,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "Choose one creature or nonmagical object that you can see within range. The creature shape-shifts into a different creature or a nonmagical object, or the object shape-shifts into a creature (the object must be neither worn nor carried). The transformation lasts for the duration or until the target dies or is destroyed, but if you maintain Concentration on this spell for the full duration, the spell lasts until dispelled."
+        },
+        {
+          "bi_rank": 10,
+          "ce_rank": 6,
+          "cosine": 0.6481,
+          "ce_score": -2.545,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "_Object._ You can try to move a Huge or smaller object. If the object isn't being worn or carried, you automatically move it up to 30 feet in any direction within the spell's range. If the object is worn or carried by a creature, that creature must succeed on a Strength saving throw, or you pull the object away and move it up to 30 feet in any direction within the spell's range."
+        }
+      ],
+      "pipeline_1_baseline": {
+        "context_bi_ranks": [
+          1,
+          2,
+          3
+        ],
+        "answer": "No. The Light cantrip targets one Large or smaller object that isn't being worn or carried by someone else. An object another creature is carrying doesn't qualify as a target."
+      },
+      "pipeline_2_reranked": {
+        "context_bi_ranks": [
+          1,
+          8,
+          4
+        ],
+        "answer": "The provided context doesn't say whether Light can be cast on an object another creature is carrying. It does say the spell targets \"one Large or smaller object that isn't being worn or carried by someone else.\" That wording suggests it can't be cast on such an object."
+      },
+      "latency_ms": {
+        "retrieve": 17.7,
+        "rerank": 26.7,
+        "llm_p1": 6711.8,
+        "llm_p2": 7398.5
+      },
+      "rank_shift": {
+        "first_relevant_baseline_rank": 1,
+        "first_relevant_reranked_rank": 1,
+        "relevant_in_top10": true,
+        "baseline_has_relevant_in_top3": true,
+        "reranked_has_relevant_in_top3": true,
+        "promoted_into_top3": false,
+        "demoted_out_of_top3": false
+      }
+    },
+    {
+      "qid": "q23",
+      "question": "Can the Dispel Magic spell end the Wall of Force spell?",
+      "gold_answer": "No, Wall of Force can't be dispelled by Dispel Magic",
+      "pipeline_1_correct": false,
+      "pipeline_2_correct": false,
+      "top10": [
+        {
+          "bi_rank": 1,
+          "ce_rank": 1,
+          "cosine": 0.4077,
+          "ce_score": 5.431,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "A _Dispel Magic_ spell can end the spell only if it is cast with a level 9 spell slot, targeting either the prison or the component used to create it.\n\n#### Incendiary Cloud\n\n_Level 8 Conjuration (Druid, Sorcerer, Wizard)_\n\n**Casting Time:** Action\n**Range:** 150 feet\n**Components:** V, S\n**Duration:** Concentration, up to 1 minute"
+        },
+        {
+          "bi_rank": 2,
+          "ce_rank": 2,
+          "cosine": 0.4531,
+          "ce_score": 4.416,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "Nothing can physically pass through the wall. It is immune to all damage and can't be dispelled by _Dispel Magic_. A _Disintegrate_ spell destroys the wall instantly, however. The wall also extends into the Ethereal Plane and blocks ethereal travel through the wall.\n\n#### Wall of Ice\n\n_Level 6 Evocation (Wizard)_\n\n**Casting Time:** Action\n**Range:** 120 feet\n**Components:** V, S, M (a piece of quartz)\n**Duration:** Concentration, up to 10 minutes"
+        },
+        {
+          "bi_rank": 3,
+          "ce_rank": 3,
+          "cosine": 0.495,
+          "ce_score": 3.446,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "The wall is an object made of stone that can be damaged and thus breached. Each panel has AC 15 and 30 Hit Points per inch of thickness, and it has Immunity to Poison and Psychic damage. Reducing a panel to 0 Hit Points destroys it and might cause connected panels to collapse at the GM's discretion.\n\nIf you maintain your Concentration on this spell for its full duration, the wall becomes permanent and can't be dispelled. Otherwise, the wall disappears when the spell ends.\n\n#### Wall of Thorns"
+        },
+        {
+          "bi_rank": 4,
+          "ce_rank": 10,
+          "cosine": 0.5029,
+          "ce_score": -2.894,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "_Dispel Magic_ has no effect on the aura, and the auras created by different _Antimagic Field_ spells don't nullify each other.\n\n#### Antipathy/Sympathy\n\n_Level 8 Enchantment (Bard, Druid, Wizard)_\n\n**Casting Time:** 1 hour\n**Range:** 60 feet\n**Components:** V, S, M (a mix of vinegar and honey)\n**Duration:** 10 days"
+        },
+        {
+          "bi_rank": 5,
+          "ce_rank": 4,
+          "cosine": 0.5189,
+          "ce_score": 2.484,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "The spell creates the effects below within the warded area. _Dispel Magic_ has no effect on _Guards and Wards_ itself, but each of the following effects can be dispelled. If all four are dispelled, _Guards and Wards_ ends. If you cast the spell every day for 365 days on the same area, the spell thereafter lasts until all its effects are dispelled."
+        },
+        {
+          "bi_rank": 6,
+          "ce_rank": 5,
+          "cosine": 0.5258,
+          "ce_score": 2.28,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "This spell automatically disintegrates a Large or smaller nonmagical object or a creation of magical force. If such a target is Huge or larger, this spell disintegrates a 10-foot-Cube portion of it.\n\n_Using a Higher-Level Spell Slot._ The damage increases by 3d6 for each spell slot level above 6.\n\n#### Dispel Evil and Good\n\n_Level 5 Abjuration (Cleric, Paladin)_"
+        },
+        {
+          "bi_rank": 7,
+          "ce_rank": 6,
+          "cosine": 0.5489,
+          "ce_score": 1.271,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "The wall, which has AC 10, can be destroyed one layer at a time, in order from red to violet, by means specific to each layer. If a layer is destroyed, it is gone for the duration. _Antimagic Field_ has no effect on the wall, and _Dispel Magic_ can affect only the violet layer.\n\n**Prismatic Layers**"
+        },
+        {
+          "bi_rank": 8,
+          "ce_rank": 8,
+          "cosine": 0.5623,
+          "ce_score": -0.918,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "rounds is reduced by 1d10. When the wall reaches 0 feet in height, the spell ends."
+        },
+        {
+          "bi_rank": 9,
+          "ce_rank": 7,
+          "cosine": 0.5929,
+          "ce_score": -0.704,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "A creature inside the cage can't leave it by nonmagical means. If the creature tries to use teleportation or interplanar travel to leave, it must first make a Charisma saving throw. On a successful save, the creature can use that magic to exit the cage. On a failed save, the creature doesn't exit the cage and wastes the spell or effect. The cage also extends into the Ethereal Plane, blocking ethereal travel.\n\nThis spell can't be dispelled by _Dispel Magic_.\n\n#### Foresight"
+        },
+        {
+          "bi_rank": 10,
+          "ce_rank": 9,
+          "cosine": 0.5962,
+          "ce_score": -1.059,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "When the spell ends, you return to the plane you left in the spot that corresponds to your space in the Border Ethereal. If you appear in an occupied space, you are shunted to the nearest unoccupied space and take Force damage equal to twice the number of feet you are moved.\n\nThis spell ends instantly if you cast it while you are on the Ethereal Plane or a plane that doesn't border it, such as one of the Outer Planes."
+        }
+      ],
+      "pipeline_1_baseline": {
+        "context_bi_ranks": [
+          1,
+          2,
+          3
+        ],
+        "answer": "The context does not contain the answer."
+      },
+      "pipeline_2_reranked": {
+        "context_bi_ranks": [
+          1,
+          2,
+          3
+        ],
+        "answer": "The context does not contain the answer."
+      },
+      "latency_ms": {
+        "retrieve": 18.2,
+        "rerank": 25.0,
+        "llm_p1": 6006.4,
+        "llm_p2": 5000.6
+      },
+      "rank_shift": {
+        "first_relevant_baseline_rank": null,
+        "first_relevant_reranked_rank": null,
+        "relevant_in_top10": false,
+        "baseline_has_relevant_in_top3": false,
+        "reranked_has_relevant_in_top3": false,
+        "promoted_into_top3": false,
+        "demoted_out_of_top3": false
+      }
+    },
+    {
+      "qid": "q24",
+      "question": "Which creatures are unaffected by the Mirror Image spell?",
+      "gold_answer": "Creatures with the Blinded condition, Blindsight, or Truesight",
+      "pipeline_1_correct": false,
+      "pipeline_2_correct": true,
+      "top10": [
+        {
+          "bi_rank": 1,
+          "ce_rank": 8,
+          "cosine": 0.5764,
+          "ce_score": -5.128,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "Three illusory duplicates of yourself appear in your space. Until the spell ends, the duplicates move with you and mimic your actions, shifting position so it's impossible to track which image is real."
+        },
+        {
+          "bi_rank": 2,
+          "ce_rank": 3,
+          "cosine": 0.5821,
+          "ce_score": -0.968,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "Physical interaction with the image reveals it to be an illusion, for things can pass through it. A creature that takes a Study action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image, and its other sensory qualities become faint to the creature."
+        },
+        {
+          "bi_rank": 3,
+          "ce_rank": 6,
+          "cosine": 0.5862,
+          "ce_score": -1.865,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "Physical interaction with the image reveals it to be an illusion, since things can pass through it. A creature that takes a Study action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image.\n\n#### Simulacrum\n\n_Level 7 Illusion (Wizard)_"
+        },
+        {
+          "bi_rank": 4,
+          "ce_rank": 1,
+          "cosine": 0.601,
+          "ce_score": 3.494,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "You give an illusory appearance to each creature of your choice that you can see within range. An unwilling target can make a Charisma saving throw, and if it succeeds, it is unaffected by this spell."
+        },
+        {
+          "bi_rank": 5,
+          "ce_rank": 4,
+          "cosine": 0.6091,
+          "ce_score": -1.056,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "Physical interaction with the image reveals it to be illusory, since things can pass through it. A creature that takes the Study action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image, and any noise it makes sounds hollow to the creature.\n\n#### Protection from Energy"
+        },
+        {
+          "bi_rank": 6,
+          "ce_rank": 5,
+          "cosine": 0.6108,
+          "ce_score": -1.637,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "Physical interaction with the image reveals it to be illusory, since things can pass through it. A creature that takes the Study action to examine the image can determine that it is an illusion with a successful Intelligence (Investigation) check against your spell save DC. If a creature discerns the illusion for what it is, the creature can see through the image, and any noise it makes sounds hollow to the creature.\n\n#### Project Image\n\n_Level 7 Illusion (Bard, Wizard)_"
+        },
+        {
+          "bi_rank": 7,
+          "ce_rank": 2,
+          "cosine": 0.6448,
+          "ce_score": 2.089,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "Creatures with Truesight can see through the illusion to the terrain's true form; however, all other elements of the illusion remain, so while the creature is aware of the illusion's presence, the creature can still physically interact with the illusion.\n\n#### Mirror Image\n\n_Level 2 Illusion (Bard, Sorcerer, Warlock, Wizard)_\n\n**Casting Time:** Action\n**Range:** Self\n**Components:** V, S\n**Duration:** 1 minute"
+        },
+        {
+          "bi_rank": 8,
+          "ce_rank": 10,
+          "cosine": 0.6502,
+          "ce_score": -9.406,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "If the original creature dies after the clone finishes forming, the creature's soul transfers to the clone if the soul is free and willing to return. The clone is physically identical to the original and has the same personality, memories, and abilities, but none of the original's equipment. The creature's original remains, if any, become inert and can't be revived, since the creature's soul is elsewhere.\n\n#### Cloudkill\n\n_Level 5 Conjuration (Sorcerer, Wizard)_"
+        },
+        {
+          "bi_rank": 9,
+          "ce_rank": 9,
+          "cosine": 0.6503,
+          "ce_score": -7.446,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "A creature that sees the sensor (such as a creature benefiting from _See Invisibility_ or Truesight) sees a luminous orb about the size of your fist.\n\n#### Clone\n\n_Level 8 Necromancy (Wizard)_"
+        },
+        {
+          "bi_rank": 10,
+          "ce_rank": 7,
+          "cosine": 0.653,
+          "ce_score": -4.513,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "**Resistance.** You grant up to ten creatures that you can see Resistance to one damage type that you choose. This Resistance is permanent.\n\n**Spell Immunity.** You grant up to ten creatures you can see immunity to a single spell or other magical effect for 8 hours."
+        }
+      ],
+      "pipeline_1_baseline": {
+        "context_bi_ranks": [
+          1,
+          2,
+          3
+        ],
+        "answer": "The context does not contain the answer."
+      },
+      "pipeline_2_reranked": {
+        "context_bi_ranks": [
+          4,
+          7,
+          2
+        ],
+        "answer": "The context does not contain the answer.\n\nThe text under Mirror Image describes how a creature can discern the illusion (a Study action and a successful Intelligence (Investigation) check against your spell save DC), but it does not say which creatures are unaffected by the spell. The passage about an unwilling target making a Charisma saving throw appears before the Mirror Image heading and is not part of that spell's text, and the Truesight passage likewise belongs to a different spell."
+      },
+      "latency_ms": {
+        "retrieve": 7.8,
+        "rerank": 20.2,
+        "llm_p1": 6674.7,
+        "llm_p2": 4002.2
+      },
+      "rank_shift": {
+        "first_relevant_baseline_rank": 7,
+        "first_relevant_reranked_rank": 2,
+        "relevant_in_top10": true,
+        "baseline_has_relevant_in_top3": false,
+        "reranked_has_relevant_in_top3": true,
+        "promoted_into_top3": true,
+        "demoted_out_of_top3": false
+      }
+    },
+    {
+      "qid": "q25",
+      "question": "What happens to the Mage Armor spell if the target puts on armor?",
+      "gold_answer": "The spell ends early",
+      "pipeline_1_correct": true,
+      "pipeline_2_correct": true,
+      "top10": [
+        {
+          "bi_rank": 1,
+          "ce_rank": 8,
+          "cosine": 0.4478,
+          "ce_score": -5.259,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "## Casting Spells\n\nEach spell description has a series of entries that provide the details needed to cast the spell. The following sections explain each of those entries, which follow a spell's name.\n\n> **Casting in Armor**\n>\n> You must have training with any armor you are wearing to cast spells while wearing it. You are otherwise too hampered by the armor for spellcasting.\n\n### Spell Level"
+        },
+        {
+          "bi_rank": 2,
+          "ce_rank": 1,
+          "cosine": 0.4657,
+          "ce_score": 5.104,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "You touch a willing creature who isn't wearing armor. Until the spell ends, the target's base AC becomes 13 plus its Dexterity modifier. The spell ends early if the target dons armor.\n\n#### Mage Hand\n\n_Conjuration Cantrip (Bard, Sorcerer, Warlock, Wizard)_\n\n**Casting Time:** Action\n**Range:** 30 feet\n**Components:** V, S\n**Duration:** 1 minute"
+        },
+        {
+          "bi_rank": 3,
+          "ce_rank": 5,
+          "cosine": 0.5397,
+          "ce_score": -2.849,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "The target gains a number of Temporary Hit Points equal to the Hit Points of the new form. These Temporary Hit Points vanish if any remain when the spell ends.\n\nThe target is limited in the actions it can perform by the anatomy of its new form, and it can't speak or cast spells.\n\nThe target's gear melds into the new form. The creature can't use or otherwise benefit from any of that equipment."
+        },
+        {
+          "bi_rank": 4,
+          "ce_rank": 3,
+          "cosine": 0.559,
+          "ce_score": 0.299,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "**Casting Time:** Action\n**Range:** Touch\n**Components:** V, S, M (a pinch of dirt)\n**Duration:** 1 hour\n\nYou touch a creature. The target's Speed increases by 10 feet until the spell ends.\n\n_Using a Higher-Level Spell Slot._ You can target one additional creature for each spell slot level above 1.\n\n#### Mage Armor\n\n_Level 1 Abjuration (Sorcerer, Wizard)_\n\n**Casting Time:** Action\n**Range:** Touch\n**Components:** V, S, M (a piece of cured leather)\n**Duration:** 8 hours"
+        },
+        {
+          "bi_rank": 5,
+          "ce_rank": 10,
+          "cosine": 0.5761,
+          "ce_score": -7.344,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "A nonmagical object that isn't being worn or carried also takes the damage if it's in the spell's area.\n\n_Using a Higher-Level Spell Slot._ The damage increases by 1d8 for each spell slot level above 2.\n\n#### Shield\n\n_Level 1 Abjuration (Sorcerer, Wizard)_\n\n**Casting Time:** Reaction, which you take when you are hit by an attack roll or targeted by the _Magic Missile_ spell\n**Range:** Self\n**Components:** V, S\n**Duration:** 1 round"
+        },
+        {
+          "bi_rank": 6,
+          "ce_rank": 9,
+          "cosine": 0.5768,
+          "ce_score": -5.784,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "You ward a creature within range. Until the spell ends, any creature who targets the warded creature with an attack roll or a damaging spell must succeed on a Wisdom saving throw or either choose a new target or lose the attack or spell. This spell doesn't protect the warded creature from areas of effect. The spell ends if the warded creature makes an attack roll, casts a spell, or deals damage.\n\n#### Scorching Ray\n\n_Level 2 Evocation (Sorcerer, Wizard)_"
+        },
+        {
+          "bi_rank": 7,
+          "ce_rank": 2,
+          "cosine": 0.5838,
+          "ce_score": 1.202,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "Choose a willing creature that you can see within range. Until the spell ends, the target's Speed is doubled, it gains a +2 bonus to Armor Class, it has Advantage on Dexterity saving throws, and it gains an additional action on each of its turns. That action can be used to take only the Attack (one attack only), Dash, Disengage, Hide, or Utilize action.\n\nWhen the spell ends, the target is Incapacitated and has a Speed of 0 until the end of its next turn, as a wave of lethargy washes over it."
+        },
+        {
+          "bi_rank": 8,
+          "ce_rank": 6,
+          "cosine": 0.598,
+          "ce_score": -3.423,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "Until the spell ends, the target is also affected by one of the following effects of your choice:\n\n**Burial.** The target is entombed beneath the earth in a hollow globe of magical force that is just large enough to contain the target. Nothing can pass into or out of the globe.\n\n**Chaining.** Chains firmly rooted in the ground hold the target in place. The target has the Restrained condition and can't be moved by any means."
+        },
+        {
+          "bi_rank": 9,
+          "ce_rank": 4,
+          "cosine": 0.602,
+          "ce_score": -1.989,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "A creature targeted by this spell makes a Dexterity saving throw. On a failed save, the target takes 10d6 + 40 Force damage. If this damage reduces it to 0 Hit Points, it and everything nonmagical it is wearing and carrying are disintegrated into gray dust. The target can be revived only by a _True Resurrection_ or a _Wish_ spell."
+        },
+        {
+          "bi_rank": 10,
+          "ce_rank": 7,
+          "cosine": 0.6083,
+          "ce_score": -4.078,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "As you hit the target, it takes an extra 1d6 Fire damage from the attack. At the start of each of its turns until the spell ends, the target takes 1d6 Fire damage and then makes a Constitution saving throw. On a failed save, the spell continues. On a successful save, the spell ends.\n\n_Using a Higher-Level Spell Slot._ All the damage increases by 1d6 for each spell slot level above 1.\n\n#### Secret Chest\n\n_Level 4 Conjuration (Wizard)_"
+        }
+      ],
+      "pipeline_1_baseline": {
+        "context_bi_ranks": [
+          1,
+          2,
+          3
+        ],
+        "answer": "The spell ends early. The context says, \"The spell ends early if the target dons armor.\"\n\nThe passage describing this effect (a touched, unarmored creature's base AC becoming 13 plus its Dexterity modifier) isn't labeled with a name in the context. I'm assuming it is the Mage Armor spell you asked about."
+      },
+      "pipeline_2_reranked": {
+        "context_bi_ranks": [
+          2,
+          7,
+          4
+        ],
+        "answer": "The spell ends early if the target dons armor."
+      },
+      "latency_ms": {
+        "retrieve": 8.1,
+        "rerank": 26.8,
+        "llm_p1": 6865.8,
+        "llm_p2": 4802.2
+      },
+      "rank_shift": {
+        "first_relevant_baseline_rank": 2,
+        "first_relevant_reranked_rank": 1,
+        "relevant_in_top10": true,
+        "baseline_has_relevant_in_top3": true,
+        "reranked_has_relevant_in_top3": true,
+        "promoted_into_top3": false,
+        "demoted_out_of_top3": false
+      }
+    },
+    {
+      "qid": "q26",
+      "question": "Which creatures automatically succeed on the saving throw against the Sleep spell?",
+      "gold_answer": "Creatures that don't sleep, such as elves, or that have Immunity to the Exhaustion condition",
+      "pipeline_1_correct": true,
+      "pipeline_2_correct": true,
+      "top10": [
+        {
+          "bi_rank": 1,
+          "ce_rank": 1,
+          "cosine": 0.3941,
+          "ce_score": 8.257,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "Creatures that don't sleep, such as elves, or that have Immunity to the Exhaustion condition automatically succeed on saves against this spell.\n\n#### Sleet Storm\n\n_Level 3 Conjuration (Druid, Sorcerer, Wizard)_\n\n**Casting Time:** Action\n**Range:** 150 feet\n**Components:** V, S, M (a miniature umbrella)\n**Duration:** Concentration, up to 1 minute"
+        },
+        {
+          "bi_rank": 2,
+          "ce_rank": 9,
+          "cosine": 0.5002,
+          "ce_score": 0.605,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "and when it enters the spell's area or ends its turn there. A creature makes this save only once per turn."
+        },
+        {
+          "bi_rank": 3,
+          "ce_rank": 8,
+          "cosine": 0.5112,
+          "ce_score": 1.47,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "If the target is awake when you cast the spell, the messenger knows it and can either end the trance (and the spell) or wait for the target to sleep, at which point the messenger enters its dreams.\n\nYou can make the messenger terrifying to the target. If you do so, the messenger can deliver a message of no more than ten words, and then the target makes a Wisdom saving throw. On a failed save, the target gains no benefit from its rest, and it takes 3d6 Psychic damage when it wakes up."
+        },
+        {
+          "bi_rank": 4,
+          "ce_rank": 10,
+          "cosine": 0.5162,
+          "ce_score": -5.515,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "**Slumber.** The target has the Unconscious condition and can't be awoken.\n\n_Ending the Spell._ When you cast the spell, specify a trigger that will end it. The trigger can be as simple or as elaborate as you choose, but the GM must agree that it has a high likelihood of happening within the next decade. The trigger must be an observable action, such as someone making a particular offering at the temple of your god, saving your true love, or defeating a specific monster."
+        },
+        {
+          "bi_rank": 5,
+          "ce_rank": 7,
+          "cosine": 0.5197,
+          "ce_score": 1.911,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "One creature of your choice that you can see within range makes a Wisdom saving throw. On a failed save, it has the Prone and Incapacitated conditions for the duration. During that time, it laughs uncontrollably if it's capable of laughter, and it can't end the Prone condition on itself."
+        },
+        {
+          "bi_rank": 6,
+          "ce_rank": 3,
+          "cosine": 0.5242,
+          "ce_score": 4.984,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "If the spell normally has no effect on a target that succeeds on a saving throw, the invalid target appears to have succeeded on its saving throw, even though it didn't attempt one (giving no hint that the creature is an invalid target). Otherwise, you perceive that the spell did nothing to the target.\n\n## Saving Throws"
+        },
+        {
+          "bi_rank": 7,
+          "ce_rank": 2,
+          "cosine": 0.5392,
+          "ce_score": 5.551,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "Each creature of your choice in a 5-foot-radius Sphere centered on a point within range must succeed on a Wisdom saving throw or have the Incapacitated condition until the end of its next turn, at which point it must repeat the save. If the target fails the second save, the target has the Unconscious condition for the duration. The spell ends on a target if it takes damage or someone within 5 feet of it takes an action to shake it out of the spell's effect."
+        },
+        {
+          "bi_rank": 8,
+          "ce_rank": 4,
+          "cosine": 0.5421,
+          "ce_score": 4.574,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "Up to three creatures of your choice that you can see within range must each make a Charisma saving throw. Whenever a target that fails this save makes an attack roll or a saving throw before the spell ends, the target must subtract 1d4 from the attack roll or save.\n\n_Using a Higher-Level Spell Slot._ You can target one additional creature for each spell slot level above 1.\n\n#### Banishment\n\n_Level 4 Abjuration (Cleric, Paladin, Sorcerer, Warlock, Wizard)_"
+        },
+        {
+          "bi_rank": 9,
+          "ce_rank": 6,
+          "cosine": 0.5575,
+          "ce_score": 2.702,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "When you cast this spell, you can designate creatures to be unaffected by it. Any other creature's Speed is halved in the Emanation, and whenever the Emanation enters a creature's space and whenever a creature enters the Emanation or ends its turn there, the creature must make a Wisdom saving throw. On a failed save, the creature takes 3d8 Radiant damage (if you are good or neutral) or 3d8 Necrotic damage (if you are evil). On a successful save, the creature takes half as much damage. A"
+        },
+        {
+          "bi_rank": 10,
+          "ce_rank": 5,
+          "cosine": 0.5674,
+          "ce_score": 4.351,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "You create a magical zone that guards against deception in a 15-foot-radius Sphere centered on a point within range. Until the spell ends, a creature that enters the spell's area for the first time on a turn or starts its turn there makes a Charisma saving throw. On a failed save, a creature can't speak a deliberate lie while in the radius. You know whether a creature succeeds or fails on this save."
+        }
+      ],
+      "pipeline_1_baseline": {
+        "context_bi_ranks": [
+          1,
+          2,
+          3
+        ],
+        "answer": "Creatures that don't sleep, such as elves, and creatures with Immunity to the Exhaustion condition automatically succeed on saves against this spell.\n\nThe context doesn't name the spell in that sentence, only \"this spell\". I'm taking it to refer to Sleep, as your question does."
+      },
+      "pipeline_2_reranked": {
+        "context_bi_ranks": [
+          1,
+          7,
+          6
+        ],
+        "answer": "Creatures that don't sleep, such as elves, and creatures with Immunity to the Exhaustion condition automatically succeed on saves against the spell.\n\nThe context doesn't name the spell in that sentence, only \"this spell\". I'm taking it to mean Sleep, since it appears just before the Sleet Storm entry."
+      },
+      "latency_ms": {
+        "retrieve": 8.8,
+        "rerank": 22.7,
+        "llm_p1": 5048.8,
+        "llm_p2": 5120.5
+      },
+      "rank_shift": {
+        "first_relevant_baseline_rank": 1,
+        "first_relevant_reranked_rank": 1,
+        "relevant_in_top10": true,
+        "baseline_has_relevant_in_top3": true,
+        "reranked_has_relevant_in_top3": true,
+        "promoted_into_top3": false,
+        "demoted_out_of_top3": false
+      }
+    },
+    {
+      "qid": "q27",
+      "question": "Does the Shield spell protect you from the Magic Missile spell?",
+      "gold_answer": "Yes, you take no damage from Magic Missile",
+      "pipeline_1_correct": true,
+      "pipeline_2_correct": true,
+      "top10": [
+        {
+          "bi_rank": 1,
+          "ce_rank": 1,
+          "cosine": 0.3861,
+          "ce_score": 5.343,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "An imperceptible barrier of magical force protects you. Until the start of your next turn, you have a +5\nbonus to AC, including against the triggering attack, and you take no damage from _Magic Missile_.\n\n#### Shield of Faith\n\n_Level 1 Abjuration (Cleric, Paladin)_\n\n**Casting Time:** Bonus Action\n**Range:** 60 feet\n**Components:** V, S, M (a prayer scroll)\n**Duration:** Concentration, up to 10 minutes"
+        },
+        {
+          "bi_rank": 2,
+          "ce_rank": 2,
+          "cosine": 0.4264,
+          "ce_score": 3.295,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "A nonmagical object that isn't being worn or carried also takes the damage if it's in the spell's area.\n\n_Using a Higher-Level Spell Slot._ The damage increases by 1d8 for each spell slot level above 2.\n\n#### Shield\n\n_Level 1 Abjuration (Sorcerer, Wizard)_\n\n**Casting Time:** Reaction, which you take when you are hit by an attack roll or targeted by the _Magic Missile_ spell\n**Range:** Self\n**Components:** V, S\n**Duration:** 1 round"
+        },
+        {
+          "bi_rank": 3,
+          "ce_rank": 9,
+          "cosine": 0.6142,
+          "ce_score": -7.232,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "The protection grants several benefits. Creatures of those types have Disadvantage on attack rolls against the target. The target also can't be possessed by or gain the Charmed or Frightened conditions from them. If the target is already possessed, Charmed, or Frightened by such a creature, the target has Advantage on any new saving throw against the relevant effect.\n\n#### Protection from Poison\n\n_Level 2 Abjuration (Cleric, Druid, Paladin, Ranger)_"
+        },
+        {
+          "bi_rank": 4,
+          "ce_rank": 7,
+          "cosine": 0.6377,
+          "ce_score": -6.214,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "In addition, whenever a creature within 5 feet of you hits you with a melee attack roll, the shield erupts with flame. The attacker takes 2d8 Fire damage from a warm shield or 2d8 Cold damage from a chill shield.\n\n#### Fire Storm\n\n_Level 7 Evocation (Cleric, Druid, Sorcerer)_\n\n**Casting Time:** Action\n**Range:** 150 feet\n**Components:** V, S\n**Duration:** Instantaneous"
+        },
+        {
+          "bi_rank": 5,
+          "ce_rank": 6,
+          "cosine": 0.65,
+          "ce_score": -6.019,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "An immobile, shimmering barrier appears in a 10-foot Emanation around you and remains for the duration.\n\nAny spell of level 5 or lower cast from outside the barrier can't affect anything within it. Such a spell can target creatures and objects within the barrier, but the spell has no effect on them. Similarly, the area within the barrier is excluded from areas of effect created by such spells."
+        },
+        {
+          "bi_rank": 6,
+          "ce_rank": 10,
+          "cosine": 0.6538,
+          "ce_score": -8.193,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "Nothing—not physical objects, energy, or other spell effects—can pass through the barrier, in or out, though a creature in the sphere can breathe there. The sphere is immune to all damage, and a creature or object inside can't be damaged by attacks or effects originating from outside, nor can a creature inside the sphere damage anything outside it."
+        },
+        {
+          "bi_rank": 7,
+          "ce_rank": 5,
+          "cosine": 0.692,
+          "ce_score": -5.112,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "**Resistance.** You grant up to ten creatures that you can see Resistance to one damage type that you choose. This Resistance is permanent.\n\n**Spell Immunity.** You grant up to ten creatures you can see immunity to a single spell or other magical effect for 8 hours."
+        },
+        {
+          "bi_rank": 8,
+          "ce_rank": 4,
+          "cosine": 0.6975,
+          "ce_score": -4.12,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "The spell creates the effects below within the warded area. _Dispel Magic_ has no effect on _Guards and Wards_ itself, but each of the following effects can be dispelled. If all four are dispelled, _Guards and Wards_ ends. If you cast the spell every day for 365 days on the same area, the spell thereafter lasts until all its effects are dispelled."
+        },
+        {
+          "bi_rank": 9,
+          "ce_rank": 8,
+          "cosine": 0.6978,
+          "ce_score": -6.812,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "You touch another creature that is willing and create a mystic connection between you and the target until the spell ends. While the target is within 60 feet of you, it gains a +1 bonus to AC and saving throws, and it has Resistance to all damage. Also, each time it takes damage, you take the same amount of damage."
+        },
+        {
+          "bi_rank": 10,
+          "ce_rank": 3,
+          "cosine": 0.7005,
+          "ce_score": -3.661,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "You ward a creature within range. Until the spell ends, any creature who targets the warded creature with an attack roll or a damaging spell must succeed on a Wisdom saving throw or either choose a new target or lose the attack or spell. This spell doesn't protect the warded creature from areas of effect. The spell ends if the warded creature makes an attack roll, casts a spell, or deals damage.\n\n#### Scorching Ray\n\n_Level 2 Evocation (Sorcerer, Wizard)_"
+        }
+      ],
+      "pipeline_1_baseline": {
+        "context_bi_ranks": [
+          1,
+          2,
+          3
+        ],
+        "answer": "Yes. According to the Context, the Shield spell grants you a +5 bonus to AC until the start of your next turn, and you take no damage from *Magic Missile*. It can also be cast as a Reaction when you are targeted by the *Magic Missile* spell."
+      },
+      "pipeline_2_reranked": {
+        "context_bi_ranks": [
+          1,
+          2,
+          10
+        ],
+        "answer": "Yes. According to the context, the Shield spell can be cast as a Reaction when you are targeted by the *Magic Missile* spell, and its effect states that until the start of your next turn you \"take no damage from *Magic Missile*.\""
+      },
+      "latency_ms": {
+        "retrieve": 6.9,
+        "rerank": 24.0,
+        "llm_p1": 4277.6,
+        "llm_p2": 9514.5
+      },
+      "rank_shift": {
+        "first_relevant_baseline_rank": null,
+        "first_relevant_reranked_rank": null,
+        "relevant_in_top10": false,
+        "baseline_has_relevant_in_top3": false,
+        "reranked_has_relevant_in_top3": false,
+        "promoted_into_top3": false,
+        "demoted_out_of_top3": false
+      }
+    },
+    {
+      "qid": "q28",
+      "question": "When does an object hit by Fire Bolt not start burning?",
+      "gold_answer": "When it is being worn or carried",
+      "pipeline_1_correct": false,
+      "pipeline_2_correct": true,
+      "top10": [
+        {
+          "bi_rank": 1,
+          "ce_rank": 2,
+          "cosine": 0.4263,
+          "ce_score": 2.988,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "Flammable objects in the area that aren't being worn or carried start burning.\n\n_Using a Higher-Level Spell Slot._ The damage increases by 1d6 for each spell slot level above 3.\n\n#### Fire Bolt\n\n_Evocation Cantrip (Sorcerer, Wizard)_\n\n**Casting Time:** Action\n**Range:** 120 feet\n**Components:** V, S\n**Duration:** Instantaneous"
+        },
+        {
+          "bi_rank": 2,
+          "ce_rank": 10,
+          "cosine": 0.4741,
+          "ce_score": -8.298,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "You create a 5-foot-diameter sphere of fire in an unoccupied space on the ground within range. It lasts for the duration. Any creature that ends its turn within 5 feet of the sphere makes a Dexterity saving throw, taking 2d6 Fire damage on a failed save or half as much damage on a successful one."
+        },
+        {
+          "bi_rank": 3,
+          "ce_rank": 4,
+          "cosine": 0.4818,
+          "ce_score": 0.661,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "A thin sheet of flames shoots forth from you. Each creature in a 15-foot Cone makes a Dexterity saving throw, taking 3d6 Fire damage on a failed save or half as much damage on a successful one.\n\nFlammable objects in the Cone that aren't being worn or carried start burning.\n\n_Using a Higher-Level Spell Slot._ The damage increases by 1d6 for each spell slot level above 1.\n\n#### Call Lightning\n\n_Level 3 Conjuration (Druid)_"
+        },
+        {
+          "bi_rank": 4,
+          "ce_rank": 5,
+          "cosine": 0.5023,
+          "ce_score": -1.031,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "A storm of fire appears within range. The area of the storm consists of up to ten 10-foot Cubes, which you arrange as you like. Each Cube must be contiguous with at least one other Cube. Each creature in the area makes a Dexterity saving throw, taking 7d10 Fire damage on a failed save or half as much damage on a successful one.\n\nFlammable objects in the area that aren't being worn or carried start burning.\n\n#### Flame Blade\n\n_Level 2 Evocation (Druid, Sorcerer)_"
+        },
+        {
+          "bi_rank": 5,
+          "ce_rank": 8,
+          "cosine": 0.5072,
+          "ce_score": -7.827,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "Blazing orbs of fire plummet to the ground at four different points you can see within range. Each creature in a 40-foot-radius Sphere centered on each of those points makes a Dexterity saving throw. A creature takes 20d6 Fire damage and 20d6 Bludgeoning damage on a failed save or half as much damage on a successful one. A creature in the area of more than one fiery Sphere is affected only once."
+        },
+        {
+          "bi_rank": 6,
+          "ce_rank": 1,
+          "cosine": 0.5117,
+          "ce_score": 5.013,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "You hurl a mote of fire at a creature or an object within range. Make a ranged spell attack against the target. On a hit, the target takes 1d10 Fire damage. A flammable object hit by this spell starts burning if it isn't being worn or carried.\n\n_Cantrip Upgrade._ The damage increases by 1d10 when you reach levels 5 (2d10), 11 (3d10), and 17 (4d10).\n\n#### Fire Shield\n\n_Level 4 Evocation (Druid, Sorcerer, Wizard)_"
+        },
+        {
+          "bi_rank": 7,
+          "ce_rank": 3,
+          "cosine": 0.5274,
+          "ce_score": 1.46,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": true,
+          "text": "A nonmagical object that isn't being worn or carried also takes the damage if it's in the spell's area, and the object starts burning if it's flammable.\n\n#### Mind Blank\n\n_Level 8 Abjuration (Bard, Wizard)_\n\n**Casting Time:** Action\n**Range:** Touch\n**Components:** V, S\n**Duration:** 24 hours"
+        },
+        {
+          "bi_rank": 8,
+          "ce_rank": 7,
+          "cosine": 0.5277,
+          "ce_score": -3.356,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "**Duration:** Concentration, up to 1 minute\nChoose a manufactured metal object, such as a metal weapon or a suit of Heavy or Medium metal armor, that you can see within range. You cause the object to glow red-hot. Any creature in physical contact with the object takes 2d8 Fire damage when you cast the spell. Until the spell ends, you can take a Bonus Action on each of your later turns to deal this damage again if the object is within range."
+        },
+        {
+          "bi_rank": 9,
+          "ce_rank": 9,
+          "cosine": 0.5378,
+          "ce_score": -7.997,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "If the spell is still in effect when the target is subjected to an effect that would kill it instantly without dealing damage, that effect is negated against the target, and the spell ends.\n\n#### Delayed Blast Fireball\n\n_Level 7 Evocation (Sorcerer, Wizard)_\n\n**Casting Time:** Action\n**Range:** 150 feet\n**Components:** V, S, M (a ball of bat guano and sulfur)\n**Duration:** Concentration, up to 1 minute"
+        },
+        {
+          "bi_rank": 10,
+          "ce_rank": 6,
+          "cosine": 0.5396,
+          "ce_score": -1.849,
+          "section": "Spells Overview",
+          "source": "spells.md",
+          "relevant": false,
+          "text": "A flickering flame appears in your hand and remains there for the duration. While there, the flame emits no heat and ignites nothing, and it sheds Bright Light in a 20-foot radius and Dim Light for an additional 20 feet. The spell ends if you cast it again.\n\nUntil the spell ends, you can take a Magic action to hurl fire at a creature or an object within 60 feet of you. Make a ranged spell attack. On a hit, the target takes 1d8 Fire damage."
+        }
+      ],
+      "pipeline_1_baseline": {
+        "context_bi_ranks": [
+          1,
+          2,
+          3
+        ],
+        "answer": "The context does not contain the answer."
+      },
+      "pipeline_2_reranked": {
+        "context_bi_ranks": [
+          6,
+          1,
+          7
+        ],
+        "answer": "An object hit by Fire Bolt doesn't start burning if it is being worn or carried. (Per the text, a flammable object hit by the spell starts burning only \"if it isn't being worn or carried.\")"
+      },
+      "latency_ms": {
+        "retrieve": 12.4,
+        "rerank": 23.1,
+        "llm_p1": 3681.3,
+        "llm_p2": 7398.2
+      },
+      "rank_shift": {
+        "first_relevant_baseline_rank": 1,
+        "first_relevant_reranked_rank": 1,
+        "relevant_in_top10": true,
+        "baseline_has_relevant_in_top3": true,
+        "reranked_has_relevant_in_top3": true,
         "promoted_into_top3": false,
         "demoted_out_of_top3": false
       }

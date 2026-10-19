@@ -95,8 +95,45 @@
     "answer": "Bonus Action"
   },
   {
-    "id": 20,
-    "question": "How many Hit Points does the Cure Wounds spell restore?",
-    "answer": "2d8 plus your spellcasting ability modifier"
-  }
+  "id": 20,
+  "question": "What can a creature hit by Shocking Grasp not do until the start of its next turn?",
+  "answer": "It can't make Opportunity Attacks"
+},
+
+{
+  "id": 21,
+  "question": "Can the Light cantrip be cast on an object that another creature is carrying?",
+  "answer": "No, the object must not be worn or carried by someone else"
+},
+{
+  "id": 23,
+  "question": "Can the Dispel Magic spell end the Wall of Force spell?",
+  "answer": "No, Wall of Force can't be dispelled by Dispel Magic"
+},
+{
+  "id": 24,
+  "question": "Which creatures are unaffected by the Mirror Image spell?",
+  "answer": "Creatures with the Blinded condition, Blindsight, or Truesight"
+},
+{
+  "id": 25,
+  "question": "What happens to the Mage Armor spell if the target puts on armor?",
+  "answer": "The spell ends early"
+},
+{
+  "id": 26,
+  "question": "Which creatures automatically succeed on the saving throw against the Sleep spell?",
+  "answer": "Creatures that don't sleep, such as elves, or that have Immunity to the Exhaustion condition"
+},
+{
+  "id": 27,
+  "question": "Does the Shield spell protect you from the Magic Missile spell?",
+  "answer": "Yes, you take no damage from Magic Missile"
+},
+{
+  "id": 28,
+  "question": "When does an object hit by Fire Bolt not start burning?",
+  "answer": "When it is being worn or carried"
+}
+
 ]
