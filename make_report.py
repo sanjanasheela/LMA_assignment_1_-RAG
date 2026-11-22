@@ -82,6 +82,34 @@ avg_sub = np.mean([len(r["extra"].get("subqueries", [])) for r in agentic_ex])
 fu_rate = np.mean([bool(r["extra"].get("followups")) for r in agentic_ex])
 cb = J["v0_closed_book"]
 
+RM = json.load(open("review/retrieval_metrics.json")); RF, RP = RM["final"], RM["pool"]
+import re
+OPEN = {}
+for line in open("review/metrics_open.md"):
+    t = line.split()
+    if len(t) >= 12 and t[0] in ORDER:
+        OPEN[t[0]] = dict(n=t[1], correct=t[2], faith=t[3], rel=t[4], comp=t[5], prec=t[6], ent=t[7], abst_ok=t[8], abst_bad=t[9], calls=t[10], secs=t[11])
+# Qwen2.5-7B-Instruct (4-bit, T4 on Colab) strict-metric results, transcribed from the Colab run log (results files live on Colab)
+QW = {"v5_graph": (66.1, 37.5, 68.2, 69.0, 87.6), "v6_agentic": (65.0, 25.0, 59.1, 67.9, 91.4), "v2b_rerank8": (59.4, 33.3, 54.5, 63.1, 73.3),
+      "v4_hybrid": (56.7, 20.8, 54.5, 58.3, 77.1), "v1_baseline": (48.5, 12.5, 45.5, 50.0, 56.2), "v2_rerank": (40.9, 8.3, 36.4, 41.7, 56.2),
+      "v3_hier_rerank": (40.9, 8.3, 36.4, 41.7, 57.1), "v0_closed_book": (21.3, 0.0, 4.5, 25.0, 0.0)}
+QWO = {"v0_closed_book": (0.0, 0.0), "v1_baseline": (48.6, 100), "v2_rerank": (45.9, 100), "v2b_rerank8": (35.1, 100), "v3_hier_rerank": (43.2, 100),
+       "v4_hybrid": (43.2, 100), "v5_graph": (40.5, 50), "v6_agentic": (48.6, 100)}
+from scipy.stats import spearmanr
+_o = [v for v in ORDER]
+rho = spearmanr([ST[v]["acc"] for v in _o], [QW[v][0] for v in _o])[0]
+fm = lambda x: "--" if x is None else f"{x:.3f}"
+ret_rows = []
+for v in sorted(RF, key=lambda v: -RF[v]["ndcg@8"]):
+    r = RF[v]; d = "$^\\dagger$" if v == "v6_agentic" else ""
+    ret_rows.append(f"{SHORT[v]} & {r['k']:.1f} & {r['mrr']:.3f}{d} & {pct(r['hit@3'])} & {pct(r['recall@3'])} & {pct(r['ndcg@3'])}{d} & {pct(r['recall@8'])} & {pct(r['prec@8'])} & {pct(r['ndcg@8'])}{d} & {pct(r['full@8'])} \\\\")
+RETT = "\n".join(ret_rows)
+pool_rows = "\n".join(f"{SHORT[v]} & {RP[v]['pool']:.0f} & {pct(RP[v]['pool_recall'])} & {RP[v]['mrr_before']:.3f} & {RP[v]['mrr_after']:.3f} & {pct(RP[v]['ndcg_before'])} & {pct(RP[v]['ndcg_after'])} \\\\" for v in RP)
+open_order = ["v6_agentic", "v5_graph", "v4_hybrid", "v2b_rerank8", "v2_rerank", "v3_hier_rerank", "v1_baseline"]
+cl = lambda x: "--" if x == "-" else x.replace("%", "\\%")
+OPENT = "\n".join(f"{SHORT[v]} & {cl(OPEN[v]['faith'])} & {cl(OPEN[v]['comp'])} & {cl(OPEN[v]['prec'])} & {cl(OPEN[v]['ent'])} & {cl(OPEN[v]['abst_bad'])} & {cl(OPEN[v]['abst_ok'])} & {OPEN[v]['calls']} & {OPEN[v]['secs']} \\\\" for v in open_order)
+QWT = "\n".join(f"{SHORT[v]} & {pct(ST[v]['acc'])} & {QW[v][0]:.1f}\\% & {QW[v][2]:.1f}\\% & {QW[v][4]:.1f}\\% & {QWO[v][0]:.1f}\\% & {QWO[v][1]:.0f}\\% \\\\" for v in sorted(ORDER, key=lambda v: -QW[v][0]))
+
 TEX = r"""\documentclass[11pt,a4paper]{article}
 \usepackage[margin=2.3cm]{geometry}
 \usepackage[T1]{fontenc}
@@ -97,12 +125,13 @@ TEX = r"""\documentclass[11pt,a4paper]{article}
 \maketitle
 
 \section{Summary}
-We rebuilt the D\&D 5e SRD RAG pipeline for the full corpus (13 files, 5{,}200 chunks) and compared eight variants on 24 hard questions with a weak generator (Claude Haiku, called through isolated \texttt{claude -p}). To stop the model answering from memory of the published SRD, the index is built on a \emph{counterfactual} copy of the data in which __NCHG__ of __NFACTS__ gold facts were changed.
+We rebuilt the D\&D 5e SRD RAG pipeline for the full corpus (13 files, 5{,}200 chunks) and compared eight variants on 24 hard questions with a weak generator (Claude Haiku, called through isolated \texttt{claude -p}), with retrieval-only metrics (MRR, recall, nDCG), 41 open questions, and a replication with Qwen2.5-7B. To stop the model answering from memory of the published SRD, the index is built on a \emph{counterfactual} copy of the data in which __NCHG__ of __NFACTS__ gold facts were changed.
 \begin{itemize}
 \item \textbf{The original duplication bug was the largest problem.} Each chunk was stored about four times, so 73\% of top-10 slots were exact copies and the cross-encoder only re-ordered copies. After deduplication the top-10 contains distinct chunks only.
 \item \textbf{Ranking (semantic judge, fact accuracy):} agentic __AG__ $>$ graph __GR__ $>$ rerank-8 __R8__ $\approx$ hybrid __HY__ $>$ baseline __BA__ $\approx$ rerank-3 __RR__ $=$ hierarchical __HI__ $>$ closed-book __CB__.
 \item \textbf{Memory is real but removed by the design.} Closed-book Haiku gets __CBCHG__ of the changed facts but __CBUNC__ of the unchanged ones, so the unchanged facts alone would have hidden retrieval quality.
 \item \textbf{What did not help:} hierarchical routing (same top-3 as flat search on 20 of 24 questions and the same score on all 24), BM25 hybrid fusion (no gain over simply reranking 8 dense chunks), and cross-encoder reranking of only 3 chunks (no gain over baseline). Most of the early ``improvement'' of larger pipelines is the larger context window.
+\item \textbf{Verdict.} \textbf{Graph RAG is the best value:} the best retrieval quality of all variants (MRR __GMRR__, nDCG@8 __GNDCG__, recall@8 __GREC__), near-top answer accuracy, and only one LLM call. \textbf{Agentic RAG is the most accurate} on the Haiku run (__AG__) but costs three calls and about three times the latency, and on the weaker Qwen generator it ties graph (Section~8). Hierarchical routing gives no benefit at this scale; reranking improves ranking (MRR 0.76 $\to$ 0.92) but not answers unless the context is also enlarged.
 \item \textbf{What helped:} entity-linked graph expansion (+__DGR__ points over rerank-8) and agentic query decomposition with a sufficiency check (+__DAG__ points over graph, at 3 LLM calls per question).
 \end{itemize}
 
@@ -177,6 +206,64 @@ __BOOT__
 \bottomrule\end{tabular}
 \end{table}
 
+\section{Retrieval-only metrics}
+Answer accuracy mixes retrieval and generation. To rank the retrievers alone we need no LLM: a chunk is \emph{relevant} to a question if it contains at least one of its gold facts (string match in the counterfactual corpus), and its gain is the number of distinct gold facts it contains. The ranked list is the list of chunks that was sent to the generator, in the order it was sent. We report \textbf{MRR} (reciprocal rank of the first relevant chunk), \textbf{Hit@$k$}, \textbf{Recall@$k$} (share of gold facts covered by the top $k$), \textbf{Precision@$k$}, \textbf{nDCG@$k$} (graded gain, normalised by the best possible ranking over all 5{,}200 chunks) and \textbf{Full@$k$} (all gold facts covered). Retrieval does not depend on the generator, so these numbers hold for any model.
+
+\begin{table}[h]\centering\footnotesize\setlength{\tabcolsep}{3pt}
+\caption{Retrieval quality of the chunks sent to the LLM (24 questions), ranked by nDCG@8. Variants with 3 chunks send fewer than 8, so their @8 values equal their @3 values by construction. $^\dagger$Agentic chunks come from several sub-queries concatenated, so MRR and nDCG are not meaningful for its order; its recall is.}
+\resizebox{\linewidth}{!}{\begin{tabular}{@{}lrrrrrrrrr@{}}\toprule
+Variant & Chunks & MRR & Hit@3 & Rec@3 & nDCG@3 & Rec@8 & Prec@8 & nDCG@8 & Full@8\\\midrule
+__RETT__
+\bottomrule\end{tabular}}
+\end{table}
+
+\begin{table}[h]\centering\footnotesize
+\caption{Candidate pool seen by the cross-encoder, and ranking quality before and after re-ranking. ``Pool recall'' is the share of gold facts present anywhere in the pool.}
+\begin{tabular}{@{}lrrrrrr@{}}\toprule
+Variant & Pool size & Pool recall & MRR before & MRR after & nDCG@8 before & nDCG@8 after\\\midrule
+__POOLT__
+\bottomrule\end{tabular}
+\end{table}
+
+\begin{itemize}
+\item \textbf{Graph RAG retrieves best.} It has the highest MRR (tied with hybrid), the highest recall at 3 and at 8, the highest precision@3, the highest nDCG at 3 and 8 and full-coverage rate, and the largest candidate pool recall (94\%). Entity linking puts the sections the question names into the pool, which similarity search alone often misses.
+\item \textbf{The cross-encoder is what makes ranking good.} On the same pool, re-ranking raises MRR from about 0.76 to 0.92. Baseline top-3 (no reranker) has MRR 0.75; with the reranker it is 0.92.
+\item \textbf{Routing does not change retrieval.} Hierarchical and flat search have the same pool recall (74.5\%) and the same MRR after re-ranking; routing only changes where the search looks, not what the reranker keeps.
+\item \textbf{Three chunks are not enough.} Full@8 is 25\% for all top-3 variants: for three out of four questions the context lacks at least one gold fact. Eight chunks lift it to 58--71\%.
+\item \textbf{Agentic covers the most facts per question but ranks worse} (Recall@8 85\%, but MRR 0.84), because it concatenates sub-query results; the first chunk is the best chunk of the first sub-query, not of the whole question.
+\end{itemize}
+
+\section{Open-ended questions (no gold answers)}
+We also ran all variants on 41 open questions written by an LLM (characters, spells, classes, monsters, equipment) over the \emph{original} SRD. They have no gold answers, so the evaluation uses several different measures, each by an isolated Haiku judge unless marked automatic: \textbf{faithfulness} (share of claims in the answer supported by the retrieved context), \textbf{completeness} (0--2, scaled; ``the information is not available'' counts as 0), \textbf{context precision} (share of retrieved chunks relevant to the question), \textbf{entity hit} (automatic: share of entities named in the question whose section appears in the context), and \textbf{abstention} (automatic: the answer says the context lacks the information). Two questions cannot be answered from the SRD (Beholder, Mind Flayer); a good system abstains on them and not on the rest.
+
+\begin{table}[h]\centering\footnotesize
+\caption{Open-question metrics (41 questions, Haiku generator and judge). ``Abst.\ ans.'' is the abstention rate on answerable questions (lower is better); ``Abst.\ unans.'' is the rate on the two unanswerable ones (higher is better).}
+\begin{tabular}{@{}lrrrrrrrr@{}}\toprule
+Variant & Faithful & Complete & Ctx prec. & Entity hit & Abst.\ ans. & Abst.\ unans. & LLM calls & Sec/q\\\midrule
+__OPENT__
+\bottomrule\end{tabular}
+\end{table}
+
+\begin{itemize}
+\item \textbf{Faithfulness is high everywhere (93--98\%)}, so none of the RAG variants hallucinates much beyond its context. The top-3 variants are the most faithful, simply because they have less to misread.
+\item \textbf{Chunk-level retrieval over-abstains on broad questions.} Between 51\% and 73\% of answerable questions are answered with ``the context does not say'' because the answer is spread over a whole section (for example, a class's full feature list). Graph RAG abstains least (51\%) and has the best entity hit rate (77\%); hierarchical and rerank-3 abstain most (70--73\%). This is the main weakness left, and it points to section-level (parent-document) retrieval as the next step.
+\item \textbf{Precision and recall trade off.} Top-3 variants have the highest context precision (57--61\%) and lowest completeness (37--40\%); the 8-chunk variants and agentic invert this.
+\item \textbf{Closed-book looks best here, which is the contamination problem again.} On unmodified SRD text a model that has read the SRD answers 85\% correctly without retrieval, but it never abstains, so it also fabricates on the two unanswerable questions (0\% abstention versus 100\% for every RAG variant except graph in the Qwen run). A correctness-versus-reference score was computed but is reliable for only 13 of the 41 questions (entity linking found the reference sections only there), so we do not use it for ranking.
+\end{itemize}
+
+\section{Replication with a small open model (Qwen2.5-7B-Instruct)}
+To check that the ranking is not an artefact of one proprietary generator, we repeated both experiments with Qwen2.5-7B-Instruct (4-bit, one T4 GPU on Colab), keeping retrieval, prompts and questions identical. Qwen's own judging was unusable: used as the semantic judge it scored closed-book answers 96\% correct, so we report only the strict string metric and the automatic abstention measure. The Qwen runs were transcribed from the Colab log; the raw result files are kept on Colab.
+
+\begin{table}[h]\centering\footnotesize
+\caption{Haiku and Qwen compared (24 counterfactual questions, strict string-match fact accuracy; open questions, abstention). Spearman rank correlation between the Haiku and Qwen fact-accuracy rankings: __RHO__.}
+\resizebox{\linewidth}{!}{\begin{tabular}{@{}lrrrrrr@{}}\toprule
+Variant & Haiku fact acc. & Qwen fact acc. & Qwen changed facts & Qwen ctx.\ recall & Qwen abst.\ ans. & Qwen abst.\ unans.\\\midrule
+__QWT__
+\bottomrule\end{tabular}}
+\end{table}
+
+The ranking transfers: graph and agentic are the top two, the 8-chunk variants come next, baseline and the 3-chunk rerankers follow, and closed-book is last with almost none of the changed facts (4.5\%). On Qwen, graph and agentic are within 1.1 points of each other, so the extra two LLM calls of agentic RAG buy nothing measurable with the weaker model. Qwen abstains less than Haiku on answerable questions (35--49\% versus 51--73\%), and rerank-8 abstains least.
+
 \section{Discussion}
 \paragraph{The counterfactual design matters.} Closed-book Haiku scores __CBUNC__ on unchanged facts, close to what several RAG variants reach overall, and __CBCHG__ on changed facts. On unmodified data alone, V1--V3 would look only a few points better than no retrieval. The ranking among retrieval methods is cleanest in the ``changed'' column.
 
@@ -190,11 +277,31 @@ __BOOT__
 
 \paragraph{Agentic RAG is best but costs more.} Splitting the question into focused queries (on average __AVGSUB__ per question) and checking for missing facts gives the highest context recall (__AGCTX__) and the best answers, including the multi-topic questions. It needs three LLM calls and was the slowest variant (about __AGSEC__\,s per question versus about __BASEC__\,s, measured with four calls in parallel). The checker requested follow-up retrieval on __FU__ of questions. It also passed the largest context (about __AGCH__ characters).
 
+\section{Which system is better?}
+\begin{table}[h]\centering\small
+\caption{Best system per criterion.}
+\begin{tabular}{@{}p{5.6cm}p{3.1cm}p{6.2cm}@{}}\toprule
+Criterion & Winner & Evidence\\\midrule
+Answer accuracy, Haiku (judge) & Agentic (__AG__) & +__DAG__ points over graph; wider interval, see Table~3\\
+Answer accuracy, Qwen (strict) & Graph $\approx$ agentic & 66.1\% vs.\ 65.0\%, within noise\\
+Ranking quality (MRR, nDCG) & Graph, hybrid & MRR 0.93; graph best nDCG@3 and nDCG@8\\
+Coverage of gold facts (Rec@8, pool) & Graph, then agentic & 88\% and 85\% at 8 chunks; pool recall 94\%\\
+Fewest LLM calls for the accuracy & Graph & one call; agentic uses three\\
+Fewest unanswered answerable questions & Graph & 51\% abstention vs.\ 57--73\% for others\\
+Faithfulness, context precision & Rerank top-3 & fewest chunks, least to misread (but least complete)\\
+Latency and simplicity & Baseline & single dense search; no gain in accuracy\\
+\bottomrule\end{tabular}
+\end{table}
+
+\paragraph{Overall.} \textbf{Graph RAG is the best system for this corpus}: it is first or tied for first on MRR, nDCG, recall and full coverage, close to the top on answers with both generators, and costs one LLM call. \textbf{Agentic RAG is the choice when maximum accuracy matters and three LLM calls are affordable}, and it helps most with a strong generator. \textbf{Hybrid search and larger context (rerank-8)} are the cheap middle ground. \textbf{Hierarchical routing and a 3-chunk reranker add complexity without improving answers}; the cross-encoder is worth keeping only if the context is also widened. Deduplication, not any of the advanced methods, was the single biggest fix.
+
 \section{Limitations}
 \begin{itemize}
 \item \textbf{Small sample.} 24 questions and one run per variant. Intervals in Table~3 are wide for some comparisons; differences among V1, V2, V2b, V4 and among V2, V3 are not significant, and the middle of the ranking is not stable across the two metrics (appendix).
 \item \textbf{Judge and generator share a model family.} The semantic judge is Haiku. The strict string metric gives the same top two and the same bottom, but not the same middle order.
 \item \textbf{Questions were written after seeing the data and by the same author as the system}, so they favour entity-centric retrieval (graph, agentic); they may understate hybrid search, which helps with vague or paraphrased queries.
+\item \textbf{Qwen results are single runs and use the strict metric only}; the open-question evaluation was judged by Haiku, which also generated the Haiku answers, and has only two unanswerable questions, so abstention rates on them carry little weight.
+\item \textbf{Retrieval relevance is defined by string match of gold facts}, which ignores chunks that help without containing a fact verbatim.
 \item \textbf{Counterfactual edits are small and local} (27 facts), so they test retrieval of specific values, not summarisation across many chunks.
 \item \textbf{Context sizes differ} (about 1.1k to 4.3k characters). V2b controls this for V4 and V5 but not for V6.
 \item \textbf{Latency} was measured with four concurrent generator calls, so absolute times are inflated; only relative cost is meaningful.
@@ -226,6 +333,8 @@ rep = {
     "__RR__": pct(J["v2_rerank"]["acc"]), "__HI__": pct(J["v3_hier_rerank"]["acc"]), "__CB__": pct(cb["acc"]),
     "__CBCHG__": pct(cb["chg"]), "__CBUNC__": pct(cb["unc"]), "__DGR__": f"{dg:.0f}", "__DAG__": f"{da:.0f}",
     "__AVGSUB__": f"{avg_sub:.1f}", "__AGCTX__": pct(J["v6_agentic"]["ctx"]), "__AGSEC__": f"{J['v6_agentic']['secs']:.0f}",
+    "__GMRR__": f"{RF['v5_graph']['mrr']:.2f}", "__GNDCG__": pct(RF["v5_graph"]["ndcg@8"]), "__GREC__": pct(RF["v5_graph"]["recall@8"]),
+    "__RETT__": RETT, "__POOLT__": pool_rows, "__OPENT__": OPENT, "__QWT__": QWT, "__RHO__": f"{rho:.2f}",
     "__BASEC__": f"{J['v1_baseline']['secs']:.0f}", "__FU__": pct(fu_rate), "__AGCH__": f"{J['v6_agentic']['chars']:.0f}",
 }
 for k, v in rep.items():

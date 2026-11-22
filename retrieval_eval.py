@@ -72,6 +72,7 @@ for v in sorted(VORDER, key=lambda v: -rows[v]["ndcg@8"]):
 # pool metrics from traces
 lines += ["", "Candidate-pool metrics from traces (cross-encoder pool; MRR measured on the pool order before vs after re-ranking)", "",
           f"{'variant':16s} {'pool':>5s} {'pool recall':>11s} {'MRR before':>10s} {'MRR after':>9s} {'nDCG@8 before':>13s} {'nDCG@8 after':>12s}"]
+pool_rows = {}
 for v in VORDER:
     pr, mb, ma, nb, na, ps = [], [], [], [], [], []
     for k, r in runs.items():
@@ -88,8 +89,10 @@ for v in VORDER:
         b, a = metrics(by_pre, r["qid"]), metrics(by_ce, r["qid"])
         mb.append(b["mrr"]); ma.append(a["mrr"]); nb.append(b["ndcg@8"]); na.append(a["ndcg@8"])
     if pr:
+        pool_rows[v] = dict(pool=float(np.mean(ps)), pool_recall=float(np.mean(pr)), mrr_before=float(np.mean(mb)), mrr_after=float(np.mean(ma)),
+                            ndcg_before=float(np.mean(nb)), ndcg_after=float(np.mean(na)))
         lines.append(f"{v:16s} {np.mean(ps):5.0f} {f(np.mean(pr)):>11s} {np.mean(mb):10.3f} {np.mean(ma):9.3f} {f(np.mean(nb)):>13s} {f(np.mean(na)):>12s}")
 txt = "\n".join(lines)
 open(OUT, "w").write("```\n" + txt + "\n```\n")
-json.dump(rows, open(OUT.replace(".md", ".json"), "w"), indent=1)
+json.dump({"final": rows, "pool": pool_rows}, open(OUT.replace(".md", ".json"), "w"), indent=1)
 print(txt)

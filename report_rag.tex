@@ -13,12 +13,13 @@
 \maketitle
 
 \section{Summary}
-We rebuilt the D\&D 5e SRD RAG pipeline for the full corpus (13 files, 5{,}200 chunks) and compared eight variants on 24 hard questions with a weak generator (Claude Haiku, called through isolated \texttt{claude -p}). To stop the model answering from memory of the published SRD, the index is built on a \emph{counterfactual} copy of the data in which 22 of 106 gold facts were changed.
+We rebuilt the D\&D 5e SRD RAG pipeline for the full corpus (13 files, 5{,}200 chunks) and compared eight variants on 24 hard questions with a weak generator (Claude Haiku, called through isolated \texttt{claude -p}), with retrieval-only metrics (MRR, recall, nDCG), 41 open questions, and a replication with Qwen2.5-7B. To stop the model answering from memory of the published SRD, the index is built on a \emph{counterfactual} copy of the data in which 22 of 106 gold facts were changed.
 \begin{itemize}
 \item \textbf{The original duplication bug was the largest problem.} Each chunk was stored about four times, so 73\% of top-10 slots were exact copies and the cross-encoder only re-ordered copies. After deduplication the top-10 contains distinct chunks only.
 \item \textbf{Ranking (semantic judge, fact accuracy):} agentic 98.6\% $>$ graph 86.7\% $>$ rerank-8 70.7\% $\approx$ hybrid 69.5\% $>$ baseline 58.6\% $\approx$ rerank-3 57.9\% $=$ hierarchical 57.9\% $>$ closed-book 51.7\%.
 \item \textbf{Memory is real but removed by the design.} Closed-book Haiku gets 4.5\% of the changed facts but 64.3\% of the unchanged ones, so the unchanged facts alone would have hidden retrieval quality.
 \item \textbf{What did not help:} hierarchical routing (same top-3 as flat search on 20 of 24 questions and the same score on all 24), BM25 hybrid fusion (no gain over simply reranking 8 dense chunks), and cross-encoder reranking of only 3 chunks (no gain over baseline). Most of the early ``improvement'' of larger pipelines is the larger context window.
+\item \textbf{Verdict.} \textbf{Graph RAG is the best value:} the best retrieval quality of all variants (MRR 0.93, nDCG@8 56.1\%, recall@8 88.3\%), near-top answer accuracy, and only one LLM call. \textbf{Agentic RAG is the most accurate} on the Haiku run (98.6\%) but costs three calls and about three times the latency, and on the weaker Qwen generator it ties graph (Section~8). Hierarchical routing gives no benefit at this scale; reranking improves ranking (MRR 0.76 $\to$ 0.92) but not answers unless the context is also enlarged.
 \item \textbf{What helped:} entity-linked graph expansion (+16 points over rerank-8) and agentic query decomposition with a sufficiency check (+12 points over graph, at 3 LLM calls per question).
 \end{itemize}
 
@@ -126,6 +127,88 @@ Hierarchical vs.\ rerank-3 & +0.0 & [+0.0, +0.0] \\
 \bottomrule\end{tabular}
 \end{table}
 
+\section{Retrieval-only metrics}
+Answer accuracy mixes retrieval and generation. To rank the retrievers alone we need no LLM: a chunk is \emph{relevant} to a question if it contains at least one of its gold facts (string match in the counterfactual corpus), and its gain is the number of distinct gold facts it contains. The ranked list is the list of chunks that was sent to the generator, in the order it was sent. We report \textbf{MRR} (reciprocal rank of the first relevant chunk), \textbf{Hit@$k$}, \textbf{Recall@$k$} (share of gold facts covered by the top $k$), \textbf{Precision@$k$}, \textbf{nDCG@$k$} (graded gain, normalised by the best possible ranking over all 5{,}200 chunks) and \textbf{Full@$k$} (all gold facts covered). Retrieval does not depend on the generator, so these numbers hold for any model.
+
+\begin{table}[h]\centering\footnotesize\setlength{\tabcolsep}{3pt}
+\caption{Retrieval quality of the chunks sent to the LLM (24 questions), ranked by nDCG@8. Variants with 3 chunks send fewer than 8, so their @8 values equal their @3 values by construction. $^\dagger$Agentic chunks come from several sub-queries concatenated, so MRR and nDCG are not meaningful for its order; its recall is.}
+\resizebox{\linewidth}{!}{\begin{tabular}{@{}lrrrrrrrrr@{}}\toprule
+Variant & Chunks & MRR & Hit@3 & Rec@3 & nDCG@3 & Rec@8 & Prec@8 & nDCG@8 & Full@8\\\midrule
+V5 graph & 8.0 & 0.931 & 100.0\% & 70.3\% & 66.3\% & 88.3\% & 47.4\% & 56.1\% & 70.8\% \\
+V4 hybrid & 8.0 & 0.931 & 100.0\% & 64.9\% & 62.0\% & 80.5\% & 43.2\% & 52.0\% & 58.3\% \\
+V2b rerank-8 & 8.0 & 0.917 & 91.7\% & 61.3\% & 61.8\% & 75.8\% & 40.6\% & 50.8\% & 62.5\% \\
+V6 agentic & 11.3 & 0.842$^\dagger$ & 91.7\% & 41.5\% & 40.7\%$^\dagger$ & 85.0\% & 41.5\% & 45.4\%$^\dagger$ & 62.5\% \\
+V3 hierarchical & 3.0 & 0.917 & 91.7\% & 61.3\% & 62.1\% & 61.3\% & 65.3\% & 42.3\% & 25.0\% \\
+V2 rerank & 3.0 & 0.917 & 91.7\% & 61.3\% & 61.8\% & 61.3\% & 65.3\% & 42.1\% & 25.0\% \\
+V1 baseline & 3.0 & 0.750 & 83.3\% & 58.6\% & 51.3\% & 58.6\% & 58.3\% & 35.7\% & 25.0\% \\
+\bottomrule\end{tabular}}
+\end{table}
+
+\begin{table}[h]\centering\footnotesize
+\caption{Candidate pool seen by the cross-encoder, and ranking quality before and after re-ranking. ``Pool recall'' is the share of gold facts present anywhere in the pool.}
+\begin{tabular}{@{}lrrrrrr@{}}\toprule
+Variant & Pool size & Pool recall & MRR before & MRR after & nDCG@8 before & nDCG@8 after\\\midrule
+V2 rerank & 10 & 74.5\% & 0.764 & 0.917 & 44.5\% & 50.1\% \\
+V2b rerank-8 & 10 & 74.5\% & 0.764 & 0.917 & 44.5\% & 50.1\% \\
+V3 hierarchical & 10 & 74.5\% & 0.777 & 0.917 & 45.0\% & 50.7\% \\
+V4 hybrid & 30 & 86.6\% & 0.859 & 0.931 & 51.2\% & 52.4\% \\
+V5 graph & 20 & 94.3\% & 0.859 & 0.931 & 51.2\% & 55.8\% \\
+V6 agentic & 20 & 57.7\% & 0.695 & 0.826 & 29.2\% & 33.5\% \\
+\bottomrule\end{tabular}
+\end{table}
+
+\begin{itemize}
+\item \textbf{Graph RAG retrieves best.} It has the highest MRR (tied with hybrid), the highest recall at 3 and at 8, the highest precision@3, the highest nDCG at 3 and 8 and full-coverage rate, and the largest candidate pool recall (94\%). Entity linking puts the sections the question names into the pool, which similarity search alone often misses.
+\item \textbf{The cross-encoder is what makes ranking good.} On the same pool, re-ranking raises MRR from about 0.76 to 0.92. Baseline top-3 (no reranker) has MRR 0.75; with the reranker it is 0.92.
+\item \textbf{Routing does not change retrieval.} Hierarchical and flat search have the same pool recall (74.5\%) and the same MRR after re-ranking; routing only changes where the search looks, not what the reranker keeps.
+\item \textbf{Three chunks are not enough.} Full@8 is 25\% for all top-3 variants: for three out of four questions the context lacks at least one gold fact. Eight chunks lift it to 58--71\%.
+\item \textbf{Agentic covers the most facts per question but ranks worse} (Recall@8 85\%, but MRR 0.84), because it concatenates sub-query results; the first chunk is the best chunk of the first sub-query, not of the whole question.
+\end{itemize}
+
+\section{Open-ended questions (no gold answers)}
+We also ran all variants on 41 open questions written by an LLM (characters, spells, classes, monsters, equipment) over the \emph{original} SRD. They have no gold answers, so the evaluation uses several different measures, each by an isolated Haiku judge unless marked automatic: \textbf{faithfulness} (share of claims in the answer supported by the retrieved context), \textbf{completeness} (0--2, scaled; ``the information is not available'' counts as 0), \textbf{context precision} (share of retrieved chunks relevant to the question), \textbf{entity hit} (automatic: share of entities named in the question whose section appears in the context), and \textbf{abstention} (automatic: the answer says the context lacks the information). Two questions cannot be answered from the SRD (Beholder, Mind Flayer); a good system abstains on them and not on the rest.
+
+\begin{table}[h]\centering\footnotesize
+\caption{Open-question metrics (41 questions, Haiku generator and judge). ``Abst.\ ans.'' is the abstention rate on answerable questions (lower is better); ``Abst.\ unans.'' is the rate on the two unanswerable ones (higher is better).}
+\begin{tabular}{@{}lrrrrrrrr@{}}\toprule
+Variant & Faithful & Complete & Ctx prec. & Entity hit & Abst.\ ans. & Abst.\ unans. & LLM calls & Sec/q\\\midrule
+V6 agentic & 95.7\% & 56.1\% & 41.6\% & 71.4\% & 64.9\% & 100.0\% & 3.0 & 18.5 \\
+V5 graph & 95.1\% & 52.4\% & 41.8\% & 76.8\% & 51.4\% & 100.0\% & 1.0 & 6.6 \\
+V4 hybrid & 94.2\% & 54.9\% & 47.0\% & 71.4\% & 56.8\% & 100.0\% & 1.0 & 8.7 \\
+V2b rerank-8 & 92.6\% & 48.8\% & 42.4\% & 67.9\% & 59.5\% & 100.0\% & 1.0 & 7.5 \\
+V2 rerank & 97.6\% & 40.2\% & 61.0\% & 50.0\% & 70.3\% & 100.0\% & 1.0 & 5.8 \\
+V3 hierarchical & 95.6\% & 36.6\% & 60.2\% & 50.0\% & 73.0\% & 100.0\% & 1.0 & 5.4 \\
+V1 baseline & 95.0\% & 37.8\% & 56.9\% & 51.8\% & 62.2\% & 100.0\% & 1.0 & 5.5 \\
+\bottomrule\end{tabular}
+\end{table}
+
+\begin{itemize}
+\item \textbf{Faithfulness is high everywhere (93--98\%)}, so none of the RAG variants hallucinates much beyond its context. The top-3 variants are the most faithful, simply because they have less to misread.
+\item \textbf{Chunk-level retrieval over-abstains on broad questions.} Between 51\% and 73\% of answerable questions are answered with ``the context does not say'' because the answer is spread over a whole section (for example, a class's full feature list). Graph RAG abstains least (51\%) and has the best entity hit rate (77\%); hierarchical and rerank-3 abstain most (70--73\%). This is the main weakness left, and it points to section-level (parent-document) retrieval as the next step.
+\item \textbf{Precision and recall trade off.} Top-3 variants have the highest context precision (57--61\%) and lowest completeness (37--40\%); the 8-chunk variants and agentic invert this.
+\item \textbf{Closed-book looks best here, which is the contamination problem again.} On unmodified SRD text a model that has read the SRD answers 85\% correctly without retrieval, but it never abstains, so it also fabricates on the two unanswerable questions (0\% abstention versus 100\% for every RAG variant except graph in the Qwen run). A correctness-versus-reference score was computed but is reliable for only 13 of the 41 questions (entity linking found the reference sections only there), so we do not use it for ranking.
+\end{itemize}
+
+\section{Replication with a small open model (Qwen2.5-7B-Instruct)}
+To check that the ranking is not an artefact of one proprietary generator, we repeated both experiments with Qwen2.5-7B-Instruct (4-bit, one T4 GPU on Colab), keeping retrieval, prompts and questions identical. Qwen's own judging was unusable: used as the semantic judge it scored closed-book answers 96\% correct, so we report only the strict string metric and the automatic abstention measure. The Qwen runs were transcribed from the Colab log; the raw result files are kept on Colab.
+
+\begin{table}[h]\centering\footnotesize
+\caption{Haiku and Qwen compared (24 counterfactual questions, strict string-match fact accuracy; open questions, abstention). Spearman rank correlation between the Haiku and Qwen fact-accuracy rankings: 0.87.}
+\resizebox{\linewidth}{!}{\begin{tabular}{@{}lrrrrrr@{}}\toprule
+Variant & Haiku fact acc. & Qwen fact acc. & Qwen changed facts & Qwen ctx.\ recall & Qwen abst.\ ans. & Qwen abst.\ unans.\\\midrule
+V5 graph & 76.0\% & 66.1\% & 68.2\% & 87.6\% & 40.5\% & 50\% \\
+V6 agentic & 84.3\% & 65.0\% & 59.1\% & 91.4\% & 48.6\% & 100\% \\
+V2b rerank-8 & 66.2\% & 59.4\% & 54.5\% & 73.3\% & 35.1\% & 100\% \\
+V4 hybrid & 67.1\% & 56.7\% & 54.5\% & 77.1\% & 43.2\% & 100\% \\
+V1 baseline & 51.2\% & 48.5\% & 45.5\% & 56.2\% & 48.6\% & 100\% \\
+V2 rerank & 52.6\% & 40.9\% & 36.4\% & 56.2\% & 45.9\% & 100\% \\
+V3 hierarchical & 52.0\% & 40.9\% & 36.4\% & 57.1\% & 43.2\% & 100\% \\
+V0 closed-book & 37.2\% & 21.3\% & 4.5\% & 0.0\% & 0.0\% & 0\% \\
+\bottomrule\end{tabular}}
+\end{table}
+
+The ranking transfers: graph and agentic are the top two, the 8-chunk variants come next, baseline and the 3-chunk rerankers follow, and closed-book is last with almost none of the changed facts (4.5\%). On Qwen, graph and agentic are within 1.1 points of each other, so the extra two LLM calls of agentic RAG buy nothing measurable with the weaker model. Qwen abstains less than Haiku on answerable questions (35--49\% versus 51--73\%), and rerank-8 abstains least.
+
 \section{Discussion}
 \paragraph{The counterfactual design matters.} Closed-book Haiku scores 64.3\% on unchanged facts, close to what several RAG variants reach overall, and 4.5\% on changed facts. On unmodified data alone, V1--V3 would look only a few points better than no retrieval. The ranking among retrieval methods is cleanest in the ``changed'' column.
 
@@ -139,11 +222,31 @@ Hierarchical vs.\ rerank-3 & +0.0 & [+0.0, +0.0] \\
 
 \paragraph{Agentic RAG is best but costs more.} Splitting the question into focused queries (on average 4.3 per question) and checking for missing facts gives the highest context recall (99.0\%) and the best answers, including the multi-topic questions. It needs three LLM calls and was the slowest variant (about 15\,s per question versus about 6\,s, measured with four calls in parallel). The checker requested follow-up retrieval on 33.3\% of questions. It also passed the largest context (about 4291 characters).
 
+\section{Which system is better?}
+\begin{table}[h]\centering\small
+\caption{Best system per criterion.}
+\begin{tabular}{@{}p{5.6cm}p{3.1cm}p{6.2cm}@{}}\toprule
+Criterion & Winner & Evidence\\\midrule
+Answer accuracy, Haiku (judge) & Agentic (98.6\%) & +12 points over graph; wider interval, see Table~3\\
+Answer accuracy, Qwen (strict) & Graph $\approx$ agentic & 66.1\% vs.\ 65.0\%, within noise\\
+Ranking quality (MRR, nDCG) & Graph, hybrid & MRR 0.93; graph best nDCG@3 and nDCG@8\\
+Coverage of gold facts (Rec@8, pool) & Graph, then agentic & 88\% and 85\% at 8 chunks; pool recall 94\%\\
+Fewest LLM calls for the accuracy & Graph & one call; agentic uses three\\
+Fewest unanswered answerable questions & Graph & 51\% abstention vs.\ 57--73\% for others\\
+Faithfulness, context precision & Rerank top-3 & fewest chunks, least to misread (but least complete)\\
+Latency and simplicity & Baseline & single dense search; no gain in accuracy\\
+\bottomrule\end{tabular}
+\end{table}
+
+\paragraph{Overall.} \textbf{Graph RAG is the best system for this corpus}: it is first or tied for first on MRR, nDCG, recall and full coverage, close to the top on answers with both generators, and costs one LLM call. \textbf{Agentic RAG is the choice when maximum accuracy matters and three LLM calls are affordable}, and it helps most with a strong generator. \textbf{Hybrid search and larger context (rerank-8)} are the cheap middle ground. \textbf{Hierarchical routing and a 3-chunk reranker add complexity without improving answers}; the cross-encoder is worth keeping only if the context is also widened. Deduplication, not any of the advanced methods, was the single biggest fix.
+
 \section{Limitations}
 \begin{itemize}
 \item \textbf{Small sample.} 24 questions and one run per variant. Intervals in Table~3 are wide for some comparisons; differences among V1, V2, V2b, V4 and among V2, V3 are not significant, and the middle of the ranking is not stable across the two metrics (appendix).
 \item \textbf{Judge and generator share a model family.} The semantic judge is Haiku. The strict string metric gives the same top two and the same bottom, but not the same middle order.
 \item \textbf{Questions were written after seeing the data and by the same author as the system}, so they favour entity-centric retrieval (graph, agentic); they may understate hybrid search, which helps with vague or paraphrased queries.
+\item \textbf{Qwen results are single runs and use the strict metric only}; the open-question evaluation was judged by Haiku, which also generated the Haiku answers, and has only two unanswerable questions, so abstention rates on them carry little weight.
+\item \textbf{Retrieval relevance is defined by string match of gold facts}, which ignores chunks that help without containing a fact verbatim.
 \item \textbf{Counterfactual edits are small and local} (27 facts), so they test retrieval of specific values, not summarisation across many chunks.
 \item \textbf{Context sizes differ} (about 1.1k to 4.3k characters). V2b controls this for V4 and V5 but not for V6.
 \item \textbf{Latency} was measured with four concurrent generator calls, so absolute times are inflated; only relative cost is meaningful.
