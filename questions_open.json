@@ -1,0 +1,248 @@
+[
+ {
+  "id": "o1",
+  "category": "Character",
+  "question": "What are the abilities and characteristics of a Wizard?",
+  "answerable": "yes"
+ },
+ {
+  "id": "o2",
+  "category": "Character",
+  "question": "What is the difference between an Elf and a Half-Elf?",
+  "answerable": "partial"
+ },
+ {
+  "id": "o3",
+  "category": "Character",
+  "question": "Which character classes can use magic?",
+  "answerable": "yes"
+ },
+ {
+  "id": "o4",
+  "category": "Character",
+  "question": "What are the racial traits of a Dragonborn?",
+  "answerable": "yes"
+ },
+ {
+  "id": "o5",
+  "category": "Character",
+  "question": "What abilities does a Tiefling character possess?",
+  "answerable": "yes"
+ },
+ {
+  "id": "o6",
+  "category": "Character",
+  "question": "What is the maximum level a character can reach?",
+  "answerable": "yes"
+ },
+ {
+  "id": "o7",
+  "category": "Character",
+  "question": "How does a character's proficiency bonus work?",
+  "answerable": "yes"
+ },
+ {
+  "id": "o8",
+  "category": "Character",
+  "question": "What are the primary ability scores of a Barbarian?",
+  "answerable": "yes"
+ },
+ {
+  "id": "o9",
+  "category": "Spell",
+  "question": "What does the Fireball spell do?",
+  "answerable": "yes"
+ },
+ {
+  "id": "o10",
+  "category": "Spell",
+  "question": "What is the damage range of Magic Missile?",
+  "answerable": "yes"
+ },
+ {
+  "id": "o11",
+  "category": "Spell",
+  "question": "Which spells require concentration?",
+  "answerable": "yes"
+ },
+ {
+  "id": "o12",
+  "category": "Spell",
+  "question": "What is the difference between Mage Hand and Minor Illusion?",
+  "answerable": "yes"
+ },
+ {
+  "id": "o13",
+  "category": "Spell",
+  "question": "Which spells can heal a character?",
+  "answerable": "yes"
+ },
+ {
+  "id": "o14",
+  "category": "Spell",
+  "question": "What level is the Revivify spell?",
+  "answerable": "yes"
+ },
+ {
+  "id": "o15",
+  "category": "Spell",
+  "question": "Can a Wizard learn healing spells?",
+  "answerable": "yes"
+ },
+ {
+  "id": "o16",
+  "category": "Spell",
+  "question": "What happens when a character loses concentration on a spell?",
+  "answerable": "yes"
+ },
+ {
+  "id": "o17",
+  "category": "Spell",
+  "question": "Which spells deal lightning damage?",
+  "answerable": "yes"
+ },
+ {
+  "id": "o18",
+  "category": "Spell",
+  "question": "What are the components required to cast Counterspell?",
+  "answerable": "yes"
+ },
+ {
+  "id": "o19",
+  "category": "Class",
+  "question": "What are the abilities of a Paladin?",
+  "answerable": "yes"
+ },
+ {
+  "id": "o20",
+  "category": "Class",
+  "question": "What is the difference between a Wizard and a Sorcerer?",
+  "answerable": "yes"
+ },
+ {
+  "id": "o21",
+  "category": "Class",
+  "question": "Which class has the highest hit points?",
+  "answerable": "yes"
+ },
+ {
+  "id": "o22",
+  "category": "Class",
+  "question": "How does a Rogue perform Sneak Attack?",
+  "answerable": "yes"
+ },
+ {
+  "id": "o23",
+  "category": "Class",
+  "question": "What are the special abilities of a Druid?",
+  "answerable": "yes"
+ },
+ {
+  "id": "o24",
+  "category": "Class",
+  "question": "Can a Fighter cast spells?",
+  "answerable": "yes"
+ },
+ {
+  "id": "o25",
+  "category": "Class",
+  "question": "What are the subclasses available for Clerics?",
+  "answerable": "yes"
+ },
+ {
+  "id": "o26",
+  "category": "Class",
+  "question": "How does a Warlock regain spell slots?",
+  "answerable": "yes"
+ },
+ {
+  "id": "o27",
+  "category": "Monster",
+  "question": "What are the abilities of a Beholder?",
+  "answerable": "no"
+ },
+ {
+  "id": "o28",
+  "category": "Monster",
+  "question": "What is the Armor Class of an Ancient Red Dragon?",
+  "answerable": "yes"
+ },
+ {
+  "id": "o29",
+  "category": "Monster",
+  "question": "What damage types is a Troll vulnerable to?",
+  "answerable": "yes"
+ },
+ {
+  "id": "o30",
+  "category": "Monster",
+  "question": "How can a Vampire be defeated?",
+  "answerable": "partial"
+ },
+ {
+  "id": "o31",
+  "category": "Monster",
+  "question": "What is the challenge rating of a Lich?",
+  "answerable": "yes"
+ },
+ {
+  "id": "o32",
+  "category": "Monster",
+  "question": "Which monsters have resistance to fire damage?",
+  "answerable": "yes"
+ },
+ {
+  "id": "o33",
+  "category": "Monster",
+  "question": "What special abilities does a Mind Flayer possess?",
+  "answerable": "no"
+ },
+ {
+  "id": "o34",
+  "category": "Monster",
+  "question": "What is the difference between a Goblin and a Hobgoblin?",
+  "answerable": "yes"
+ },
+ {
+  "id": "o35",
+  "category": "Equipment",
+  "question": "What is the damage dealt by a Longsword?",
+  "answerable": "yes"
+ },
+ {
+  "id": "o36",
+  "category": "Equipment",
+  "question": "What is the difference between a Greatsword and a Greataxe?",
+  "answerable": "yes"
+ },
+ {
+  "id": "o37",
+  "category": "Equipment",
+  "question": "Which weapons have the Finesse property?",
+  "answerable": "yes"
+ },
+ {
+  "id": "o38",
+  "category": "Equipment",
+  "question": "What is the Armor Class provided by Plate Armor?",
+  "answerable": "yes"
+ },
+ {
+  "id": "o39",
+  "category": "Equipment",
+  "question": "Which magical weapons provide additional damage?",
+  "answerable": "yes"
+ },
+ {
+  "id": "o40",
+  "category": "Equipment",
+  "question": "What are the properties of a Longbow?",
+  "answerable": "yes"
+ },
+ {
+  "id": "o41",
+  "category": "Equipment",
+  "question": "Which items require attunement?",
+  "answerable": "yes"
+ }
+]
