@@ -190,24 +190,45 @@ V1 baseline & 95.0\% & 37.8\% & 56.9\% & 51.8\% & 62.2\% & 100.0\% & 1.0 & 5.5 \
 \end{itemize}
 
 \section{Replication with a small open model (Qwen2.5-7B-Instruct)}
-To check that the ranking is not an artefact of one proprietary generator, we repeated both experiments with Qwen2.5-7B-Instruct (4-bit, one T4 GPU on Colab), keeping retrieval, prompts and questions identical. Qwen's own judging was unusable: used as the semantic judge it scored closed-book answers 96\% correct, so we report only the strict string metric and the automatic abstention measure. The Qwen runs were transcribed from the Colab log; the raw result files are kept on Colab.
+To check that the ranking is not an artefact of one proprietary generator, we repeated both experiments with Qwen2.5-7B-Instruct (4-bit, one T4 GPU on Colab), keeping the retrieval, prompts and questions identical; retrieval was replayed to store the chunk rankings, and its candidate lists are the same as in Section~6. Qwen judging its own kind was unusable (it scored closed-book answers 96\% correct), so Qwen's answers were scored by the same Haiku judge and by the strict string match.
 
 \begin{table}[h]\centering\footnotesize
-\caption{Haiku and Qwen compared (24 counterfactual questions, strict string-match fact accuracy; open questions, abstention). Spearman rank correlation between the Haiku and Qwen fact-accuracy rankings: 0.87.}
-\resizebox{\linewidth}{!}{\begin{tabular}{@{}lrrrrrr@{}}\toprule
-Variant & Haiku fact acc. & Qwen fact acc. & Qwen changed facts & Qwen ctx.\ recall & Qwen abst.\ ans. & Qwen abst.\ unans.\\\midrule
-V5 graph & 76.0\% & 66.1\% & 68.2\% & 87.6\% & 40.5\% & 50\% \\
-V6 agentic & 84.3\% & 65.0\% & 59.1\% & 91.4\% & 48.6\% & 100\% \\
-V2b rerank-8 & 66.2\% & 59.4\% & 54.5\% & 73.3\% & 35.1\% & 100\% \\
-V4 hybrid & 67.1\% & 56.7\% & 54.5\% & 77.1\% & 43.2\% & 100\% \\
-V1 baseline & 51.2\% & 48.5\% & 45.5\% & 56.2\% & 48.6\% & 100\% \\
-V2 rerank & 52.6\% & 40.9\% & 36.4\% & 56.2\% & 45.9\% & 100\% \\
-V3 hierarchical & 52.0\% & 40.9\% & 36.4\% & 57.1\% & 43.2\% & 100\% \\
-V0 closed-book & 37.2\% & 21.3\% & 4.5\% & 0.0\% & 0.0\% & 0\% \\
+\caption{Haiku and Qwen as generators (24 counterfactual questions; open-question abstention). ``Judge'' is the Haiku semantic judge, ``strict'' the string match. Spearman rank correlation between the Haiku and Qwen rankings: 0.97 (judge) and 0.87 (strict).}
+\resizebox{\linewidth}{!}{\begin{tabular}{@{}lrrrrrrr@{}}\toprule
+Variant & Haiku judge & Qwen judge & Qwen changed facts & Haiku strict & Qwen strict & Qwen abst.\ ans. & Qwen abst.\ unans.\\\midrule
+V6 agentic & 98.6\% & 84.3\% & 77.3\% & 84.3\% & 65.0\% & 48.6\% & 100\% \\
+V5 graph & 86.7\% & 81.9\% & 81.8\% & 76.0\% & 66.1\% & 40.5\% & 50\% \\
+V4 hybrid & 69.5\% & 68.7\% & 68.2\% & 67.1\% & 56.7\% & 43.2\% & 100\% \\
+V2b rerank-8 & 70.7\% & 61.8\% & 50.0\% & 66.2\% & 59.4\% & 35.1\% & 100\% \\
+V1 baseline & 58.6\% & 51.9\% & 50.0\% & 51.2\% & 48.5\% & 48.6\% & 100\% \\
+V3 hierarchical & 57.9\% & 49.4\% & 36.4\% & 52.0\% & 40.9\% & 43.2\% & 100\% \\
+V2 rerank & 57.9\% & 47.3\% & 36.4\% & 52.6\% & 40.9\% & 45.9\% & 100\% \\
+V0 closed-book & 51.7\% & 33.0\% & 4.5\% & 37.2\% & 21.3\% & 0.0\% & 0\% \\
 \bottomrule\end{tabular}}
 \end{table}
 
-The ranking transfers: graph and agentic are the top two, the 8-chunk variants come next, baseline and the 3-chunk rerankers follow, and closed-book is last with almost none of the changed facts (4.5\%). On Qwen, graph and agentic are within 1.1 points of each other, so the extra two LLM calls of agentic RAG buy nothing measurable with the weaker model. Qwen abstains less than Haiku on answerable questions (35--49\% versus 51--73\%), and rerank-8 abstains least.
+\begin{table}[h]\centering\footnotesize
+\caption{Open-question metrics with Qwen as generator (41 questions; Haiku judge). ``Correct'' is the score against the oracle reference and is defined for 13 questions only.}
+\begin{tabular}{@{}lrrrrrrr@{}}\toprule
+Variant & Faithful & Complete & Ctx prec. & Entity hit & Correct & Abst.\ ans. & Abst.\ unans.\\\midrule
+V6 agentic & 84.3\% & 40.2\% & 47.5\% & 57.1\% & 53.8\% & 48.6\% & 100.0\% \\
+V5 graph & 81.6\% & 50.0\% & 44.8\% & 76.8\% & 61.5\% & 40.5\% & 50.0\% \\
+V4 hybrid & 85.9\% & 45.1\% & 45.4\% & 71.4\% & 53.8\% & 43.2\% & 100.0\% \\
+V2b rerank-8 & 81.0\% & 50.0\% & 42.7\% & 67.9\% & 61.5\% & 35.1\% & 100.0\% \\
+V2 rerank & 83.1\% & 35.4\% & 63.4\% & 50.0\% & 50.0\% & 45.9\% & 100.0\% \\
+V3 hierarchical & 86.9\% & 41.5\% & 60.2\% & 50.0\% & 42.3\% & 43.2\% & 100.0\% \\
+V1 baseline & 80.0\% & 39.0\% & 59.3\% & 51.8\% & 50.0\% & 48.6\% & 100.0\% \\
+V0 closed-book & -- & 76.8\% & -- & -- & 15.4\% & 0.0\% & 0.0\% \\
+\bottomrule\end{tabular}
+\end{table}
+
+\begin{itemize}
+\item \textbf{The ranking transfers.} Agentic and graph are the top two with both generators, the 8-chunk variants follow, then baseline and the 3-chunk rerankers, and closed-book is last, getting only 4.5\% of the changed facts. Rank correlation with Haiku is 0.97.
+\item \textbf{With the weaker generator the gap between graph and agentic closes.} The judge puts agentic ahead by about 2 points (84\% vs.\ 82\%) and the string metric puts graph ahead by about 1 point; neither difference is meaningful at 24 questions, so the two extra LLM calls of agentic RAG buy little here.
+\item \textbf{Qwen is less faithful than Haiku} (80--87\% of claims supported by context, versus 93--98\%), so a stronger generator matters even with good retrieval.
+\item \textbf{Qwen shows the value of retrieval on the open questions.} Qwen has not memorised the SRD: closed-book Qwen is correct on 15\% of the answerable reference questions, against 85\% for Haiku, while the RAG variants reach 42--62\%. Rerank-8 and graph score best (62\%), on the 13 questions that have a reference.
+\item \textbf{Abstention.} Qwen abstains less than Haiku on answerable questions (35--49\% versus 51--73\%); rerank-8 abstains least. Graph is the only variant that failed to abstain on one of the two unanswerable questions.
+\end{itemize}
 
 \section{Discussion}
 \paragraph{The counterfactual design matters.} Closed-book Haiku scores 64.3\% on unchanged facts, close to what several RAG variants reach overall, and 4.5\% on changed facts. On unmodified data alone, V1--V3 would look only a few points better than no retrieval. The ranking among retrieval methods is cleanest in the ``changed'' column.
@@ -228,7 +249,7 @@ The ranking transfers: graph and agentic are the top two, the 8-chunk variants c
 \begin{tabular}{@{}p{5.6cm}p{3.1cm}p{6.2cm}@{}}\toprule
 Criterion & Winner & Evidence\\\midrule
 Answer accuracy, Haiku (judge) & Agentic (98.6\%) & +12 points over graph; wider interval, see Table~3\\
-Answer accuracy, Qwen (strict) & Graph $\approx$ agentic & 66.1\% vs.\ 65.0\%, within noise\\
+Answer accuracy, Qwen & Agentic $\approx$ graph & judge 84\% vs.\ 82\%; strict 65\% vs.\ 66\%; within noise\\
 Ranking quality (MRR, nDCG) & Graph, hybrid & MRR 0.93; graph best nDCG@3 and nDCG@8\\
 Coverage of gold facts (Rec@8, pool) & Graph, then agentic & 88\% and 85\% at 8 chunks; pool recall 94\%\\
 Fewest LLM calls for the accuracy & Graph & one call; agentic uses three\\
@@ -245,7 +266,7 @@ Latency and simplicity & Baseline & single dense search; no gain in accuracy\\
 \item \textbf{Small sample.} 24 questions and one run per variant. Intervals in Table~3 are wide for some comparisons; differences among V1, V2, V2b, V4 and among V2, V3 are not significant, and the middle of the ranking is not stable across the two metrics (appendix).
 \item \textbf{Judge and generator share a model family.} The semantic judge is Haiku. The strict string metric gives the same top two and the same bottom, but not the same middle order.
 \item \textbf{Questions were written after seeing the data and by the same author as the system}, so they favour entity-centric retrieval (graph, agentic); they may understate hybrid search, which helps with vague or paraphrased queries.
-\item \textbf{Qwen results are single runs and use the strict metric only}; the open-question evaluation was judged by Haiku, which also generated the Haiku answers, and has only two unanswerable questions, so abstention rates on them carry little weight.
+\item \textbf{Qwen results are single runs} (judged by Haiku and by string match); the open-question evaluation was judged by Haiku, which also generated the Haiku answers, and has only two unanswerable questions, so abstention rates on them carry little weight.
 \item \textbf{Retrieval relevance is defined by string match of gold facts}, which ignores chunks that help without containing a fact verbatim.
 \item \textbf{Counterfactual edits are small and local} (27 facts), so they test retrieval of specific values, not summarisation across many chunks.
 \item \textbf{Context sizes differ} (about 1.1k to 4.3k characters). V2b controls this for V4 and V5 but not for V6.

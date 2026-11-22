@@ -39,7 +39,7 @@ def export(results_path, questions_path, name, kind):
                 r = runs.get(f"{v}|{q['id']}")
                 if not r:
                     continue
-                secs = r.get("context_sources", [])
+                secs = r.get("context_sources") or [it["section"] for st in r.get("trace", []) for it in st["items"] if it["selected_for_llm"] and st["stage"] == "rerank"][:len(r["context"])]
                 sub = r.get("extra", {}).get("subqueries", [])
                 row = [qid(q), q.get("type") or q.get("category"), q["question"], v, r["answer"], len(r["context"]), sum(map(len, r["context"])),
                        r["llm_calls"], round(r["total_s"], 1), " | ".join(secs), " | ".join(sub)]
@@ -82,8 +82,12 @@ def export(results_path, questions_path, name, kind):
 
 
 if __name__ == "__main__":
-    which = sys.argv[1:] or ["cf", "open"]
+    which = sys.argv[1:] or ["cf", "open", "cf_qwen", "open_qwen"]
     if "cf" in which:
         export("results_v2.json", "questions_v2.json", "counterfactual_24q", "cf")
     if "open" in which:
         export("results_open.json", "questions_open.json", "open_41q", "open")
+    if "cf_qwen" in which:
+        export("results_v2_qwen.json", "questions_v2.json", "counterfactual_24q_qwen", "cf")
+    if "open_qwen" in which:
+        export("results_open_qwen.json", "questions_open.json", "open_41q_qwen", "open")

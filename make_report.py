@@ -89,15 +89,33 @@ for line in open("review/metrics_open.md"):
     t = line.split()
     if len(t) >= 12 and t[0] in ORDER:
         OPEN[t[0]] = dict(n=t[1], correct=t[2], faith=t[3], rel=t[4], comp=t[5], prec=t[6], ent=t[7], abst_ok=t[8], abst_bad=t[9], calls=t[10], secs=t[11])
-# Qwen2.5-7B-Instruct (4-bit, T4 on Colab) strict-metric results, transcribed from the Colab run log (results files live on Colab)
-QW = {"v5_graph": (66.1, 37.5, 68.2, 69.0, 87.6), "v6_agentic": (65.0, 25.0, 59.1, 67.9, 91.4), "v2b_rerank8": (59.4, 33.3, 54.5, 63.1, 73.3),
-      "v4_hybrid": (56.7, 20.8, 54.5, 58.3, 77.1), "v1_baseline": (48.5, 12.5, 45.5, 50.0, 56.2), "v2_rerank": (40.9, 8.3, 36.4, 41.7, 56.2),
-      "v3_hier_rerank": (40.9, 8.3, 36.4, 41.7, 57.1), "v0_closed_book": (21.3, 0.0, 4.5, 25.0, 0.0)}
-QWO = {"v0_closed_book": (0.0, 0.0), "v1_baseline": (48.6, 100), "v2_rerank": (45.9, 100), "v2b_rerank8": (35.1, 100), "v3_hier_rerank": (43.2, 100),
-       "v4_hybrid": (43.2, 100), "v5_graph": (40.5, 50), "v6_agentic": (48.6, 100)}
+# Qwen2.5-7B-Instruct (4-bit, T4): answers generated on Colab, then re-judged locally with Haiku
+QR = json.load(open("results_v2_qwen.json"))["runs"]
+byq = {v: [QR[f"{v}|{q['id']}"] for q in Q] for v in ORDER}
+
+
+def aggq(v, key):
+    rs = byq[v]; sc = "judge_score" if key == "judge_hit" else "score"; fu = "judge_full" if key == "judge_hit" else "full"
+    chg = [x for r in rs for x, c in zip(r[key], r["fact_changed"]) if c]
+    ctx = [x for r in rs for x in r["ctx_hit"] if x is not None]
+    return dict(acc=np.mean([r[sc] for r in rs]), full=np.mean([r[fu] for r in rs]), chg=np.mean(chg), ctx=(np.mean(ctx) if ctx else None))
+
+
+QJ, QS = {v: aggq(v, "judge_hit") for v in ORDER}, {v: aggq(v, "fact_hit") for v in ORDER}
+QOR = json.load(open("results_open_qwen.json"))["runs"]
+QWO = {}
+for v in ORDER:
+    rs = [r for k, r in QOR.items() if k.startswith(v + "|")]
+    QWO[v] = (100 * np.mean([r["abstained"] for r in rs if r["answerable"] == "yes"]), 100 * np.mean([r["abstained"] for r in rs if r["answerable"] == "no"]))
+OPENQ = {}
+for line in open("review/metrics_open_qwen.md"):
+    t = line.split()
+    if len(t) >= 12 and t[0] in ORDER:
+        OPENQ[t[0]] = dict(correct=t[2], faith=t[3], comp=t[5], prec=t[6], ent=t[7], abst_ok=t[8], abst_bad=t[9])
 from scipy.stats import spearmanr
 _o = [v for v in ORDER]
-rho = spearmanr([ST[v]["acc"] for v in _o], [QW[v][0] for v in _o])[0]
+rho = spearmanr([J[v]["acc"] for v in _o], [QJ[v]["acc"] for v in _o])[0]
+rho_s = spearmanr([ST[v]["acc"] for v in _o], [QS[v]["acc"] for v in _o])[0]
 fm = lambda x: "--" if x is None else f"{x:.3f}"
 ret_rows = []
 for v in sorted(RF, key=lambda v: -RF[v]["ndcg@8"]):
@@ -108,7 +126,9 @@ pool_rows = "\n".join(f"{SHORT[v]} & {RP[v]['pool']:.0f} & {pct(RP[v]['pool_reca
 open_order = ["v6_agentic", "v5_graph", "v4_hybrid", "v2b_rerank8", "v2_rerank", "v3_hier_rerank", "v1_baseline"]
 cl = lambda x: "--" if x == "-" else x.replace("%", "\\%")
 OPENT = "\n".join(f"{SHORT[v]} & {cl(OPEN[v]['faith'])} & {cl(OPEN[v]['comp'])} & {cl(OPEN[v]['prec'])} & {cl(OPEN[v]['ent'])} & {cl(OPEN[v]['abst_bad'])} & {cl(OPEN[v]['abst_ok'])} & {OPEN[v]['calls']} & {OPEN[v]['secs']} \\\\" for v in open_order)
-QWT = "\n".join(f"{SHORT[v]} & {pct(ST[v]['acc'])} & {QW[v][0]:.1f}\\% & {QW[v][2]:.1f}\\% & {QW[v][4]:.1f}\\% & {QWO[v][0]:.1f}\\% & {QWO[v][1]:.0f}\\% \\\\" for v in sorted(ORDER, key=lambda v: -QW[v][0]))
+QWT = "\n".join(f"{SHORT[v]} & {pct(J[v]['acc'])} & {pct(QJ[v]['acc'])} & {pct(QJ[v]['chg'])} & {pct(ST[v]['acc'])} & {pct(QS[v]['acc'])} & {QWO[v][0]:.1f}\\% & {QWO[v][1]:.0f}\\% \\\\" for v in sorted(ORDER, key=lambda v: -QJ[v]["acc"]))
+oq = ["v6_agentic", "v5_graph", "v4_hybrid", "v2b_rerank8", "v2_rerank", "v3_hier_rerank", "v1_baseline", "v0_closed_book"]
+QOPENT = "\n".join(f"{SHORT[v]} & {cl(OPENQ[v]['faith'])} & {cl(OPENQ[v]['comp'])} & {cl(OPENQ[v]['prec'])} & {cl(OPENQ[v]['ent'])} & {cl(OPENQ[v]['correct'])} & {cl(OPENQ[v]['abst_bad'])} & {cl(OPENQ[v]['abst_ok'])} \\\\" for v in oq)
 
 TEX = r"""\documentclass[11pt,a4paper]{article}
 \usepackage[margin=2.3cm]{geometry}
@@ -252,17 +272,31 @@ __OPENT__
 \end{itemize}
 
 \section{Replication with a small open model (Qwen2.5-7B-Instruct)}
-To check that the ranking is not an artefact of one proprietary generator, we repeated both experiments with Qwen2.5-7B-Instruct (4-bit, one T4 GPU on Colab), keeping retrieval, prompts and questions identical. Qwen's own judging was unusable: used as the semantic judge it scored closed-book answers 96\% correct, so we report only the strict string metric and the automatic abstention measure. The Qwen runs were transcribed from the Colab log; the raw result files are kept on Colab.
+To check that the ranking is not an artefact of one proprietary generator, we repeated both experiments with Qwen2.5-7B-Instruct (4-bit, one T4 GPU on Colab), keeping the retrieval, prompts and questions identical; retrieval was replayed to store the chunk rankings, and its candidate lists are the same as in Section~6. Qwen judging its own kind was unusable (it scored closed-book answers 96\% correct), so Qwen's answers were scored by the same Haiku judge and by the strict string match.
 
 \begin{table}[h]\centering\footnotesize
-\caption{Haiku and Qwen compared (24 counterfactual questions, strict string-match fact accuracy; open questions, abstention). Spearman rank correlation between the Haiku and Qwen fact-accuracy rankings: __RHO__.}
-\resizebox{\linewidth}{!}{\begin{tabular}{@{}lrrrrrr@{}}\toprule
-Variant & Haiku fact acc. & Qwen fact acc. & Qwen changed facts & Qwen ctx.\ recall & Qwen abst.\ ans. & Qwen abst.\ unans.\\\midrule
+\caption{Haiku and Qwen as generators (24 counterfactual questions; open-question abstention). ``Judge'' is the Haiku semantic judge, ``strict'' the string match. Spearman rank correlation between the Haiku and Qwen rankings: __RHO__ (judge) and __RHOS__ (strict).}
+\resizebox{\linewidth}{!}{\begin{tabular}{@{}lrrrrrrr@{}}\toprule
+Variant & Haiku judge & Qwen judge & Qwen changed facts & Haiku strict & Qwen strict & Qwen abst.\ ans. & Qwen abst.\ unans.\\\midrule
 __QWT__
 \bottomrule\end{tabular}}
 \end{table}
 
-The ranking transfers: graph and agentic are the top two, the 8-chunk variants come next, baseline and the 3-chunk rerankers follow, and closed-book is last with almost none of the changed facts (4.5\%). On Qwen, graph and agentic are within 1.1 points of each other, so the extra two LLM calls of agentic RAG buy nothing measurable with the weaker model. Qwen abstains less than Haiku on answerable questions (35--49\% versus 51--73\%), and rerank-8 abstains least.
+\begin{table}[h]\centering\footnotesize
+\caption{Open-question metrics with Qwen as generator (41 questions; Haiku judge). ``Correct'' is the score against the oracle reference and is defined for 13 questions only.}
+\begin{tabular}{@{}lrrrrrrr@{}}\toprule
+Variant & Faithful & Complete & Ctx prec. & Entity hit & Correct & Abst.\ ans. & Abst.\ unans.\\\midrule
+__QOPENT__
+\bottomrule\end{tabular}
+\end{table}
+
+\begin{itemize}
+\item \textbf{The ranking transfers.} Agentic and graph are the top two with both generators, the 8-chunk variants follow, then baseline and the 3-chunk rerankers, and closed-book is last, getting only 4.5\% of the changed facts. Rank correlation with Haiku is __RHO__.
+\item \textbf{With the weaker generator the gap between graph and agentic closes.} The judge puts agentic ahead by about 2 points (84\% vs.\ 82\%) and the string metric puts graph ahead by about 1 point; neither difference is meaningful at 24 questions, so the two extra LLM calls of agentic RAG buy little here.
+\item \textbf{Qwen is less faithful than Haiku} (80--87\% of claims supported by context, versus 93--98\%), so a stronger generator matters even with good retrieval.
+\item \textbf{Qwen shows the value of retrieval on the open questions.} Qwen has not memorised the SRD: closed-book Qwen is correct on 15\% of the answerable reference questions, against 85\% for Haiku, while the RAG variants reach 42--62\%. Rerank-8 and graph score best (62\%), on the 13 questions that have a reference.
+\item \textbf{Abstention.} Qwen abstains less than Haiku on answerable questions (35--49\% versus 51--73\%); rerank-8 abstains least. Graph is the only variant that failed to abstain on one of the two unanswerable questions.
+\end{itemize}
 
 \section{Discussion}
 \paragraph{The counterfactual design matters.} Closed-book Haiku scores __CBUNC__ on unchanged facts, close to what several RAG variants reach overall, and __CBCHG__ on changed facts. On unmodified data alone, V1--V3 would look only a few points better than no retrieval. The ranking among retrieval methods is cleanest in the ``changed'' column.
@@ -283,7 +317,7 @@ The ranking transfers: graph and agentic are the top two, the 8-chunk variants c
 \begin{tabular}{@{}p{5.6cm}p{3.1cm}p{6.2cm}@{}}\toprule
 Criterion & Winner & Evidence\\\midrule
 Answer accuracy, Haiku (judge) & Agentic (__AG__) & +__DAG__ points over graph; wider interval, see Table~3\\
-Answer accuracy, Qwen (strict) & Graph $\approx$ agentic & 66.1\% vs.\ 65.0\%, within noise\\
+Answer accuracy, Qwen & Agentic $\approx$ graph & judge 84\% vs.\ 82\%; strict 65\% vs.\ 66\%; within noise\\
 Ranking quality (MRR, nDCG) & Graph, hybrid & MRR 0.93; graph best nDCG@3 and nDCG@8\\
 Coverage of gold facts (Rec@8, pool) & Graph, then agentic & 88\% and 85\% at 8 chunks; pool recall 94\%\\
 Fewest LLM calls for the accuracy & Graph & one call; agentic uses three\\
@@ -300,7 +334,7 @@ Latency and simplicity & Baseline & single dense search; no gain in accuracy\\
 \item \textbf{Small sample.} 24 questions and one run per variant. Intervals in Table~3 are wide for some comparisons; differences among V1, V2, V2b, V4 and among V2, V3 are not significant, and the middle of the ranking is not stable across the two metrics (appendix).
 \item \textbf{Judge and generator share a model family.} The semantic judge is Haiku. The strict string metric gives the same top two and the same bottom, but not the same middle order.
 \item \textbf{Questions were written after seeing the data and by the same author as the system}, so they favour entity-centric retrieval (graph, agentic); they may understate hybrid search, which helps with vague or paraphrased queries.
-\item \textbf{Qwen results are single runs and use the strict metric only}; the open-question evaluation was judged by Haiku, which also generated the Haiku answers, and has only two unanswerable questions, so abstention rates on them carry little weight.
+\item \textbf{Qwen results are single runs} (judged by Haiku and by string match); the open-question evaluation was judged by Haiku, which also generated the Haiku answers, and has only two unanswerable questions, so abstention rates on them carry little weight.
 \item \textbf{Retrieval relevance is defined by string match of gold facts}, which ignores chunks that help without containing a fact verbatim.
 \item \textbf{Counterfactual edits are small and local} (27 facts), so they test retrieval of specific values, not summarisation across many chunks.
 \item \textbf{Context sizes differ} (about 1.1k to 4.3k characters). V2b controls this for V4 and V5 but not for V6.
@@ -334,7 +368,7 @@ rep = {
     "__CBCHG__": pct(cb["chg"]), "__CBUNC__": pct(cb["unc"]), "__DGR__": f"{dg:.0f}", "__DAG__": f"{da:.0f}",
     "__AVGSUB__": f"{avg_sub:.1f}", "__AGCTX__": pct(J["v6_agentic"]["ctx"]), "__AGSEC__": f"{J['v6_agentic']['secs']:.0f}",
     "__GMRR__": f"{RF['v5_graph']['mrr']:.2f}", "__GNDCG__": pct(RF["v5_graph"]["ndcg@8"]), "__GREC__": pct(RF["v5_graph"]["recall@8"]),
-    "__RETT__": RETT, "__POOLT__": pool_rows, "__OPENT__": OPENT, "__QWT__": QWT, "__RHO__": f"{rho:.2f}",
+    "__RETT__": RETT, "__POOLT__": pool_rows, "__OPENT__": OPENT, "__QWT__": QWT, "__RHO__": f"{rho:.2f}", "__RHOS__": f"{rho_s:.2f}", "__QOPENT__": QOPENT,
     "__BASEC__": f"{J['v1_baseline']['secs']:.0f}", "__FU__": pct(fu_rate), "__AGCH__": f"{J['v6_agentic']['chars']:.0f}",
 }
 for k, v in rep.items():

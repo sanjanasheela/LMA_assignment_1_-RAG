@@ -1,0 +1,1081 @@
+﻿qid,type_or_category,question,variant,answer,n_ctx_chunks,ctx_chars,llm_calls,seconds,retrieved_sections,agentic_subqueries,answerable_from_srd,abstained_auto,MANUAL_correct_0_1_2,MANUAL_complete_0_1_2,MANUAL_faithful_Y_N,MANUAL_notes
+o1,Character,What are the abilities and characteristics of a Wizard?,v0_closed_book,"A Wizard in Dungeons & Dragons 5th Edition is a spellcasting class known for their versatility and intelligence. Here are their key abilities and characteristics:
+
+1. **Class Features**:
+   - **Spellcasting**: Wizards can cast a wide variety of spells from the Wizard spell list.
+   - **Arcane Recovery**: Once per long rest, a wizard can recover a number of expended spell slots equal to their Intelligence modifier.
+   - **Cantrips**: Wizards can cast two cantrips of their choice at will.
+   - **Spellbook**: Wizards maintain a spellbook where they record all the spells they know.
+
+2. **Ability Scores**:
+   - **Intelligence**: The primary ability score for wizards. Higher Intelligence scores allow them to learn more and greater spells.
+   - **Wisdom**: Secondary ability score. Affects saving throw DCs and some spell effects.
+   - **Charisma**: Affects certain interactions and social skills, as well as some spell effects.
+
+3. **Hit Points and Armor Class**:
+   - **Hit Points**: Typically average for a spellcaster, starting with around 6 hit points at level 1 and gaining more as they advance.
+   - **Armor Class**: Generally low due to their focus on spellcasting. They often rely on Dexterity or other defenses.
+
+4. **Proficiencies**:
+   - **Tools**: Wizards are proficient with one type of artisan’s tools and one musical instrument.
+   - **Saving Throws**: Wisdom and Charisma.
+   - **Skills**: Choose two from Arcana, History, Investigation, Nature, Religion, Athletics, Insight, Medicine, Perception, Performance, Persuasion, Investigation, Nature, Religion, Stealth, and Survival.
+
+5. **Backgrounds**: Wizards can choose from various backgrounds that provide additional benefits and background features.
+
+6. **Playstyle**:
+   - **Versatility**: Can adapt to many different playstyles, from offensive to defensive or support roles.
+   - **Study and Experimentation**: Often portrayed as scholars or experimenters, spending time studying and researching new spells.
+
+7. **Drawbacks**:
+   - **Physical Weakness**: Relies heavily on mental abilities and has poor physical defenses.
+   - **",0,0,1,118.5,,,yes,False,,,,
+o1,Character,What are the abilities and characteristics of a Wizard?,v1_baseline,"As a Wizard, at Level 1, you gain all the traits in the Core Wizard Traits table and the Wizard's level 1 features listed in the Wizard Features table. You also gain cantrips and the ability to prepare spells. The exact details of these abilities and characteristics are not provided in the given context.",3,846,1,25.0,Classes > As a Level 1 Character | Classes > Wizard Class Features | Classes > Level 6 Wizard Spells,,yes,True,,,,
+o1,Character,What are the abilities and characteristics of a Wizard?,v2_rerank,"- **Core Wizard Traits**: Gained as a Level 1 character.
+- **Wizard Features**: Gain at various levels, including proficiency bonus, class features, cantrips, prepared spells, and spell slots per spell level.
+- **Ability Score Improvement**: At level 4 and every 4 levels thereafter (levels 8, 12, and 16), can choose to improve an ability score or take another qualifying feat.",3,1019,1,13.3,Classes > As a Level 1 Character | Classes > Level 4: Ability Score Improvement | Classes > Wizard Class Features,,yes,False,,,,
+o1,Character,What are the abilities and characteristics of a Wizard?,v2b_rerank8,"The context provided does not explicitly list the abilities and characteristics of a Wizard. It describes how Wizards gain features and spells but does not detail their specific abilities or characteristics. Therefore, part of the answer is missing based on the given information.",8,2691,1,16.2,Classes > As a Level 1 Character | Classes > Level 4: Ability Score Improvement | Classes > Wizard Class Features | Classes > Level 1: Spellcasting | Classes > Level 6 Wizard Spells | Classes > Level 1 Wizard Spells | Classes > Wizard Class Features | Playing the Game > The Six Abilities,,yes,True,,,,
+o1,Character,What are the abilities and characteristics of a Wizard?,v3_hier_rerank,"- **Core Wizard Traits**: Gain all traits listed in the Core Wizard Traits table.
+- **Wizard Features**: Gain the Wizard's level 1 features, including proficiency bonus, class features, cantrips, prepared spells, and spell slots per spell level.
+- **Changing Prepared Spells**: Can change your list of prepared spells after a long rest by replacing any of them with spells from your spellbook.
+- **Spellcasting Ability**: Intelligence is the spellcasting ability for Wizard spells.",3,1286,1,31.4,Classes > As a Level 1 Character | Classes > Level 1: Spellcasting | Classes > Wizard Class Features,,yes,False,,,,
+o1,Character,What are the abilities and characteristics of a Wizard?,v4_hybrid,"A Wizard has the following abilities and characteristics:
+
+- **Core Abilities**: Intelligence, Wisdom, and Charisma (for sentient magic items).
+- **Spellcasting Ability**: Intelligence.
+- **Hit Point Die**: From the Core Wizard Traits table (only for multiclass characters).
+- **Class Features**: Listed in the Wizard Features table, starting at Level 1.
+- **Cantrips**: Gained at Level 1.
+- **Prepared Spells**: Can change the list of prepared spells after a long rest, replacing any with spells from their spellbook.
+- **Spell Slots**: Details provided in the Wizard Features table.
+- **Subclass**: Gains a subclass at Level 3, chosen from available options like Evoker.
+- **Background Abilities**: Can choose three abilities from Strength, Dexterity, Constitution, Intelligence, or Wisdom based on their background.
+
+Note: The context does not provide specific details about all aspects of a Wizard’s abilities and characteristics, such as the exact number of cantrips or the full range of spell slots per level.",8,3260,1,35.4,Classes > As a Level 1 Character | Classes > As a Multiclass Character | Magic Items > Abilities | Classes > Level 1: Spellcasting | Playing the Game > The Six Abilities | Classes > Wizard Class Features | Gameplay Toolbox > 1: Choose Abilities | Classes > Level 3: Wizard Subclass,,yes,True,,,,
+o1,Character,What are the abilities and characteristics of a Wizard?,v5_graph,"A Wizard gains the following abilities and characteristics:
+
+- **Core Wizard Traits**: All traits from the Core Wizard Traits table.
+- **Wizard Features**: The Wizard's level 1 features, including proficiency bonus, class features, cantrips, and spell slots (details provided in the Wizard Features table).
+- **Abilities**: Intelligence, Wisdom, and Charisma scores, chosen by the player or determined randomly (rolling 4d6 for each, dropping the lowest and totaling the rest).
+
+The context does not provide specific details about the exact number of spell slots or other class features beyond level 1, nor does it specify the exact scores for Intelligence, Wisdom, and Charisma for a new Wizard character. Additionally, the subclass and its features are not detailed in the given context.",8,2885,1,47.1,Classes > As a Level 1 Character | Classes > As a Multiclass Character | Magic Items > Abilities | Playing the Game > The Six Abilities | Classes > Wizard Class Features | Gameplay Toolbox > 1: Choose Abilities | Classes > Level 3: Wizard Subclass | Monsters A–Z > Traits,,yes,True,,,,
+o1,Character,What are the abilities and characteristics of a Wizard?,v6_agentic,"As a Wizard, you gain the following abilities and characteristics:
+
+- **Class Features**: You gain features listed in the Wizard Features table at each specified level.
+- **Core Wizard Traits**: You gain all the traits in the Core Wizard Traits table.
+- **Cantrips**: You learn cantrips.
+- **Prepared Spells**: You prepare a certain number of spells from the Wizard spell list.
+- **Spell Slots**: You gain spell slots per spell level.
+- **Spellcasting**: You can cast spells from the Wizard spell list.
+- **Arcane Focus**: You can use an Arcane Focus as a Spellcasting Focus.
+
+Mirage Arcane and Arcane Sword are specific spells available to Wizards, but they do not define the general abilities and characteristics of a Wizard. The context does not provide detailed information about all specific spells or features beyond these points.",9,3096,3,50.7,Classes > Wizard Class Features | Classes > As a Level 1 Character | Classes > Wizard Spell List | Equipment > Arcane Focus (Varies) | Spells > Mirage Arcane | Spells > Arcane Sword | Rules Glossary > Spellcasting Focus | Classes > Level 1: Spellcasting | Character Creation > Spellcasting,Wizard | Arcane Tradition | Spellcasting,yes,True,,,,
+o2,Character,What is the difference between an Elf and a Half-Elf?,v0_closed_book,"An Elf is a full-blooded member of the elf race with all its racial traits, including darkvision, advantage on saving throws against being charmed, ageless youth (aging slowly until reaching the age of 100), and a +2 to Dexterity or Wisdom. 
+
+A Half-Elf, on the other hand, has one elf parent and one human parent. They gain both the elf and human racial traits. Specifically, they have darkvision, advantage on saving throws against being charmed, and a +2 to either Dexterity, Wisdom, or Charisma (chosen at creation). Additionally, half-elves can choose to take either the elf or human ancestry feature, which provides further benefits related to their heritage.",0,0,1,118.5,,,partial,False,,,,
+o2,Character,What is the difference between an Elf and a Half-Elf?,v1_baseline,"The provided context does not contain information about Half-Elves, so I cannot provide a comparison between Elves and Half-Elves based on the given information. The context only describes the traits of Elves and Halflings.",3,1454,1,23.6,Character Origins > Elf | Character Origins > Halfling | Character Origins > Elf,,partial,True,,,,
+o2,Character,What is the difference between an Elf and a Half-Elf?,v2_rerank,"The context provided does not contain information about Half-Elves, so the specific differences between Elves and Half-Elves cannot be answered based on this information alone. The context only describes traits for Elves and does not provide any details about Half-Elves.",3,800,1,13.3,Character Origins > Elf | Character Origins > Elf | Character Origins > Halfling,,partial,True,,,,
+o2,Character,What is the difference between an Elf and a Half-Elf?,v2b_rerank8,"The context provided does not contain information about a Half-Elf, so the specific differences between an Elf and a Half-Elf cannot be answered based solely on the given information. The context only details the traits of Elves and does not mention Half-Elves.",8,3236,1,16.2,Character Origins > Elf | Character Origins > Elf | Character Origins > Halfling | Character Origins > Elf | Character Origins > Halfling | Character Origins > Elf | Character Origins > Elf | Monsters > Creature Type,,partial,True,,,,
+o2,Character,What is the difference between an Elf and a Half-Elf?,v3_hier_rerank,"The context provided does not contain information about Half-Elves or their differences from Elves. Therefore, the part of the answer regarding the comparison between Elves and Half-Elves is missing.",3,902,1,31.4,Character Origins > Elf | Monsters A–Z > Traits | Character Origins > Elf,,partial,True,,,,
+o2,Character,What is the difference between an Elf and a Half-Elf?,v4_hybrid,"The context provided does not contain information about Half-Elves, only about Elves and Halflings. Therefore, the specific differences between an Elf and a Half-Elf cannot be answered based on the given information.",8,3067,1,35.4,Character Origins > Elf | Monsters A–Z > Traits | Character Origins > Elf | Character Origins > Halfling | Character Origins > Elf | Character Origins > Halfling | Character Origins > Elf | Character Origins > Elf,,partial,True,,,,
+o2,Character,What is the difference between an Elf and a Half-Elf?,v5_graph,"The context provided does not contain information about the differences between an Elf and a Half-Elf. Therefore, the part of the answer that is missing is the comparison between Elf and Half-Elf characteristics and traits.",8,3234,1,42.9,Character Origins > Elf | Character Origins > Elf | Character Origins > Elf | Character Origins > Halfling | Spells > Sleep | Character Origins > Elf | Character Origins > Elf | Monsters A–Z > Traits,,partial,True,,,,
+o2,Character,What is the difference between an Elf and a Half-Elf?,v6_agentic,"The context provided does not contain information about Half-Elves or their differences from Elves. Therefore, the part of the answer regarding the difference between an Elf and a Half-Elf is missing.",7,2776,3,62.1,Character Origins > Elf | Character Origins > Elf | Character Origins > Elf | Character Creation > Choose a Species | Monsters A–Z > Traits | Monsters A–Z > Half-Dragon | Character Origins > Elf,Elf | Half-Elf,partial,True,,,,
+o3,Character,Which character classes can use magic?,v0_closed_book,"In Dungeons & Dragons 5th Edition (2024 SRD 5.2), several character classes can use magic:
+
+1. **Wizard**: Can cast spells from the wizard spell list.
+2. **Sorcerer**: Can cast spells from the sorcerer spell list.
+3. **Warlock**: Can cast spells from the warlock spell list.
+4. **Paladin**: Can cast some divine spells from the paladin spell list.
+5. **Ranger**: Can cast some druidic spells from the druid spell list.
+6. **Bard**: Can cast spells from the bard spell list.
+7. **Cleric**: Can cast spells from the cleric spell list.
+8. **Druid**: Can cast spells from the druid spell list.
+9. **Pact Magic Classes (Sorcerer and Warlock)**: These classes gain spells through their class features.
+10. **Multiclassing**: Characters with levels in any of these classes can also use magic if they multiclass into one of them.
+
+These classes have the ability to cast spells as part of their core abilities or through class features.",0,0,1,118.5,,,yes,False,,,,
+o3,Character,Which character classes can use magic?,v1_baseline,"The context provided does not specify which character classes can use magic. It only lists some level 1 wizard spells and level 1 sorcerer spells. Therefore, missing information: which specific character classes can use magic.",3,722,1,23.6,Character Creation > Tier 2 (Levels 5–10) | Classes > Level 1 Wizard Spells | Classes > Level 1: Spellcasting,,yes,True,,,,
+o3,Character,Which character classes can use magic?,v2_rerank,"The context provided does not specify which character classes can use magic. It only discusses features at level 10 and for tier 2 characters but does not list specific classes. Therefore, the part of the answer regarding which character classes can use magic is missing.",3,736,1,20.7,Classes > Level 10: Magical Secrets | Character Creation > Tier 2 (Levels 5–10) | Classes > As a Multiclass Character,,yes,True,,,,
+o3,Character,Which character classes can use magic?,v2b_rerank8,"The context provided does not explicitly list specific character classes that can use magic. It mentions features and abilities related to certain levels and classes like Wizard, Sorcerer, and Druid, but it does not directly state which classes can use magic. Therefore, part of the answer is missing based on the given context.",8,1903,1,16.2,Classes > Level 10: Magical Secrets | Character Creation > Tier 2 (Levels 5–10) | Classes > As a Multiclass Character | Classes > Level 1: Spellcasting | Classes > Level 6 Wizard Spells | Spells > School of Magic | Classes > As a Multiclass Character | Classes > Level 3: Draconic Spells,,yes,True,,,,
+o3,Character,Which character classes can use magic?,v3_hier_rerank,"The context provided does not specify which character classes can use magic. It only discusses features at level 10 and for tier 2 characters but does not list specific classes. Therefore, the part of the answer regarding which character classes can use magic is missing.",3,736,1,18.1,Classes > Level 10: Magical Secrets | Character Creation > Tier 2 (Levels 5–10) | Classes > As a Multiclass Character,,yes,True,,,,
+o3,Character,Which character classes can use magic?,v4_hybrid,"The context provided does not explicitly list specific character classes that can use magic. It describes features and abilities related to magic usage but does not directly state which classes can use magic. Therefore, part of the answer is missing based on the given context.",8,2714,1,35.4,Character Creation > Spellcasting | Classes > Level 13: Use Magic Device | Classes > Level 2: Font of Magic | Classes > Level 1: Spellcasting | Classes > Wizard Subclass: Evoker | Classes > Level 10: Magical Secrets | Character Creation > Tier 2 (Levels 5–10) | Classes > As a Multiclass Character,,yes,True,,,,
+o3,Character,Which character classes can use magic?,v5_graph,"The context provided does not explicitly list specific character classes that can use magic. It discusses features like Sorcery Points, spell slots, and multiclassing but does not directly state which classes can use magic. Therefore, part of the answer is missing based on the given context.",8,2642,1,42.9,Classes > Level 2: Font of Magic | Character Creation > Tier 2 (Levels 5–10) | Classes > As a Multiclass Character | Spells > Spell Slots | Classes > As a Multiclass Character | Character Creation > Multiclassing | Monsters A–Z > Traits | Magic Items > Armor,,yes,True,,,,
+o3,Character,Which character classes can use magic?,v6_agentic,"The provided context does not explicitly state which character classes can use magic. Therefore, part of the answer is missing based on the given information.",14,4591,3,76.6,Monsters > Armor Class | Classes > Level 3: Fighter Subclass | Classes > Level 7: Additional Fighting Style | Magic Items > Weapons | Magic Items | Equipment > Identifying a Magic Item | Character Creation > Create Your Character | Character Creation > Step 1: Choose Class | Character Creation > Multiclassing | Classes > Level 1: Fighting Style | Classes > Level 2: Fighting Style | Magic Items > Abilities | Magic Items > Mysterious Deck | Spells > Casting without Slots,classes | magic,yes,True,,,,
+o4,Character,What are the racial traits of a Dragonborn?,v0_closed_book,"Dragonborn in Dungeons & Dragons 5th Edition have the following racial traits:
+
+1. **Age**: Dragonborn reach adulthood around age 15 and can live to be over 150 years old.
+2. **Alignment**: Tends towards lawful good, though they can be any alignment.
+3. **Size**: Medium (size does not affect carrying capacity or reach).
+4. **Speed**: Base walking speed is 30 feet.
+5. **Breath Weapon**: Once per short rest, a dragonborn can exhale a 15-foot line of gas or radiant energy. The type of breath weapon varies by dragonborn subtype (acid, cold, fire, lightning, or poison).
+6. **Draconic Ancestry**: Advantage on saving throws against being charmed and frightened. Can speak, read, and write Draconic and Common.
+7. **Draconic Heritage**: Can use their action to breathe a 15-foot cone of their draconic ancestry's damage type. This ability can be used three times per long rest, and regains one use when they finish a short or long rest.
+8. **Languages**: Proficient in two languages of their choice (typically Draconic and another language like Common).
+
+These traits define the core characteristics and abilities of a dragonborn character in D&D 5e.",0,0,1,118.5,,,yes,False,,,,
+o4,Character,What are the racial traits of a Dragonborn?,v1_baseline,"The racial traits of a Dragonborn include:
+
+- **Draconic Ancestry:** This trait allows you to choose a type of dragon, which affects your Breath Weapon and Damage Resistance traits as well as your appearance.
+- **Speed:** 30 feet.
+- **Amphibious:** The dragonborn can breathe air and water.
+
+The specific Breath Weapon and Damage Resistance traits depend on the chosen dragon ancestor, but the exact details are not provided in the given context.",3,1139,1,23.6,Character Origins > Dragonborn | Character Origins > Dragonborn | Monsters A–Z > Traits,,yes,True,,,,
+o4,Character,What are the racial traits of a Dragonborn?,v2_rerank,"- **Draconic Ancestry:** Your lineage stems from a dragon progenitor. This affects your Breath Weapon and Damage Resistance traits as well as your appearance.
+- **Speed:** 30 feet.
+- **Size:** Medium (about 5–7 feet tall).
+
+The specific Breath Weapon and Damage Resistance details are missing from the provided context.",3,1304,1,20.7,Character Origins > Dragonborn | Character Origins > Character Species | Character Creation > Choose a Species,,yes,True,,,,
+o4,Character,What are the racial traits of a Dragonborn?,v2b_rerank8,"As a Dragonborn, you have the following racial traits:
+
+- **Draconic Ancestry**: Your lineage stems from a dragon progenitor. This choice affects your Breath Weapon and Damage Resistance traits as well as your appearance.
+- **Speed**: 30 feet.
+
+The specific Breath Weapon and Damage Resistance depend on the type of dragon you choose from the Draconic Ancestors table.",8,3381,1,27.8,Character Origins > Dragonborn | Character Origins > Character Species | Character Creation > Choose a Species | Monsters A–Z > Traits | Character Origins > Dragonborn | Monsters A–Z > Adult Black Dragon | Monsters A–Z > Ancient White Dragon | Monsters A–Z > Adult Gold Dragon,,yes,False,,,,
+o4,Character,What are the racial traits of a Dragonborn?,v3_hier_rerank,"- **Draconic Ancestry:** Your lineage stems from a dragon progenitor. This affects your Breath Weapon and Damage Resistance traits as well as your appearance.
+- **Speed:** 30 feet.
+- **Size:** Medium (about 5–7 feet tall).
+
+The specific Breath Weapon and Damage Resistance details are missing from the provided context.",3,1304,1,18.1,Character Origins > Dragonborn | Character Origins > Character Species | Character Creation > Choose a Species,,yes,True,,,,
+o4,Character,What are the racial traits of a Dragonborn?,v4_hybrid,"A Dragonborn has the following racial traits:
+
+- **Draconic Ancestry**: Choose a dragon type which determines the Breath Weapon, Damage Resistance, and appearance.
+- **Breath Weapon**: Can be used a number of times equal to the character’s Proficiency Bonus, regaining uses after a Long Rest.
+- **Damage Resistance**: Resistant to the damage type of their Draconic Ancestry.
+- **Darkvision**: Has Darkvision with a range of 60 feet.
+
+The context does not provide specific details about the exact Breath Weapon or Damage Resistance for each Draconic Ancestry type, only the table headers and a few examples.",8,2679,1,50.8,Character Origins > Dragonborn | Character Origins > Dragonborn | Character Origins > Character Species | Character Creation > Choose a Species | Monsters A–Z > Traits | Monsters A–Z > Traits | Character Origins > Dragonborn | Character Origins > Dragonborn,,yes,True,,,,
+o4,Character,What are the racial traits of a Dragonborn?,v5_graph,"The racial traits of a Dragonborn are:
+- **Draconic Ancestry**: Choose a dragon type that affects Breath Weapon, Damage Resistance, and appearance.
+- **Breath Weapon**: Can be used a number of times equal to the character’s Proficiency Bonus, regaining uses after a Long Rest.
+- **Damage Resistance**: Resistance to the damage type determined by Draconic Ancestry.
+- **Darkvision**: Range of 60 feet.",8,2389,1,42.9,Character Origins > Dragonborn | Character Origins > Dragonborn | Character Origins > Character Species | Character Creation > Choose a Species | Monsters A–Z > Traits | Monsters A–Z > Traits | Monsters A–Z > Traits | Character Origins > Dragonborn,,yes,False,,,,
+o4,Character,What are the racial traits of a Dragonborn?,v6_agentic,"The racial traits of a Dragonborn include:
+
+- **Draconic Ancestry**: Determines the Breath Weapon and Damage Resistance.
+- **Breath Weapon**: Can be used a number of times equal to the Proficiency Bonus, with a range of 15 feet (Cone) or 30 feet (Line), dealing damage of a type determined by Draconic Ancestry.
+- **Damage Resistance**: Resistance to the damage type determined by Draconic Ancestry.
+- **Darkvision**: Vision out to 60 feet in darkness.
+- **Draconic Spells**: At certain levels, gains specific spells related to dragon magic.
+
+The exact types of Breath Weapon and Damage Resistance are not specified in the given context.",6,2668,3,76.6,Character Origins > Dragonborn | Character Origins > Dragonborn | Character Origins > Dragonborn | Classes > Level 3: Draconic Spells | Classes > Sorcerer Subclass: Draconic Sorcery | Spells > Actions,Dragonborn racial traits,yes,False,,,,
+o5,Character,What abilities does a Tiefling character possess?,v0_closed_book,"A Tiefling character in Dungeons & Dragons 5e possesses the following abilities:
+
+1. **Darkvision**: Tieflings have darkvision out to 60 feet, allowing them to see in darkness as if it were dim light.
+2. **Hellish Resistance**: Tieflings have resistance to fire damage.
+3. **Hellish Rebuke**: Starting at 1st level, a Tiefling can use their action to cause a creature they can see within 5 feet of them to make a DC 10 Wisdom saving throw or take 1d6 radiant damage.
+4. **Infernal Legacy**: Tieflings gain proficiency in two skills of their choice. They also gain proficiency with the Warhammer and can cast the spells ""Bane"" and ""Darkness"" once per day without expending a spell slot. Additionally, they can cast ""Bane"" once per short rest.
+5. **Tongues**: At 6th level, Tieflings can understand and speak any language, including those of other creatures.
+6. **Improved Darkvision**: At 10th level, Tieflings' darkvision increases to 120 feet.
+
+These abilities reflect the Tiefling's heritage and the influence of fiendish or celestial beings on their ancestry.",0,0,1,118.5,,,yes,False,,,,
+o5,Character,What abilities does a Tiefling character possess?,v1_baseline,"A Tiefling character possesses the following abilities:
+
+- **Darkvision**: With a range of 60 feet.
+- **Fiendish Legacy**: Chooses a legacy from the Fiendish Legacies table, gaining the level 1 benefit of the chosen legacy.
+- At levels 3 and 5, learns a higher-level spell known to them, which they can cast once without a spell slot, regaining this ability after a long rest. They can also cast these spells using available spell slots.
+- **Infernal Legacy** (as an example): Resistance to Fire damage and knowing the Fire Bolt cantrip.
+- Can cast the cantrip Thaumaturgy using the chosen spellcasting ability.
+
+Note: The specific legacy chosen affects some of the abilities, but the context provided does not specify which legacy was chosen.",3,1426,1,23.6,Character Origins > Tiefling | Character Origins > Tiefling | Character Origins > Tiefling,,yes,True,,,,
+o5,Character,What abilities does a Tiefling character possess?,v2_rerank,"A Tiefling character possesses the following abilities:
+
+- Darkvision with a range of 60 feet.
+- One of the following Fiendish Legacies: Infernal (Resistance to Fire damage and knowing the Fire Bolt cantrip), Hellish Rebuke, Darkness.
+- The ability to know one cantrip: either Thaumaturgy or Fire Bolt, depending on the chosen Fiendish Legacy.
+- The ability to cast a higher-level spell learned at levels 3 and 5 without using a spell slot once per long rest, regaining this ability after a long rest.
+- Using the Intelligence, Wisdom, or Charisma ability score for spellcasting with their chosen higher-level spell and cantrips.",3,1426,1,20.7,Character Origins > Tiefling | Character Origins > Tiefling | Character Origins > Tiefling,,yes,False,,,,
+o5,Character,What abilities does a Tiefling character possess?,v2b_rerank8,"A Tiefling character possesses the following abilities:
+
+- Darkvision with a range of 60 feet
+- A choice of a Fiendish Legacy (options include Infernal, Hellish Rebuke, Darkness, and Otherworldly Presence)
+- The ability to cast a higher-level spell learned at levels 3 and 5 without a spell slot once per long rest, with the option to use spell slots of the appropriate level
+- The spellcasting ability is determined by Intelligence, Wisdom, or Charisma (chosen when selecting the legacy)
+- For the Otherworldly Presence legacy, the ability to cast the Thaumaturgy cantrip with the chosen spellcasting ability",8,3242,1,27.8,Character Origins > Tiefling | Character Origins > Tiefling | Character Origins > Tiefling | Playing the Game > The Six Abilities | Magic Items > Rope of Climbing | Gameplay Toolbox > 1: Choose Abilities | Gameplay Toolbox > 1: Choose Abilities | Equipment > Rope (1 GP),,yes,False,,,,
+o5,Character,What abilities does a Tiefling character possess?,v3_hier_rerank,"A Tiefling character possesses the following abilities:
+
+- Darkvision with a range of 60 feet.
+- One of the following Fiendish Legacies: Infernal (Resistance to Fire damage and knowing the Fire Bolt cantrip), Hellish Rebuke, Darkness.
+- The ability to know one cantrip: either Thaumaturgy or Fire Bolt, depending on the chosen Fiendish Legacy.
+- The ability to cast a higher-level spell learned at levels 3 and 5 without using a spell slot once per long rest, regaining this ability after a long rest.
+- Using the Intelligence, Wisdom, or Charisma ability score for spellcasting with their chosen higher-level spell and cantrips.",3,1426,1,26.5,Character Origins > Tiefling | Character Origins > Tiefling | Character Origins > Tiefling,,yes,False,,,,
+o5,Character,What abilities does a Tiefling character possess?,v4_hybrid,"A Tiefling character possesses the following abilities:
+
+- **Darkvision with a range of 60 feet**
+- An ability score (Intelligence, Wisdom, or Charisma) chosen by the player, which serves as the spellcasting ability for their Fiendish Legacy spells.
+- A Fiendish Legacy trait (Infernal, Hellish Rebuke, Darkness, or Otherworldly Presence) which provides specific benefits.
+- The ability to cast a higher-level spell learned at levels 3 and 5, which they always have prepared and can cast without a spell slot once per long rest.
+- The ability to cast certain cantrips depending on their legacy (Fire Bolt for Infernal, Thaumaturgy for Otherworldly Presence).
+- Proficiency in skills and tools related to their background, though not specified in the context provided.
+- A Proficiency Bonus that increases as the character gains levels.
+
+The exact choice of abilities and traits depends on the specific legacy selected by the player.",8,3645,1,50.8,Character Origins > Tiefling | Character Origins > Tiefling | Character Origins > Tiefling | Character Creation > Choose a Species | Playing the Game > The Six Abilities | Character Origins > Criminal | Playing the Game > Proficiency | Gameplay Toolbox > 1: Choose Abilities,,yes,False,,,,
+o5,Character,What abilities does a Tiefling character possess?,v5_graph,"A Tiefling character possesses the following abilities:
+
+- Darkvision with a range of 60 feet
+- Resistance to Fire damage (if choosing the Infernal legacy)
+- Knowledge of the Fire Bolt cantrip (if choosing the Infernal legacy)
+- Knowledge of the Thaumaturgy cantrip
+- The ability to cast a higher-level spell at character levels 3 and 5, which can be cast once without a spell slot after a long rest
+
+The context provided does not specify which legacy the Tiefling chooses, so the resistance to fire damage and knowledge of Fire Bolt are only applicable if the Infernal legacy is selected.",8,3231,1,23.6,Character Origins > Tiefling | Character Origins > Tiefling | Character Origins > Tiefling | Playing the Game > The Six Abilities | Character Creation > Create Your Character | Equipment > Rope (1 GP) | Magic Items > Abilities | Character Creation > Step 3: Ability Scores,,yes,True,,,,
+o5,Character,What abilities does a Tiefling character possess?,v6_agentic,"A Tiefling character possesses the following abilities:
+
+- **Darkvision**: With a range of 60 feet.
+- **Fiendish Legacy**: Chooses a legacy from the Fiendish Legacies table, gaining the level 1 benefit immediately and learning higher-level spells at levels 3 and 5.
+- **Cantrips**: Knows one cantrip based on their chosen legacy (Poison Spray for Abyssal, Chill Touch for Chthonic, Fire Bolt for Infernal).
+- **Spells**: Can cast a higher-level spell learned at levels 3 and 5 without a spell slot, regaining this ability after a long rest. Can also cast these spells using available spell slots.
+- **Otherworldly Presence**: Knows the Thaumaturgy cantrip, which uses the same spellcasting ability as the Fiendish Legacy trait.
+- **Resistance**: Gains resistance to a specific damage type (Poison for Abyssal, Necrotic for Chthonic, Fire for Infernal) and can choose another damage type at level 10 through the Fiendish Resilience feature.
+
+Note: The exact resistance and higher-level spell for each legacy are not fully specified in the given context, so some details are missing.",6,2528,3,101.3,Character Origins > Tiefling | Spells > Reincarnate | Character Origins > Tiefling | Character Origins > Tiefling | Character Origins > Tiefling | Classes > Level 10: Fiendish Resilience,Tiefling race | Tiefling subrace | Tiefling features,yes,True,,,,
+o6,Character,What is the maximum level a character can reach?,v0_closed_book,"In Dungeons & Dragons 5th Edition (2024 SRD 5.2), the maximum level a character can reach is 20. Characters can advance to level 20 through normal experience gains and do not have a higher limit within the standard rules.",0,0,1,118.5,,,yes,False,,,,
+o6,Character,What is the maximum level a character can reach?,v1_baseline,The maximum level a character can reach is 20.,3,969,1,23.6,Character Creation > Creating Your Character | Character Creation > Gaining a Level | Character Creation > Tiers of Play,,yes,False,,,,
+o6,Character,What is the maximum level a character can reach?,v2_rerank,"The context provided does not specify a maximum level a character can reach. Therefore, the part regarding the maximum level is missing.",3,993,1,20.7,Character Creation > Gaining a Level | Character Creation > Creating Your Character | Character Creation > Write Your Level,,yes,True,,,,
+o6,Character,What is the maximum level a character can reach?,v2b_rerank8,The maximum level a character can reach is 20.,8,2102,1,27.8,Character Creation > Gaining a Level | Character Creation > Creating Your Character | Character Creation > Write Your Level | Character Creation > Starting at Higher Levels | Character Creation > Tiers of Play | Classes > Level 20: Body and Mind | Character Creation > Gaining a Level | Rules Glossary > Reach,,yes,False,,,,
+o6,Character,What is the maximum level a character can reach?,v3_hier_rerank,"The context provided does not specify a maximum level a character can reach. Therefore, the part regarding the maximum level is missing.",3,993,1,26.5,Character Creation > Gaining a Level | Character Creation > Creating Your Character | Character Creation > Write Your Level,,yes,True,,,,
+o6,Character,What is the maximum level a character can reach?,v4_hybrid,"The provided context does not specify a maximum level a character can reach. The information given pertains to character creation, level advancement, and bonus feats at level 20, but it does not set an upper limit on levels. Therefore, based solely on the given context, the maximum level is not stated.",8,3539,1,50.8,Character Creation > Gaining a Level | Character Creation > Creating Your Character | Character Creation > Creating Your Character | Character Creation > Gaining a Level | Character Creation > Experience Points | Character Creation > Level Advancement | Character Creation > Fill In Numbers | Character Creation > Write Your Level,,yes,True,,,,
+o6,Character,What is the maximum level a character can reach?,v5_graph,"The provided context does not specify a maximum level a character can reach. The information given pertains to character creation, level advancement, and bonus feats at level 20, but it does not set an upper limit on levels. Therefore, based solely on the given context, the maximum level is not stated.",8,3539,1,23.6,Character Creation > Gaining a Level | Character Creation > Creating Your Character | Character Creation > Creating Your Character | Character Creation > Gaining a Level | Character Creation > Experience Points | Character Creation > Level Advancement | Character Creation > Fill In Numbers | Character Creation > Write Your Level,,yes,True,,,,
+o6,Character,What is the maximum level a character can reach?,v6_agentic,"The context provided does not specify a maximum level a character can reach. The information given only describes advancing from level 1 to level 20 without mentioning any cap beyond that. Therefore, the maximum level based on the given context is level 20, but it does not provide information about any level above that.",3,1146,3,42.7,Character Creation > Level Advancement | Character Creation > Tiers of Play | Character Creation > Write Your Level,level cap,yes,True,,,,
+o7,Character,How does a character's proficiency bonus work?,v0_closed_book,"A character's proficiency bonus in Dungeons & Dragons 5e is a numerical value that represents their training and experience in certain skills or abilities. It increases as the character gains levels in their class. Here’s how it works:
+
+1. **Level-Based Increase**: The proficiency bonus starts at +2 at 1st level and increases by +1 for each additional even-level milestone (2nd, 4th, 6th, etc.). For example:
+   - 1st-3rd level: +2
+   - 4th-5th level: +3
+   - 6th-8th level: +4
+   - 9th-11th level: +5
+   - 12th-14th level: +6
+   - 15th-17th level: +7
+   - 18th-20th level: +8
+
+2. **Applying Proficiency**: The proficiency bonus is added to any ability check where the character has proficiency. This includes skills, saving throws, and certain attack rolls.
+
+3. **Class Features and Abilities**: Some class features and abilities grant proficiency in specific skills or tools, which also apply the proficiency bonus to those checks.
+
+4. **Special Cases**: Certain spells, magic items, and other effects can grant proficiency or increase the proficiency bonus temporarily.
+
+5. **Combining Proficiencies**: A character can be proficient in multiple things, and their proficiency bonus applies to all of them. However, if a skill or ability check involves a proficiency they don’t have, they do not add their proficiency bonus to the roll.
+
+This system helps balance the game by allowing characters to specialize in certain areas while still providing a general boost to their overall capabilities.",0,0,1,40.7,,,yes,False,,,,
+o7,Character,How does a character's proficiency bonus work?,v1_baseline,"A character's Proficiency Bonus is based on their total character level and is added to ability checks when the GM deems a skill or tool proficiency relevant and the character has that proficiency. For example, a level 5 character would add +3 to relevant ability checks due to their Proficiency Bonus. Without proficiency in a skill, a creature can still make ability checks involving that skill but doesn't add their Proficiency Bonus.",3,1386,1,23.6,Character Creation > Proficiency Bonus | Playing the Game > Skill Proficiencies | Playing the Game > Proficiency Bonus,,yes,False,,,,
+o7,Character,How does a character's proficiency bonus work?,v2_rerank,"A character's Proficiency Bonus is based on their total character level and is used in ability checks for skills in which they are proficient. The bonus is added to the relevant ability score when making a check involving a proficient skill. For example, a level 5 character (Proficiency Bonus +3) would add this bonus to an Athletics check if they are proficient in Athletics. Characters without proficiency in a skill do not add their Proficiency Bonus to checks involving that skill. Monsters also have a Proficiency Bonus, but it is not specified how it works for them in the given context.",3,1402,1,20.7,Character Creation > Proficiency Bonus | Playing the Game > Skill Proficiencies | Playing the Game > Proficiency,,yes,False,,,,
+o7,Character,How does a character's proficiency bonus work?,v2b_rerank8,"A character's Proficiency Bonus is based on their total character level and is used in ability checks and attack rolls when relevant. For skill checks, the character adds their Proficiency Bonus if they are proficient in the relevant skill. For example, if a character has proficiency in Athletics and makes a Strength (Athletics) check to climb a cliff, they add their Proficiency Bonus to the check. The Proficiency Bonus also applies to attack rolls when using a weapon the character is proficient with or casting a spell. The exact value of the Proficiency Bonus increases as the character gains levels. Monsters use a Proficiency Bonus based on their Challenge Rating.",8,2983,1,27.8,Character Creation > Proficiency Bonus | Playing the Game > Skill Proficiencies | Playing the Game > Proficiency | Playing the Game > Proficiency | Playing the Game > Proficiency Bonus | Playing the Game > Skill Proficiencies | Playing the Game > Proficiency Bonus | Playing the Game > D20 Tests,,yes,False,,,,
+o7,Character,How does a character's proficiency bonus work?,v3_hier_rerank,"A character's Proficiency Bonus is based on their total character level and is used in ability checks for skills in which they are proficient. The bonus is added to the relevant ability score when making a check involving a proficient skill. For example, a level 5 character (Proficiency Bonus +3) would add this bonus to an Athletics check if they are proficient in Athletics. Characters without proficiency in a skill do not add their Proficiency Bonus to checks involving that skill. Monsters also have a Proficiency Bonus, but it is not specified how it works for them in the given context.",3,1402,1,26.5,Character Creation > Proficiency Bonus | Playing the Game > Skill Proficiencies | Playing the Game > Proficiency,,yes,False,,,,
+o7,Character,How does a character's proficiency bonus work?,v4_hybrid,"A character's Proficiency Bonus increases at certain levels as shown in the Character Advancement table and class features table. It is added to ability checks and saving throws for skills and abilities the character is proficient in. For skills, the character adds their Proficiency Bonus to the ability modifier associated with that skill. For saving throws, the character adds their Proficiency Bonus to the appropriate ability modifier. The bonus is +2 for a level 1 character and increases as the character gains levels. Skill and saving throw proficiencies are class-specific and some monsters also have them as noted in their stat blocks.",8,3121,1,42.4,Character Creation > Gaining a Level | Character Creation > Proficiency Bonus | Playing the Game > Skill Proficiencies | Playing the Game > Saving Throw Proficiencies | Playing the Game > Proficiency | Character Creation > Fill In Numbers | Character Creation > Fill In Numbers | Character Creation > Choose a Background,,yes,False,,,,
+o7,Character,How does a character's proficiency bonus work?,v5_graph,"A character's Proficiency Bonus works by increasing at certain levels as shown in the Character Advancement table and class features table. It is added to ability checks when the GM determines that a skill or tool proficiency is relevant and the character has that proficiency. For example, a character with proficiency in Athletics adds their Proficiency Bonus to a Strength (Athletics) check. The Proficiency Bonus also increases when gaining levels, starting at +2 for a level 1 character and increasing based on the character's total level as shown in the tables.",8,2917,1,23.6,Character Creation > Gaining a Level | Character Creation > Proficiency Bonus | Playing the Game > Skill Proficiencies | Playing the Game > Proficiency | Character Creation > Choose a Background | Playing the Game > Proficiency | Playing the Game > Proficiency Bonus | Playing the Game > Skill Proficiencies,,yes,False,,,,
+o7,Character,How does a character's proficiency bonus work?,v6_agentic,"A character's Proficiency Bonus is based on their total character level, not their level in a particular class. It is added to an ability check when the GM determines that a skill or tool proficiency is relevant and the character has that proficiency. The exact value of the Proficiency Bonus depends on the character's level, as shown in the Character Advancement table. Monsters' Proficiency Bonuses are based on their Challenge Rating.",3,1043,3,81.9,Character Creation > Proficiency Bonus | Playing the Game > Proficiency Bonus | Playing the Game > Proficiency,proficiency bonus,yes,False,,,,
+o8,Character,What are the primary ability scores of a Barbarian?,v0_closed_book,"The primary ability scores for a Barbarian in Dungeons & Dragons 5th Edition are Strength and Constitution. Strength is crucial for melee attacks and damage, while Constitution provides significant health and resistance to ability damage.",0,0,1,40.7,,,yes,False,,,,
+o8,Character,What are the primary ability scores of a Barbarian?,v1_baseline,The primary ability score for a Barbarian is Strength.,3,1346,1,13.5,Classes > Barbarian | Classes > As a Multiclass Character | Classes > Barbarian Class Features,,yes,False,,,,
+o8,Character,What are the primary ability scores of a Barbarian?,v2_rerank,The primary ability score of a Barbarian is Strength.,3,1185,1,20.7,Character Creation > Prerequisites | Classes > Level 4: Ability Score Improvement | Classes > Barbarian,,yes,False,,,,
+o8,Character,What are the primary ability scores of a Barbarian?,v2b_rerank8,The primary ability score for a Barbarian is Strength.,8,3336,1,27.8,Character Creation > Prerequisites | Classes > Level 4: Ability Score Improvement | Classes > Barbarian | Classes > As a Multiclass Character | Classes > Barbarian Class Features | Classes > Barbarian Class Features | Classes > As a Level 1 Character | Classes > Barbarian Class Features,,yes,False,,,,
+o8,Character,What are the primary ability scores of a Barbarian?,v3_hier_rerank,The primary ability score of a Barbarian is Strength.,3,1185,1,26.5,Character Creation > Prerequisites | Classes > Level 4: Ability Score Improvement | Classes > Barbarian,,yes,False,,,,
+o8,Character,What are the primary ability scores of a Barbarian?,v4_hybrid,The primary ability score for a Barbarian is Strength.,8,3610,1,42.4,Character Creation > Prerequisites | Classes > Level 4: Ability Score Improvement | Classes > Barbarian | Classes > As a Multiclass Character | Playing the Game > Ability Scores | Classes > Barbarian Class Features | Character Creation > Assign Ability Scores | Classes > Barbarian Class Features,,yes,False,,,,
+o8,Character,What are the primary ability scores of a Barbarian?,v5_graph,The primary ability score of a Barbarian is Strength.,8,2965,1,27.2,Character Creation > Prerequisites | Classes > Level 4: Ability Score Improvement | Classes > Barbarian | Classes > As a Multiclass Character | Playing the Game > Ability Scores | Character Creation > Assign Ability Scores | Classes > As a Level 1 Character | Character Creation > Adjust Ability Scores,,yes,False,,,,
+o8,Character,What are the primary ability scores of a Barbarian?,v6_agentic,"The context provided does not contain information about the primary ability scores for a Barbarian. The primary ability score for a Barbarian is typically Strength, as it is for many melee combat classes in D&D, but this specific detail is not listed in the given context.",3,1082,3,85.1,Classes > Barbarian Class Features | Classes > As a Multiclass Character | Classes > As a Level 1 Character,Barbarian,yes,True,,,,
+o9,Spell,What does the Fireball spell do?,v0_closed_book,"The Fireball spell creates a sphere of fire that radiates heat and deals fire damage to creatures in its area. It has the following details:
+
+- **Level**: 3rd-level Evocation Spell
+- **Casting Time**: 1 action
+- **Range**: 150 feet
+- **Components**: V, S, M (a tiny bit of phosphorus and sulfur)
+- **Duration**: Instantaneous
+
+**Effect**: The spell creates a 20-foot-radius sphere of fire centered on a point within range. Each creature in that area must make a Dexterity saving throw. On a failed save, a creature takes 8d6 fire damage; on a successful save, it takes half as much damage.
+
+**Area of Effect**: The sphere spreads around corners, and each creature in the area when the spell is cast must make the Dexterity saving throw.
+
+**Additional Effects**: The fire can ignite flammable objects in the area that aren't being worn or carried, dealing an additional 2d6 fire damage to those objects on the first round they are ignited.",0,0,1,40.7,,,yes,False,,,,
+o9,Spell,What does the Fireball spell do?,v1_baseline,"The Fireball spell creates a bright streak that flashes from the caster to a point within range, then explodes into a fiery sphere. Each creature in a 20-foot-radius sphere centered on that point makes a Dexterity saving throw, taking 8d6 Fire damage on a failed save or half as much damage on a successful one. Flammable objects in the area that aren't being worn or carried start burning.",3,1182,1,13.5,Spells > Fireball | Spells > Fireball | Spells > Delayed Blast Fireball,,yes,False,,,,
+o9,Spell,What does the Fireball spell do?,v2_rerank,"The Delayed Blast Fireball spell creates a glowing bead that, when the spell ends, explodes in a 20-foot-radius sphere centered on the chosen point. Each creature in the area must make a Dexterity saving throw, taking Fire damage equal to the total accumulated damage on a failed save or half as much damage on a successful one. The base damage is 12d6, increasing by 1d6 whenever the caster's turn ends and the spell hasn't ended. If a creature touches the bead before the spell ends, they make a Dexterity saving throw; on a failed save, the spell ends and the bead explodes, while on a successful save, the creature can throw the bead up to 40 feet. If the thrown bead enters a creature's space or collides with a solid object, the spell ends and the bead explodes. Flammable objects not being worn or carried start burning when the bead explodes.",3,1225,1,26.2,Spells > Delayed Blast Fireball | Spells > Delayed Blast Fireball | Spells > Delayed Blast Fireball,,yes,False,,,,
+o9,Spell,What does the Fireball spell do?,v2b_rerank8,"The Fireball spell creates a bright streak that flashes from you to a point within range and then expands into a fiery explosion. Each creature in a 20-foot-radius sphere centered on that point makes a Dexterity saving throw, taking 8d6 Fire damage on a failed save or half as much damage on a successful one. Flammable objects in the area that aren't being worn or carried start burning. The damage increases by 1d6 for each spell slot level above 3 when using a higher-level spell slot.",8,2913,1,27.8,Spells > Delayed Blast Fireball | Spells > Delayed Blast Fireball | Spells > Delayed Blast Fireball | Spells > Fireball | Spells > Fireball | Monsters A–Z > Actions | Spells > Produce Flame | Spells > Gust of Wind,,yes,False,,,,
+o9,Spell,What does the Fireball spell do?,v3_hier_rerank,"The Delayed Blast Fireball spell creates a glowing bead that, when the spell ends, explodes in a 20-foot-radius sphere centered on the chosen point. Each creature in the area must make a Dexterity saving throw, taking Fire damage equal to the total accumulated damage on a failed save or half as much damage on a successful one. The base damage is 12d6, increasing by 1d6 whenever the caster's turn ends and the spell hasn't ended. If a creature touches the bead before the spell ends, they make a Dexterity saving throw; on a failed save, the spell ends and the bead explodes, while on a successful save, the creature can throw the bead up to 40 feet. If the thrown bead enters a creature's space or collides with a solid object, the spell ends and the bead explodes. Flammable objects not being worn or carried start burning when the bead explodes.",3,1225,1,26.4,Spells > Delayed Blast Fireball | Spells > Delayed Blast Fireball | Spells > Delayed Blast Fireball,,yes,False,,,,
+o9,Spell,What does the Fireball spell do?,v4_hybrid,The Fireball spell creates a bright streak that flashes from the caster to a point within range and then expands into a fiery explosion. Each creature in a 20-foot-radius sphere centered on that point makes a Dexterity saving throw. Creatures take 8d6 Fire damage on a failed save or half as much damage on a successful one. Flammable objects in the area that aren't being worn or carried start burning. The damage increases by 1d6 for each spell slot level above 3 when using a higher-level spell slot.,8,2986,1,42.4,Spells > Delayed Blast Fireball | Spells > Delayed Blast Fireball | Spells > Delayed Blast Fireball | Spells > Fireball | Spells > Fireball | Magic Items > Wand of Fireballs | Monsters A–Z > Actions | Playing the Game > Damage against Multiple Targets,,yes,False,,,,
+o9,Spell,What does the Fireball spell do?,v5_graph,"The Fireball spell creates a 20-foot-radius sphere centered on a point within 150 feet of the caster. Each creature in that area must make a Dexterity saving throw. Those who fail take 8d6 Fire damage, while those who succeed take half damage. Flammable objects in the area that aren't being worn or carried start burning. The damage increases by 1d6 for each spell slot level above 3 when using a higher-level spell slot.",8,2978,1,27.2,Spells > Delayed Blast Fireball | Spells > Delayed Blast Fireball | Spells > Fireball | Spells > Fireball | Magic Items > Wand of Fireballs | Playing the Game > Damage against Multiple Targets | Spells > Delayed Blast Fireball | Magic Items > Staff of Power,,yes,False,,,,
+o9,Spell,What does the Fireball spell do?,v6_agentic,"The Fireball spell creates a bright streak that flashes from the caster to a chosen point within range, then explodes into a fiery sphere. Each creature in a 20-foot-radius sphere centered on that point makes a Dexterity saving throw, taking 8d6 Fire damage on a failed save or half as much damage on a successful one. Flammable objects in the area that aren't being worn or carried start burning.",3,1082,3,85.1,Spells > Fireball | Spells > Fireball | Magic Items > Wand of Fireballs,Fireball,yes,False,,,,
+o10,Spell,What is the damage range of Magic Missile?,v0_closed_book,"Magic Missile deals 1d4 + 1 force damage per dart, for a total of 3 darts. So the damage range is 3d4 + 3.",0,0,1,40.7,,,yes,False,,,,
+o10,Spell,What is the damage range of Magic Missile?,v1_baseline,The damage range of Magic Missile is 1d4 + 1 Force damage per dart.,3,1031,1,13.5,Spells > Magic Missile | Spells > Shield | Spells > Magic Missile,,yes,False,,,,
+o10,Spell,What is the damage range of Magic Missile?,v2_rerank,The damage range of Magic Missile is 1d4 + 1 Force damage.,3,1440,1,26.2,Spells > Magic Missile | Spells > Shield | Magic Items > Hammer of Thunderbolts,,yes,False,,,,
+o10,Spell,What is the damage range of Magic Missile?,v2b_rerank8,The damage range of Magic Missile is 1d4 + 1 Force damage.,8,3438,1,33.6,Spells > Magic Missile | Spells > Shield | Magic Items > Hammer of Thunderbolts | Magic Items > Gloves of Missile Snaring | Magic Items > Shield of Missile Attraction | Magic Items > Brooch of Shielding | Magic Items > Wand of Magic Missiles | Monsters A–Z > Actions,,yes,False,,,,
+o10,Spell,What is the damage range of Magic Missile?,v3_hier_rerank,The damage range of Magic Missile is 1d4 + 1 Force damage.,3,1440,1,26.4,Spells > Magic Missile | Spells > Shield | Magic Items > Hammer of Thunderbolts,,yes,False,,,,
+o10,Spell,What is the damage range of Magic Missile?,v4_hybrid,The damage range of Magic Missile is 1d4 + 1 Force damage per dart.,8,3351,1,47.3,Spells > Magic Missile | Magic Items > Dwarven Thrower | Spells > Shield | Magic Items > Quarterstaff of the Acrobat | Magic Items > Hammer of Thunderbolts | Magic Items > Gloves of Missile Snaring | Magic Items > Shield of Missile Attraction | Magic Items > Brooch of Shielding,,yes,False,,,,
+o10,Spell,What is the damage range of Magic Missile?,v5_graph,The damage range of Magic Missile is 1d4 + 1 Force damage.,8,3371,1,27.2,Spells > Magic Missile | Spells > Shield | Magic Items > Gloves of Missile Snaring | Magic Items > Shield of Missile Attraction | Magic Items > Brooch of Shielding | Magic Items > Vicious Weapon | Magic Items > Wand of Magic Missiles | Monsters A–Z > Reactions,,yes,False,,,,
+o10,Spell,What is the damage range of Magic Missile?,v6_agentic,The damage range of Magic Missile is 1d4 + 1 Force damage.,3,1152,3,61.2,Spells > Magic Missile | Magic Items > Wand of Magic Missiles | Monsters A–Z > Actions,Magic Missile,yes,False,,,,
+o11,Spell,Which spells require concentration?,v0_closed_book,"The following spells require concentration in Dungeons & Dragons 5e:
+
+1. Blur
+2. Counterspell
+3. Dispel Magic
+4. Fireball
+5. Freedom of Movement
+6. Heat Metal
+7. Heroism
+8. Hold Person
+9. Mirror Image
+10. Pass Without Trace
+11. Protection from Energy
+12. Shield of Faith
+13. Shield
+14. Slow
+15. Spirit Guardians
+16. True Strike
+17. Wall of Force
+
+These spells must be maintained by concentrating on them for their duration. Concentration is lost if the caster is knocked unconscious or killed, or if they choose to end it as a bonus action.",0,0,1,40.7,,,yes,False,,,,
+o11,Spell,Which spells require concentration?,v1_baseline,"Spells with a casting time of 1 minute or longer require concentration. Additionally, activating effects that require concentration will cause you to lose concentration on any existing effects.",3,1111,1,13.5,Spells > Major Image | Rules Glossary > Magic [Action] | Rules Glossary > Concentration,,yes,False,,,,
+o11,Spell,Which spells require concentration?,v2_rerank,"The context provided does not specify which individual wizard spells require concentration. It only describes the general rules for concentration and how it applies to starting another concentration effect or taking damage. Therefore, the specific spells that require concentration are missing from this context.",3,1283,1,26.2,Rules Glossary > Concentration | Rules Glossary > Concentration | Classes > Wizard Spell List,,yes,True,,,,
+o11,Spell,Which spells require concentration?,v2b_rerank8,"The context does not provide a comprehensive list of which specific spells require concentration. It only indicates that some spells and effects require concentration, and lists the conditions under which concentration is lost. Specific spells requiring concentration would need to be referenced from the individual class spell lists (Wizard, Sorcerer, Cleric) where the ""Special"" column might indicate this requirement.",8,3201,1,33.6,Rules Glossary > Concentration | Rules Glossary > Concentration | Classes > Wizard Spell List | Classes > Sorcerer Spell List | Classes > Cleric Spell List | Magic Items > Spells Cast from Items | Rules Glossary > Magic [Action] | Spells > Major Image,,yes,True,,,,
+o11,Spell,Which spells require concentration?,v3_hier_rerank,"The context provided does not specify which individual wizard spells require concentration. It only describes the general rules for concentration and how it applies to starting another concentration effect or taking damage. Therefore, the specific spells that require concentration are missing from this context.",3,1283,1,9.0,Rules Glossary > Concentration | Rules Glossary > Concentration | Classes > Wizard Spell List,,yes,True,,,,
+o11,Spell,Which spells require concentration?,v4_hybrid,"The context does not provide a comprehensive list of spells that require concentration. It only mentions that some spells and effects require concentration to remain active, and provides examples like the ""Bestow Curse"" spell. Additionally, the Warlock, Wizard, Sorcerer, and Cleric spell lists indicate that certain spells marked with ""C"" in the Special column require concentration. However, the specific spells are not listed here. Therefore, the context is missing the names of the specific concentration-requiring spells.",8,3204,1,47.3,Rules Glossary > Concentration | Spells > Bestow Curse | Rules Glossary > Concentration | Classes > Warlock Spell List | Classes > Wizard Spell List | Classes > Sorcerer Spell List | Classes > Cleric Spell List | Rules Glossary > Ready [Action],,yes,True,,,,
+o11,Spell,Which spells require concentration?,v5_graph,"The following spells require concentration:
+
+- Bestow Curse when cast with a level 4 or lower spell slot.
+- Major Image when cast with a level 4 or higher spell slot.
+- Dominate Person when cast with a level 6 or higher spell slot.
+- Scrying (the duration is specified as Concentration, up to 10 minutes).
+
+Other spells do not explicitly require concentration unless they are cast with a higher-level spell slot that removes the need for concentration (e.g., Bestow Curse with a level 5+ spell slot, or Major Image with a level 4+ spell slot).",8,3268,1,27.2,Rules Glossary > Concentration | Spells > Bestow Curse | Rules Glossary > Concentration | Rules Glossary > Magic [Action] | Spells > Major Image | Spells > Longer Casting Times | Spells > Dominate Person | Spells > Scrying,,yes,False,,,,
+o11,Spell,Which spells require concentration?,v6_agentic,"The context provided does not specify which particular spells require concentration. It only describes the general conditions under which concentration is required or lost. Therefore, the specific spells that require concentration are missing from the given information.",6,1741,3,92.2,Rules Glossary > Concentration | Rules Glossary > Concentration | Rules Glossary > Concentration | Rules Glossary > Spell | Spells > Gaining Spells | Magic Items > Spells,concentration | spells,yes,True,,,,
+o12,Spell,What is the difference between Mage Hand and Minor Illusion?,v0_closed_book,"Mage Hand and Minor Illusion are both cantrips from the Wizard spell list in D&D 5e, but they serve different purposes:
+
+1. **Mage Hand**:
+   - Creates an invisible, floating hand that can manipulate objects.
+   - Can lift up to 1 pound per level of the caster (up to 6 pounds at 6th level).
+   - Can move up to 30 feet on each turn.
+   - Useful for opening doors, moving objects, or delivering messages.
+
+2. **Minor Illusion**:
+   - Creates a sound or an image of your choosing within range.
+   - The illusion can be seen by one creature or heard by multiple creatures.
+   - Lasts for 1 minute per level of the caster (up to 8 minutes at 6th level).
+   - Useful for creating distractions, hiding small objects, or misleading others with false images or sounds.
+
+In summary, Mage Hand is for physical manipulation, while Minor Illusion is for creating auditory or visual illusions.",0,0,1,40.7,,,yes,False,,,,
+o12,Spell,What is the difference between Mage Hand and Minor Illusion?,v1_baseline,"Mage Hand allows you to manipulate objects and doors, while Minor Illusion creates visual images. Mage Hand cannot attack or carry heavy loads, whereas Minor Illusion cannot produce sounds or other sensory effects.",3,1149,1,13.5,Spells > Mage Hand | Spells > Minor Illusion | Spells > Mage Hand,,yes,False,,,,
+o12,Spell,What is the difference between Mage Hand and Minor Illusion?,v2_rerank,"Mage Hand allows manipulation of objects, opening doors, containers, and moving items, while Minor Illusion creates auditory or visual illusions. Mage Hand cannot attack, activate magic items, or carry more than 10 pounds, whereas Minor Illusion cannot create sensory effects other than sight and sound.",3,1160,1,26.2,Spells > Minor Illusion | Spells > Mage Hand | Spells > Minor Illusion,,yes,False,,,,
+o12,Spell,What is the difference between Mage Hand and Minor Illusion?,v2b_rerank8,"Mage Hand and Minor Illusion serve different purposes:
+
+- **Mage Hand**: Allows manipulation of objects, opening doors, containers, moving items, and pouring liquids. It can move up to 30 feet as a Magic action but cannot attack, activate magic items, or carry more than 10 pounds.
+- **Minor Illusion**: Creates visual or auditory illusions but cannot create sensory effects beyond sight and sound. Physical interaction reveals it as an illusion because objects can pass through it.",8,3395,1,33.6,Spells > Minor Illusion | Spells > Mage Hand | Spells > Minor Illusion | Spells > Mage Hand | Magic Items > Deck of Illusions | Magic Items > Deck of Illusions | Spells > Major Image | Spells > Project Image,,yes,False,,,,
+o12,Spell,What is the difference between Mage Hand and Minor Illusion?,v3_hier_rerank,"Mage Hand allows manipulation of objects, opening doors, containers, and moving items, while Minor Illusion creates auditory or visual illusions. Mage Hand cannot attack, activate magic items, or carry more than 10 pounds, whereas Minor Illusion cannot create sensory effects other than sight and sound.",3,1160,1,9.0,Spells > Minor Illusion | Spells > Mage Hand | Spells > Minor Illusion,,yes,False,,,,
+o12,Spell,What is the difference between Mage Hand and Minor Illusion?,v4_hybrid,"The main differences between Mage Hand and Minor Illusion are:
+
+- **Functionality**: 
+  - Mage Hand can manipulate objects, open doors or containers, stow or retrieve items, or pour contents out of vials.
+  - Minor Illusion creates a sound or image of an object.
+
+- **Movement**: 
+  - Mage Hand can move up to 30 feet as part of a Magic action.
+  - Minor Illusion does not allow movement.
+
+- **Interaction**: 
+  - Mage Hand can interact physically with objects and environments.
+  - Minor Illusion creates an illusion that can be examined but does not physically interact with the environment.
+
+- **Components**: 
+  - Mage Hand requires no components.
+  - Minor Illusion requires somatic (S) and material (M, a bit of fleece) components.
+
+- **Duration**: 
+  - Mage Hand can be controlled multiple times per turn.
+  - Minor Illusion has a duration of 1 minute.
+
+- **Spellcasting Ability**: 
+  - Mage Hand is available at will by the Naga and at will by the Level 0 Wizard.
+  - Minor Illusion is available at will by the Sphinx and at will by the Level 0 Wizard.",8,3046,1,47.3,Monsters A–Z > Actions | Spells > Minor Illusion | Spells > Minor Illusion | Monsters A–Z > Actions | Monsters A–Z > Actions | Classes > Cantrips (Level 0 Wizard Spells) | Spells > Mage Hand | Spells > Minor Illusion,,yes,False,,,,
+o12,Spell,What is the difference between Mage Hand and Minor Illusion?,v5_graph,"Mage Hand and Minor Illusion serve different purposes:
+
+- **Mage Hand**: Allows the creation of a spectral hand to manipulate objects, open doors, or containers, and pour contents out of vials. It does not create sound or images but can move up to 30 feet as a magic action.
+- **Minor Illusion**: Creates a sound or image of an object within range for the duration of the spell. Interaction with the illusion reveals it as false, but visual inspection can identify it as an illusion with a successful Intelligence (Investigation) check against the spell's save DC.",8,3474,1,27.2,Spells > Minor Illusion | Spells > Minor Illusion | Classes > Cantrips (Level 0 Wizard Spells) | Spells > Mage Hand | Spells > Minor Illusion | Classes > Cantrips (Level 0 Bard Spells) | Spells > Mage Hand | Magic Items > Deck of Illusions,,yes,False,,,,
+o12,Spell,What is the difference between Mage Hand and Minor Illusion?,v6_agentic,"The primary differences between Mage Hand and Minor Illusion are:
+
+- **Functionality**: 
+  - Mage Hand allows manipulation of objects and creation of a spectral hand.
+  - Minor Illusion creates auditory or visual illusions.
+
+- **Weight Limit**:
+  - Mage Hand can lift up to 10 pounds.
+  - Minor Illusion has no weight limit but cannot create sensory effects like sound or light.
+
+- **Duration**:
+  - Mage Hand lasts for 1 minute.
+  - Minor Illusion also lasts for 1 minute.
+
+- **Detection**:
+  - Physical interaction with Mage Hand reveals it as an illusion.
+  - Minor Illusion can be detected with an Intelligence (Investigation) check.
+
+- **Spell Type**:
+  - Mage Hand is a Conjuration cantrip.
+  - Minor Illusion is an Illusion cantrip.
+
+These points summarize the key distinctions between the two spells.",9,3259,3,57.5,Spells > Mage Hand | Spells > Mage Hand | Monsters A–Z > Actions | Spells > Minor Illusion | Spells > Minor Illusion | Spells > Minor Illusion | Monsters A–Z > Actions | Monsters A–Z > Actions | Monsters A–Z > Actions,Mage Hand | Minor Illusion,yes,False,,,,
+o13,Spell,Which spells can heal a character?,v0_closed_book,"The following spells can heal a character in Dungeons & Dragons 5e:
+
+1. **Healing Word** - Heals up to 3d8 + 3 (or 1d8 + 1 for a cantrip) hit points.
+2. **Cure Wounds** - Heals up to 3d8 + your spellcasting ability modifier (up to 6d8 at 5th level).
+3. **Greater Healing** - Heals up to 6d8 + 2 your spellcasting ability modifier (up to 10d8 at 9th level).
+4. **Mass Healing Word** - Heals up to 1d8 + 1 per target (up to 10 targets).
+5. **Mass Cure Wounds** - Heals up to 2d8 + 2 per target (up to 10 targets).
+6. **Regenerate** - Restores 1d8 + 2 hit points at the start of each of the target's turns.
+7. **Revivify** - Can restore a creature to life with 1d8 + 2 hit points.
+8. **True Regeneration** - Restores 1d8 + 2 hit points at the start of each of the target's turns.
+9. **Wish** - Can restore a creature to life with up to 20d8 + 5x your spellcasting ability modifier hit points.
+
+These spells provide various levels of healing, from minor to major, depending on the spell's level and the caster's abilities.",0,0,1,37.2,,,yes,False,,,,
+o13,Spell,Which spells can heal a character?,v1_baseline,"The spells that can heal a character are Prayer of Healing, Heal, and Mass Cure Wounds. However, the exact healing amounts for these spells are not provided in the context given.",3,714,1,13.5,Spells > Prayer of Healing | Spells > Heal | Spells > Mass Cure Wounds,,yes,True,,,,
+o13,Spell,Which spells can heal a character?,v2_rerank,"The following spells can heal a character:
+
+- **Heal**: Restores 70 Hit Points and ends certain conditions.
+- **Healing Word**: Restores Hit Points equal to 2d4 plus a modifier, with increased healing if a higher-level spell slot is used.",3,1185,1,26.2,Spells > Heal | Classes > Level 6: Blessed Healer | Spells > Healing Word,,yes,False,,,,
+o13,Spell,Which spells can heal a character?,v2b_rerank8,"The following spells can heal a character:
+
+- **Heal**: Restores 70 Hit Points and removes Blinded, Deafened, and Poisoned conditions.
+- **Mass Heal**: Restores up to 700 Hit Points divided among any number of creatures and removes Blinded, Deafened, and Poisoned conditions.
+- **Cure Wounds**: Restores 2d8 + spellcasting ability modifier Hit Points.
+- **Healing Word**: Restores 2d4 + spellcasting ability modifier Hit Points.
+- **Power Word Heal**: Restores all Hit Points and removes certain conditions.
+- **Prayer of Healing**: Increases healing by 1d8 for each spell slot level above 2.
+- **Mass Cure Wounds**: Increases healing by 1d8 for each spell slot level above 5.
+
+Note: Some spells like *Heal* and *Mass Heal* can be cast at higher levels to increase the healing amount.",8,2777,1,33.6,Spells > Heal | Classes > Level 6: Blessed Healer | Spells > Healing Word | Spells > Mass Heal | Spells > Cure Wounds | Spells > Power Word Heal | Spells > Prayer of Healing | Spells > Mass Cure Wounds,,yes,False,,,,
+o13,Spell,Which spells can heal a character?,v3_hier_rerank,"The following spells can heal a character:
+
+- **Heal**: Restores 70 Hit Points and ends certain conditions.
+- **Healing Word**: Restores Hit Points equal to 2d4 plus a modifier, with increased healing if a higher-level spell slot is used.",3,1185,1,9.0,Spells > Heal | Classes > Level 6: Blessed Healer | Spells > Healing Word,,yes,False,,,,
+o13,Spell,Which spells can heal a character?,v4_hybrid,"The following spells can heal a character:
+
+- **Heal**: Restores 70 Hit Points and ends the Blinded, Deafened, and Poisoned conditions.
+- **Mass Heal**: Restores up to 700 Hit Points divided among any number of creatures.
+- **Cure Wounds**: Restores 2d8 + spellcasting ability modifier Hit Points.
+- **Healing Word**: Restores 2d4 + spellcasting ability modifier Hit Points.
+- **Prayer of Healing**: Using a higher-level spell slot, the healing increases by 1d8 for each level above 2.
+- **Power Word Heal**: Restores all Hit Points and removes certain conditions like Charmed, Frightened, Paralyzed, Poisoned, or Stunned, and allows a standing up reaction if Prone.
+
+Note: The context provided does not explicitly mention the spell ""Prayer of Healing,"" but it is included based on the pattern of the other spells and the format used.",8,3181,1,59.2,Gameplay Toolbox > Sight Rot | Spells > Heal | Classes > Level 6: Blessed Healer | Spells > Healing Word | Spells > Mass Heal | Spells > Cure Wounds | Spells > Power Word Heal | Spells > Prayer of Healing,,yes,False,,,,
+o13,Spell,Which spells can heal a character?,v5_graph,"The following spells can heal a character:
+
+- **Heal**: Restores 70 Hit Points and ends the Blinded, Deafened, and Poisoned conditions.
+- **Mass Heal**: Restores up to 700 Hit Points divided among any number of creatures.
+- **Power Word Heal**: Restores all Hit Points of one creature and removes certain conditions.
+- **Prayer of Healing**: Restores Hit Points based on the spell slot level used.
+- **Cure Wounds** (not explicitly listed but implied to be a healing spell like those mentioned).
+
+Additionally, a _Healing Potion_ could be used for healing, though it is not listed in the provided context.",8,2947,1,27.2,Gameplay Toolbox > Sight Rot | Spells > Heal | Playing the Game > Healing | Classes > Level 6: Blessed Healer | Spells > Mass Heal | Spells > Power Word Heal | Spells > Prayer of Healing | Classes > Level 20: Words of Creation,,yes,False,,,,
+o13,Spell,Which spells can heal a character?,v6_agentic,The spells that can heal a character according to the given context are Heal and Prayer of Healing.,3,896,3,49.4,Classes > Level 6: Blessed Healer | Spells > Heal | Spells > Prayer of Healing,healing spells,yes,False,,,,
+o14,Spell,What level is the Revivify spell?,v0_closed_book,The Revivify spell is a 2nd-level necromancy spell.,0,0,1,37.2,,,yes,False,,,,
+o14,Spell,What level is the Revivify spell?,v1_baseline,Level 3,3,639,1,12.1,Classes > Level 1: Spellcasting | Classes > Level 3 Paladin Spells | Spells > Revivify,,yes,False,,,,
+o14,Spell,What level is the Revivify spell?,v2_rerank,Level 3,3,775,1,26.2,Spells > Revivify | Classes > Level 3 Paladin Spells | Classes > Level 3: Life Domain Spells,,yes,False,,,,
+o14,Spell,What level is the Revivify spell?,v2b_rerank8,Level 3,8,1847,1,33.6,Spells > Revivify | Classes > Level 3 Paladin Spells | Classes > Level 3: Life Domain Spells | Spells > Spell Level | Classes > Level 1: Spellcasting | Classes > Level 1: Spellcasting | Classes > Level 1: Spellcasting | Classes > Level 7 Cleric Spells,,yes,False,,,,
+o14,Spell,What level is the Revivify spell?,v3_hier_rerank,Level 3,3,775,1,9.0,Spells > Revivify | Classes > Level 3 Paladin Spells | Classes > Level 3: Life Domain Spells,,yes,False,,,,
+o14,Spell,What level is the Revivify spell?,v4_hybrid,The Revivify spell is level 3.,8,2062,1,59.2,Spells > Revivify | Classes > Level 3 Paladin Spells | Classes > Level 3: Life Domain Spells | Classes > Level 3: Life Domain Spells | Spells > Spell Level | Classes > Level 1: Spellcasting | Classes > Level 1: Spellcasting | Spells > Geas,,yes,False,,,,
+o14,Spell,What level is the Revivify spell?,v5_graph,The Revivify spell is level 3.,8,2314,1,46.9,Spells > Revivify | Classes > Level 3 Paladin Spells | Classes > Level 3: Life Domain Spells | Classes > Level 3: Life Domain Spells | Spells > Spell Level | Classes > Level 1: Spellcasting | Spells > Greater Restoration | Classes > Level 1: Spellcasting,,yes,False,,,,
+o14,Spell,What level is the Revivify spell?,v6_agentic,Level 3,3,775,3,50.6,Spells > Revivify | Classes > Level 3 Paladin Spells | Classes > Level 3: Life Domain Spells,Revivify,yes,False,,,,
+o15,Spell,Can a Wizard learn healing spells?,v0_closed_book,"Yes, a Wizard can learn healing spells. The Wizard's spell list includes several healing spells such as Cure Wounds, Lesser Restoration, and Greater Restoration. These spells allow the Wizard to heal damage or restore ability scores.",0,0,1,37.2,,,yes,False,,,,
+o15,Spell,Can a Wizard learn healing spells?,v1_baseline,"The context provided does not explicitly mention Wizards learning healing spells. The information given is about replacing prepared spells and adding new spells to a spellbook, but it does not directly address whether Wizards learn healing spells. Therefore, part of the answer is missing based on the given context.",3,944,1,12.1,Classes > Level 5: Memorize Spell | Classes > Level 3: Wizard Subclass | Classes > Level 6: Blessed Healer,,yes,True,,,,
+o15,Spell,Can a Wizard learn healing spells?,v2_rerank,"The context provided does not specify whether a Wizard can learn healing spells or not. It only discusses the process of adding spells to a spellbook and replacing prepared spells. Therefore, part of the answer is missing based on the given information.",3,951,1,8.1,Classes > Level 3: Wizard Subclass | Classes > Level 3: Wizard Subclass | Classes > Level 5: Memorize Spell,,yes,True,,,,
+o15,Spell,Can a Wizard learn healing spells?,v2b_rerank8,"The context provided does not explicitly mention Wizards learning healing spells. The Blessed Healer feature allows a Wizard to heal themselves when healing others, but it does not state that Wizards learn healing spells specifically. Therefore, part of the answer is missing based on the given context.",8,2561,1,33.6,Classes > Level 3: Wizard Subclass | Classes > Level 3: Wizard Subclass | Classes > Level 5: Memorize Spell | Classes > Level 1: Spellcasting | Classes > Level 1: Spellcasting | Classes > Level 6: Blessed Healer | Classes > Level 3: Wizard Subclass | Classes > Level 6 Wizard Spells,,yes,True,,,,
+o15,Spell,Can a Wizard learn healing spells?,v3_hier_rerank,"The context provided does not specify whether a Wizard can learn healing spells or not. It only discusses the process of adding spells to a spellbook and replacing prepared spells. Therefore, part of the answer is missing based on the given information.",3,951,1,15.1,Classes > Level 3: Wizard Subclass | Classes > Level 3: Wizard Subclass | Classes > Level 5: Memorize Spell,,yes,True,,,,
+o15,Spell,Can a Wizard learn healing spells?,v4_hybrid,"Yes, a Wizard can learn healing spells. They can choose from the Cleric, Druid, or Wizard spell lists, including cantrips and spells they have spell slots for, to learn two spells at level 6 through the ""Magical Discoveries"" feature. Additionally, a Wizard can gain cantrips through the ""Magic Initiate"" feat, which includes healing cantrips from the chosen class's list.",8,2868,1,59.2,Classes > Level 6: Magical Discoveries | Playing the Game > Healing | Feats > Magic Initiate | Classes > Level 3: Wizard Subclass | Classes > Level 3: Wizard Subclass | Classes > Level 5: Memorize Spell | Classes > Level 1: Spellcasting | Classes > Level 1: Spellcasting,,yes,False,,,,
+o15,Spell,Can a Wizard learn healing spells?,v5_graph,"Yes, a Wizard can learn healing spells. They can choose from the Cleric, Druid, or Wizard spell list, including cantrips or spells they have spell slots for, to learn two new spells at level 6. However, the context does not specify if all these spells are necessarily healing spells.",8,2899,1,46.9,Classes > Level 6: Magical Discoveries | Playing the Game > Healing | Classes > Level 3: Wizard Subclass | Classes > Level 3: Wizard Subclass | Classes > Level 1: Spellcasting | Classes > Wizard Spell List | Classes > Level 1: Spellcasting | Classes > Level 1: Spellcasting,,yes,True,,,,
+o15,Spell,Can a Wizard learn healing spells?,v6_agentic,"The context provided does not explicitly state whether Wizards can learn healing spells or not. The information given focuses on the Blessed Healer feature for a specific class and details about the Heal and Prayer of Healing spells. It does not mention Wizards learning these spells directly. Therefore, the part regarding whether a Wizard can learn healing spells is missing from the given context.",6,2003,3,50.6,Classes > Level 6: Blessed Healer | Spells > Heal | Spells > Prayer of Healing | Classes > Wizard Class Features | Classes > As a Level 1 Character | Classes > Wizard Spell List,healing spells | wizard,yes,True,,,,
+o16,Spell,What happens when a character loses concentration on a spell?,v0_closed_book,"When a character loses concentration on a spell, the spell ends. The exact circumstances under which concentration is lost vary depending on the spell being cast. Common reasons include taking damage while concentrating, being incapacitated, or the spell specifically requiring concentration. Once concentration is lost, the spell ends immediately, and any effects dependent on that spell cease.",0,0,1,37.2,,,yes,False,,,,
+o16,Spell,What happens when a character loses concentration on a spell?,v1_baseline,The effect ends.,3,1449,1,12.1,Rules Glossary > Concentration | Rules Glossary > Magic [Action] | Rules Glossary > Concentration,,yes,False,,,,
+o16,Spell,What happens when a character loses concentration on a spell?,v2_rerank,The effect ends.,3,1139,1,8.1,Rules Glossary > Concentration | Rules Glossary > Concentration | Spells > Flesh to Stone,,yes,False,,,,
+o16,Spell,What happens when a character loses concentration on a spell?,v2b_rerank8,The effect ends.,8,3130,1,21.9,Rules Glossary > Concentration | Rules Glossary > Concentration | Spells > Flesh to Stone | Spells > Banishment | Rules Glossary > Magic [Action] | Spells > Enthrall | Spells > Enlarge/Reduce | Spells > Hex,,yes,False,,,,
+o16,Spell,What happens when a character loses concentration on a spell?,v3_hier_rerank,The effect ends.,3,1139,1,15.1,Rules Glossary > Concentration | Rules Glossary > Concentration | Spells > Flesh to Stone,,yes,False,,,,
+o16,Spell,What happens when a character loses concentration on a spell?,v4_hybrid,The effect ends.,8,3295,1,29.2,Rules Glossary > Concentration | Rules Glossary > Concentration | Spells > Flesh to Stone | Spells > Banishment | Rules Glossary > Magic [Action] | Spells > Bestow Curse | Spells > Glyph of Warding | Spells > Enthrall,,yes,False,,,,
+o16,Spell,What happens when a character loses concentration on a spell?,v5_graph,The effect ends.,8,3410,1,46.9,Rules Glossary > Concentration | Rules Glossary > Concentration | Rules Glossary > Magic [Action] | Spells > Bestow Curse | Spells > Glyph of Warding | Spells > Enlarge/Reduce | Classes > Extended Spell | Spells > Saving Throws,,yes,False,,,,
+o16,Spell,What happens when a character loses concentration on a spell?,v6_agentic,The effect ends.,6,1648,3,50.6,Rules Glossary > Concentration | Rules Glossary > Concentration | Rules Glossary > Concentration | Rules Glossary > Spell | Spells > Class Spell Lists | Rules Glossary > Spell Attack,concentration | spell,yes,False,,,,
+o17,Spell,Which spells deal lightning damage?,v0_closed_book,"The following spells deal lightning damage in D&D 5e:
+
+1. Thunderwave (Cantrip)
+2. Lightning Bolt (3rd-level Evocation)
+3. Scorching Ray (2nd-level Evocation)
+4. Fireball (3rd-level Evocation) - though primarily fire damage, it can hit with lightning for extra damage
+5. Call Lightning (4th-level Evocation)
+6. Storm of Vengeance (6th-level Evocation)
+
+These spells specifically include lightning as part of their damage type.",0,0,1,37.2,,,yes,False,,,,
+o17,Spell,Which spells deal lightning damage?,v1_baseline,"Call Lightning, Lightning Bolt deal lightning damage.",3,915,1,12.1,Spells > Call Lightning | Spells > Lightning Bolt | Spells > Lightning Bolt,,yes,False,,,,
+o17,Spell,Which spells deal lightning damage?,v2_rerank,"Chain Lightning, Call Lightning deal lightning damage.",3,1067,1,8.1,Spells > Chain Lightning | Spells > Call Lightning | Spells > Call Lightning,,yes,False,,,,
+o17,Spell,Which spells deal lightning damage?,v2b_rerank8,"The following spells deal lightning damage:
+
+- Chain Lightning
+- Call Lightning
+- Lightning Bolt
+- Shocking Grasp
+- Storm of Vengeance
+- Glyph of Warding (when set to deal lightning damage)
+
+Note: The context does not specify the damage type for Shocking Grasp, but it is implied to deal lightning damage based on the name.",8,3028,1,21.9,Spells > Chain Lightning | Spells > Call Lightning | Spells > Call Lightning | Spells > Lightning Bolt | Spells > Shocking Grasp | Spells > Lightning Bolt | Spells > Storm of Vengeance | Spells > Glyph of Warding,,yes,True,,,,
+o17,Spell,Which spells deal lightning damage?,v3_hier_rerank,"Chain Lightning, Call Lightning deal lightning damage.",3,1067,1,6.1,Spells > Chain Lightning | Spells > Call Lightning | Spells > Call Lightning,,yes,False,,,,
+o17,Spell,Which spells deal lightning damage?,v4_hybrid,"The following spells deal lightning damage:
+
+- Chain Lightning
+- Call Lightning
+- Lightning Bolt
+- Shocking Grasp
+- Storm of Vengeance (Turn 3 effect)",8,3060,1,34.6,Spells > Chain Lightning | Spells > Call Lightning | Spells > Call Lightning | Spells > Lightning Bolt | Spells > Resistance | Spells > Shocking Grasp | Spells > Lightning Bolt | Spells > Storm of Vengeance,,yes,False,,,,
+o17,Spell,Which spells deal lightning damage?,v5_graph,"The following spells deal lightning damage:
+
+- Chain Lightning
+- Call Lightning
+- Lightning Bolt
+- Shocking Grasp
+- Storm of Vengeance (Turn 3 effect)
+- Javelin of Lightning (when used to deal lightning damage)
+- Prismatic Wall (Yellow layer)",8,3086,1,46.9,Spells > Chain Lightning | Spells > Call Lightning | Spells > Lightning Bolt | Spells > Shocking Grasp | Spells > Lightning Bolt | Spells > Storm of Vengeance | Magic Items > Javelin of Lightning | Spells > Prismatic Wall,,yes,False,,,,
+o17,Spell,Which spells deal lightning damage?,v6_agentic,Lightning Bolt and Javelin of Lightning deal lightning damage. Wand of Lightning Bolts can also be used to cast a spell that deals lightning damage.,6,2488,3,40.2,Spells > Lightning Bolt | Magic Items > Javelin of Lightning | Magic Items > Wand of Lightning Bolts | Spells > Thunderwave | Spells > Thunderwave | Spells > Targets,lightning bolt | thunderwave,yes,False,,,,
+o18,Spell,What are the components required to cast Counterspell?,v0_closed_book,"To cast Counterspell, no material components are required. The spell only needs a somatic component (a gesture) and a verbal component (the words of the spell).",0,0,1,37.2,,,yes,False,,,,
+o18,Spell,What are the components required to cast Counterspell?,v1_baseline,The components required to cast Counterspell are S (Somatic).,3,900,1,12.1,Spells > Counterspell | Spells > Counterspell | Monsters A–Z > Reactions,,yes,False,,,,
+o18,Spell,What are the components required to cast Counterspell?,v2_rerank,S,3,1040,1,8.1,Spells > Counterspell | Spells > Counterspell | Spells > Components,,yes,False,,,,
+o18,Spell,What are the components required to cast Counterspell?,v2b_rerank8,The components required to cast Counterspell are S (Somatic).,8,2340,1,21.9,Spells > Counterspell | Spells > Counterspell | Spells > Components | Monsters > Spellcasting | Monsters A–Z > Reactions | Monsters A–Z > Reactions | Classes > Level 1: Spellcasting | Classes > Level 1: Spellcasting,,yes,False,,,,
+o18,Spell,What are the components required to cast Counterspell?,v3_hier_rerank,S,3,1040,1,11.8,Spells > Counterspell | Spells > Counterspell | Spells > Components,,yes,False,,,,
+o18,Spell,What are the components required to cast Counterspell?,v4_hybrid,The components required to cast Counterspell are Somatic (S).,8,2618,1,34.6,Spells > Counterspell | Spells > Counterspell | Spells > Components | Monsters > Spellcasting | Monsters A–Z > Reactions | Monsters A–Z > Reactions | Classes > Subtle Spell | Equipment > Spellcasting,,yes,False,,,,
+o18,Spell,What are the components required to cast Counterspell?,v5_graph,The components required to cast Counterspell are Somatic (S).,8,3109,1,46.9,Spells > Counterspell | Spells > Counterspell | Spells > Components | Spells > Material (M) | Spells > Verbal (V) | Equipment > Spellcasting | Spells > Casting Time | Equipment > Prerequisites for the Scribe,,yes,False,,,,
+o18,Spell,What are the components required to cast Counterspell?,v6_agentic,S,3,900,3,40.2,Spells > Counterspell | Spells > Counterspell | Monsters A–Z > Reactions,Counterspell,yes,False,,,,
+o19,Class,What are the abilities of a Paladin?,v0_closed_book,"A Paladin in Dungeons & Dragons 5th Edition has several key abilities:
+
+1. **Divine Domain**: Paladins choose a divine domain at 1st level, which grants them domain spells, channel divinity options, and other benefits.
+2. **Channel Divinity**: Paladins can use Channel Divinity to perform miracles, such as healing allies or dealing damage to enemies. They gain additional Channel Divinity options at higher levels.
+3. **Divine Sense**: Paladins can sense creatures within 60 feet that are aligned against their deity.
+4. **Lay on Hands**: Paladins can heal themselves or others with their Lay on Hands feature, which regenerates hit points over time.
+5. **Divine Smite**: Paladins can deal extra radiant damage to one creature they hit with an attack.
+6. **Aura**: Paladins have a beneficial aura that affects creatures within a certain radius, such as granting advantage on saving throws or increasing attack rolls.
+7. **Purity of Spirit**: Paladins can cast spells without material components if they are wearing their holy symbol.
+8. **Oath Spells**: At 3rd level, paladins gain access to oath spells, which are a subset of spells related to their chosen Oath.
+9. **Oath of Devotion**: This oath focuses on protecting allies and dealing damage to enemies.
+10. **Oath of Vengeance**: This oath allows the paladin to track down and destroy those who have wronged them or their deity.
+11. **Oath of the Ancients**: This oath connects the paladin to nature and allows them to command natural creatures and protect the environment.
+12. **Hit Points and Saving Throws**: Paladins have high hit points and proficiency in saving throws related to their deity.
+
+These abilities provide a mix of offensive, defensive, and utility features that make the Paladin a versatile and powerful class.",0,0,1,47.6,,,yes,False,,,,
+o19,Class,What are the abilities of a Paladin?,v1_baseline,"The abilities of a Paladin at level 1 include gaining the following traits from the Core Paladin Traits table: Hit Point Die, proficiency with Martial weapons, and training with Light and Medium armor and Shields. Additionally, they gain the Paladin's level 1 features, which are listed in the Paladin Features table but not detailed in the provided context. The exact level 1 features are missing from the given information.",3,1187,1,12.1,Classes > As a Multiclass Character | Classes > Paladin Class Features | Classes > As a Level 1 Character,,yes,True,,,,
+o19,Class,What are the abilities of a Paladin?,v2_rerank,The primary abilities for a Paladin are Strength and Charisma.,3,1195,1,8.1,Classes > As a Multiclass Character | Classes > Level 4: Ability Score Improvement | Classes > Paladin,,yes,False,,,,
+o19,Class,What are the abilities of a Paladin?,v2b_rerank8,"The abilities of a Paladin include gaining all the traits in the Core Paladin Traits table, proficiency with martial weapons, training with light and medium armor and shields, and the Paladin's level 1 features as listed in the Paladin Features table. At level 4, Paladins gain an Ability Score Improvement or another qualifying feat. Additionally, Paladins have saving throw proficiencies in Wisdom and Charisma, skill proficiencies in two chosen skills from Athletics, Insight, Intimidation, Medicine, Persuasion, or Religion, and weapon proficiencies in simple and martial weapons.",8,2759,1,21.9,Classes > As a Multiclass Character | Classes > Level 4: Ability Score Improvement | Classes > Paladin | Classes > As a Level 1 Character | Classes > Paladin Class Features | Classes > Paladin Class Features | Classes > Level 3 Paladin Spells | Classes > Level 1 Paladin Spells,,yes,False,,,,
+o19,Class,What are the abilities of a Paladin?,v3_hier_rerank,The primary abilities for a Paladin are Strength and Charisma.,3,1195,1,11.8,Classes > As a Multiclass Character | Classes > Level 4: Ability Score Improvement | Classes > Paladin,,yes,False,,,,
+o19,Class,What are the abilities of a Paladin?,v4_hybrid,"A Paladin gains the following abilities:
+
+- **Hit Points**: D10 per Paladin level.
+- **Saving Throw Proficiencies**: Wisdom and Charisma.
+- **Skill Proficiencies**: Choose 2 from Athletics, Insight, Intimidation, Medicine, Persuasion, or Religion.
+- **Weapon Proficiencies**: Simple and Martial weapons.
+- **Armor Training**: Training with Light and Medium armor and Shields.
+- **Primary Abilities**: Strength and Charisma.
+- **Cantrips**: Two Cleric cantrips of choice, counting as Paladin spells with Charisma as the spellcasting ability.
+- **Fighting Style**: Blessed Warrior, allowing the learning of two Cleric cantrips.
+- **Tenets**: ""Let your word be your promise,"" ""Protect the weak and never fear to act,"" ""Let your honorable deeds be an example.""
+- **Channel Divinity**: Paladins can perform acts of divine power, though specific details are not provided in the given context.
+- **Oath of Devotion**: This subclass focuses on justice and order, though specific abilities are not detailed here.
+- **Ability Score Improvement**: At levels 4, 8, 12, and 16, the Paladin can choose to improve an ability score or take another feat they qualify for.
+
+Note: Specific feats and abilities related to Channel Divinity and Oath of Devotion are not detailed in the provided context.",8,3112,1,51.9,Classes > As a Multiclass Character | Classes > Level 4: Ability Score Improvement | Classes > Paladin | Classes > Paladin Subclass: Oath of Devotion | Classes > Level 2: Fighting Style | Classes > Paladin Subclass: Oath of Devotion | Classes > Level 3: Channel Divinity | Classes > As a Level 1 Character,,yes,True,,,,
+o19,Class,What are the abilities of a Paladin?,v5_graph,"A Paladin gains the following abilities:
+
+- **Hit Point Die:** D10 per Paladin level.
+- **Saving Throw Proficiencies:** Wisdom and Charisma.
+- **Skill Proficiencies:** Choose 2 from Athletics, Insight, Intimidation, Medicine, Persuasion, or Religion.
+- **Weapon Proficiencies:** Simple and Martial weapons.
+- **Armor Training:** Training with Light and Medium armor and Shields.
+- **Primary Abilities:** Strength and Charisma.
+- **Core Paladin Traits:** Hit Point Die, proficiency with Martial weapons, and training with Light and Medium armor and Shields.
+- **Paladin Features:** Level 1 features, including the option to gain two Cleric cantrips at Level 2 (Blessed Warrior fighting style), and Channel Divinity starting at Level 3.
+- **Oath of Devotion Tenets:** ""Let your word be your promise,"" ""Protect the weak and never fear to act,"" and ""Let your honorable deeds be an example.""
+- **Cantrips:** Two Cleric cantrips chosen at Level 2, with the option to replace one at higher levels.
+- **Channel Divinity Uses:** Can use Channel Divinity twice, regaining uses after short rests and all uses after long rests, with an additional use gained at Level 11.
+
+Note: The exact features and abilities of a Paladin are determined by their level and any chosen subclasses, such as the Oath of Devotion.",8,3306,1,46.9,Classes > As a Multiclass Character | Classes > Paladin | Classes > Paladin Subclass: Oath of Devotion | Classes > Level 2: Fighting Style | Classes > Paladin Subclass: Oath of Devotion | Classes > Level 3: Channel Divinity | Classes > As a Level 1 Character | Classes > Level 3: Channel Divinity,,yes,False,,,,
+o19,Class,What are the abilities of a Paladin?,v6_agentic,"The context provided does not explicitly list all the abilities of a Paladin. It mentions some traits such as primary ability scores (Strength and Charisma), hit point die (D10 per Paladin level), saving throw proficiencies (Wisdom and Charisma), skill proficiencies (2 chosen from Athletics, Insight, Intimidation, Medicine, Persuasion, or Religion), weapon proficiencies (Simple and Martial weapons), and armor training. However, it does not fully detail all abilities of a Paladin. The Paladin's level 1 features are mentioned to be found in the Paladin Features table, but the specific features are not included in the given context.",3,1195,3,36.3,Classes > As a Multiclass Character | Classes > Paladin | Classes > Level 4: Ability Score Improvement,paladin abilities,yes,True,,,,
+o20,Class,What is the difference between a Wizard and a Sorcerer?,v0_closed_book,"A Wizard and a Sorcerer in Dungeons & Dragons 5e differ primarily in their origin of magical power:
+
+1. **Source of Magic**:
+   - **Wizard**: Wizards learn and study magic through years of dedicated study and practice. They must find and study ancient tomes and spellbooks.
+   - **Sorcerer**: Sorcerers inherit their magical abilities from a bloodline or lineage. Their magic flows naturally from within them, often without formal training.
+
+2. **Spell Points**:
+   - **Wizard**: Uses spell slots to cast spells, which are limited by their level and class features.
+   - **Sorcerer**: Also uses spell slots but has a pool of ""spell points"" that can be used to cast any sorcerer spell they know, up to their point limit.
+
+3. **Spell Selection**:
+   - **Wizard**: Can choose from a wide array of spells from the wizard spell list, with no restrictions on what they can learn.
+   - **Sorcerer**: Can choose from a subset of spells from the sorcerer spell list, typically a smaller selection than wizards but with more flexibility in choosing which spells to focus on.
+
+4. **Cantrips**:
+   - **Wizard**: Typically starts with two cantrips from the wizard spell list.
+   - **Sorcerer**: Usually starts with two cantrips from the sorcerer spell list, though some sorcerers might start with cantrips from other classes.
+
+5. **Metamagic**:
+   - **Wizard**: Does not have access to metamagic options.
+   - **Sorcerer**: Can use metamagic options, which allow for more creative and versatile spellcasting.
+
+6. **Bloodline Features**:
+   - **Sorcerer**: Has unique bloodline features that grant special abilities and powers tied to their family's magical heritage.
+   - **Wizard**: Does not have bloodline features.
+
+These differences create distinct playstyles and flavor for each class, allowing players to choose based on their preferred approach to magic in their character.",0,0,1,47.6,,,yes,False,,,,
+o20,Class,What is the difference between a Wizard and a Sorcerer?,v1_baseline,"The provided context does not contain information to compare a Wizard and a Sorcerer. The context only details aspects specific to the Sorcerer class, such as spell preparation, spellcasting ability, and some class features up to level 3. There is no information given about Wizards or their differences from Sorcerers.",3,1435,1,11.6,Classes > Level 1: Spellcasting | Classes > Sorcerer Class Features | Classes > Level 3: Sorcerer Subclass,,yes,True,,,,
+o20,Class,What is the difference between a Wizard and a Sorcerer?,v2_rerank,The provided context does not contain enough information to compare a Wizard and a Sorcerer. The context only discusses Sorcerer subclasses and spellcasting abilities. Specific differences between Wizards and Sorcerers are not mentioned.,3,1267,1,8.1,Classes > Level 3: Sorcerer Subclass | Classes > Level 1: Spellcasting | Classes > Sorcerer Spell List,,yes,True,,,,
+o20,Class,What is the difference between a Wizard and a Sorcerer?,v2b_rerank8,"The provided context does not contain information about the differences between a Wizard and a Sorcerer. The context focuses solely on the Sorcerer class, its subclasses, and features up to level 3. Therefore, the part of the answer regarding the difference between a Wizard and a Sorcerer is missing.",8,2877,1,21.9,Classes > Level 3: Sorcerer Subclass | Classes > Level 1: Spellcasting | Classes > Sorcerer Spell List | Classes > Sorcerer Class Features | Classes > Level 1: Spellcasting | Classes > Level 1: Spellcasting | Classes > Level 1: Spellcasting | Classes > Level 4 Sorcerer Spells,,yes,True,,,,
+o20,Class,What is the difference between a Wizard and a Sorcerer?,v3_hier_rerank,The provided context does not contain enough information to compare a Wizard and a Sorcerer. The context only discusses Sorcerer subclasses and spellcasting abilities. Specific differences between Wizards and Sorcerers are not mentioned.,3,1267,1,11.8,Classes > Level 3: Sorcerer Subclass | Classes > Level 1: Spellcasting | Classes > Sorcerer Spell List,,yes,True,,,,
+o20,Class,What is the difference between a Wizard and a Sorcerer?,v4_hybrid,"The provided context does not contain enough information to describe the differences between a Wizard and a Sorcerer. Specifically, details about Wizard class features, subclasses, or spell lists are missing from the given context. Therefore, I cannot provide a complete answer to the question based solely on the given information.",8,3367,1,51.9,Classes > Level 3: Sorcerer Subclass | Classes > Level 1: Spellcasting | Classes > Level 2: Metamagic | Classes > Sorcerer Spell List | Classes > Sorcerer Class Features | Magic Items > Robe of the Archmagi | Classes > Level 1: Spellcasting | Classes > Wizard Spell List,,yes,True,,,,
+o20,Class,What is the difference between a Wizard and a Sorcerer?,v5_graph,"The provided context does not contain enough information to describe the differences between a Wizard and a Sorcerer. Specifically, it lacks details about the unique features, subclasses, spell lists, and other class-specific abilities that differentiate Wizards from Sorcerers.",8,3330,1,18.5,Classes > Level 3: Sorcerer Subclass | Classes > Level 1: Spellcasting | Classes > Sorcerer Spell List | Classes > Wizard Spell List | Classes > Level 3: Wizard Subclass | Spells > True Strike | Character Creation > Spellcasting | Classes > Sorcerer Class Features,,yes,True,,,,
+o20,Class,What is the difference between a Wizard and a Sorcerer?,v6_agentic,"The context provided does not directly compare a Wizard and a Sorcerer in detail. It lists features for both classes but does not explicitly state the differences between them. Key features mentioned for Wizards include Intelligence as the primary ability, proficiency in Arcana skills, and gaining cantrips and prepared spells. For Sorcerers, the primary ability is also Intelligence, proficiency in Sorcery Points, and gaining cantrips and prepared spells. Without a direct comparison, specific differences are not clearly stated in the given context.",10,3951,3,73.9,Classes > Wizard Class Features | Classes > As a Level 1 Character | Classes > Wizard Spell List | Classes > Sorcerer Class Features | Classes > Level 3: Sorcerer Subclass | Classes > Sorcerer Spell List | Classes > As a Multiclass Character | Classes > Level 1: Spellcasting | Classes > As a Multiclass Character | Classes > Wizard,Wizard | Sorcerer,yes,False,,,,
+o21,Class,Which class has the highest hit points?,v0_closed_book,"The class with the highest hit points at level 1 is typically the Barbarian. At level 1, a Barbarian has 12 hit points (1d12), which is higher than the 10 hit points (1d10) for a Fighter or the 8 hit points (1d8) for a Wizard. However, it's important to note that this can vary based on specific builds and racial choices, but generally, the Barbarian has the highest starting hit points.",0,0,1,47.6,,,yes,False,,,,
+o21,Class,Which class has the highest hit points?,v1_baseline,"The given context does not provide information about hit points for different classes, only the general rules for hit points and a specific ability related to critical hits at level 15 for a class. Therefore, the part of the question asking ""Which class has the highest hit points?"" is missing necessary information to answer.",3,981,1,11.6,Classes > Level 3: Remarkable Athlete | Playing the Game > Hit Points | Classes > Level 15: Superior Critical,,yes,True,,,,
+o21,Class,Which class has the highest hit points?,v2_rerank,"The context provided does not contain information about hit points for different classes, only how hit points are gained at certain levels. Therefore, the part of the question asking ""Which class has the highest hit points?"" is missing necessary information to provide an answer.",3,619,1,13.2,Classes > Level 15: Superior Critical | Character Creation > Hit Points and Hit Point Dice | Classes > Level 3: Improved Critical,,yes,True,,,,
+o21,Class,Which class has the highest hit points?,v2b_rerank8,"The context provided does not specify which class has the highest hit points. It only describes how hit points work and the critical hit mechanics for certain levels but does not give specific hit point values for different classes. Therefore, the part of the answer regarding which class has the highest hit points is missing.",8,2806,1,21.9,Classes > Level 15: Superior Critical | Character Creation > Hit Points and Hit Point Dice | Classes > Level 3: Improved Critical | Playing the Game > Hit Points | Rules Glossary > Hit Points | Classes > Level 3: Remarkable Athlete | Character Creation > Assign Ability Scores | Monsters > Hit Points,,yes,True,,,,
+o21,Class,Which class has the highest hit points?,v3_hier_rerank,"The context provided does not contain information about hit points for different classes, only how hit points are gained at certain levels. Therefore, the part of the question asking ""Which class has the highest hit points?"" is missing necessary information to provide an answer.",3,619,1,19.5,Classes > Level 15: Superior Critical | Character Creation > Hit Points and Hit Point Dice | Classes > Level 3: Improved Critical,,yes,True,,,,
+o21,Class,Which class has the highest hit points?,v4_hybrid,"The context provided does not specify hit points for any classes beyond the basic information given for Level 1 Hit Points by Class and Fixed Hit Points by Class. It also does not provide enough information to compare hit points between different classes at higher levels. Therefore, the part of the question asking ""Which class has the highest hit points?"" cannot be answered based on the given context.",8,2650,1,51.9,Classes > Level 17: Supreme Healing | Character Creation > Fill In Numbers | Classes > Fiendish Vigor | Classes > Level 15: Superior Critical | Character Creation > Hit Points and Hit Point Dice | Character Creation > Gaining a Level | Classes > Level 3: Disciple of Life | Classes > Level 3: Improved Critical,,yes,True,,,,
+o21,Class,Which class has the highest hit points?,v5_graph,"The context provided does not contain enough information to determine which class has the highest hit points. The tables show Hit Points for level 1 and fixed hit points per level, but do not provide enough data to compare different classes' hit points beyond level 1. Additionally, there is no information given about how hit points change at higher levels for each class. Therefore, the part needed to answer this question is missing.",8,3058,1,18.5,Character Creation > Fill In Numbers | Classes > Level 15: Superior Critical | Character Creation > Hit Points and Hit Point Dice | Character Creation > Gaining a Level | Classes > Level 3: Disciple of Life | Playing the Game > Hit Points | Rules Glossary > Stat Block | Classes > Level 3: Remarkable Athlete,,yes,True,,,,
+o21,Class,Which class has the highest hit points?,v6_agentic,"The context provided does not contain enough information to determine which class has the highest hit points. The context describes how hit points work but does not provide specific hit point values for different classes. Therefore, the part needed to answer which class has the highest hit points is missing.",9,3835,3,50.2,Rules Glossary > Hit Points | Playing the Game > Hit Points | Rules Glossary > Breaking Objects | Character Creation > Class Features | Monsters > Armor Class | Character Creation > Step 1: Choose Class | Character Creation > Hit Points and Hit Point Dice | Character Creation > Gaining a Level | Character Creation > Fill In Numbers,hit points | class,yes,True,,,,
+o22,Class,How does a Rogue perform Sneak Attack?,v0_closed_book,"A Rogue performs a Sneak Attack under the following conditions:
+
+1. The target must be surprised or within 5 feet of an ally.
+2. The Rogue must have advantage on the attack roll.
+3. The Rogue's attack must deal piercing, bludgeoning, or slashing damage.
+
+The damage dealt by a Sneak Attack is equal to 1d6 plus the Rogue's proficiency bonus. This damage increases as the Rogue gains levels:
+- At 1st level: 1d6
+- At 7th level: 2d6
+- At 15th level: 3d6
+
+The Rogue can only make one sneak attack per turn, and it must use a weapon that deals piercing, bludgeoning, or slashing damage.",0,0,1,47.6,,,yes,False,,,,
+o22,Class,How does a Rogue perform Sneak Attack?,v1_baseline,"A Rogue performs Sneak Attack once per turn by hitting a creature with an attack roll that has Advantage, using a Finesse or Ranged weapon. The attack deals extra 1d6 damage of the weapon's type.",3,1192,1,11.6,Classes > Level 9: Supreme Sneak | Classes > Level 1: Sneak Attack | Classes > Level 5: Cunning Strike,,yes,False,,,,
+o22,Class,How does a Rogue perform Sneak Attack?,v2_rerank,"A Rogue performs Sneak Attack once per turn by dealing an extra 1d6 damage to one creature they hit with an attack roll if they have Advantage on the roll and the attack uses a Finesse or a Ranged weapon. The extra damage's type matches the weapon's type. The extra damage increases to 2d6 at level 2 and higher, as shown in the Rogue Features table.",3,1245,1,13.2,Classes > Level 1: Sneak Attack | Classes > Level 1: Sneak Attack | Classes > Rogue Class Features,,yes,False,,,,
+o22,Class,How does a Rogue perform Sneak Attack?,v2b_rerank8,"A Rogue performs Sneak Attack once per turn by hitting a creature with an attack roll using a Finesse or Ranged weapon, provided they have Advantage on the roll. They deal extra damage equal to 1d6, which increases with level as shown in the Sneak Attack column of the Rogue Features table. The extra damage type matches the weapon's type.",8,3015,1,49.6,Classes > Level 1: Sneak Attack | Classes > Level 1: Sneak Attack | Classes > Rogue Class Features | Classes > Level 5: Cunning Strike | Classes > Level 14: Devious Strikes | Classes > Level 9: Supreme Sneak | Classes > Level 11: Improved Cunning Strike | Classes > Rogue Subclass: Thief,,yes,False,,,,
+o22,Class,How does a Rogue perform Sneak Attack?,v3_hier_rerank,"A Rogue performs Sneak Attack once per turn by dealing an extra 1d6 damage to one creature they hit with an attack roll if they have Advantage on the roll and the attack uses a Finesse or a Ranged weapon. The extra damage's type matches the weapon's type. The extra damage increases to 2d6 at level 2 and higher, as shown in the Rogue Features table.",3,1245,1,19.5,Classes > Level 1: Sneak Attack | Classes > Level 1: Sneak Attack | Classes > Rogue Class Features,,yes,False,,,,
+o22,Class,How does a Rogue perform Sneak Attack?,v4_hybrid,"A Rogue performs Sneak Attack once per turn by hitting a creature with an attack roll that uses a Finesse or Ranged weapon. They deal extra damage equal to 1d6, which is the same type as the weapon's damage type. The extra damage requires Advantage on the attack roll unless at least one ally is within 5 feet of the target, the ally isn't Incapacitated, and there is no Disadvantage on the attack roll. Critical hits result in rolling the damage dice twice for the extra damage. As the Rogue gains levels, the Sneak Attack damage increases.",8,3120,1,51.9,Classes > Level 1: Sneak Attack | Classes > Level 1: Sneak Attack | Playing the Game > Critical Hits | Classes > Rogue Class Features | Classes > Level 5: Cunning Strike | Classes > Level 14: Devious Strikes | Classes > Level 9: Supreme Sneak | Classes > Level 11: Improved Cunning Strike,,yes,False,,,,
+o22,Class,How does a Rogue perform Sneak Attack?,v5_graph,"A Rogue performs Sneak Attack once per turn by hitting a creature with an attack roll that uses a Finesse or Ranged weapon. They deal extra damage equal to 1d6, which is the same type as the weapon's damage. The extra damage requires Advantage on the attack roll unless at least one ally is within 5 feet of the target, the ally isn't Incapacitated, and there is no Disadvantage on the attack roll. Critical hits result in extra damage from the attack's dice being rolled twice. The extra damage from Sneak Attack increases as the Rogue gains levels, as shown in the Sneak Attack column of the Rogue Features table.",8,3120,1,18.5,Classes > Level 1: Sneak Attack | Classes > Level 1: Sneak Attack | Playing the Game > Critical Hits | Classes > Rogue Class Features | Classes > Level 5: Cunning Strike | Classes > Level 14: Devious Strikes | Classes > Level 9: Supreme Sneak | Classes > Level 11: Improved Cunning Strike,,yes,False,,,,
+o22,Class,How does a Rogue perform Sneak Attack?,v6_agentic,"To perform Sneak Attack, a Rogue must hit a creature with an attack roll using a Finesse or Ranged weapon. They can deal an extra 1d6 damage if they have Advantage on the roll. If they do not have Advantage, at least one ally must be within 5 feet of the target, the ally must not be Incapacitated, and they must not have Disadvantage on the attack roll. The extra damage type matches the weapon's type. At level 5, a Rogue can add a Cunning Strike effect to their Sneak Attack, but this requires forgoing some of the Sneak Attack damage dice.",6,2496,3,50.2,Classes > Level 1: Sneak Attack | Classes > Level 1: Sneak Attack | Classes > Level 5: Cunning Strike | Classes > Rogue Subclass: Thief | Classes > Rogue Class Features | Classes > Level 3: Rogue Subclass,sneak attack | rogue,yes,False,,,,
+o23,Class,What are the special abilities of a Druid?,v0_closed_book,"A Druid in Dungeons & Dragons 5th Edition has several special abilities, including:
+
+1. **Wild Shape**: Can transform into any beast, but not into a humanoid or an undead.
+2. **Druidic**: Can cast spells from the Druid spell list without preparing them in advance.
+3. **Favored by Nature**: Gains proficiency in certain skills related to nature.
+4. **Land's Bond**: Can communicate with plants and animals.
+5. **Nature's Sanctuary**: Can create a temporary sanctuary that repels creatures with the evil trait.
+6. **Shape of the Moon**: Can gain the benefits of the Full Moon form, which includes increased speed and senses, and the ability to heal.
+7. **Wild Magic Surge**: Occasionally gains unpredictable magical effects when casting druid spells.
+8. **Domain Spells**: At 2nd level, can choose domain spells from a specific domain (such as Plant, Animal, or Knowledge).
+
+These abilities reflect the druid's deep connection to nature and their role as protectors of the natural world.",0,0,1,47.6,,,yes,False,,,,
+o23,Class,What are the special abilities of a Druid?,v1_baseline,"The provided context does not contain specific information about the special abilities of a Druid beyond the Ability Score Improvement at level 4 and some class features. The context also lists a few spells and class features but does not detail the special abilities. Therefore, the part of the question regarding the special abilities of a Druid cannot be answered based on the given information.",3,617,1,11.6,Classes > Level 4: Ability Score Improvement | Classes > Level 3 Druid Spells | Classes > Druid Class Features,,yes,True,,,,
+o23,Class,What are the special abilities of a Druid?,v2_rerank,"The context provided does not explicitly list special abilities of a Druid beyond their core traits. The primary abilities and proficiencies are given, but specific special abilities like those found in subclasses or other features are not mentioned. Therefore, the special abilities of a Druid are not fully described in the given context.",3,979,1,13.2,Classes > Level 1: Spellcasting | Classes > Druid | Classes > Level 4: Ability Score Improvement,,yes,True,,,,
+o23,Class,What are the special abilities of a Druid?,v2b_rerank8,"The special abilities of a Druid include:
+
+- **Core Druid Traits**: Primary Ability is Wisdom, Hit Point Die is D8 per level, Saving Throw Proficiencies are Intelligence and Wisdom, Skill Proficiencies are chosen from Animal Handling, Arcana, Insight, Medicine, Nature, Perception, Religion, or Survival, Weapon Proficiencies are simple weapons, and Tool Proficiencies are unspecified.
+- **Druid Features**: At level 1, they gain the ability to cast Druid spells with Wisdom as the spellcasting ability, can use a Druidic Focus as a spellcasting focus, and gain the features listed in the Druid Features table.
+- **Ability Score Improvement**: At level 4, they gain an Ability Score Improvement or another qualifying feat.
+- **Wild Shape**: A feature that allows them to transform into beasts.
+- **Cantrips**: They know Druid cantrips.
+- **Prepared Spells**: They prepare a certain number of spells per day.
+- **Spell Slots**: They have a certain number of spell slots per spell level.
+- **Fey Ancestry**: Advantage on saving throws against being charmed.
+- **Keen Senses**: Proficiency in Insight, Perception, or Survival.
+
+Note: The context does not provide specific details about all the features at each level or all cantrips, so some information is missing.",8,2387,1,49.6,Classes > Level 1: Spellcasting | Classes > Druid | Classes > Level 4: Ability Score Improvement | Classes > As a Level 1 Character | Classes > Druid Class Features | Character Origins > Elf | Classes > Level 7 Druid Spells | Classes > Level 3 Druid Spells,,yes,True,,,,
+o23,Class,What are the special abilities of a Druid?,v3_hier_rerank,"The context provided does not list specific special abilities of a Druid beyond the Core Druid Traits. The Core Druid Traits include hit point die, saving throw proficiencies, skill proficiencies, weapon proficiencies, and tool proficiencies. Special abilities typically refer to class features such as spells, wild shape, and other unique abilities, which are not detailed in the given context. Therefore, the specific special abilities of a Druid are missing from the provided information.",3,1129,1,19.5,Classes > As a Multiclass Character | Classes > Druid | Classes > Level 4: Ability Score Improvement,,yes,True,,,,
+o23,Class,What are the special abilities of a Druid?,v4_hybrid,"The context provided does not contain specific details about the special abilities of a Druid. It describes general traits, features, and subclasses but does not list any special abilities unique to Druids.",8,3298,1,46.5,Classes > As a Multiclass Character | Classes > Druid | Classes > Level 4: Ability Score Improvement | Classes > Druid Class Features | Character Origins > Elf | Classes > Druid Spell List | Classes > Level 3: Druid Subclass | Monsters > Resistances and Vulnerabilities,,yes,True,,,,
+o23,Class,What are the special abilities of a Druid?,v5_graph,"The context provided does not contain specific details about the special abilities of a Druid. The information given pertains to multiclassing traits, ability score improvements, class features, subclasses, and general game mechanics, but it does not describe the special abilities of a Druid.",8,3360,1,28.3,Classes > As a Multiclass Character | Classes > Level 4: Ability Score Improvement | Classes > Druid Class Features | Classes > Druid Spell List | Classes > Level 3: Druid Subclass | Monsters > Resistances and Vulnerabilities | Playing the Game > The Six Abilities | Gameplay Toolbox > 1: Choose Abilities,,yes,True,,,,
+o23,Class,What are the special abilities of a Druid?,v6_agentic,"The context provided does not explicitly list specific ""special abilities"" of a Druid beyond what is implied by their class features. Key aspects that could be considered special abilities include:
+
+- Casting spells
+- Proficiency with certain skills and tools
+- Saving throw proficiencies in Intelligence and Wisdom
+- Weapon proficiency with simple weapons
+
+However, these are derived from the class features rather than explicitly labeled as ""special abilities."" The context focuses on traits, proficiencies, and spellcasting, but does not provide a direct list of special abilities. Therefore, the specific ""special abilities"" of a Druid are not fully detailed in the given context.",5,1857,3,53.2,Classes > Druid | Classes > Level 4: Ability Score Improvement | Classes > As a Multiclass Character | Classes > As a Level 1 Character | Classes > Level 1: Spellcasting,druid special abilities,yes,True,,,,
+o24,Class,Can a Fighter cast spells?,v0_closed_book,"No, a Fighter cannot cast spells. In 5e, the Fighter class does not have any spellcasting abilities. Fighters focus on martial training and combat skills rather than magic.",0,0,1,47.6,,,yes,False,,,,
+o24,Class,Can a Fighter cast spells?,v1_baseline,"No, a Fighter cannot cast spells. The context indicates that a Fighter cannot cast spells due to the restriction ""No Spellcasting"" at Level 2, and this is consistent with the typical Fighter class description in D&D.",3,546,1,11.6,Rules Glossary > Spell Attack | Classes > Level 2: Wild Shape | Spells > Casting without Slots,,yes,False,,,,
+o24,Class,Can a Fighter cast spells?,v2_rerank,"No, a Fighter cannot cast spells. The context indicates that a class capable of wild shape (likely a Druid) cannot cast spells but shapeshifting does not interfere with spells already cast. There is no mention of Fighters in the given context, so the specific ability of a Fighter to cast spells is not addressed here.",3,752,1,13.2,Classes > Level 2: Wild Shape | Spells > Casting without Slots | Spells > Gaining Spells,,yes,False,,,,
+o24,Class,Can a Fighter cast spells?,v2b_rerank8,"No, a Fighter cannot cast spells based on the given context. The context does not mention any class that includes spellcasting abilities for a Fighter.",8,2697,1,49.6,Classes > Level 2: Wild Shape | Spells > Casting without Slots | Spells > Gaining Spells | Monsters A–Z > Actions | Monsters A–Z > Actions | Monsters A–Z > Actions | Monsters A–Z > Actions | Character Creation > Spellcasting,,yes,True,,,,
+o24,Class,Can a Fighter cast spells?,v3_hier_rerank,"The context provided does not contain specific information about whether a Fighter can cast spells or not. It only discusses general rules about casting spells and components. Therefore, the part of the answer regarding whether a Fighter can cast spells is missing from the given context.",3,937,1,13.8,Spells > Casting Spells | Spells > Components | Spells > Casting without Slots,,yes,True,,,,
+o24,Class,Can a Fighter cast spells?,v4_hybrid,"The context provided does not specify if a Fighter can cast spells or not. The information given is about general rules for spellcasting and specific spells, but it does not mention the capabilities of a Fighter class. Therefore, the part regarding whether a Fighter can cast spells is missing.",8,3047,1,46.5,Monsters > Spellcasting | Spells > Gaseous Form | Spells > Casting Spells | Spells > Animal Shapes | Spells > Casting without Slots | Classes > Level 18: Beast Spells | Spells > Casting without Slots | Character Creation > Spellcasting,,yes,True,,,,
+o24,Class,Can a Fighter cast spells?,v5_graph,"The context provided does not specify if a Fighter can cast spells. The information given covers general rules about casting spells, special abilities for certain classes, and methods of casting without using spell slots, but it does not mention the Fighter class specifically. Therefore, the part of the answer regarding whether a Fighter can cast spells is missing.",8,2691,1,28.3,Spells > Gaseous Form | Spells > Casting without Slots | Classes > Level 18: Beast Spells | Spells > Components | Spells > Casting without Slots | Classes > Level 20: Signature Spells | Spells > Gaining Spells | Spells > One Spell with a Spell Slot per Turn,,yes,True,,,,
+o24,Class,Can a Fighter cast spells?,v6_agentic,"No, the provided context does not mention Fighters having the ability to cast spells. The context focuses on Fighter class features, multiclassing traits, and spellcasting focuses but does not include information about Fighter spellcasting abilities.",6,2180,3,29.5,Classes > Fighter Class Features | Classes > As a Multiclass Character | Classes > As a Level 1 Character | Rules Glossary > Spellcasting Focus | Classes > Level 1: Spellcasting | Character Creation > Spellcasting,Fighter | spellcasting,yes,True,,,,
+o25,Class,What are the subclasses available for Clerics?,v0_closed_book,"For Dungeons & Dragons 5th Edition (2024 SRD 5.2), the available subclasses for Clerics are:
+
+1. Domain
+2. Oath
+
+The Domain subclass allows a cleric to focus on a specific aspect of their deity's power or philosophy, such as Healing, War, Trickery, etc.
+
+The Oath subclass is available for Clerics who follow a code of conduct, such as Oath of Devotion, Oath of Vengeance, or Oath of the Ancients.",0,0,1,33.0,,,yes,False,,,,
+o25,Class,What are the subclasses available for Clerics?,v1_baseline,"The context provided does not list specific subclasses available for Clerics. It only mentions that a player gains a Cleric subclass of their choice at level 3, but does not enumerate the available options. Therefore, the part of which subclasses are available is missing.",3,1285,1,11.6,Classes > Level 3: Cleric Subclass | Classes > Cleric Class Features | Classes > As a Multiclass Character,,yes,True,,,,
+o25,Class,What are the subclasses available for Clerics?,v2_rerank,"The context provided does not specify any particular subclasses available for Clerics beyond mentioning the Life Domain as an example. Therefore, the part of which subclasses are available is missing.",3,1285,1,13.2,Classes > Level 3: Cleric Subclass | Classes > As a Multiclass Character | Classes > Cleric Class Features,,yes,True,,,,
+o25,Class,What are the subclasses available for Clerics?,v2b_rerank8,"The context provided does not list specific subclasses available for Clerics. It only mentions that at level 3, a player gains a Cleric subclass of their choice, but does not enumerate the available options. Therefore, the part of the answer regarding the specific subclasses is missing.",8,3246,1,49.6,Classes > Level 3: Cleric Subclass | Classes > As a Multiclass Character | Classes > Cleric Class Features | Classes > Cleric Class Features | Classes > Cleric Class Features | Classes > As a Level 1 Character | Classes > Cleric Class Features | Classes > Cleric,,yes,True,,,,
+o25,Class,What are the subclasses available for Clerics?,v3_hier_rerank,"The context provided does not specify any particular subclasses available for Clerics beyond mentioning the Life Domain as an example. Therefore, the part of which subclasses are available is missing.",3,1285,1,13.8,Classes > Level 3: Cleric Subclass | Classes > As a Multiclass Character | Classes > Cleric Class Features,,yes,True,,,,
+o25,Class,What are the subclasses available for Clerics?,v4_hybrid,"The context mentions only one specific subclass for Clerics, which is the Life Domain. It does not list other subclasses available for Clerics. Therefore, the information provided is insufficient to determine all available subclasses for Clerics.",8,3431,1,13.9,Classes > Level 3: Cleric Subclass | Classes > Cleric Subclass: Life Domain | Classes > Cleric Subclass: Life Domain | Classes > As a Multiclass Character | Classes > Cleric Class Features | Classes > Level 2: Fighting Style | Classes > Cleric Class Features | Classes > Cleric Class Features,,yes,False,,,,
+o25,Class,What are the subclasses available for Clerics?,v5_graph,"The context provided does not list specific subclasses available for Clerics beyond mentioning the Life Domain subclass. Therefore, the part of which subclasses are available (other than Life Domain) is missing.",8,2586,1,28.3,Classes > Level 3: Cleric Subclass | Classes > Cleric Subclass: Life Domain | Classes > As a Multiclass Character | Classes > Cleric Class Features | Classes > Level 1: Spellcasting | Classes > As a Level 1 Character | Classes > Level 1: Spellcasting | Classes > Level 1: Spellcasting,,yes,True,,,,
+o25,Class,What are the subclasses available for Clerics?,v6_agentic,"The context provided mentions only one subclass for Clerics, which is the Life Domain. Therefore, based on the given information, the available subclass for Clerics is the Life Domain. Other subclasses are not mentioned in this specific context.",3,1046,3,29.5,Classes > Level 3: Cleric Subclass | Classes > Cleric Subclass: Life Domain | Classes > Cleric Subclass: Life Domain,cleric subclasses,yes,True,,,,
+o26,Class,How does a Warlock regain spell slots?,v0_closed_book,"A Warlock regains spell slots through the following methods:
+
+1. **Long Rest**: After completing a long rest (8 hours), a Warlock can regain all expended spell slots.
+2. **Pact Boon**: Depending on the Warlock's patron, they may gain additional spell slots or regain spent slots as a feature of their patron. For example:
+   - The Eldritch Invoker can use Eldritch Invocations to regain spell slots.
+   - The Fiend patron grants the Pact of the Chain feature, which allows the Warlock to regain 1d4 spell slots when they finish a short rest.
+3. **Feats and Abilities**: Some feats or class abilities might grant the ability to regain spell slots, though this is less common for Warlocks compared to other classes.
+
+These are the primary ways a Warlock regains spell slots in D&D 5e.",0,0,1,33.0,,,yes,False,,,,
+o26,Class,How does a Warlock regain spell slots?,v1_baseline,A Warlock regains all expended Pact Magic spell slots when they finish a Short or Long Rest.,3,1120,1,9.6,Classes > Level 1: Pact Magic | Spells > Spell Slots | Character Creation > Spellcasting,,yes,False,,,,
+o26,Class,How does a Warlock regain spell slots?,v2_rerank,A Warlock regains all expended Pact Magic spell slots when they finish a Short or Long Rest.,3,1484,1,13.2,Classes > Level 1: Pact Magic | Classes > Level 11: Mystic Arcanum | Character Creation > Spellcasting,,yes,False,,,,
+o26,Class,How does a Warlock regain spell slots?,v2b_rerank8,"A Warlock regains all expended Pact Magic spell slots when they finish a Short or Long Rest, and all uses of their Mystic Arcanum when they finish a Long Rest.",8,3388,1,49.6,Classes > Level 1: Pact Magic | Classes > Level 11: Mystic Arcanum | Character Creation > Spellcasting | Classes > Level 1: Pact Magic | Classes > Level 20: Eldritch Master | Classes > As a Multiclass Character | Classes > Level 1: Pact Magic | Classes > Warlock Spell List,,yes,False,,,,
+o26,Class,How does a Warlock regain spell slots?,v3_hier_rerank,A Warlock regains all expended Pact Magic spell slots when they finish a Short or Long Rest.,3,1484,1,13.8,Classes > Level 1: Pact Magic | Classes > Level 11: Mystic Arcanum | Character Creation > Spellcasting,,yes,False,,,,
+o26,Class,How does a Warlock regain spell slots?,v4_hybrid,"A Warlock regains spell slots when they finish a Short or Long Rest. They regain all expended Pact Magic spell slots after these rests. Additionally, a Warlock can use the Gift of the Depths feature to regain the ability to cast Water Breathing without expending a spell slot, though this doesn't directly relate to regaining other spell slots. No other specific methods for regaining spell slots are mentioned in the provided context.",8,3710,1,13.9,Classes > Level 1: Pact Magic | Classes > Level 11: Mystic Arcanum | Classes > Level 6: Natural Recovery | Classes > Level 1: Arcane Recovery | Classes > Gift of the Depths | Character Creation > Spellcasting | Classes > Level 2: Magical Cunning | Classes > Level 1: Pact Magic,,yes,False,,,,
+o26,Class,How does a Warlock regain spell slots?,v5_graph,A Warlock regains all expended Pact Magic spell slots when they finish a Short or Long Rest.,8,3614,1,39.8,Classes > Level 1: Pact Magic | Classes > Level 11: Mystic Arcanum | Classes > Level 1: Arcane Recovery | Character Creation > Spellcasting | Classes > Level 1: Spellcasting | Classes > Level 20: Eldritch Master | Classes > Level 1: Spellcasting | Classes > Level 1: Spellcasting,,yes,False,,,,
+o26,Class,How does a Warlock regain spell slots?,v6_agentic,A Warlock regains all expended Pact Magic spell slots when they finish a Short or Long Rest.,3,1363,3,59.7,Classes > Level 1: Pact Magic | Character Creation > Spellcasting | Classes > Level 11: Mystic Arcanum,Warlock spell slot regeneration,yes,False,,,,
+o27,Monster,What are the abilities of a Beholder?,v0_closed_book,"A Beholder in Dungeons & Dragons 5e has the following abilities:
+
+1. **Sphere of Vision**: A Beholder has a central eye that can see in all directions (360 degrees) within a 60-foot radius. It also has 8 smaller eyes arranged in a circle around the central eye, each with a 60-degree field of vision.
+
+2. **Detect Thoughts**: The central eye allows the Beholder to detect thoughts within its sphere of vision.
+
+3. **Detect Magic**: The central eye can detect magic within its sphere of vision.
+
+4. **Telepathy**: Beholders can communicate telepathically with creatures within 120 feet who understand a language.
+
+5. **Antimagic Susceptibility**: The central eye is susceptible to antimagic effects, while the other eyes are not.
+
+6. **Eye Rays**: Each eye can fire an eye ray as a spell attack. The specific effects vary by eye but often include damaging rays or control effects on targets.
+
+7. **Regeneration**: Beholders regenerate hit points if they are reduced to 0 hit points, though this ability is limited to certain conditions.
+
+8. **Immunities**: Beholders are immune to poison, disease, paralysis, sleep, and being charmed or frightened.
+
+9. **Darkvision**: Beholders have darkvision out to 60 feet.
+
+These abilities make Beholders formidable opponents in combat and encounters.",0,0,1,33.0,,,no,False,,,,
+o27,Monster,What are the abilities of a Beholder?,v1_baseline,"The context provided does not contain any information about Beholder abilities. The given context discusses attitudes, equipment, and a magic item but does not mention Beholders. Therefore, the part of the answer regarding Beholder abilities is missing.",3,774,1,9.6,Rules Glossary > Friendly [Attitude] | Equipment > Costume (5 GP) | Magic Items > Robe of Eyes,,no,True,,,,
+o27,Monster,What are the abilities of a Beholder?,v2_rerank,"The context provided does not contain specific information about Beholder abilities. Therefore, the part of the answer regarding Beholder abilities is missing.",3,1212,1,12.4,Playing the Game > The Six Abilities | Playing the Game > The Six Abilities | Playing the Game > Ability Modifier,,no,True,,,,
+o27,Monster,What are the abilities of a Beholder?,v2b_rerank8,The context provided does not contain information about the abilities of a Beholder. The Beholder's abilities are not mentioned in the given text.,8,2540,1,49.6,Playing the Game > The Six Abilities | Playing the Game > The Six Abilities | Playing the Game > Ability Modifier | Rules Glossary > Hostile [Attitude] | Rules Glossary > Friendly [Attitude] | Equipment > Costume (5 GP) | Magic Items > Robe of Eyes | Magic Items > Eyes of the Eagle,,no,True,,,,
+o27,Monster,What are the abilities of a Beholder?,v3_hier_rerank,"The context provided does not contain specific information about Beholder abilities. Therefore, the part of the answer regarding Beholder abilities is missing.",3,1212,1,13.4,Playing the Game > The Six Abilities | Playing the Game > The Six Abilities | Playing the Game > Ability Modifier,,no,True,,,,
+o27,Monster,What are the abilities of a Beholder?,v4_hybrid,The context provided does not contain information about Beholder abilities. The Beholder's abilities are not mentioned in the given text.,8,2960,1,13.9,Playing the Game > Ability Checks | Playing the Game > The Six Abilities | Gameplay Toolbox > 1: Choose Abilities | Magic Items > Abilities | Rules Glossary > Ability Check | Classes > Rogue Subclass: Thief | Playing the Game > The Six Abilities | Character Origins > Gnome,,no,True,,,,
+o27,Monster,What are the abilities of a Beholder?,v5_graph,The context provided does not specify the abilities of a Beholder. The Beholder's abilities are not mentioned in the given information.,8,2790,1,39.8,Playing the Game > The Six Abilities | Gameplay Toolbox > 1: Choose Abilities | Magic Items > Abilities | Rules Glossary > Ability Check | Playing the Game > The Six Abilities | Rules Glossary > Skill | Rules Glossary > Friendly [Attitude] | Rules Glossary > Search [Action],,no,True,,,,
+o27,Monster,What are the abilities of a Beholder?,v6_agentic,"The context provided does not contain information about a Beholder's abilities. The context includes descriptions for Glory Seeker, Lore Seeker, Protector magic items, and statistics for Invisible Stalker and Azer Sentinel monsters, but there is no mention of a Beholder.",3,1456,3,59.7,Magic Items > Special Purpose | Monsters A–Z > Invisible Stalker | Monsters A–Z > Azer Sentinel,Beholder,no,True,,,,
+o28,Monster,What is the Armor Class of an Ancient Red Dragon?,v0_closed_book,The Armor Class (AC) of an Ancient Red Dragon in Dungeons & Dragons 5e is 21. This includes their natural armor bonus and any other modifiers they might have based on their level and abilities.,0,0,1,33.0,,,yes,False,,,,
+o28,Monster,What is the Armor Class of an Ancient Red Dragon?,v1_baseline,"The context provided does not contain information about the Armor Class of an Ancient Red Dragon. Therefore, I cannot answer this part of the question with the given information.",3,1155,1,9.6,Magic Items > Dragon Scale Mail | Character Origins > Dragonborn | Classes > Level 3: Draconic Spells,,yes,True,,,,
+o28,Monster,What is the Armor Class of an Ancient Red Dragon?,v2_rerank,The Armor Class (AC) of an Ancient Red Dragon is 22.,3,1053,1,12.4,Monsters A–Z > Ancient Red Dragon | Magic Items > Dragon Scale Mail | Monsters A–Z > Ancient Red Dragon,,yes,False,,,,
+o28,Monster,What is the Armor Class of an Ancient Red Dragon?,v2b_rerank8,The Armor Class (AC) of an Ancient Red Dragon is 22.,8,3645,1,36.8,Monsters A–Z > Ancient Red Dragon | Magic Items > Dragon Scale Mail | Monsters A–Z > Ancient Red Dragon | Monsters A–Z > Ancient Bronze Dragon | Monsters A–Z > Ancient Bronze Dragon | Monsters A–Z > Ancient Silver Dragon | Monsters A–Z > Adult Red Dragon | Magic Items > Dragon Scale Mail,,yes,False,,,,
+o28,Monster,What is the Armor Class of an Ancient Red Dragon?,v3_hier_rerank,The Armor Class (AC) of an Ancient Red Dragon is 22.,3,1053,1,13.4,Monsters A–Z > Ancient Red Dragon | Magic Items > Dragon Scale Mail | Monsters A–Z > Ancient Red Dragon,,yes,False,,,,
+o28,Monster,What is the Armor Class of an Ancient Red Dragon?,v4_hybrid,The Armor Class (AC) of an Ancient Red Dragon is 22.,8,3127,1,35.8,Monsters A–Z > Ancient Red Dragon | Magic Items > Dragon Scale Mail | Monsters A–Z > Ancient Red Dragon | Monsters > Armor Class | Classes > Sorcerer Subclass: Draconic Sorcery | Monsters A–Z > Ancient Bronze Dragon | Classes > Level 3: Draconic Resilience | Playing the Game > Armor Class,,yes,False,,,,
+o28,Monster,What is the Armor Class of an Ancient Red Dragon?,v5_graph,The Armor Class (AC) of an Ancient Red Dragon is 22.,8,2936,1,39.8,Monsters A–Z > Ancient Red Dragon | Magic Items > Dragon Scale Mail | Monsters A–Z > Ancient Red Dragon | Monsters A–Z > Ancient Red Dragon | Monsters > Armor Class | Playing the Game > Armor Class | Rules Glossary > Armor Class | Character Creation > Armor Class,,yes,False,,,,
+o28,Monster,What is the Armor Class of an Ancient Red Dragon?,v6_agentic,22,3,1248,3,59.7,Monsters A–Z > Ancient Red Dragon | Monsters A–Z > Ancient Red Dragon | Monsters A–Z > Ancient Red Dragon,Ancient Red Dragon Armor Class,yes,False,,,,
+o29,Monster,What damage types is a Troll vulnerable to?,v0_closed_book,A Troll in Dungeons & Dragons 5th Edition (2024 SRD 5.2) is vulnerable to fire damage.,0,0,1,33.0,,,yes,False,,,,
+o29,Monster,What damage types is a Troll vulnerable to?,v1_baseline,The context does not specify any damage types that a Troll is vulnerable to. Vulnerability information is not provided in the given text.,3,855,1,9.6,Monsters A–Z > Traits | Monsters A–Z > Traits | Playing the Game > Damage and Healing,,yes,True,,,,
+o29,Monster,What damage types is a Troll vulnerable to?,v2_rerank,"The context provided does not specify any damage types that a troll is vulnerable to. Therefore, the information needed to answer this question is missing.",3,1067,1,12.4,Monsters A–Z > Traits | Playing the Game > Resistance and Vulnerability | Rules Glossary > Vulnerability,,yes,True,,,,
+o29,Monster,What damage types is a Troll vulnerable to?,v2b_rerank8,"The context provided does not specify any damage types that a Troll is vulnerable to. Therefore, based on the given information, there is no answer to the question ""What damage types is a Troll vulnerable to?""",8,2843,1,36.8,Monsters A–Z > Traits | Playing the Game > Resistance and Vulnerability | Rules Glossary > Vulnerability | Monsters A–Z > Traits | Rules Glossary > Breaking Objects | Monsters A–Z > Actions | Monsters A–Z > Traits | Playing the Game > Damage Types,,yes,True,,,,
+o29,Monster,What damage types is a Troll vulnerable to?,v3_hier_rerank,"The context provided does not specify any damage types that a troll is vulnerable to. Therefore, the information needed to answer this question is missing.",3,1067,1,13.5,Monsters A–Z > Traits | Playing the Game > Resistance and Vulnerability | Rules Glossary > Vulnerability,,yes,True,,,,
+o29,Monster,What damage types is a Troll vulnerable to?,v4_hybrid,"The context provided does not explicitly state that a Troll has a Vulnerability to any specific damage type. Therefore, based on the given information, the part of the answer regarding the damage types a Troll is vulnerable to is missing.",8,2677,1,35.8,Monsters A–Z > Traits | Playing the Game > Resistance and Vulnerability | Rules Glossary > Vulnerability | Monsters A–Z > Traits | Magic Items > Armor of Vulnerability | Rules Glossary > Breaking Objects | Monsters A–Z > Actions | Spells > Hallow,,yes,True,,,,
+o29,Monster,What damage types is a Troll vulnerable to?,v5_graph,"The context provided does not specify any damage types that a Troll is vulnerable to. Therefore, based on the given information, there is no answer to the question ""What damage types is a Troll vulnerable to?""",8,2904,1,30.1,Monsters A–Z > Traits | Playing the Game > Resistance and Vulnerability | Rules Glossary > Vulnerability | Monsters A–Z > Traits | Magic Items > Armor of Vulnerability | Rules Glossary > Breaking Objects | Monsters A–Z > Actions | Monsters A–Z > Traits,,yes,True,,,,
+o29,Monster,What damage types is a Troll vulnerable to?,v6_agentic,"The context provided does not specify any vulnerabilities for the Troll. Therefore, based on the given information, I cannot determine what damage types a Troll is vulnerable to.",4,1423,3,59.7,Monsters A–Z > Traits | Monsters A–Z > Traits | Monsters A–Z > Troll | Monsters A–Z > Actions,Troll vulnerability,yes,True,,,,
+o30,Monster,How can a Vampire be defeated?,v0_closed_book,"A vampire in D&D 5e can be defeated through several methods:
+
+1. **Decapitation**: Cutting off the vampire's head will destroy it.
+2. **Disembowelment**: Removing the vampire's heart will destroy it.
+3. **Sunlight**: Exposing a vampire to direct sunlight during the day will cause it to burst into flames and be destroyed.
+4. **Blessed Silver Weapons**: A creature can be killed by a critical hit with a blessed silver weapon.
+5. **Holy Water**: Splashing holy water on a vampire will cause it to make a DC 17 Constitution saving throw or be destroyed.
+6. **Vulnerability to Fire**: A vampire is vulnerable to fire damage, which can be used to weaken or destroy it.
+7. **Special Abilities**: Some specific abilities or spells can target and destroy vampires directly, such as the ""Dispel Magic"" spell.
+
+These methods are effective against most vampires, though some may have special vulnerabilities or resistances depending on their type and origin.",0,0,1,33.0,,,partial,False,,,,
+o30,Monster,How can a Vampire be defeated?,v1_baseline,"A Vampire can be defeated by driving a weapon that deals Piercing damage into its heart while it has the Incapacitated condition. Additionally, a Vampire takes 20 Radiant damage if it starts its turn in sunlight, which can also be used to defeat it.",3,997,1,9.6,Monsters A–Z > Traits | Monsters A–Z > Traits | Monsters A–Z > Actions,,partial,False,,,,
+o30,Monster,How can a Vampire be defeated?,v2_rerank,"A Vampire can be defeated by driving a weapon that deals Piercing damage into its heart while it has the Incapacitated condition. Additionally, it can be defeated if it remains in its resting place for 2 hours in its mist form without reaching its resting place.",3,1363,1,12.4,Monsters A–Z > Traits | Monsters A–Z > Traits | Monsters A–Z > Traits,,partial,False,,,,
+o30,Monster,How can a Vampire be defeated?,v2b_rerank8,"A Vampire can be defeated in the following ways:
+
+- By driving a weapon that deals Piercing damage into its heart while it has the Incapacitated condition.
+- By destroying it in its resting place with a weapon that deals Piercing damage to its heart while it has the Incapacitated condition.
+- By ensuring it does not reach its resting place within 2 hours in mist form, as it will be destroyed.
+- By exposing it to sunlight, though this method is less direct and involves other conditions (e.g., it must be Incapacitated).
+
+The context provided does not specify other methods beyond these.",8,3211,1,36.8,Monsters A–Z > Traits | Monsters A–Z > Traits | Monsters A–Z > Traits | Monsters A–Z > Traits | Monsters A–Z > Actions | Monsters A–Z > Traits | Monsters A–Z > Actions | Monsters A–Z > Actions,,partial,True,,,,
+o30,Monster,How can a Vampire be defeated?,v3_hier_rerank,"A Vampire can be defeated by driving a weapon that deals Piercing damage into its heart while it has the Incapacitated condition. Additionally, it can be defeated if it remains in its resting place for 2 hours in its mist form without reaching its resting place.",3,1363,1,13.4,Monsters A–Z > Traits | Monsters A–Z > Traits | Monsters A–Z > Traits,,partial,False,,,,
+o30,Monster,How can a Vampire be defeated?,v4_hybrid,"A Vampire can be defeated in several ways:
+
+1. **Stake to the Heart:** Drive a weapon that deals Piercing damage into the vampire's heart while it has the Incapacitated condition.
+2. **Sunlight:** The vampire takes 20 Radiant damage if it starts its turn in sunlight. Additionally, while in sunlight, it has Disadvantage on attack rolls and ability checks.
+3. **Forbiddance:** The vampire can't enter a residence without an invitation from an occupant.
+4. **Running Water:** The vampire takes 20 Acid damage if it ends its turn in running water.
+
+The Vampire also has a trait called ""Misty Escape,"" which allows it to transform into mist if it drops to 0 Hit Points outside its resting place, potentially making it harder to defeat in that state.",8,3151,1,35.8,Monsters A–Z > Traits | Monsters A–Z > Traits | Monsters A–Z > Bonus Actions | Monsters A–Z > Traits | Monsters A–Z > Legendary Actions | Monsters A–Z > Traits | Monsters A–Z > Legendary Actions | Monsters A–Z > Traits,,partial,False,,,,
+o30,Monster,How can a Vampire be defeated?,v5_graph,"A Vampire can be defeated in several ways:
+
+1. Driving a weapon that deals Piercing damage into its heart while it has the Incapacitated condition.
+2. Exposing it to sunlight, causing it to take 20 Radiant damage.
+3. Destroying it in its resting place by driving a weapon that deals Piercing damage into its heart while it has the Incapacitated condition and the Paralyzed condition.
+4. Ensuring it does not reach its resting place within 2 hours after dropping to 0 Hit Points outside its resting place, causing it to be destroyed.
+5. Using a Forbiddance effect to prevent it from entering a residence without an invitation from an occupant, though this does not directly defeat it but limits its movement.
+6. Ensuring it does not enter running water, as it would take 20 Acid damage and be destroyed if it ends its turn in running water.",8,3202,1,30.0,Monsters A–Z > Traits | Monsters A–Z > Traits | Monsters A–Z > Traits | Monsters A–Z > Legendary Actions | Monsters A–Z > Traits | Monsters A–Z > Traits | Monsters A–Z > Actions | Monsters A–Z > Bonus Actions,,partial,False,,,,
+o30,Monster,How can a Vampire be defeated?,v6_agentic,"A Vampire can be defeated in several ways based on the given context:
+
+- Using a Stake to the Heart: Drive a weapon that deals Piercing damage into the vampire's heart while it has the Incapacitated condition in its resting place to paralyze it until the weapon is removed. For definitive defeat, drive the weapon into the heart while the vampire has the Incapacitated condition to destroy it.
+- Sunlight: Expose the vampire to sunlight, causing it to take 20 Radiant damage each turn it starts its turn there, with additional penalties on attacks and checks.
+- Forbiddance: Prevent the vampire from entering a residence without an invitation from an occupant, though this does not directly defeat it.
+- Running Water: Exposing the vampire to running water causes it to take 20 Acid damage if it ends its turn in it, but this alone does not defeat it.
+
+The context provided does not include methods for defeating a vampire beyond these specific traits.",6,2269,3,36.0,Monsters A–Z > Traits | Monsters A–Z > Traits | Monsters A–Z > Traits | Magic Items > Oathbow | Playing the Game > Ending Combat | Magic Items > Special Purpose,vampire | defeat,partial,True,,,,
+o31,Monster,What is the challenge rating of a Lich?,v0_closed_book,The challenge rating (CR) of a Lich in Dungeons & Dragons 5e is 8.,0,0,1,33.3,,,yes,False,,,,
+o31,Monster,What is the challenge rating of a Lich?,v1_baseline,The context provided does not contain information about the challenge rating of a Lich. The challenge rating for a Lich is missing.,3,1119,1,9.6,Rules Glossary > Challenge Rating | Playing the Game > Ability Scores | Rules Glossary > Challenge Rating,,yes,True,,,,
+o31,Monster,What is the challenge rating of a Lich?,v2_rerank,"The context provided does not specify the Challenge Rating of a Lich. The information given only explains what Challenge Rating is and where to find more details, but it does not list the Challenge Rating for specific monsters like a Lich.",3,1159,1,12.4,Rules Glossary > Challenge Rating | Monsters > Challenge Rating | Rules Glossary > Stat Block,,yes,True,,,,
+o31,Monster,What is the challenge rating of a Lich?,v2b_rerank8,The challenge rating of a Lich is 16.,8,3184,1,36.8,Rules Glossary > Challenge Rating | Monsters > Challenge Rating | Rules Glossary > Stat Block | Rules Glossary > Challenge Rating | Gameplay Toolbox > Step 1: Choose a Difficulty | Monsters A–Z > Lich | Playing the Game > Ability Scores | Playing the Game > Ability Scores,,yes,False,,,,
+o31,Monster,What is the challenge rating of a Lich?,v3_hier_rerank,The Challenge Rating of a Lich is 16.,3,1404,1,13.4,Gameplay Toolbox > Step 1: Choose a Difficulty | Monsters A–Z > Lich | Equipment > Other Tools,,yes,False,,,,
+o31,Monster,What is the challenge rating of a Lich?,v4_hybrid,"The context provided does not specify the Challenge Rating of a Lich. Therefore, the part about the Challenge Rating of a Lich is missing.",8,3275,1,32.4,Rules Glossary > Challenge Rating | Monsters > Challenge Rating | Rules Glossary > Stat Block | Rules Glossary > Challenge Rating | Spells > Find Familiar | Monsters > Proficiency Bonus | Spells > Polymorph | Monsters > Experience Points,,yes,True,,,,
+o31,Monster,What is the challenge rating of a Lich?,v5_graph,The challenge rating of a Lich is 21.,8,2756,1,32.8,Rules Glossary > Challenge Rating | Monsters > Challenge Rating | Rules Glossary > Challenge Rating | Monsters > Experience Points | Playing the Game > Proficiency | Gameplay Toolbox > Step 1: Choose a Difficulty | Monsters A–Z > Lich | Monsters A–Z > Lich,,yes,False,,,,
+o31,Monster,What is the challenge rating of a Lich?,v6_agentic,The context provided does not include the challenge rating for a Lich.,3,1347,3,36.0,Monsters A–Z > Lich | Monsters A–Z > Traits | Monsters A–Z > Actions,Lich,yes,True,,,,
+o32,Monster,Which monsters have resistance to fire damage?,v0_closed_book,"Several monsters in the Dungeons & Dragons 5th Edition have resistance to fire damage. Notable examples include:
+
+- Devils (all subtypes)
+- Fiends (all subtypes)
+- Fire Elemental
+- Mephit (all subtypes)
+
+These are some of the more common monsters with fire resistance, but many others may also have this trait depending on their specific stat blocks.",0,0,1,33.3,,,yes,False,,,,
+o32,Monster,Which monsters have resistance to fire damage?,v1_baseline,"The context provided does not specify any monsters that have inherent resistance to fire damage. The only mention of resistance to fire damage is for creatures underwater, and the Steam Breath action of a specific monster does not confer resistance but rather specifies that being underwater does not grant resistance to its fire damage. Therefore, based on the given context, no monsters have resistance to fire damage mentioned.",3,698,1,11.9,Playing the Game > Fire Resistance | Monsters A–Z > Actions | Monsters A–Z > Traits,,yes,True,,,,
+o32,Monster,Which monsters have resistance to fire damage?,v2_rerank,"The context provided does not specify any monster with inherent resistance to fire damage. The only trait mentioned is ""Confer Fire Resistance,"" which allows a nightmare to grant resistance to fire damage to a rider while on the nightmare, but this is a granted effect, not an inherent one. Therefore, based on the given information, there is no monster listed that has resistance to fire damage.",3,839,1,12.4,Monsters A–Z > Traits | Playing the Game > Order of Application | Monsters A–Z > Traits,,yes,True,,,,
+o32,Monster,Which monsters have resistance to fire damage?,v2b_rerank8,The nightmare has resistance to fire damage when riding on it. No other monsters in the provided context have explicitly stated resistance to fire damage.,8,2069,1,36.8,Monsters A–Z > Traits | Playing the Game > Order of Application | Monsters A–Z > Traits | Monsters A–Z > Actions | Playing the Game > Fire Resistance | Monsters A–Z > Actions | Monsters A–Z > Actions | Monsters A–Z > Traits,,yes,False,,,,
+o32,Monster,Which monsters have resistance to fire damage?,v3_hier_rerank,"The context provided does not specify any monster with inherent resistance to fire damage. The only trait mentioned is ""Confer Fire Resistance,"" which allows a nightmare to grant resistance to fire damage to a rider while on the nightmare, but this is a granted effect, not an inherent one. Therefore, based on the given information, there is no monster listed that has resistance to fire damage.",3,839,1,13.4,Monsters A–Z > Traits | Playing the Game > Order of Application | Monsters A–Z > Traits,,yes,True,,,,
+o32,Monster,Which monsters have resistance to fire damage?,v4_hybrid,The nightmare has resistance to fire damage when ridden. No other monsters in the provided context have resistance to fire damage.,8,2822,1,32.4,Monsters A–Z > Traits | Monsters A–Z > Traits | Playing the Game > Order of Application | Monsters A–Z > Traits | Monsters A–Z > Traits | Monsters A–Z > Actions | Monsters A–Z > Actions | Monsters A–Z > Actions,,yes,False,,,,
+o32,Monster,Which monsters have resistance to fire damage?,v5_graph,The nightmare grants resistance to fire damage to its rider while on the nightmare. No other monsters in the provided context have explicit resistance to fire damage.,8,2781,1,22.3,Monsters A–Z > Traits | Monsters A–Z > Traits | Playing the Game > Order of Application | Monsters A–Z > Traits | Monsters A–Z > Actions | Monsters A–Z > Actions | Monsters A–Z > Actions | Playing the Game > Fire Resistance,,yes,False,,,,
+o32,Monster,Which monsters have resistance to fire damage?,v6_agentic,"The Nightmare can confer Resistance to Fire damage to a rider while it is on the Nightmare. However, the Nightmare itself does not have Resistance to Fire damage.",8,2721,3,22.1,Monsters A–Z > Traits | Playing the Game > Order of Application | Monsters A–Z > Traits | Monsters A–Z > Nightmare | Magic Items > Giant Fly | Magic Items > Manual of Golems | Magic Items > Manual of Golems | Monsters A–Z > Traits,monsters with resistance to fire,yes,False,,,,
+o33,Monster,What special abilities does a Mind Flayer possess?,v0_closed_book,"A Mind Flayer in D&D 5e possesses several special abilities:
+
+1. **Mind Reading**: Can use its Telepathy to read the thoughts of creatures it can see within 60 feet.
+2. **Telepathy**: Can communicate telepathically with any creature it can see within 60 feet.
+3. **Shapechanger**: Can use its Action to polymorph into a Small or Medium humanoid it has seen before, or back to its true form. It retains its alignment and mental abilities but gains the target's physical traits.
+4. **Improved Darkvision**: Has darkvision out to 120 feet.
+5. **Magic Resistance**: Has advantage on saving throws against spells and other magical effects.
+6. **Regeneration**: Regains 1 hit point at the start of each of its turns if it is not wearing any magic armor.
+7. **Immunity to Psychic Effects**: Is immune to being charmed and doesn't need to make Constitution saving throws against being charmed.
+8. **Innate Spellcasting**: Can cast the following spells without using spell slots: Detect Thoughts, Detect Magic, Identify, and Read Languages. Its spell attack modifier is its Intelligence modifier.
+9. **Multiattack**: Can attack twice when it takes the Attack action.
+10. **Amphibious**: Can breathe both air and water.
+
+These abilities make the Mind Flayer a formidable opponent in combat and exploration.",0,0,1,33.3,,,no,False,,,,
+o33,Monster,What special abilities does a Mind Flayer possess?,v1_baseline,"The context provided does not contain information about the special abilities of a Mind Flayer. Specifically, there is no mention of Mind Flayer abilities in the given excerpts. Therefore, the part of the answer regarding the special abilities of a Mind Flayer is missing.",3,1450,1,11.9,Playing the Game > The Six Abilities | Monsters A–Z > Actions | Magic Items > Ioun Stone,,no,True,,,,
+o33,Monster,What special abilities does a Mind Flayer possess?,v2_rerank,"The context provided does not contain information about Mind Flayer abilities. Therefore, I cannot answer what special abilities a Mind Flayer possesses based solely on the given information.",3,1267,1,10.7,Playing the Game > The Six Abilities | Gameplay Toolbox > 1: Choose Abilities | Playing the Game > The Six Abilities,,no,True,,,,
+o33,Monster,What special abilities does a Mind Flayer possess?,v2b_rerank8,"The context provided does not contain specific information about a Mind Flayer's special abilities beyond what is listed in the ""Actions"" section for ""Dominate Mind."" Therefore, the only special ability mentioned for a Mind Flayer is:
+
+**Dominate Mind (2/Day):** _Wisdom Saving Throw_: DC 16, one creature the aboleth can see within 30 feet. _Failure_: The target has the Charmed condition until the aboleth dies or is on a different plane of existence from the target. While Charmed, the target acts as an ally to the aboleth and is under its control while within 60 feet of it. In addition, the aboleth and the target can communicate telepathically with each other over any distance. 
+
+No other special abilities for a Mind Flayer are provided in the given context.",8,3572,1,36.8,Playing the Game > The Six Abilities | Gameplay Toolbox > 1: Choose Abilities | Playing the Game > The Six Abilities | Monsters A–Z > Actions | Playing the Game > Skill Proficiencies | Magic Items > Ioun Stone | Magic Items > Ioun Stone | Spells > Animated Object,,no,True,,,,
+o33,Monster,What special abilities does a Mind Flayer possess?,v3_hier_rerank,"The context provided does not contain any information about Mind Flayer abilities. The given information is about the six abilities (Strength, Dexterity, Constitution, Intelligence, Wisdom, and Charisma) and a trait related to a couatl. Therefore, the specific abilities of a Mind Flayer are missing from this context.",3,1001,1,11.3,Playing the Game > The Six Abilities | Playing the Game > The Six Abilities | Monsters A–Z > Traits,,no,True,,,,
+o33,Monster,What special abilities does a Mind Flayer possess?,v4_hybrid,"The context provided does not list any special abilities for a Mind Flayer. The given information pertains to general rules about special abilities, multiattack, and abilities in general for creatures and characters, but it does not include specific details about a Mind Flayer's traits or abilities. Therefore, the part describing the Mind Flayer's special abilities is missing.",8,3042,1,32.4,Monsters > Resistances and Vulnerabilities | Playing the Game > The Six Abilities | Gameplay Toolbox > 1: Choose Abilities | Spells > Casting without Slots | Magic Items > Abilities | Playing the Game > The Six Abilities | Playing the Game > Reactions | Monsters A–Z > Traits,,no,True,,,,
+o33,Monster,What special abilities does a Mind Flayer possess?,v5_graph,"The Mind Flayer possesses a special ability called Dominate Mind, which can be used up to twice a day. When successful, it imposes the Charmed condition on the target, preventing them from attacking or targeting the Mind Flayer and giving the Mind Flayer advantage on social interaction checks with the target.",8,3394,1,22.3,Monsters > Resistances and Vulnerabilities | Playing the Game > The Six Abilities | Spells > Casting without Slots | Magic Items > Abilities | Playing the Game > The Six Abilities | Rules Glossary > Charmed [Condition] | Monsters A–Z > Actions | Playing the Game > Ability Scores,,no,False,,,,
+o33,Monster,What special abilities does a Mind Flayer possess?,v6_agentic,"The context provided does not explicitly list special abilities of a Mind Flayer. The given information includes details about Mind Spike, Mind Blank, legendary actions, resistances, reactions, and class features, but does not mention any specific abilities of a Mind Flayer.",9,3395,3,57.2,Spells > Mind Spike | Spells > Mind Blank | Monsters A–Z > Legendary Actions | Monsters > Resistances and Vulnerabilities | Spells > Casting without Slots | Playing the Game > Reactions | Classes > Level 2: Tactical Mind | Playing the Game > The Six Abilities | Gameplay Toolbox > 1: Choose Abilities,mind flayer | special abilities,no,True,,,,
+o34,Monster,What is the difference between a Goblin and a Hobgoblin?,v0_closed_book,"In Dungeons & Dragons 5th Edition, the main differences between Goblins and Hobgoblins are:
+
+1. Size: Goblins are typically smaller, standing about 3 to 4 feet tall, while Hobgoblins are larger, reaching about 4 to 5 feet tall.
+
+2. Intelligence and Leadership: Hobgoblins are generally more intelligent and organized than Goblins. They often form structured societies and military units.
+
+3. Alignment: Goblins tend to be chaotic evil, while Hobgoblins are usually lawful evil.
+
+4. Strength: Hobgoblins are stronger than Goblins due to their larger size and better training.
+
+5. Role in Combat: Goblins are often used as skirmishers or scouts, while Hobgoblins serve as frontline fighters and leaders in battle.
+
+6. Equipment: Goblins use simple weapons like daggers and slings, while Hobgoblins prefer martial weapons such as swords and shields.
+
+7. Society: Goblins live in small, scattered groups, whereas Hobgoblins form larger, more organized communities or armies.
+
+These distinctions help differentiate these two races in gameplay and storytelling.",0,0,1,33.3,,,yes,False,,,,
+o34,Monster,What is the difference between a Goblin and a Hobgoblin?,v1_baseline,"The context provided does not contain information about goblins, only hobgoblins. Therefore, the part comparing goblins to hobgoblins is missing. Based on the given information, there is no difference described between a Goblin and a Hobgoblin.",3,852,1,11.9,Monsters A–Z > Traits | Monsters A–Z > Traits | Monsters A–Z > Reactions,,yes,True,,,,
+o34,Monster,What is the difference between a Goblin and a Hobgoblin?,v2_rerank,"The context provided does not contain information about the differences between a Goblin and a Hobgoblin. The context only describes the abilities of a Hobgoblin Warrior and some general traits of hobgoblins. Therefore, the part about the difference between a Goblin and a Hobgoblin is missing.",3,627,1,10.7,Monsters A–Z > Hobgoblin Warrior | Monsters A–Z > Traits | Monsters A–Z > Traits,,yes,True,,,,
+o34,Monster,What is the difference between a Goblin and a Hobgoblin?,v2b_rerank8,"The context provided does not contain information specifically comparing a Goblin to a Hobgoblin. Therefore, the part of the question asking about the difference between a Goblin and a Hobgoblin cannot be answered based on the given information.",8,2468,1,10.9,Monsters A–Z > Hobgoblin Warrior | Monsters A–Z > Traits | Monsters A–Z > Traits | Monsters A–Z > Hobgoblin Warrior | Monsters A–Z > Actions | Monsters A–Z > Reactions | Monsters A–Z > Bonus Actions | Monsters > Creature Type,,yes,True,,,,
+o34,Monster,What is the difference between a Goblin and a Hobgoblin?,v3_hier_rerank,"The context provided does not contain information about the differences between a Goblin and a Hobgoblin. The context only describes the abilities of a Hobgoblin Warrior and some general traits of hobgoblins. Therefore, the part about the difference between a Goblin and a Hobgoblin is missing.",3,627,1,11.3,Monsters A–Z > Hobgoblin Warrior | Monsters A–Z > Traits | Monsters A–Z > Traits,,yes,True,,,,
+o34,Monster,What is the difference between a Goblin and a Hobgoblin?,v4_hybrid,"The context provided does not contain information about goblins specifically, only hobgoblins. Therefore, I cannot provide a comparison between goblins and hobgoblins based on the given information. The context focuses solely on hobgoblins and their variants (Warrior and Captain).",8,2462,1,23.4,Monsters A–Z > Hobgoblin Warrior | Monsters A–Z > Hobgoblin Captain | Monsters A–Z > Traits | Monsters A–Z > Traits | Monsters A–Z > Hobgoblin Warrior | Monsters A–Z > Actions | Monsters A–Z > Hobgoblin Captain | Monsters A–Z > Reactions,,yes,True,,,,
+o34,Monster,What is the difference between a Goblin and a Hobgoblin?,v5_graph,"The context provided does not contain information to differentiate between a Goblin and a Hobgoblin. The context only describes traits, actions, reactions, and bonus actions for Hobgoblin Warrior, Hobgoblin Captain, and Goblin Boss, but does not provide any distinguishing features between Goblins and Hobgoblins.",8,1640,1,22.3,Monsters A–Z > Hobgoblin Warrior | Monsters A–Z > Hobgoblin Captain | Monsters A–Z > Traits | Monsters A–Z > Traits | Monsters A–Z > Actions | Monsters A–Z > Reactions | Monsters A–Z > Bonus Actions | Monsters A–Z > Goblin Boss,,yes,True,,,,
+o34,Monster,What is the difference between a Goblin and a Hobgoblin?,v6_agentic,"The context provided does not contain direct comparisons between goblins and hobgoblins beyond their individual descriptions. However, based on the information given:
+
+- **Size**: A Goblin is described as ""Small"" while a Hobgoblin is ""Medium"".
+- **Traits**: 
+  - **Goblin Minion**: No specific traits mentioned other than basic stats.
+  - **Hobgoblin Warrior**: Has the ""Aura of Authority"" trait, which grants advantage on attack rolls and saving throws to itself and its allies under certain conditions.
+
+These differences indicate that hobgoblins are larger and have a more advantageous ability compared to goblins.",6,2105,3,41.2,Monsters A–Z > Reactions | Monsters A–Z > Goblin Warrior | Monsters A–Z > Goblin Minion | Monsters A–Z > Hobgoblin Warrior | Monsters A–Z > Traits | Monsters A–Z > Actions,Goblin | Hobgoblin,yes,True,,,,
+o35,Equipment,What is the damage dealt by a Longsword?,v0_closed_book,A Longsword deals 1d8 slashing damage.,0,0,1,33.3,,,yes,False,,,,
+o35,Equipment,What is the damage dealt by a Longsword?,v1_baseline,The damage dealt by a Longsword is 12 (2d10 + 1) Slashing damage.,3,982,1,11.9,Monsters A–Z > Actions | Spells > Mending | Spells > Shatter,,yes,False,,,,
+o35,Equipment,What is the damage dealt by a Longsword?,v2_rerank,12 (2d10 + 1) Slashing damage.,3,1127,1,10.7,Monsters A–Z > Actions | Magic Items > Sword of Wounding | Monsters A–Z > Actions,,yes,False,,,,
+o35,Equipment,What is the damage dealt by a Longsword?,v2b_rerank8,The damage dealt by a Longsword is 12 (2d10 + 1) Slashing damage.,8,2476,1,10.9,Monsters A–Z > Actions | Magic Items > Sword of Wounding | Monsters A–Z > Actions | Rules Glossary > Damage Threshold | Monsters A–Z > Actions | Spells > Shatter | Monsters A–Z > Actions | Monsters A–Z > Actions,,yes,False,,,,
+o35,Equipment,What is the damage dealt by a Longsword?,v3_hier_rerank,12 (2d10 + 1) Slashing damage.,3,1127,1,11.3,Monsters A–Z > Actions | Magic Items > Sword of Wounding | Monsters A–Z > Actions,,yes,False,,,,
+o35,Equipment,What is the damage dealt by a Longsword?,v4_hybrid,The damage dealt by a Longsword is 12 (2d10 + 1) Slashing damage.,8,2726,1,23.4,Monsters A–Z > Actions | Magic Items > Sword of Sharpness | Monsters A–Z > Actions | Magic Items > Sword of Wounding | Monsters A–Z > Actions | Magic Items > Luck Blade | Rules Glossary > Damage Threshold | Monsters A–Z > Actions,,yes,False,,,,
+o35,Equipment,What is the damage dealt by a Longsword?,v5_graph,The damage dealt by a Longsword is 12 (2d10 + 1) Slashing damage.,8,2293,1,22.3,Monsters A–Z > Actions | Magic Items > Sword of Sharpness | Monsters A–Z > Actions | Rules Glossary > Damage Threshold | Magic Items > Sun Blade | Classes > Level 3: Deflect Attacks | Magic Items > Instant Fortress | Spells > Shatter,,yes,False,,,,
+o35,Equipment,What is the damage dealt by a Longsword?,v6_agentic,"The context provided does not contain information about the base damage of a Longsword. The details given are specific to the magical properties of the Sun Blade, Vorpal Sword, and Sword of Sharpness, but do not include the standard damage of a non-magical Longsword. Therefore, the part of the answer regarding the damage dealt by a non-magical Longsword is missing.",3,1194,3,22.0,Magic Items > Sun Blade | Magic Items > Vorpal Sword | Magic Items > Sword of Sharpness,Longsword,yes,True,,,,
+o36,Equipment,What is the difference between a Greatsword and a Greataxe?,v0_closed_book,"A Greatsword and a Greataxe are both large one-handed melee weapons in D&D 5e, but they differ in several key aspects:
+
+1. **Damage Type**: 
+   - Greatsword deals slashing damage.
+   - Greataxe deals bludgeoning damage.
+
+2. **Attack Bonus**:
+   - Greatsword has a +2 bonus to attack rolls.
+   - Greataxe also has a +2 bonus to attack rolls.
+
+3. **Damage Die**:
+   - Greatsword deals 2d6 damage.
+   - Greataxe deals 2d8 damage.
+
+4. **Versatility**:
+   - Greatsword can be used with advantage when attacking a creature at half its speed.
+   - Greataxe does not have this special property.
+
+5. **Weight**:
+   - Greatsword is typically heavier than Greataxe, often weighing around 18-20 pounds.
+   - Greataxe is usually lighter, often weighing around 12-14 pounds.
+
+6. **Size**:
+   - Both weapons are considered Large weapons, meaning they require two hands to use, but a character with the Two-Handed Fighting Style can use them one-handed.
+
+These differences affect how each weapon performs in combat, with the Greatsword being more versatile for certain situations due to its ability to gain advantage on attacks while moving, while the Greataxe offers higher damage output.",0,0,1,33.3,,,yes,False,,,,
+o36,Equipment,What is the difference between a Greatsword and a Greataxe?,v1_baseline,"The context provided does not contain information about Greataxes or their differences from Greatswords. Therefore, the part of the answer regarding Greataxes is missing.",3,992,1,11.9,Monsters A–Z > Actions | Magic Items > Hammer of Thunderbolts | Magic Items > Sun Blade,,yes,True,,,,
+o36,Equipment,What is the difference between a Greatsword and a Greataxe?,v2_rerank,"The context provided does not contain information about Greataxes or their differences from Greatswords. Therefore, the part describing the difference between a Greatsword and a Greataxe is missing.",3,1204,1,10.7,Monsters A–Z > Actions | Magic Items > Sword of Sharpness | Magic Items > Frost Brand,,yes,True,,,,
+o36,Equipment,What is the difference between a Greatsword and a Greataxe?,v2b_rerank8,"The provided context does not contain information about Greataxes or their differences from Greatswords. Therefore, the relevant part of the answer is missing.",8,3426,1,10.9,Monsters A–Z > Actions | Magic Items > Sword of Sharpness | Magic Items > Frost Brand | Magic Items > Sword of Wounding | Magic Items > Sun Blade | Magic Items > Thunderous Greatclub | Magic Items > Belt of Dwarvenkind | Magic Items > Hammer of Thunderbolts,,yes,True,,,,
+o36,Equipment,What is the difference between a Greatsword and a Greataxe?,v3_hier_rerank,"The provided context does not contain any information about a Greatsword or a Greataxe, nor does it mention their differences. Therefore, the part of the answer regarding the difference between a Greatsword and a Greataxe is missing.",3,1354,1,11.3,Magic Items > Sword of Sharpness | Magic Items > Frost Brand | Magic Items > Sword of Wounding,,yes,True,,,,
+o36,Equipment,What is the difference between a Greatsword and a Greataxe?,v4_hybrid,"The difference between a Greatsword and a Greataxe is their damage die size and price. A Greataxe deals 1d12 slashing damage and costs 30 GP, while a Greatsword deals 2d6 slashing damage and costs 50 GP. Additionally, a Greataxe is listed as Heavy and Two-Handed, and has the Cleave property, whereas the Greatsword has the Graze property.",8,2996,1,23.4,Magic Items > Berserker Axe | Monsters A–Z > Actions | Magic Items > Sword of Sharpness | Magic Items > Frost Brand | Magic Items > Luck Blade | Magic Items > Sword of Wounding | Monsters A–Z > Actions | Equipment > Mastery Properties,,yes,False,,,,
+o36,Equipment,What is the difference between a Greatsword and a Greataxe?,v5_graph,"The difference between a Greatsword and a Greataxe is their damage die and properties:
+
+- A Greatsword deals 2d6 Slashing damage and has the properties Heavy, Two-Handed, and Graze.
+- A Greataxe deals 1d12 Slashing damage and has the properties Heavy and Two-Handed.
+
+The context provided does not specify any other differences beyond these basic stats and properties.",8,3313,1,22.2,Magic Items > Berserker Axe | Magic Items > Sword of Sharpness | Magic Items > Luck Blade | Equipment > Mastery Properties | Magic Items > Sun Blade | Spells > Astral Projection | Playing the Game > What Is an Object? | Magic Items > Belt of Giant Strength,,yes,True,,,,
+o36,Equipment,What is the difference between a Greatsword and a Greataxe?,v6_agentic,"The context provided does not contain detailed descriptions of a Greatsword and a Greataxe beyond their names and some basic attack details. It does not provide enough information to describe the differences between a Greatsword and a Greataxe in terms of their properties, mechanics, or design. Therefore, the specific differences between a Greatsword and a Greataxe cannot be answered based solely on the given context.",8,2581,3,57.2,Magic Items > Vorpal Sword | Magic Items > Sword of Sharpness | Monsters A–Z > Actions | Magic Items > Berserker Axe | Monsters A–Z > Actions | Classes > Barbarian | Monsters A–Z > Actions | Monsters A–Z > Actions,Greatsword | Greataxe,yes,True,,,,
+o37,Equipment,Which weapons have the Finesse property?,v0_closed_book,"The following weapons have the Finesse property in D&D 5e:
+
+- Dagger
+- Handaxe
+- Javelin
+- Light Hammer
+- Quarterstaff
+- Sickle
+- Spear
+
+Note that some of these weapons can be used with either one or two hands, but only when used one-handed do they qualify for the finesse property. The quarterstaff is unique as it can be used with either one or two hands, but only one-handed use qualifies for finesse.",0,0,1,25.0,,,yes,False,,,,
+o37,Equipment,Which weapons have the Finesse property?,v1_baseline,Simple weapons and Martial weapons that have the Finesse property.,3,1044,1,11.9,Classes > Rogue | Equipment > Properties | Equipment > Properties,,yes,False,,,,
+o37,Equipment,Which weapons have the Finesse property?,v2_rerank,Simple weapons and Martial weapons that have the Finesse property.,3,1380,1,10.7,Classes > Rogue | Equipment > Properties | Equipment > Mastery Properties,,yes,False,,,,
+o37,Equipment,Which weapons have the Finesse property?,v2b_rerank8,"Dagger, Dart, Light Crossbow.",8,3059,1,10.9,Classes > Rogue | Equipment > Properties | Equipment > Mastery Properties | Equipment > Mastery Properties | Equipment > Mastery Properties | Equipment > Properties | Magic Items > Energy Bow | Equipment > Mastery Properties,,yes,False,,,,
+o37,Equipment,Which weapons have the Finesse property?,v3_hier_rerank,Dart and Sap have the Finesse property.,3,1436,1,11.3,Equipment > Properties | Equipment > Mastery Properties | Equipment > Mastery Properties,,yes,False,,,,
+o37,Equipment,Which weapons have the Finesse property?,v4_hybrid,"Simple weapons and Martial weapons that have the Finesse property, as well as the Sun Blade and Daggers.",8,3850,1,40.8,Classes > Rogue | Magic Items > Sun Blade | Equipment > Properties | Playing the Game > Ability Modifier | Equipment > Mastery Properties | Equipment > Mastery Properties | Equipment > Mastery Properties | Equipment > Mastery Properties,,yes,False,,,,
+o37,Equipment,Which weapons have the Finesse property?,v5_graph,"Dagger, Sap, Dart.",8,3674,1,19.5,Equipment > Properties | Equipment > Mastery Properties | Equipment > Mastery Properties | Equipment > Mastery Properties | Equipment > Mastery Properties | Equipment > Weapons | Equipment > Weapons | Equipment > Mastery Properties,,yes,False,,,,
+o37,Equipment,Which weapons have the Finesse property?,v6_agentic,"Scimitar, Shortsword, Sun Blade.",5,2316,3,41.1,Equipment > Properties | Playing the Game > Ability Modifier | Equipment > Mastery Properties | Classes > Rogue | Magic Items > Sun Blade,Finesse,yes,False,,,,
+o38,Equipment,What is the Armor Class provided by Plate Armor?,v0_closed_book,Plate Armor provides an Armor Class (AC) of 16.,0,0,1,25.0,,,yes,False,,,,
+o38,Equipment,What is the Armor Class provided by Plate Armor?,v1_baseline,"The context provided does not specify a base Armor Class for Plate Armor. Therefore, the part of the answer regarding the specific Armor Class provided by Plate Armor is missing.",3,1158,1,13.3,Character Creation > Note Armor Training | Magic Items > Dwarven Plate | Equipment > Armor,,yes,True,,,,
+o38,Equipment,What is the Armor Class provided by Plate Armor?,v2_rerank,"The context provided does not specify the base Armor Class of Plate Armor. The only information given is about a specific type of Dwarven Plate armor which provides a +2 bonus to Armor Class. Without the base AC of regular Plate Armor, the full answer cannot be provided.",3,893,1,10.7,Magic Items > Dwarven Plate | Magic Items > Armor | Monsters > Armor Class,,yes,True,,,,
+o38,Equipment,What is the Armor Class provided by Plate Armor?,v2b_rerank8,"18
+
+The Armor Class provided by Plate Armor is 18, as shown in the Equipment > Armor table.",8,2818,1,24.1,Magic Items > Dwarven Plate | Magic Items > Armor | Monsters > Armor Class | Equipment > Armor | Character Creation > Armor Class | Character Creation > Note Armor Training | Equipment > Armor | Equipment > Armor,,yes,False,,,,
+o38,Equipment,What is the Armor Class provided by Plate Armor?,v3_hier_rerank,"The context provided does not specify the base Armor Class of Plate Armor. The only information given is about a specific type of Dwarven Plate armor which provides a +2 bonus to Armor Class. Without the base AC of regular Plate Armor, the full answer cannot be provided.",3,893,1,11.3,Magic Items > Dwarven Plate | Magic Items > Armor | Monsters > Armor Class,,yes,True,,,,
+o38,Equipment,What is the Armor Class provided by Plate Armor?,v4_hybrid,"The context does not provide a specific AC value for Plate Armor. The AC provided is based on the type of armor worn and the Dexterity modifier. Plate Armor generally provides an AC of 17 (10 + Dexterity modifier, assuming no other modifiers or magic items). However, the exact AC for Plate Armor is not given in the provided context.",8,2971,1,40.7,Magic Items > Dwarven Plate | Magic Items > Armor | Monsters > Armor Class | Equipment > Armor | Magic Items > Plate Armor of Etherealness | Character Creation > Fill In Numbers | Magic Items > Armor of Invulnerability | Character Creation > Armor Class,,yes,True,,,,
+o38,Equipment,What is the Armor Class provided by Plate Armor?,v5_graph,"The context does not provide a specific AC value for Plate Armor. The AC provided is based on the type of armor worn and the Dexterity modifier, but the exact AC for Plate Armor is not given in the provided context.",8,2851,1,9.3,Magic Items > Dwarven Plate | Magic Items > Armor | Monsters > Armor Class | Equipment > Armor | Magic Items > Plate Armor of Etherealness | Character Creation > Fill In Numbers | Character Creation > Armor Class | Character Creation > Note Armor Training,,yes,True,,,,
+o38,Equipment,What is the Armor Class provided by Plate Armor?,v6_agentic,"The context does not provide a specific base Armor Class for Dwarven Plate or any other Plate Armor. It only mentions a +2 bonus to Armor Class while wearing the armor. Therefore, the base Armor Class is missing.",4,1735,3,45.8,Magic Items > Dwarven Plate | Magic Items > Plate Armor of Etherealness | Magic Items > Armor of Invulnerability | Equipment > Armor,Plate Armor,yes,True,,,,
+o39,Equipment,Which magical weapons provide additional damage?,v0_closed_book,"Several magical weapons in D&D 5e provide additional damage. Here are some examples:
+
+1. **Bane Weapons**: These weapons deal an extra 1d4 damage of the weapon's type against a target with the appropriate alignment (lawful, neutral, or chaotic).
+
+2. **Flame Tongue Sword**: This sword deals an extra 1d6 fire damage on a hit.
+
+3. **Holy Avenger**: This sword deals an extra 1d8 radiant damage on a hit against undead creatures.
+
+4. **Maul of Earth and Sky**: This maul deals an extra 1d6 force damage on a hit.
+
+5. **Rapier of Speed**: While you are not wearing armor or wielding a shield, this rapier deals an extra 1d6 piercing damage on a hit.
+
+These are just a few examples, and there may be other magical weapons that provide additional damage depending on the specific campaign or source material.",0,0,1,25.0,,,yes,False,,,,
+o39,Equipment,Which magical weapons provide additional damage?,v1_baseline,"Two magical weapons provide additional damage:
+
+- Vicious Weapon provides an extra 2d6 damage of the same type as the weapon's normal damage.
+- Sword of Sharpness provides an extra 14 Slashing damage when attacking a creature with a roll of 20 on the d20.",3,1134,1,13.3,Magic Items > Vicious Weapon | Magic Items > Sword of Wounding | Magic Items > Sword of Sharpness,,yes,False,,,,
+o39,Equipment,Which magical weapons provide additional damage?,v2_rerank,"Three magical weapons provide additional damage:
+
+- Vicious Weapon provides an extra 2d6 damage of the same type as the weapon's normal damage.
+- Sword of Sharpness can maximize weapon damage dice against objects and deal an extra 14 Slashing damage against creatures on a critical hit.
+- Sword of Wounding provides an extra 2d6 Necrotic damage.",3,1134,1,16.2,Magic Items > Vicious Weapon | Magic Items > Sword of Sharpness | Magic Items > Sword of Wounding,,yes,False,,,,
+o39,Equipment,Which magical weapons provide additional damage?,v2b_rerank8,"The following magical weapons provide additional damage:
+
+- Vicious Weapon: Deals an extra 2d6 damage of the weapon's type.
+- Sword of Sharpness: Maximizes weapon damage dice against objects and deals an extra 14 Slashing damage to creatures hit with a 20 on the attack roll.
+- Sword of Wounding: Deals an extra 2d6 Necrotic damage.
+- Holy Avenger: Deals an extra 2d10 Radiant damage to Fiends or Undead.
+- Vorpal Sword: Ignores Resistance to Slashing damage (not additional damage but affects damage resistance).
+
+No other weapons in the provided context grant additional damage.",8,2335,1,24.1,Magic Items > Vicious Weapon | Magic Items > Sword of Sharpness | Magic Items > Sword of Wounding | Magic Items > Holy Avenger | Magic Items > Vorpal Sword | Magic Items > Luck Blade | Magic Items > Hammer of Thunderbolts | Magic Items > Energy Bow,,yes,False,,,,
+o39,Equipment,Which magical weapons provide additional damage?,v3_hier_rerank,"Three magical weapons provide additional damage:
+
+- Vicious Weapon provides an extra 2d6 damage of the same type as the weapon's normal damage.
+- Sword of Sharpness can maximize weapon damage dice against objects and deal an extra 14 Slashing damage against creatures on a critical hit.
+- Sword of Wounding provides an extra 2d6 Necrotic damage.",3,1134,1,9.6,Magic Items > Vicious Weapon | Magic Items > Sword of Sharpness | Magic Items > Sword of Wounding,,yes,False,,,,
+o39,Equipment,Which magical weapons provide additional damage?,v4_hybrid,"The following magical weapons provide additional damage:
+
+- Vicious Weapon: Deals an extra 2d6 damage of the weapon's type.
+- Sword of Sharpness: Does not directly provide additional damage but maximizes damage dice against objects and deals an extra 14 Slashing damage and Exhaustion to creatures on a critical hit.
+- Thunderous Greatclub: Deals an extra 1d8 Thunder damage to creatures and an extra 3d8 Thunder damage to non-worn or carried objects.
+- Sword of Wounding: Deals an extra 2d6 Necrotic damage.
+- Energy Bow: Deals Force damage instead of Piercing damage, but does not specify additional damage beyond the change in damage type.
+- Holy Avenger: Deals an extra 2d10 Radiant damage to Fiends or Undead.
+- Dragon Slayer: Deals an extra 3d6 damage of the weapon's type to Dragons.
+- Vorpal Sword: Ignores Resistance to Slashing damage, effectively providing additional damage by bypassing resistance.",8,2950,1,40.7,Magic Items > Vicious Weapon | Magic Items > Sword of Sharpness | Magic Items > Thunderous Greatclub | Magic Items > Sword of Wounding | Magic Items > Energy Bow | Magic Items > Holy Avenger | Magic Items > Dragon Slayer | Magic Items > Vorpal Sword,,yes,True,,,,
+o39,Equipment,Which magical weapons provide additional damage?,v5_graph,The Vicious Weapon provides an extra 2d6 damage of the weapon's normal type when it hits. None of the other described magical weapons directly provide additional damage beyond their base properties and effects.,8,3429,1,9.3,Magic Items > Vicious Weapon | Magic Items > Sword of Sharpness | Magic Items > Sword of Wounding | Magic Items > Energy Bow | Magic Items > Hammer of Thunderbolts | Spells > Prismatic Wall | Magic Items > Oil of Sharpness | Spells > Magic Weapon,,yes,False,,,,
+o39,Equipment,Which magical weapons provide additional damage?,v6_agentic,"Two magical weapons provide additional damage:
+
+1. **Vicious Weapon**: Deals an extra 2d6 damage of the same type as the weapon's normal damage.
+2. **Energy Bow**: The magical arrow it produces deals Force damage instead of Piercing damage on a hit.",3,1167,3,39.6,Magic Items > Vicious Weapon | Magic Items > Energy Bow | Magic Items > Sword of Sharpness,magical weapons additional damage,yes,False,,,,
+o40,Equipment,What are the properties of a Longbow?,v0_closed_book,"A longbow in Dungeons & Dragons 5th Edition (2024 SRD 5.2) has the following properties:
+
+- **Size**: Large (requires two hands)
+- **Type**: Ranged Weapon
+- **Damage Type**: Piercing
+- **Attack Bonus**: +2 to hit at medium range (60 feet), +5 to hit at long range (180 feet)
+- **Damage**: 1d8 Piercing damage
+- **Properties**: Ammunition, Two-Handed
+
+The longbow requires ammunition (arrows) to function, and it is considered a two-handed weapon, meaning you cannot use it with the Two-Weapon Fighting fighting style or similar abilities.",0,0,1,25.0,,,yes,False,,,,
+o40,Equipment,What are the properties of a Longbow?,v1_baseline,"A Longbow has the following properties:
+- Deals 1d8 Piercing damage
+- Is Heavy and Two-Handed
+- Requires Ammunition (Range 150/600; Arrow)",3,893,1,13.3,Equipment > Mastery Properties | Magic Items > Bracers of Archery | Magic Items > Energy Bow,,yes,False,,,,
+o40,Equipment,What are the properties of a Longbow?,v2_rerank,"The context provided does not contain specific information about the properties of a Longbow itself. It only mentions Longbows in relation to Magic Items like the Oathbow and Energy Bow. The Bracers of Archery provide information about proficiency and damage bonus for Longbows and Shortbows, but not their base properties. Therefore, the base properties of a Longbow are missing from this context.",3,465,1,16.2,Magic Items > Oathbow | Magic Items > Energy Bow | Magic Items > Bracers of Archery,,yes,True,,,,
+o40,Equipment,What are the properties of a Longbow?,v2b_rerank8,"A Longbow has the following properties:
+- Deals 1d8 Piercing damage
+- Is Heavy and Two-Handed
+- Requires Ammunition (Range 150/600; Arrow)",8,2549,1,31.4,Magic Items > Oathbow | Magic Items > Energy Bow | Magic Items > Bracers of Archery | Magic Items > Energy Bow | Equipment > Mastery Properties | Equipment > Mastery Properties | Magic Items > Energy Bow | Magic Items > Energy Bow,,yes,False,,,,
+o40,Equipment,What are the properties of a Longbow?,v3_hier_rerank,"The context provided does not contain specific information about the properties of a Longbow itself. It only mentions Longbows in relation to Magic Items like the Oathbow and Energy Bow. The Bracers of Archery provide information about proficiency and damage bonus for Longbows and Shortbows, but not their base properties. Therefore, the base properties of a Longbow are missing from this context.",3,465,1,9.6,Magic Items > Oathbow | Magic Items > Energy Bow | Magic Items > Bracers of Archery,,yes,True,,,,
+o40,Equipment,What are the properties of a Longbow?,v4_hybrid,"The context provided does not specify any unique properties for a Longbow itself. It only describes the attack properties and damage for Longbows used by monsters and the bonus to damage rolls from the Bracers of Archery. Therefore, no specific properties of a Longbow are mentioned in the given context.",8,2305,1,47.1,Magic Items > Oathbow | Magic Items > Energy Bow | Magic Items > Bracers of Archery | Monsters A–Z > Actions | Monsters A–Z > Actions | Monsters A–Z > Actions | Monsters A–Z > Actions | Equipment > Mastery Properties,,yes,True,,,,
+o40,Equipment,What are the properties of a Longbow?,v5_graph,"The context provided does not specify any unique properties for a Longbow itself. It only describes specific magic versions of Longbows (Oathbow and Energy Bow) and how certain items grant proficiency with Longbows. Therefore, no specific properties of a Longbow are given in this context.",8,2081,1,19.3,Magic Items > Weapons | Magic Items > Oathbow | Magic Items > Energy Bow | Magic Items > Bracers of Archery | Monsters A–Z > Actions | Monsters A–Z > Actions | Monsters A–Z > Actions | Magic Items > Energy Bow,,yes,True,,,,
+o40,Equipment,What are the properties of a Longbow?,v6_agentic,"A Longbow has the following properties:
+- Deals 1d8 Piercing damage
+- Requires Ammunition (Range 150/600 ft., Arrow)
+- Is Heavy and Two-Handed",4,982,3,31.4,Magic Items > Oathbow | Magic Items > Energy Bow | Monsters A–Z > Actions | Equipment > Mastery Properties,Longbow,yes,False,,,,
+o41,Equipment,Which items require attunement?,v0_closed_book,"Items that require attunement include:
+
+1. Artifacts
+2. Wondrous items with the attunement requirement
+3. Certain magic armor and weapons (those with a specific attunement requirement)
+4. Certain potions (if they have an attunement requirement)
+5. Certain rings (if they have an attunement requirement)
+6. Certain rods (if they have an attunement requirement)
+7. Certain staffs (if they have an attunement requirement)
+8. Certain wands (if they have an attunement requirement)
+
+Note that not all magic items require attunement; those without a specific attunement requirement can be used by any character who can wield them.",0,0,1,25.0,,,yes,False,,,,
+o41,Equipment,Which items require attunement?,v1_baseline,Some magic items require attunement before a creature can use their magical properties.,3,1274,1,13.3,Magic Items > Magic Item Rules | Equipment > Attunement | Rules Glossary > Attunement,,yes,False,,,,
+o41,Equipment,Which items require attunement?,v2_rerank,The context does not specify which items require attunement.,3,1151,1,16.2,Equipment > Attunement | Rules Glossary > Attunement | Equipment > No More Than Three Items,,yes,True,,,,
+o41,Equipment,Which items require attunement?,v2b_rerank8,"The following items require attunement:
+- Oathbow
+- Energy Bow
+- Instant Fortress
+
+These are the items listed in the context that specifically state they require attunement.",8,2342,1,31.4,Equipment > Attunement | Rules Glossary > Attunement | Equipment > No More Than Three Items | Magic Items > Oathbow | Magic Items > Energy Bow | Magic Items > Instant Fortress | Magic Items > Magic Item Rules | Monsters > Equipping a Monster with Other Items,,yes,False,,,,
+o41,Equipment,Which items require attunement?,v3_hier_rerank,Oathbow requires attunement.,3,951,1,9.6,Equipment > Attunement | Equipment > No More Than Three Items | Magic Items > Oathbow,,yes,False,,,,
+o41,Equipment,Which items require attunement?,v4_hybrid,"The following items require attunement:
+- Cloak of Elvenkind
+- Cloak of Protection
+- Crystal Ball of Telepathy
+- Mantle of Spell Resistance
+- Oathbow",8,2026,1,47.1,Equipment > Attunement | Rules Glossary > Attunement | Magic Items > Cloak of Elvenkind | Equipment > No More Than Three Items | Magic Items > Cloak of Protection | Magic Items > Crystal Ball of Telepathy | Magic Items > Mantle of Spell Resistance | Magic Items > Oathbow,,yes,False,,,,
+o41,Equipment,Which items require attunement?,v5_graph,"The following items require attunement:
+- Crystal Ball of Telepathy
+- Oathbow
+- Energy Bow
+- Dwarven Thrower
+- Rod of Absorption
+- Rod of Rulership
+- Flame Tongue",8,1268,1,19.3,Equipment > Attunement | Magic Items > Crystal Ball of Telepathy | Magic Items > Oathbow | Magic Items > Energy Bow | Magic Items > Dwarven Thrower | Magic Items > Rod of Absorption | Magic Items > Rod of Rulership | Magic Items > Flame Tongue,,yes,False,,,,
+o41,Equipment,Which items require attunement?,v6_agentic,Some magic items require attunement. The Periapt of Proof against Poison is one such item that requires attunement.,3,1129,3,31.4,Equipment > Attunement | Equipment > No More Than Three Items | Magic Items > Periapt of Proof against Poison,items requiring attunement,yes,False,,,,
