@@ -17,3 +17,5 @@ __pycache__/
 chroma_cf/
 rag_colab_bundle.zip
 *.bak
+chroma_lc/
+chroma_lc_test/
